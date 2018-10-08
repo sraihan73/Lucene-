@@ -151,4 +151,4 @@ protected:
   virtual T lookupFromSearcher(S s, const std::wstring &id) = 0;
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

@@ -8,23 +8,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class PlanetModel;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/PlanetModel.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPoint;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPolygonFactory;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class PolygonDescription;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPoint.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPolygonFactory.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/PolygonDescription.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -437,4 +425,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::spatial::spatial4j
+} // #include  "core/src/java/org/apache/lucene/spatial/spatial4j/

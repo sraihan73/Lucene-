@@ -3,23 +3,11 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
 
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::search
-{
-class TwoPhaseIterator;
-}
-namespace org::apache::lucene::search::spans
-{
-class Spans;
-}
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/search/TwoPhaseIterator.h"
+#include  "core/src/java/org/apache/lucene/search/spans/Spans.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -75,4 +63,4 @@ public:
   DisiWrapper(std::shared_ptr<Spans> spans);
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

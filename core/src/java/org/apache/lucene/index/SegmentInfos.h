@@ -11,43 +11,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class SegmentCommitInfo;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentCommitInfo.h"
 
-namespace org::apache::lucene::util
-{
-class Version;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::store
-{
-class ChecksumIndexInput;
-}
-namespace org::apache::lucene::codecs
-{
-class Codec;
-}
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
-namespace org::apache::lucene::index
-{
-class MergePolicy;
-}
-namespace org::apache::lucene::index
-{
-class OneMerge;
-}
+#include  "core/src/java/org/apache/lucene/util/Version.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/store/ChecksumIndexInput.h"
+#include  "core/src/java/org/apache/lucene/codecs/Codec.h"
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
+#include  "core/src/java/org/apache/lucene/index/MergePolicy.h"
+#include  "core/src/java/org/apache/lucene/index/OneMerge.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -636,4 +609,4 @@ public:
   int getIndexCreatedVersionMajor();
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

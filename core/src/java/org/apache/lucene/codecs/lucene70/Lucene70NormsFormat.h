@@ -4,23 +4,11 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class NormsConsumer;
-}
+#include  "core/src/java/org/apache/lucene/codecs/NormsConsumer.h"
 
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::codecs
-{
-class NormsProducer;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/codecs/NormsProducer.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -129,4 +117,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::lucene70
+} // #include  "core/src/java/org/apache/lucene/codecs/lucene70/

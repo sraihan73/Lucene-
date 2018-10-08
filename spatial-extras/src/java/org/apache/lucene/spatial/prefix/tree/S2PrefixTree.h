@@ -5,27 +5,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class SpatialPrefixTree;
-}
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/SpatialPrefixTree.h"
 
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class S2ShapeFactory;
-}
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class Cell;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class CellIterator;
-}
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/S2ShapeFactory.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/Cell.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/CellIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -140,4 +125,4 @@ protected:
         SpatialPrefixTree::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::spatial::prefix::tree
+} // #include  "core/src/java/org/apache/lucene/spatial/prefix/tree/

@@ -7,35 +7,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class RAMFile;
-}
+#include  "core/src/java/org/apache/lucene/store/RAMFile.h"
 
-namespace org::apache::lucene::store
-{
-class LockFactory;
-}
-namespace org::apache::lucene::store
-{
-class FSDirectory;
-}
-namespace org::apache::lucene::store
-{
-class IOContext;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
+#include  "core/src/java/org/apache/lucene/store/LockFactory.h"
+#include  "core/src/java/org/apache/lucene/store/FSDirectory.h"
+#include  "core/src/java/org/apache/lucene/store/IOContext.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -193,4 +172,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::store
+} // #include  "core/src/java/org/apache/lucene/store/

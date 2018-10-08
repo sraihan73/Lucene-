@@ -5,31 +5,13 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::packed
-{
-class PagedGrowableWriter;
-}
+#include  "core/src/java/org/apache/lucene/util/packed/PagedGrowableWriter.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util::packed
-{
-class PagedMutable;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::index
-{
-class DocValuesFieldUpdates;
-}
-namespace org::apache::lucene::index
-{
-class Iterator;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/packed/PagedMutable.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/index/DocValuesFieldUpdates.h"
+#include  "core/src/java/org/apache/lucene/index/Iterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -134,4 +116,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

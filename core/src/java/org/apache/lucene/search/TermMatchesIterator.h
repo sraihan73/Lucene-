@@ -3,10 +3,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -62,4 +59,4 @@ public:
   int endOffset()  override;
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

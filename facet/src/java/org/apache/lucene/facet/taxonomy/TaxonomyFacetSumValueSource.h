@@ -4,35 +4,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet::taxonomy
-{
-class OrdinalsReader;
-}
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/OrdinalsReader.h"
 
-namespace org::apache::lucene::search
-{
-class DoubleValuesSource;
-}
-namespace org::apache::lucene::facet
-{
-class FacetsCollector;
-}
-namespace org::apache::lucene::facet
-{
-class FacetsConfig;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class TaxonomyReader;
-}
-namespace org::apache::lucene::search
-{
-class DoubleValues;
-}
-namespace org::apache::lucene::facet
-{
-class MatchingDocs;
-}
+#include  "core/src/java/org/apache/lucene/search/DoubleValuesSource.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetsCollector.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetsConfig.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/TaxonomyReader.h"
+#include  "core/src/java/org/apache/lucene/search/DoubleValues.h"
+#include  "core/src/java/org/apache/lucene/facet/MatchingDocs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -135,4 +114,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::taxonomy
+} // #include  "core/src/java/org/apache/lucene/facet/taxonomy/

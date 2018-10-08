@@ -8,15 +8,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::automaton
-{
-class Transition;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Transition.h"
 
-namespace org::apache::lucene::util
-{
-class Sorter;
-}
+#include  "core/src/java/org/apache/lucene/util/Sorter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -385,4 +379,4 @@ public:
   int64_t ramBytesUsed() override;
 };
 
-} // namespace org::apache::lucene::util::automaton
+} // #include  "core/src/java/org/apache/lucene/util/automaton/

@@ -5,39 +5,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::automaton
-{
-class ByteRunAutomaton;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/ByteRunAutomaton.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::util::automaton
-{
-class CompiledAutomaton;
-}
-namespace org::apache::lucene::util::automaton
-{
-class Transition;
-}
-namespace org::apache::lucene::util
-{
-class IntsRefBuilder;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/CompiledAutomaton.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/Transition.h"
+#include  "core/src/java/org/apache/lucene/util/IntsRefBuilder.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -195,4 +171,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

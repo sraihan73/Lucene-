@@ -97,4 +97,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::ngram
+} // #include  "core/src/java/org/apache/lucene/analysis/ngram/

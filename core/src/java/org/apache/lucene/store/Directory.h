@@ -5,31 +5,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
 
-namespace org::apache::lucene::store
-{
-class IOContext;
-}
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::store
-{
-class ChecksumIndexInput;
-}
-namespace org::apache::lucene::store
-{
-class Lock;
-}
-namespace org::apache::lucene::store
-{
-class AlreadyClosedException;
-}
+#include  "core/src/java/org/apache/lucene/store/IOContext.h"
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/store/ChecksumIndexInput.h"
+#include  "core/src/java/org/apache/lucene/store/Lock.h"
+#include  "core/src/java/org/apache/lucene/store/AlreadyClosedException.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -208,4 +190,4 @@ public:
   getPendingDeletions() ;
 };
 
-} // namespace org::apache::lucene::store
+} // #include  "core/src/java/org/apache/lucene/store/

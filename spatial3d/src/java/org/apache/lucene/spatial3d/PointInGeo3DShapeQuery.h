@@ -7,31 +7,13 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoShape;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoShape.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class XYZBounds;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class Weight;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/XYZBounds.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -127,4 +109,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial3d
+} // #include  "core/src/java/org/apache/lucene/spatial3d/

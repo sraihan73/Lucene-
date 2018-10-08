@@ -6,10 +6,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::quality
-{
-class QualityQuery;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/quality/QualityQuery.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -68,4 +65,4 @@ public:
   readQueries(std::shared_ptr<BufferedReader> reader) ;
 };
 
-} // namespace org::apache::lucene::benchmark::quality::trec
+} // #include  "core/src/java/org/apache/lucene/benchmark/quality/trec/

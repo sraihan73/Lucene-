@@ -6,15 +6,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial::query
-{
-class SpatialArgs;
-}
+#include  "core/src/java/org/apache/lucene/spatial/query/SpatialArgs.h"
 
-namespace org::apache::lucene::spatial::query
-{
-class SpatialArgsParser;
-}
+#include  "core/src/java/org/apache/lucene/spatial/query/SpatialArgsParser.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -65,4 +59,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::apache::lucene::spatial
+} // #include  "core/src/java/org/apache/lucene/spatial/

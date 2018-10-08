@@ -122,4 +122,4 @@ public:
 /* JavaCC - OriginalChecksum=db38f23b3674db52ff034369707a0ac3 (do not edit this
  * line) */
 
-} // namespace org::apache::lucene::queryparser::surround::parser
+} // #include  "core/src/java/org/apache/lucene/queryparser/surround/parser/

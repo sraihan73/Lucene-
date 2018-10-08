@@ -106,4 +106,4 @@ public:
   static int heapChild(int from, int i);
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

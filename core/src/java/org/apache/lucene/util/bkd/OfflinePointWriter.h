@@ -5,23 +5,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
-namespace org::apache::lucene::util::bkd
-{
-class OfflinePointReader;
-}
-namespace org::apache::lucene::util::bkd
-{
-class PointReader;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
+#include  "core/src/java/org/apache/lucene/util/bkd/OfflinePointReader.h"
+#include  "core/src/java/org/apache/lucene/util/bkd/PointReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -103,4 +91,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::apache::lucene::util::bkd
+} // #include  "core/src/java/org/apache/lucene/util/bkd/

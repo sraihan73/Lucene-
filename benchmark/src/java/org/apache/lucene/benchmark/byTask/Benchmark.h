@@ -8,15 +8,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::byTask
-{
-class PerfRunData;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/PerfRunData.h"
 
-namespace org::apache::lucene::benchmark::byTask::utils
-{
-class Algorithm;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/utils/Algorithm.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -97,4 +91,4 @@ public:
   virtual std::shared_ptr<PerfRunData> getRunData();
 };
 
-} // namespace org::apache::lucene::benchmark::byTask
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/

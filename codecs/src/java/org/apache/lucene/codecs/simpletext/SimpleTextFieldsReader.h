@@ -19,19 +19,10 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
 
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename Atypename B>
@@ -42,30 +33,12 @@ namespace org::apache::lucene::util::fst
 template <typename Atypename B>
 class Pair;
 }
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::util
-{
-class CharsRefBuilder;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::index
-{
-class Terms;
-}
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/util/CharsRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -448,4 +421,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::simpletext
+} // #include  "core/src/java/org/apache/lucene/codecs/simpletext/

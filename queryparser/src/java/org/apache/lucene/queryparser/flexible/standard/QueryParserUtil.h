@@ -7,23 +7,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::queryparser::flexible::core
-{
-class QueryNodeException;
-}
-namespace org::apache::lucene::search
-{
-class BooleanClause;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/QueryNodeException.h"
+#include  "core/src/java/org/apache/lucene/search/BooleanClause.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -175,4 +163,4 @@ public:
   static std::wstring escape(const std::wstring &s);
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::standard
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/

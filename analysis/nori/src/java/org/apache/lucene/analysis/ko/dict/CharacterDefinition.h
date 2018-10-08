@@ -137,4 +137,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::analysis::ko::dict
+} // #include  "core/src/java/org/apache/lucene/analysis/ko/dict/

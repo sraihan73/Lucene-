@@ -5,19 +5,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::vectorhighlight
-{
-class FieldFragList;
-}
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/FieldFragList.h"
 
-namespace org::apache::lucene::search::vectorhighlight
-{
-class FieldPhraseList;
-}
-namespace org::apache::lucene::search::vectorhighlight
-{
-class WeightedPhraseInfo;
-}
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/FieldPhraseList.h"
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/WeightedPhraseInfo.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -115,4 +106,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::search::vectorhighlight
+} // #include  "core/src/java/org/apache/lucene/search/vectorhighlight/

@@ -6,55 +6,19 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
 
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::facet
-{
-class MatchingDocs;
-}
-namespace org::apache::lucene::util
-{
-class DocIdSetBuilder;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSet;
-}
-namespace org::apache::lucene::search
-{
-class Collector;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search
-{
-class TopDocs;
-}
-namespace org::apache::lucene::search
-{
-class Sort;
-}
-namespace org::apache::lucene::search
-{
-class TopFieldDocs;
-}
-namespace org::apache::lucene::search
-{
-class ScoreDoc;
-}
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/facet/MatchingDocs.h"
+#include  "core/src/java/org/apache/lucene/util/DocIdSetBuilder.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSet.h"
+#include  "core/src/java/org/apache/lucene/search/Collector.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/TopDocs.h"
+#include  "core/src/java/org/apache/lucene/search/Sort.h"
+#include  "core/src/java/org/apache/lucene/search/TopFieldDocs.h"
+#include  "core/src/java/org/apache/lucene/search/ScoreDoc.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -226,4 +190,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet
+} // #include  "core/src/java/org/apache/lucene/facet/

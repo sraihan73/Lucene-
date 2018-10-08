@@ -91,4 +91,4 @@ public:
   T newInstance(const std::wstring &cname, std::type_info<T> &expectedType);
 };
 
-} // namespace org::apache::lucene::analysis::util
+} // #include  "core/src/java/org/apache/lucene/analysis/util/

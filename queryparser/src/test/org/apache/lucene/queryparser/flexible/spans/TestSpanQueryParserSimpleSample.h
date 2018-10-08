@@ -105,4 +105,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::spans
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/spans/

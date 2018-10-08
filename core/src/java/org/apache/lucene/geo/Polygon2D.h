@@ -4,19 +4,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::geo
-{
-class Edge;
-}
+#include  "core/src/java/org/apache/lucene/geo/Edge.h"
 
-namespace org::apache::lucene::geo
-{
-class Polygon;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
+#include  "core/src/java/org/apache/lucene/geo/Polygon.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -223,4 +214,4 @@ private:
                     double cy);
 };
 
-} // namespace org::apache::lucene::geo
+} // #include  "core/src/java/org/apache/lucene/geo/

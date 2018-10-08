@@ -7,19 +7,10 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::util
-{
-class AttributeImpl;
-}
-namespace org::apache::lucene::util
-{
-class AttributeReflector;
-}
+#include  "core/src/java/org/apache/lucene/util/AttributeImpl.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeReflector.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -82,4 +73,4 @@ protected:
         org.apache.lucene.util.AttributeImpl::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::analysis::tokenattributes
+} // #include  "core/src/java/org/apache/lucene/analysis/tokenattributes/

@@ -7,15 +7,9 @@
 #include <typeinfo>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class FSDirectory;
-}
+#include  "core/src/java/org/apache/lucene/store/FSDirectory.h"
 
-namespace org::apache::lucene::store
-{
-class LockFactory;
-}
+#include  "core/src/java/org/apache/lucene/store/LockFactory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -129,4 +123,4 @@ public:
       std::shared_ptr<LockFactory> lf) ;
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

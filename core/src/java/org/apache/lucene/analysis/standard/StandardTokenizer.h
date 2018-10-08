@@ -8,31 +8,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::standard
-{
-class StandardTokenizerImpl;
-}
+#include  "core/src/java/org/apache/lucene/analysis/standard/StandardTokenizerImpl.h"
 
-namespace org::apache::lucene::util
-{
-class AttributeFactory;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PositionIncrementAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class TypeAttribute;
-}
+#include  "core/src/java/org/apache/lucene/util/AttributeFactory.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PositionIncrementAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/TypeAttribute.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -180,4 +162,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::standard
+} // #include  "core/src/java/org/apache/lucene/analysis/standard/

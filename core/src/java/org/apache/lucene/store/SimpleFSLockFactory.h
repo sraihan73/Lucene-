@@ -5,15 +5,9 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class FSDirectory;
-}
+#include  "core/src/java/org/apache/lucene/store/FSDirectory.h"
 
-namespace org::apache::lucene::store
-{
-class Lock;
-}
+#include  "core/src/java/org/apache/lucene/store/Lock.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -122,4 +116,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::store
+} // #include  "core/src/java/org/apache/lucene/store/

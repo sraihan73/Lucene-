@@ -4,27 +4,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class DocIdSetBuilder;
-}
+#include  "core/src/java/org/apache/lucene/util/DocIdSetBuilder.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoShape;
-}
-namespace org::apache::lucene::util
-{
-class BulkAdder;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class XYZBounds;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoShape.h"
+#include  "core/src/java/org/apache/lucene/util/BulkAdder.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/XYZBounds.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -84,4 +69,4 @@ public:
                    std::deque<char> &maxPackedValue) override;
 };
 
-} // namespace org::apache::lucene::spatial3d
+} // #include  "core/src/java/org/apache/lucene/spatial3d/

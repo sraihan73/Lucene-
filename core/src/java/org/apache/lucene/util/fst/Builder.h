@@ -10,14 +10,8 @@ template <typename T>
 class UnCompiledNode;
 }
 
-namespace org::apache::lucene::util::fst
-{
-class CompiledNode;
-}
-namespace org::apache::lucene::util::fst
-{
-class Node;
-}
+#include  "core/src/java/org/apache/lucene/util/fst/CompiledNode.h"
+#include  "core/src/java/org/apache/lucene/util/fst/Node.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -751,4 +745,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::util::fst
+} // #include  "core/src/java/org/apache/lucene/util/fst/

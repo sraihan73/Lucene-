@@ -6,23 +6,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class Field;
-}
+#include  "core/src/java/org/apache/lucene/document/Field.h"
 
-namespace org::apache::lucene::search
-{
-class DoubleValuesSource;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::spatial::query
-{
-class SpatialArgs;
-}
+#include  "core/src/java/org/apache/lucene/search/DoubleValuesSource.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/spatial/query/SpatialArgs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -168,4 +156,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::apache::lucene::spatial
+} // #include  "core/src/java/org/apache/lucene/spatial/

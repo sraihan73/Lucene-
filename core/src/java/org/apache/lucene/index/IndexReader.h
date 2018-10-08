@@ -10,43 +10,14 @@
 #include <unordered_set>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class CacheKey;
-}
-
-namespace org::apache::lucene::store
-{
-class AlreadyClosedException;
-}
-namespace org::apache::lucene::index
-{
-class Fields;
-}
-namespace org::apache::lucene::index
-{
-class Terms;
-}
-namespace org::apache::lucene::index
-{
-class StoredFieldVisitor;
-}
-namespace org::apache::lucene::document
-{
-class Document;
-}
-namespace org::apache::lucene::index
-{
-class IndexReaderContext;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
+#include  "core/src/java/org/apache/lucene/store/AlreadyClosedException.h"
+#include  "core/src/java/org/apache/lucene/index/Fields.h"
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
+#include  "core/src/java/org/apache/lucene/index/StoredFieldVisitor.h"
+#include  "core/src/java/org/apache/lucene/document/Document.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReaderContext.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -441,4 +412,4 @@ public:
   virtual int64_t getSumTotalTermFreq(const std::wstring &field) = 0;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

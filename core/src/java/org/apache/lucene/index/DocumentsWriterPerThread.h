@@ -7,120 +7,39 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class DocConsumer;
-}
+#include  "core/src/java/org/apache/lucene/index/DocConsumer.h"
 
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Similarity;
-}
-namespace org::apache::lucene::index
-{
-class IndexableField;
-}
-namespace org::apache::lucene::index
-{
-class SegmentCommitInfo;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::index
-{
-class FrozenBufferedUpdates;
-}
-namespace org::apache::lucene::util
-{
-class FixedBitSet;
-}
-namespace org::apache::lucene::index
-{
-class Sorter;
-}
-namespace org::apache::lucene::index
-{
-class DocMap;
-}
-namespace org::apache::lucene::index
-{
-class BufferedUpdates;
-}
-namespace org::apache::lucene::codecs
-{
-class Codec;
-}
-namespace org::apache::lucene::store
-{
-class TrackingDirectoryWrapper;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::util
-{
-class Counter;
-}
-namespace org::apache::lucene::index
-{
-class SegmentInfo;
-}
-namespace org::apache::lucene::index
-{
-class Builder;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterDeleteQueue;
-}
-namespace org::apache::lucene::index
-{
-class DeleteSlice;
-}
-namespace org::apache::lucene::util
-{
-class ByteBlockPool;
-}
-namespace org::apache::lucene::util
-{
-class Allocator;
-}
-namespace org::apache::lucene::util
-{
-class IntBlockPool;
-}
-namespace org::apache::lucene::index
-{
-class LiveIndexWriterConfig;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriter;
-}
-namespace org::apache::lucene::index
-{
-class FlushNotifications;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Similarity.h"
+#include  "core/src/java/org/apache/lucene/index/IndexableField.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentCommitInfo.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/index/FrozenBufferedUpdates.h"
+#include  "core/src/java/org/apache/lucene/util/FixedBitSet.h"
+#include  "core/src/java/org/apache/lucene/index/Sorter.h"
+#include  "core/src/java/org/apache/lucene/index/DocMap.h"
+#include  "core/src/java/org/apache/lucene/index/BufferedUpdates.h"
+#include  "core/src/java/org/apache/lucene/codecs/Codec.h"
+#include  "core/src/java/org/apache/lucene/store/TrackingDirectoryWrapper.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/util/Counter.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentInfo.h"
+#include  "core/src/java/org/apache/lucene/index/Builder.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterDeleteQueue.h"
+#include  "core/src/java/org/apache/lucene/index/DeleteSlice.h"
+#include  "core/src/java/org/apache/lucene/util/ByteBlockPool.h"
+#include  "core/src/java/org/apache/lucene/util/Allocator.h"
+#include  "core/src/java/org/apache/lucene/util/IntBlockPool.h"
+#include  "core/src/java/org/apache/lucene/index/LiveIndexWriterConfig.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriter.h"
+#include  "core/src/java/org/apache/lucene/index/FlushNotifications.h"
 namespace org::apache::lucene::index
 {
 template <typename T>
 class Node;
 }
-namespace org::apache::lucene::util
-{
-class Bits;
-}
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -447,4 +366,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

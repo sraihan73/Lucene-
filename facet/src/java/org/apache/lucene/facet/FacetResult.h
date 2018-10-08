@@ -7,10 +7,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet
-{
-class LabelAndValue;
-}
+#include  "core/src/java/org/apache/lucene/facet/LabelAndValue.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -67,4 +64,4 @@ public:
   virtual int hashCode();
 };
 
-} // namespace org::apache::lucene::facet
+} // #include  "core/src/java/org/apache/lucene/facet/

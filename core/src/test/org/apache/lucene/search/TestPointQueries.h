@@ -12,55 +12,19 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class Document;
-}
+#include  "core/src/java/org/apache/lucene/document/Document.h"
 
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::codecs
-{
-class Codec;
-}
-namespace org::apache::lucene::codecs
-{
-class PointsFormat;
-}
-namespace org::apache::lucene::codecs
-{
-class PointsWriter;
-}
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::codecs
-{
-class PointsReader;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/codecs/Codec.h"
+#include  "core/src/java/org/apache/lucene/codecs/PointsFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/PointsWriter.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/codecs/PointsReader.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more

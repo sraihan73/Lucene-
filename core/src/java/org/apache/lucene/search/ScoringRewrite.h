@@ -4,59 +4,20 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class BooleanQuery;
-}
+#include  "core/src/java/org/apache/lucene/search/BooleanQuery.h"
 
-namespace org::apache::lucene::search
-{
-class Builder;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::index
-{
-class TermContext;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search
-{
-class MultiTermQuery;
-}
-namespace org::apache::lucene::search
-{
-class ParallelArraysTermCollector;
-}
-namespace org::apache::lucene::search
-{
-class TermFreqBoostByteStart;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefHash;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::search
-{
-class BoostAttribute;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/search/Builder.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/index/TermContext.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/MultiTermQuery.h"
+#include  "core/src/java/org/apache/lucene/search/ParallelArraysTermCollector.h"
+#include  "core/src/java/org/apache/lucene/search/TermFreqBoostByteStart.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefHash.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/search/BoostAttribute.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -288,4 +249,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

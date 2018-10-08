@@ -8,43 +8,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
-namespace org::apache::lucene::document
-{
-class Document;
-}
-namespace org::apache::lucene::document
-{
-class LazyField;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class IndexableField;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class IndexableFieldType;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
+#include  "core/src/java/org/apache/lucene/document/Document.h"
+#include  "core/src/java/org/apache/lucene/document/LazyField.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/IndexableField.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/IndexableFieldType.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -179,4 +152,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::document
+} // #include  "core/src/java/org/apache/lucene/document/

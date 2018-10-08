@@ -4,15 +4,9 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -109,4 +103,4 @@ public:
   virtual std::shared_ptr<TermsEnum> termsEnum() ;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

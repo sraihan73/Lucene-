@@ -9,39 +9,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
 
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::codecs
-{
-class DocValuesProducer;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class SortedNumericDocValues;
-}
-namespace org::apache::lucene::store
-{
-class GrowableByteArrayDataOutput;
-}
-namespace org::apache::lucene::index
-{
-class SortedSetDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesProducer.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/SortedNumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/store/GrowableByteArrayDataOutput.h"
+#include  "core/src/java/org/apache/lucene/index/SortedSetDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -242,4 +218,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::lucene70
+} // #include  "core/src/java/org/apache/lucene/codecs/lucene70/

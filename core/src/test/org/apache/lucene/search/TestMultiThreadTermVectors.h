@@ -8,23 +8,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::index
-{
-class Fields;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/index/Fields.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -111,4 +99,4 @@ private:
                     int num) ;
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

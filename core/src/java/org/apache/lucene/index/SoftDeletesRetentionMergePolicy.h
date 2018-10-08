@@ -5,40 +5,19 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class Query;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
 
-namespace org::apache::lucene::index
-{
-class MergePolicy;
-}
-namespace org::apache::lucene::index
-{
-class CodecReader;
-}
+#include  "core/src/java/org/apache/lucene/index/MergePolicy.h"
+#include  "core/src/java/org/apache/lucene/index/CodecReader.h"
 namespace org::apache::lucene::util
 {
 template <typename T>
 class IOSupplier;
 }
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::util
-{
-class FixedBitSet;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::index
-{
-class SegmentCommitInfo;
-}
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/util/FixedBitSet.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentCommitInfo.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -184,4 +163,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

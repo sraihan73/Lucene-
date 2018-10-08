@@ -10,35 +10,14 @@
 
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet
-{
-class FacetsCollector;
-}
+#include  "core/src/java/org/apache/lucene/facet/FacetsCollector.h"
 
-namespace org::apache::lucene::search
-{
-class LongValuesSource;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::facet
-{
-class MatchingDocs;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
-namespace org::apache::lucene::facet
-{
-class FacetResult;
-}
-namespace org::apache::lucene::facet
-{
-class LabelAndValue;
-}
+#include  "core/src/java/org/apache/lucene/search/LongValuesSource.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/facet/MatchingDocs.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetResult.h"
+#include  "core/src/java/org/apache/lucene/facet/LabelAndValue.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -257,4 +236,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet
+} // #include  "core/src/java/org/apache/lucene/facet/

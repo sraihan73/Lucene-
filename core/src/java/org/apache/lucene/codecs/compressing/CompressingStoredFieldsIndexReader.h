@@ -8,27 +8,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::packed
-{
-class PackedInts;
-}
+#include  "core/src/java/org/apache/lucene/util/packed/PackedInts.h"
 
-namespace org::apache::lucene::util::packed
-{
-class Reader;
-}
-namespace org::apache::lucene::index
-{
-class SegmentInfo;
-}
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
+#include  "core/src/java/org/apache/lucene/util/packed/Reader.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentInfo.h"
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -113,4 +98,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::apache::lucene::codecs::compressing
+} // #include  "core/src/java/org/apache/lucene/codecs/compressing/

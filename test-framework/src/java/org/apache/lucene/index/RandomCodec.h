@@ -10,51 +10,18 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class PostingsFormat;
-}
+#include  "core/src/java/org/apache/lucene/codecs/PostingsFormat.h"
 
-namespace org::apache::lucene::codecs
-{
-class DocValuesFormat;
-}
-namespace org::apache::lucene::codecs
-{
-class PointsFormat;
-}
-namespace org::apache::lucene::codecs
-{
-class PointsWriter;
-}
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::codecs
-{
-class PointsReader;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::util::bkd
-{
-class BKDWriter;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/PointsFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/PointsWriter.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/codecs/PointsReader.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/util/bkd/BKDWriter.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -297,4 +264,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

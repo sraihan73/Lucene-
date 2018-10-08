@@ -52,4 +52,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::snowball
+} // #include  "core/src/java/org/apache/lucene/analysis/snowball/

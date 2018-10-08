@@ -7,67 +7,22 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class PrefixCodedTerms;
-}
+#include  "core/src/java/org/apache/lucene/index/PrefixCodedTerms.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::index
-{
-class TermState;
-}
-namespace org::apache::lucene::search
-{
-class Weight;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSet;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class Matches;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::search
-{
-class BulkScorer;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/TermState.h"
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSet.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/Matches.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/search/BulkScorer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -257,4 +212,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

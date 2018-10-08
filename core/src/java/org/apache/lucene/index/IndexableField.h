@@ -4,23 +4,11 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexableFieldType;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexableFieldType.h"
 
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -96,4 +84,4 @@ public:
   virtual std::shared_ptr<Number> numericValue() = 0;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

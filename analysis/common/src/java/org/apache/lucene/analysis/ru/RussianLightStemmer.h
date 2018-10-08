@@ -82,4 +82,4 @@ private:
   int removeCase(std::deque<wchar_t> &s, int len);
 };
 
-} // namespace org::apache::lucene::analysis::ru
+} // #include  "core/src/java/org/apache/lucene/analysis/ru/

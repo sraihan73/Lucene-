@@ -7,27 +7,12 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class Collector;
-}
+#include  "core/src/java/org/apache/lucene/search/Collector.h"
 
-namespace org::apache::lucene::util
-{
-class Counter;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class LeafCollector;
-}
-namespace org::apache::lucene::search
-{
-class TimerThread;
-}
+#include  "core/src/java/org/apache/lucene/util/Counter.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/LeafCollector.h"
+#include  "core/src/java/org/apache/lucene/search/TimerThread.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -334,4 +319,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

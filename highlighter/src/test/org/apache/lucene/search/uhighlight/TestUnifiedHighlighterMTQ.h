@@ -9,55 +9,19 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
 
-namespace org::apache::lucene::store
-{
-class BaseDirectoryWrapper;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class UnifiedHighlighter;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class PassageFormatter;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class Passage;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanQuery;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanWeight;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/store/BaseDirectoryWrapper.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/UnifiedHighlighter.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/PassageFormatter.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/Passage.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanQuery.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanWeight.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -353,4 +317,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::uhighlight
+} // #include  "core/src/java/org/apache/lucene/search/uhighlight/

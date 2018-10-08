@@ -6,23 +6,11 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::queries::function
-{
-class FunctionValues;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Similarity;
-}
-namespace org::apache::lucene::search::similarities
-{
-class TFIDFSimilarity;
-}
+#include  "core/src/java/org/apache/lucene/queries/function/FunctionValues.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Similarity.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/TFIDFSimilarity.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -84,4 +72,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queries::function::valuesource
+} // #include  "core/src/java/org/apache/lucene/queries/function/valuesource/

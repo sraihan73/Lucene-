@@ -3,23 +3,11 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class BulkScorer;
-}
+#include  "core/src/java/org/apache/lucene/search/BulkScorer.h"
 
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
-namespace org::apache::lucene::search
-{
-class LeafCollector;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
+#include  "core/src/java/org/apache/lucene/search/LeafCollector.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -68,4 +56,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

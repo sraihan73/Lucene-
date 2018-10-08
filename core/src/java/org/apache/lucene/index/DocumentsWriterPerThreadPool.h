@@ -5,15 +5,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class DocumentsWriterPerThread;
-}
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterPerThread.h"
 
-namespace org::apache::lucene::index
-{
-class DocumentsWriter;
-}
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -191,4 +185,4 @@ public:
   int getMaxThreadStates();
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

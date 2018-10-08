@@ -8,27 +8,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet::taxonomy
-{
-class OrdinalsReader;
-}
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/OrdinalsReader.h"
 
-namespace org::apache::lucene::facet::taxonomy
-{
-class CachedOrds;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/CachedOrds.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -170,4 +155,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::taxonomy
+} // #include  "core/src/java/org/apache/lucene/facet/taxonomy/

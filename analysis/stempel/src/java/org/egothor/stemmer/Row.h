@@ -5,10 +5,7 @@
 #include <optional>
 
 // C++ NOTE: Forward class declarations:
-namespace org::egothor::stemmer
-{
-class Cell;
-}
+#include  "core/src/java/org/egothor/stemmer/Cell.h"
 
 /*
                     Egothor Software License version 1.00
@@ -191,4 +188,4 @@ public:
   virtual std::shared_ptr<Cell> at(std::optional<wchar_t> &index);
 };
 
-} // namespace org::egothor::stemmer
+} // #include  "core/src/java/org/egothor/stemmer/

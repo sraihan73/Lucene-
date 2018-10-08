@@ -56,4 +56,4 @@ public:
   virtual std::wstring getShortName() = 0;
 };
 
-} // namespace org::apache::lucene::analysis::icu::tokenattributes
+} // #include  "core/src/java/org/apache/lucene/analysis/icu/tokenattributes/

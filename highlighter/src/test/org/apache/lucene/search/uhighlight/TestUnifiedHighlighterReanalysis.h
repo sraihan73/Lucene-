@@ -4,10 +4,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class MockAnalyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/MockAnalyzer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -60,4 +57,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::uhighlight
+} // #include  "core/src/java/org/apache/lucene/search/uhighlight/

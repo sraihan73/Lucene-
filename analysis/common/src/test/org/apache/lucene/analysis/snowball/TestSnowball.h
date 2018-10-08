@@ -9,39 +9,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class TypeAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PayloadAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PositionIncrementAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class FlagsAttribute;
-}
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/TypeAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PayloadAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PositionIncrementAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/FlagsAttribute.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -211,4 +187,4 @@ protected:
         org.apache.lucene.analysis.BaseTokenStreamTestCase::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::analysis::snowball
+} // #include  "core/src/java/org/apache/lucene/analysis/snowball/

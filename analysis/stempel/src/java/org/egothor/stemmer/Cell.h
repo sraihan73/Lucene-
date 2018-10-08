@@ -94,4 +94,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::egothor::stemmer
+} // #include  "core/src/java/org/egothor/stemmer/

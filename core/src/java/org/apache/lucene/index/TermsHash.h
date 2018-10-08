@@ -5,51 +5,18 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class IntBlockPool;
-}
+#include  "core/src/java/org/apache/lucene/util/IntBlockPool.h"
 
-namespace org::apache::lucene::util
-{
-class ByteBlockPool;
-}
-namespace org::apache::lucene::util
-{
-class Counter;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterPerThread;
-}
-namespace org::apache::lucene::index
-{
-class DocState;
-}
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::index
-{
-class Sorter;
-}
-namespace org::apache::lucene::index
-{
-class DocMap;
-}
-namespace org::apache::lucene::index
-{
-class TermsHashPerField;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class FieldInvertState;
-}
+#include  "core/src/java/org/apache/lucene/util/ByteBlockPool.h"
+#include  "core/src/java/org/apache/lucene/util/Counter.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterPerThread.h"
+#include  "core/src/java/org/apache/lucene/index/DocState.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/index/Sorter.h"
+#include  "core/src/java/org/apache/lucene/index/DocMap.h"
+#include  "core/src/java/org/apache/lucene/index/TermsHashPerField.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInvertState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -120,4 +87,4 @@ public:
   virtual void startDocument() ;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

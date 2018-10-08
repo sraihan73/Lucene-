@@ -11,23 +11,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::icu::segmentation
-{
-class ICUTokenizerConfig;
-}
+#include  "core/src/java/org/apache/lucene/analysis/icu/segmentation/ICUTokenizerConfig.h"
 
-namespace org::apache::lucene::analysis::util
-{
-class ResourceLoader;
-}
-namespace org::apache::lucene::analysis::icu::segmentation
-{
-class ICUTokenizer;
-}
-namespace org::apache::lucene::util
-{
-class AttributeFactory;
-}
+#include  "core/src/java/org/apache/lucene/analysis/util/ResourceLoader.h"
+#include  "core/src/java/org/apache/lucene/analysis/icu/segmentation/ICUTokenizer.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeFactory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -159,4 +147,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::icu::segmentation
+} // #include  "core/src/java/org/apache/lucene/analysis/icu/segmentation/

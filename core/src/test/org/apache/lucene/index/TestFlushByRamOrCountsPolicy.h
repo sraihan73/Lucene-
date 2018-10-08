@@ -7,31 +7,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class LineFileDocs;
-}
+#include  "core/src/java/org/apache/lucene/util/LineFileDocs.h"
 
-namespace org::apache::lucene::index
-{
-class DocumentsWriterFlushControl;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::index
-{
-class LiveIndexWriterConfig;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterPerThreadPool;
-}
-namespace org::apache::lucene::index
-{
-class ThreadState;
-}
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterFlushControl.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/index/LiveIndexWriterConfig.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterPerThreadPool.h"
+#include  "core/src/java/org/apache/lucene/index/ThreadState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -159,4 +141,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

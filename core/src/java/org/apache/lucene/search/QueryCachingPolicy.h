@@ -3,10 +3,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class Query;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -77,4 +74,4 @@ public:
   void onUse(std::shared_ptr<Query> query) override;
   bool shouldCache(std::shared_ptr<Query> query)  override;
 };
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

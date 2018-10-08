@@ -6,31 +6,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
 
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -117,4 +99,4 @@ protected:
         org.apache.lucene.util.LuceneTestCase::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::queries::payloads
+} // #include  "core/src/java/org/apache/lucene/queries/payloads/

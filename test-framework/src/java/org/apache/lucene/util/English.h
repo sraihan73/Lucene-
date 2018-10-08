@@ -44,4 +44,4 @@ public:
   static void intToEnglish(int i, std::shared_ptr<StringBuilder> result);
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

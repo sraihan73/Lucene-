@@ -7,43 +7,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class OrdinalMap;
-}
+#include  "core/src/java/org/apache/lucene/index/OrdinalMap.h"
 
-namespace org::apache::lucene::util
-{
-class LongBitSet;
-}
-namespace org::apache::lucene::search::join
-{
-class Scores;
-}
-namespace org::apache::lucene::search::join
-{
-class Occurrences;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class LeafCollector;
-}
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
-namespace org::apache::lucene::util
-{
-class LongValues;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
+#include  "core/src/java/org/apache/lucene/util/LongBitSet.h"
+#include  "core/src/java/org/apache/lucene/search/join/Scores.h"
+#include  "core/src/java/org/apache/lucene/search/join/Occurrences.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/LeafCollector.h"
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
+#include  "core/src/java/org/apache/lucene/util/LongValues.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more

@@ -6,39 +6,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
-namespace org::apache::lucene::codecs
-{
-class TermVectorsReader;
-}
-namespace org::apache::lucene::index
-{
-class MergeState;
-}
-namespace org::apache::lucene::index
-{
-class DocMap;
-}
-namespace org::apache::lucene::index
-{
-class Fields;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
+#include  "core/src/java/org/apache/lucene/codecs/TermVectorsReader.h"
+#include  "core/src/java/org/apache/lucene/index/MergeState.h"
+#include  "core/src/java/org/apache/lucene/index/DocMap.h"
+#include  "core/src/java/org/apache/lucene/index/Fields.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -206,4 +182,4 @@ public:
   override
 };
 
-} // namespace org::apache::lucene::codecs
+} // #include  "core/src/java/org/apache/lucene/codecs/

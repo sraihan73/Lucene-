@@ -62,4 +62,4 @@ protected:
         BasicAEProvider::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::analysis::uima::ae
+} // #include  "core/src/java/org/apache/lucene/analysis/uima/ae/

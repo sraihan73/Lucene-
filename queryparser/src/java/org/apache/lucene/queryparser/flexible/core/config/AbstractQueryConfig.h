@@ -105,4 +105,4 @@ public:
   bool unset(std::shared_ptr<ConfigurationKey<T>> key);
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::core::config
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/core/config/

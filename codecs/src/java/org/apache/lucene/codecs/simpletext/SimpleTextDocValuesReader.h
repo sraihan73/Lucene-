@@ -14,27 +14,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::codecs::simpletext
-{
-class DocValuesIterator;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class BinaryDocValues;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/codecs/simpletext/DocValuesIterator.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/BinaryDocValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -566,4 +551,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::simpletext
+} // #include  "core/src/java/org/apache/lucene/codecs/simpletext/

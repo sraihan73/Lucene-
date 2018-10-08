@@ -3,10 +3,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::suggest
-{
-class InputIterator;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/InputIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -47,4 +44,4 @@ public:
   virtual std::shared_ptr<InputIterator> getEntryIterator() = 0;
 };
 
-} // namespace org::apache::lucene::search::spell
+} // #include  "core/src/java/org/apache/lucene/search/spell/

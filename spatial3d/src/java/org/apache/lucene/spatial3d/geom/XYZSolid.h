@@ -29,4 +29,4 @@ class XYZSolid : public GeoArea, public PlanetObject
   GET_CLASS_NAME(XYZSolid)
 };
 
-} // namespace org::apache::lucene::spatial3d::geom
+} // #include  "core/src/java/org/apache/lucene/spatial3d/geom/

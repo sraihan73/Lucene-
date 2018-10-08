@@ -4,10 +4,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class Cell;
-}
+#include  "core/src/java/org/apache/lucene/index/Cell.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -69,4 +66,4 @@ public:
   // TODO: expose other details about the stack...
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

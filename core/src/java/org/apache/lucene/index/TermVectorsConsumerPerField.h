@@ -5,39 +5,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class TermVectorsPostingsArray;
-}
+#include  "core/src/java/org/apache/lucene/index/TermVectorsPostingsArray.h"
 
-namespace org::apache::lucene::index
-{
-class TermVectorsConsumer;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PayloadAttribute;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class FieldInvertState;
-}
-namespace org::apache::lucene::index
-{
-class IndexableField;
-}
-namespace org::apache::lucene::index
-{
-class ParallelPostingsArray;
-}
+#include  "core/src/java/org/apache/lucene/index/TermVectorsConsumer.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PayloadAttribute.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInvertState.h"
+#include  "core/src/java/org/apache/lucene/index/IndexableField.h"
+#include  "core/src/java/org/apache/lucene/index/ParallelPostingsArray.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -147,4 +123,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

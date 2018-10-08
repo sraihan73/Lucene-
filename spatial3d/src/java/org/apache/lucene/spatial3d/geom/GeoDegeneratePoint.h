@@ -9,43 +9,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class PlanetModel;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/PlanetModel.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPoint;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoBBox;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class Membership;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class Plane;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoShape;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class Bounds;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class DistanceStyle;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class Vector;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPoint.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoBBox.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Membership.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Plane.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoShape.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Bounds.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/DistanceStyle.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Vector.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -149,4 +122,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial3d::geom
+} // #include  "core/src/java/org/apache/lucene/spatial3d/geom/

@@ -9,39 +9,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
 
-namespace org::apache::lucene::document
-{
-class Field;
-}
-namespace org::apache::lucene::spatial
-{
-class ShapeValuesSource;
-}
-namespace org::apache::lucene::search
-{
-class DoubleValuesSource;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::spatial::query
-{
-class SpatialArgs;
-}
-namespace org::apache::lucene::search
-{
-class BooleanClause;
-}
-namespace org::apache::lucene::search
-{
-class BooleanQuery;
-}
+#include  "core/src/java/org/apache/lucene/document/Field.h"
+#include  "core/src/java/org/apache/lucene/spatial/ShapeValuesSource.h"
+#include  "core/src/java/org/apache/lucene/search/DoubleValuesSource.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/spatial/query/SpatialArgs.h"
+#include  "core/src/java/org/apache/lucene/search/BooleanClause.h"
+#include  "core/src/java/org/apache/lucene/search/BooleanQuery.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -338,4 +314,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial::bbox
+} // #include  "core/src/java/org/apache/lucene/spatial/bbox/

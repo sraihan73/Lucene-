@@ -9,40 +9,19 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Similarity;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Similarity.h"
 namespace org::apache::lucene::classification
 {
 template <typename T>
 class ClassificationResult;
 }
-namespace org::apache::lucene::document
-{
-class Document;
-}
-namespace org::apache::lucene::search
-{
-class TopDocs;
-}
+#include  "core/src/java/org/apache/lucene/document/Document.h"
+#include  "core/src/java/org/apache/lucene/search/TopDocs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -161,4 +140,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::classification::document
+} // #include  "core/src/java/org/apache/lucene/classification/document/

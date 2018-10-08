@@ -11,103 +11,31 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::analysis
-{
-class MockAnalyzer;
-}
-namespace org::apache::lucene::search
-{
-class TopDocs;
-}
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::search::highlight
-{
-class InvalidTokenOffsetsException;
-}
-namespace org::apache::lucene::search
-{
-class MultiTermQuery;
-}
-namespace org::apache::lucene::search::highlight
-{
-class WeightedSpanTerm;
-}
-namespace org::apache::lucene::search::highlight
-{
-class Formatter;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
-namespace org::apache::lucene::search::highlight
-{
-class TextFragment;
-}
-namespace org::apache::lucene::analysis
-{
-class Token;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PositionIncrementAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
-namespace org::apache::lucene::search::highlight
-{
-class TokenGroup;
-}
-namespace org::apache::lucene::document
-{
-class Document;
-}
-namespace org::apache::lucene::search::highlight
-{
-class Fragmenter;
-}
-namespace org::apache::lucene::search::highlight
-{
-class Highlighter;
-}
-namespace org::apache::lucene::search::highlight
-{
-class WeightedTerm;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/analysis/MockAnalyzer.h"
+#include  "core/src/java/org/apache/lucene/search/TopDocs.h"
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/InvalidTokenOffsetsException.h"
+#include  "core/src/java/org/apache/lucene/search/MultiTermQuery.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/WeightedSpanTerm.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/Formatter.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/TextFragment.h"
+#include  "core/src/java/org/apache/lucene/analysis/Token.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PositionIncrementAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/TokenGroup.h"
+#include  "core/src/java/org/apache/lucene/document/Document.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/Fragmenter.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/Highlighter.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/WeightedTerm.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -1389,4 +1317,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::highlight
+} // #include  "core/src/java/org/apache/lucene/search/highlight/

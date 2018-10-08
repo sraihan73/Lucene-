@@ -47,4 +47,4 @@ public:
   virtual int64_t delGen() = 0;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

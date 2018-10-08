@@ -3,19 +3,10 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class TermStats;
-}
+#include  "core/src/java/org/apache/lucene/codecs/TermStats.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -80,4 +71,4 @@ public:
            int64_t termsFilePointer) = 0;
 };
 
-} // namespace org::apache::lucene::codecs::blockterms
+} // #include  "core/src/java/org/apache/lucene/codecs/blockterms/

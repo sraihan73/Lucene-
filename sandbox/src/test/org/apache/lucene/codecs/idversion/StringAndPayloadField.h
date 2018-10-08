@@ -5,31 +5,13 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PayloadAttribute;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PayloadAttribute.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -133,4 +115,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::idversion
+} // #include  "core/src/java/org/apache/lucene/codecs/idversion/

@@ -7,35 +7,14 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class ScoreTerm;
-}
+#include  "core/src/java/org/apache/lucene/search/ScoreTerm.h"
 
-namespace org::apache::lucene::search
-{
-class MaxNonCompetitiveBoostAttribute;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::search
-{
-class BoostAttribute;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::index
-{
-class TermContext;
-}
+#include  "core/src/java/org/apache/lucene/search/MaxNonCompetitiveBoostAttribute.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/search/BoostAttribute.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/index/TermContext.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -233,4 +212,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

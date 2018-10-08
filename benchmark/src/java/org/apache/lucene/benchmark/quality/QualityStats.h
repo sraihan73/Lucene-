@@ -175,4 +175,4 @@ public:
   virtual int64_t getSearchTime();
 };
 
-} // namespace org::apache::lucene::benchmark::quality
+} // #include  "core/src/java/org/apache/lucene/benchmark/quality/

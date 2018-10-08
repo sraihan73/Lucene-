@@ -14,88 +14,31 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ja::dict
-{
-class Dictionary;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ja/dict/Dictionary.h"
 
-namespace org::apache::lucene::analysis::ja::dict
-{
-class TokenInfoFST;
-}
-namespace org::apache::lucene::analysis::ja::dict
-{
-class TokenInfoDictionary;
-}
-namespace org::apache::lucene::analysis::ja::dict
-{
-class UnknownDictionary;
-}
-namespace org::apache::lucene::analysis::ja::dict
-{
-class ConnectionCosts;
-}
-namespace org::apache::lucene::analysis::ja::dict
-{
-class UserDictionary;
-}
-namespace org::apache::lucene::analysis::ja::dict
-{
-class CharacterDefinition;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ja/dict/TokenInfoFST.h"
+#include  "core/src/java/org/apache/lucene/analysis/ja/dict/TokenInfoDictionary.h"
+#include  "core/src/java/org/apache/lucene/analysis/ja/dict/UnknownDictionary.h"
+#include  "core/src/java/org/apache/lucene/analysis/ja/dict/ConnectionCosts.h"
+#include  "core/src/java/org/apache/lucene/analysis/ja/dict/UserDictionary.h"
+#include  "core/src/java/org/apache/lucene/analysis/ja/dict/CharacterDefinition.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::util::fst
-{
-class BytesReader;
-}
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
-namespace org::apache::lucene::analysis::util
-{
-class RollingCharBuffer;
-}
-namespace org::apache::lucene::analysis::ja
-{
-class WrappedPositionArray;
-}
-namespace org::apache::lucene::analysis::ja
-{
-class Token;
-}
-namespace org::apache::lucene::analysis
-{
-class Token;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PositionIncrementAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PositionLengthAttribute;
-}
-namespace org::apache::lucene::util
-{
-class AttributeFactory;
-}
-namespace org::apache::lucene::analysis::ja
-{
-class GraphvizFormatter;
-}
+#include  "core/src/java/org/apache/lucene/util/fst/BytesReader.h"
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
+#include  "core/src/java/org/apache/lucene/analysis/util/RollingCharBuffer.h"
+#include  "core/src/java/org/apache/lucene/analysis/ja/WrappedPositionArray.h"
+#include  "core/src/java/org/apache/lucene/analysis/ja/Token.h"
+#include  "core/src/java/org/apache/lucene/analysis/Token.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PositionIncrementAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PositionLengthAttribute.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeFactory.h"
+#include  "core/src/java/org/apache/lucene/analysis/ja/GraphvizFormatter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -635,4 +578,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::ja
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/

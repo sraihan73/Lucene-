@@ -3,10 +3,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -57,4 +54,4 @@ public:
   virtual int64_t cost() = 0;
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

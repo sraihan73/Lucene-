@@ -8,19 +8,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::automaton
-{
-class CharacterRunAutomaton;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/CharacterRunAutomaton.h"
 
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::analysis
-{
-class ReuseStrategy;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/analysis/ReuseStrategy.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -229,4 +220,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis
+} // #include  "core/src/java/org/apache/lucene/analysis/

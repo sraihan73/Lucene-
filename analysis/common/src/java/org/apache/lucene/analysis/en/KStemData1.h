@@ -58,4 +58,4 @@ public:
   static std::deque<std::wstring> data;
 };
 
-} // namespace org::apache::lucene::analysis::en
+} // #include  "core/src/java/org/apache/lucene/analysis/en/

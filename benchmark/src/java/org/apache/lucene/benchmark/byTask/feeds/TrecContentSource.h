@@ -14,23 +14,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::byTask::feeds
-{
-class HTMLParser;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/HTMLParser.h"
 
-namespace org::apache::lucene::benchmark::byTask::feeds
-{
-class NoMoreDataException;
-}
-namespace org::apache::lucene::benchmark::byTask::feeds
-{
-class DocData;
-}
-namespace org::apache::lucene::benchmark::byTask::utils
-{
-class Config;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/NoMoreDataException.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/DocData.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/utils/Config.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -172,4 +160,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::feeds
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/

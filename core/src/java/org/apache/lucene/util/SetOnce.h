@@ -94,4 +94,4 @@ public:
   T get() { return obj; }
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

@@ -7,15 +7,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -223,4 +217,4 @@ public:
   std::shared_ptr<PagedBytesDataOutput> getDataOutput();
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

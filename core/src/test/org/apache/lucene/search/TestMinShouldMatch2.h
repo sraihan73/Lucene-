@@ -9,51 +9,18 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::index
-{
-class DirectoryReader;
-}
-namespace org::apache::lucene::index
-{
-class LeafReader;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::document
-{
-class Document;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::index
-{
-class SortedSetDocValues;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Similarity;
-}
-namespace org::apache::lucene::search::similarities
-{
-class SimScorer;
-}
-namespace org::apache::lucene::search
-{
-class BooleanWeight;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
+#include  "core/src/java/org/apache/lucene/index/DirectoryReader.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReader.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/document/Document.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/index/SortedSetDocValues.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Similarity.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/SimScorer.h"
+#include  "core/src/java/org/apache/lucene/search/BooleanWeight.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -226,4 +193,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

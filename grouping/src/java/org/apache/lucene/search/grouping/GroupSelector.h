@@ -82,4 +82,4 @@ public:
   setGroups(std::shared_ptr<std::deque<SearchGroup<T>>> groups) = 0;
 };
 
-} // namespace org::apache::lucene::search::grouping
+} // #include  "core/src/java/org/apache/lucene/search/grouping/

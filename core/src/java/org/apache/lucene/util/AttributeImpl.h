@@ -5,6 +5,8 @@
 #include <memory>
 #include <stdexcept>
 #include <string>
+#include "core/src/java/org/apache/lucene/util/Attribute.h"
+#include "core/src/java/org/apache/lucene/util/AttributeReflector.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -35,7 +37,6 @@ GET_CLASS_NAME(for)
 org.apache.lucene.analysis.TokenStream}.
  */
 class AttributeImpl : public std::enable_shared_from_this<AttributeImpl>,
-                      public Cloneable,
                       public Attribute
 {
   GET_CLASS_NAME(AttributeImpl)
@@ -108,7 +109,7 @@ properties!
    * In most cases the clone is, and should be, deep in order to be able to
    * properly capture the state of all attributes.
    */
-  std::shared_ptr<AttributeImpl> clone() override;
+  virtual std::shared_ptr<AttributeImpl> clone();
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

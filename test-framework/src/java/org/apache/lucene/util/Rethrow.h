@@ -51,4 +51,4 @@ private:
   static void rethrow0(std::runtime_error t) ;
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

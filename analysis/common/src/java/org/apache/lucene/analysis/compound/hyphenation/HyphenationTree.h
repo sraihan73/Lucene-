@@ -10,19 +10,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::compound::hyphenation
-{
-class ByteVector;
-}
+#include  "core/src/java/org/apache/lucene/analysis/compound/hyphenation/ByteVector.h"
 
-namespace org::apache::lucene::analysis::compound::hyphenation
-{
-class TernaryTree;
-}
-namespace org::apache::lucene::analysis::compound::hyphenation
-{
-class Hyphenation;
-}
+#include  "core/src/java/org/apache/lucene/analysis/compound/hyphenation/TernaryTree.h"
+#include  "core/src/java/org/apache/lucene/analysis/compound/hyphenation/Hyphenation.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -240,4 +231,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::compound::hyphenation
+} // #include  "core/src/java/org/apache/lucene/analysis/compound/hyphenation/

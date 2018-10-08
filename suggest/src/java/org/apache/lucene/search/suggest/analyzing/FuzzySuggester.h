@@ -6,23 +6,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
@@ -38,19 +26,13 @@ namespace org::apache::lucene::util::fst
 template <typename Atypename B>
 class Pair;
 }
-namespace org::apache::lucene::search::suggest::analyzing
-{
-class FSTUtil;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/analyzing/FSTUtil.h"
 namespace org::apache::lucene::search::suggest::analyzing
 {
 template <typename T>
 class Path;
 }
-namespace org::apache::lucene::analysis
-{
-class TokenStreamToAutomaton;
-}
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamToAutomaton.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -246,4 +228,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::analyzing
+} // #include  "core/src/java/org/apache/lucene/search/suggest/analyzing/

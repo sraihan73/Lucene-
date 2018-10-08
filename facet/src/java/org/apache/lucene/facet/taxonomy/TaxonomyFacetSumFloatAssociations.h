@@ -5,23 +5,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet
-{
-class FacetsCollector;
-}
+#include  "core/src/java/org/apache/lucene/facet/FacetsCollector.h"
 
-namespace org::apache::lucene::facet
-{
-class FacetsConfig;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class TaxonomyReader;
-}
-namespace org::apache::lucene::facet
-{
-class MatchingDocs;
-}
+#include  "core/src/java/org/apache/lucene/facet/FacetsConfig.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/TaxonomyReader.h"
+#include  "core/src/java/org/apache/lucene/facet/MatchingDocs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -83,4 +71,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::taxonomy
+} // #include  "core/src/java/org/apache/lucene/facet/taxonomy/

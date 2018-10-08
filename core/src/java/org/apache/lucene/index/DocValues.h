@@ -6,43 +6,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class BinaryDocValues;
-}
+#include  "core/src/java/org/apache/lucene/index/BinaryDocValues.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
-namespace org::apache::lucene::index
-{
-class LegacySortedDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedNumericDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedSetDocValues;
-}
-namespace org::apache::lucene::index
-{
-class LeafReader;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/LegacySortedDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedNumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedSetDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReader.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -435,4 +408,4 @@ public:
                           std::deque<std::wstring> &fields);
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

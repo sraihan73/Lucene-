@@ -9,31 +9,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
-namespace org::apache::lucene::index
-{
-class OrdinalMap;
-}
-namespace org::apache::lucene::facet::sortedset
-{
-class SortedSetDocValuesReaderState;
-}
-namespace org::apache::lucene::facet::sortedset
-{
-class OrdRange;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
-namespace org::apache::lucene::index
-{
-class SortedSetDocValues;
-}
+#include  "core/src/java/org/apache/lucene/index/OrdinalMap.h"
+#include  "core/src/java/org/apache/lucene/facet/sortedset/SortedSetDocValuesReaderState.h"
+#include  "core/src/java/org/apache/lucene/facet/sortedset/OrdRange.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
+#include  "core/src/java/org/apache/lucene/index/SortedSetDocValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -144,4 +126,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::sortedset
+} // #include  "core/src/java/org/apache/lucene/facet/sortedset/

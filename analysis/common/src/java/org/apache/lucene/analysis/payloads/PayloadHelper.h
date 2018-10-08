@@ -62,4 +62,4 @@ public:
   static int decodeInt(std::deque<char> &bytes, int offset);
 };
 
-} // namespace org::apache::lucene::analysis::payloads
+} // #include  "core/src/java/org/apache/lucene/analysis/payloads/

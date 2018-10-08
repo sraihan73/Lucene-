@@ -6,19 +6,10 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::index
-{
-class RandomIndexWriter;
-}
-namespace org::apache::lucene::document
-{
-class Document;
-}
+#include  "core/src/java/org/apache/lucene/index/RandomIndexWriter.h"
+#include  "core/src/java/org/apache/lucene/document/Document.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -83,4 +74,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::lucene50
+} // #include  "core/src/java/org/apache/lucene/codecs/lucene50/

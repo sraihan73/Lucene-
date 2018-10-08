@@ -5,23 +5,11 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class FieldsConsumer;
-}
+#include  "core/src/java/org/apache/lucene/codecs/FieldsConsumer.h"
 
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::codecs
-{
-class FieldsProducer;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/codecs/FieldsProducer.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -95,4 +83,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::blocktreeords
+} // #include  "core/src/java/org/apache/lucene/codecs/blocktreeords/

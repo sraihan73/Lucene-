@@ -5,10 +5,7 @@
 #include <stdexcept>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::byTask
-{
-class PerfRunData;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/PerfRunData.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -52,4 +49,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::tasks::alt
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/tasks/alt/

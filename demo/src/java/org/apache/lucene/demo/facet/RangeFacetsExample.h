@@ -7,47 +7,17 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::facet::range
-{
-class LongRange;
-}
-namespace org::apache::lucene::facet
-{
-class FacetsConfig;
-}
-namespace org::apache::lucene::facet
-{
-class FacetResult;
-}
-namespace org::apache::lucene::search
-{
-class TopDocs;
-}
-namespace org::apache::lucene::facet
-{
-class DrillSideways;
-}
-namespace org::apache::lucene::facet
-{
-class DrillSidewaysResult;
-}
-namespace org::apache::lucene::facet
-{
-class Facets;
-}
-namespace org::apache::lucene::facet
-{
-class FacetsCollector;
-}
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/facet/range/LongRange.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetsConfig.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetResult.h"
+#include  "core/src/java/org/apache/lucene/search/TopDocs.h"
+#include  "core/src/java/org/apache/lucene/facet/DrillSideways.h"
+#include  "core/src/java/org/apache/lucene/facet/DrillSidewaysResult.h"
+#include  "core/src/java/org/apache/lucene/facet/Facets.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetsCollector.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -153,4 +123,4 @@ public:
   static void main(std::deque<std::wstring> &args) ;
 };
 
-} // namespace org::apache::lucene::demo::facet
+} // #include  "core/src/java/org/apache/lucene/demo/facet/

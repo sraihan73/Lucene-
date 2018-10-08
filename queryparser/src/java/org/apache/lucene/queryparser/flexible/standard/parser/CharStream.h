@@ -114,4 +114,4 @@ public:
 /* JavaCC - OriginalChecksum=c95f1720d9b38046dc5d294b741c44cb (do not edit this
  * line) */
 
-} // namespace org::apache::lucene::queryparser::flexible::standard::parser
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/parser/

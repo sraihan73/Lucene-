@@ -4,19 +4,10 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class FuzzyQuery;
-}
+#include  "core/src/java/org/apache/lucene/search/FuzzyQuery.h"
 
-namespace org::apache::lucene::queryparser::flexible::core
-{
-class QueryNodeException;
-}
-namespace org::apache::lucene::queryparser::flexible::core::nodes
-{
-class QueryNode;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/QueryNodeException.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/nodes/QueryNode.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -59,4 +50,4 @@ public:
       QueryNodeException) override;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::standard::builders
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/builders/

@@ -9,23 +9,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::suggest
-{
-class Input;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/Input.h"
 
-namespace org::apache::lucene::search::suggest
-{
-class Lookup;
-}
-namespace org::apache::lucene::search::suggest
-{
-class BenchmarkResult;
-}
-namespace org::apache::lucene::search::suggest
-{
-class Average;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/Lookup.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/BenchmarkResult.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/Average.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -253,4 +241,4 @@ protected:
         LuceneTestCase::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::search::suggest
+} // #include  "core/src/java/org/apache/lucene/search/suggest/

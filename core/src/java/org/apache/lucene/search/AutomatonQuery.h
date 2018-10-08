@@ -6,31 +6,13 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
 
-namespace org::apache::lucene::util::automaton
-{
-class CompiledAutomaton;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::index
-{
-class Terms;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::util
-{
-class AttributeSource;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/CompiledAutomaton.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeSource.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -160,4 +142,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

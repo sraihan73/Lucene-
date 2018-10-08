@@ -90,4 +90,4 @@ public:
   static std::wstring geoTermToString(int64_t term);
 };
 
-} // namespace org::apache::lucene::spatial::util
+} // #include  "core/src/java/org/apache/lucene/spatial/util/

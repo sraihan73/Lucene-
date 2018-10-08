@@ -59,4 +59,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::commongrams
+} // #include  "core/src/java/org/apache/lucene/analysis/commongrams/

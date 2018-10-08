@@ -8,43 +8,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search
-{
-class BooleanClause;
-}
-namespace org::apache::lucene::search
-{
-class BooleanQuery;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanQuery;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::search
-{
-class Builder;
-}
-namespace org::apache::lucene::search
-{
-class MultiPhraseQuery;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/BooleanClause.h"
+#include  "core/src/java/org/apache/lucene/search/BooleanQuery.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanQuery.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/search/Builder.h"
+#include  "core/src/java/org/apache/lucene/search/MultiPhraseQuery.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -417,4 +390,4 @@ protected:
   newMultiPhraseQueryBuilder();
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

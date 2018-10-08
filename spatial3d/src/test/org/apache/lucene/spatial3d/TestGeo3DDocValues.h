@@ -42,4 +42,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial3d
+} // #include  "core/src/java/org/apache/lucene/spatial3d/

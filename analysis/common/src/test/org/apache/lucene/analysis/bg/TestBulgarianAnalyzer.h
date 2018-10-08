@@ -65,4 +65,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::bg
+} // #include  "core/src/java/org/apache/lucene/analysis/bg/

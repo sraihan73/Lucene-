@@ -9,27 +9,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
 
-namespace org::apache::lucene::facet
-{
-class FacetsConfig;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class TaxonomyWriter;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class SearcherTaxonomyManager;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class SearcherAndTaxonomy;
-}
+#include  "core/src/java/org/apache/lucene/facet/FacetsConfig.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/TaxonomyWriter.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/SearcherTaxonomyManager.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/SearcherAndTaxonomy.h"
 namespace org::apache::lucene::search
 {
 template <typename G>
@@ -147,4 +132,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::taxonomy
+} // #include  "core/src/java/org/apache/lucene/facet/taxonomy/

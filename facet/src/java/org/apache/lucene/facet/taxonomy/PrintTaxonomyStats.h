@@ -6,10 +6,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet::taxonomy
-{
-class TaxonomyReader;
-}
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/TaxonomyReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -65,4 +62,4 @@ private:
                                int depth) ;
 };
 
-} // namespace org::apache::lucene::facet::taxonomy
+} // #include  "core/src/java/org/apache/lucene/facet/taxonomy/

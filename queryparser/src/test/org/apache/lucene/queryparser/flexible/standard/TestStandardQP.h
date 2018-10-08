@@ -6,31 +6,13 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::queryparser::flexible::standard
-{
-class StandardQueryParser;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::queryparser::flexible::standard
-{
-class CommonQueryParserConfiguration;
-}
-namespace org::apache::lucene::document
-{
-class DateTools;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/StandardQueryParser.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/CommonQueryParserConfiguration.h"
+#include  "core/src/java/org/apache/lucene/document/DateTools.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -151,4 +133,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::standard
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/

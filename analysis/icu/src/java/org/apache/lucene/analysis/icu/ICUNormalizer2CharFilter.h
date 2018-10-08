@@ -7,15 +7,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class CharacterUtils;
-}
+#include  "core/src/java/org/apache/lucene/analysis/CharacterUtils.h"
 
-namespace org::apache::lucene::analysis
-{
-class CharacterBuffer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/CharacterBuffer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -109,4 +103,4 @@ protected:
             .BaseCharFilter::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::analysis::icu
+} // #include  "core/src/java/org/apache/lucene/analysis/icu/

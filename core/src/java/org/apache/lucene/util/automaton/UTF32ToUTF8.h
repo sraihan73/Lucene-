@@ -6,15 +6,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
 
-namespace org::apache::lucene::util::automaton
-{
-class Builder;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Builder.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -147,4 +141,4 @@ public:
   std::shared_ptr<Automaton> convert(std::shared_ptr<Automaton> utf32);
 };
 
-} // namespace org::apache::lucene::util::automaton
+} // #include  "core/src/java/org/apache/lucene/util/automaton/

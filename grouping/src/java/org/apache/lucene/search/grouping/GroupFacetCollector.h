@@ -8,27 +8,12 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::search::grouping
-{
-class SegmentResult;
-}
-namespace org::apache::lucene::search::grouping
-{
-class GroupedFacetResult;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::search::grouping
-{
-class FacetEntry;
-}
+#include  "core/src/java/org/apache/lucene/search/grouping/SegmentResult.h"
+#include  "core/src/java/org/apache/lucene/search/grouping/GroupedFacetResult.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/search/grouping/FacetEntry.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -284,4 +269,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::grouping
+} // #include  "core/src/java/org/apache/lucene/search/grouping/

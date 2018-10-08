@@ -5,43 +5,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class FreqProxPostingsArray;
-}
+#include  "core/src/java/org/apache/lucene/index/FreqProxPostingsArray.h"
 
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PayloadAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class FieldInvertState;
-}
-namespace org::apache::lucene::index
-{
-class TermsHash;
-}
-namespace org::apache::lucene::index
-{
-class TermsHashPerField;
-}
-namespace org::apache::lucene::index
-{
-class IndexableField;
-}
-namespace org::apache::lucene::index
-{
-class ParallelPostingsArray;
-}
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PayloadAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInvertState.h"
+#include  "core/src/java/org/apache/lucene/index/TermsHash.h"
+#include  "core/src/java/org/apache/lucene/index/TermsHashPerField.h"
+#include  "core/src/java/org/apache/lucene/index/IndexableField.h"
+#include  "core/src/java/org/apache/lucene/index/ParallelPostingsArray.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -155,4 +128,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

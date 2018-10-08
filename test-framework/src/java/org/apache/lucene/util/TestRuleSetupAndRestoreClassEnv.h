@@ -10,27 +10,12 @@
 #include <unordered_set>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class Codec;
-}
+#include  "core/src/java/org/apache/lucene/codecs/Codec.h"
 
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Similarity;
-}
-namespace org::apache::lucene::codecs
-{
-class PostingsFormat;
-}
-namespace org::apache::lucene::codecs
-{
-class DocValuesFormat;
-}
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Similarity.h"
+#include  "core/src/java/org/apache/lucene/codecs/PostingsFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesFormat.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -194,4 +179,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

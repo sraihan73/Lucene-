@@ -41,4 +41,4 @@ public:
   static const int DEFAULT_MAXIMUM_DOCUMENTS = std::numeric_limits<int>::max();
 };
 
-} // namespace org::apache::lucene::benchmark
+} // #include  "core/src/java/org/apache/lucene/benchmark/

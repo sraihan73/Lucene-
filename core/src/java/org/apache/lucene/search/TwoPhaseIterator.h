@@ -110,4 +110,4 @@ public:
   virtual float matchCost() = 0;
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

@@ -10,23 +10,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::cn::smart::hhmm
-{
-class SegTokenPair;
-}
+#include  "core/src/java/org/apache/lucene/analysis/cn/smart/hhmm/SegTokenPair.h"
 
-namespace org::apache::lucene::analysis::cn::smart::hhmm
-{
-class SegToken;
-}
-namespace org::apache::lucene::analysis::cn::smart::hhmm
-{
-class BigramDictionary;
-}
-namespace org::apache::lucene::analysis::cn::smart::hhmm
-{
-class SegGraph;
-}
+#include  "core/src/java/org/apache/lucene/analysis/cn/smart/hhmm/SegToken.h"
+#include  "core/src/java/org/apache/lucene/analysis/cn/smart/hhmm/BigramDictionary.h"
+#include  "core/src/java/org/apache/lucene/analysis/cn/smart/hhmm/SegGraph.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -117,4 +105,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::apache::lucene::analysis::cn::smart::hhmm
+} // #include  "core/src/java/org/apache/lucene/analysis/cn/smart/hhmm/

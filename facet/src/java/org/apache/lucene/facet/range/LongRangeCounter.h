@@ -10,19 +10,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet::range
-{
-class LongRangeNode;
-}
+#include  "core/src/java/org/apache/lucene/facet/range/LongRangeNode.h"
 
-namespace org::apache::lucene::facet::range
-{
-class LongRange;
-}
-namespace org::apache::lucene::facet::range
-{
-class InclusiveRange;
-}
+#include  "core/src/java/org/apache/lucene/facet/range/LongRange.h"
+#include  "core/src/java/org/apache/lucene/facet/range/InclusiveRange.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -131,4 +122,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::facet::range
+} // #include  "core/src/java/org/apache/lucene/facet/range/

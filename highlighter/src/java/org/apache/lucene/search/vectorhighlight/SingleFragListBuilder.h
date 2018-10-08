@@ -6,15 +6,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::vectorhighlight
-{
-class FieldFragList;
-}
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/FieldFragList.h"
 
-namespace org::apache::lucene::search::vectorhighlight
-{
-class FieldPhraseList;
-}
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/FieldPhraseList.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -56,4 +50,4 @@ public:
                       int fragCharSize) override;
 };
 
-} // namespace org::apache::lucene::search::vectorhighlight
+} // #include  "core/src/java/org/apache/lucene/search/vectorhighlight/

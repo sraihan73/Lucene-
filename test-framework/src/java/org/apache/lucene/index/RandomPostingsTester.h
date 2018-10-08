@@ -12,59 +12,20 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::index
-{
-class SeedAndOrd;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::index
-{
-class FieldAndTerm;
-}
-namespace org::apache::lucene::index
-{
-class SeedPostings;
-}
-namespace org::apache::lucene::index
-{
-class Terms;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
-namespace org::apache::lucene::codecs
-{
-class Codec;
-}
-namespace org::apache::lucene::codecs
-{
-class FieldsProducer;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::index
-{
-class Fields;
-}
+#include  "core/src/java/org/apache/lucene/index/SeedAndOrd.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/index/FieldAndTerm.h"
+#include  "core/src/java/org/apache/lucene/index/SeedPostings.h"
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
+#include  "core/src/java/org/apache/lucene/codecs/Codec.h"
+#include  "core/src/java/org/apache/lucene/codecs/FieldsProducer.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/index/Fields.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -478,4 +439,4 @@ public:
                         bool withPayloads) ;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

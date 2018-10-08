@@ -5,15 +5,9 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class MergeInfo;
-}
+#include  "core/src/java/org/apache/lucene/store/MergeInfo.h"
 
-namespace org::apache::lucene::store
-{
-class FlushInfo;
-}
+#include  "core/src/java/org/apache/lucene/store/FlushInfo.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -101,4 +95,4 @@ public:
 
   virtual std::wstring toString();
 };
-} // namespace org::apache::lucene::store
+} // #include  "core/src/java/org/apache/lucene/store/

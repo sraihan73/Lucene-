@@ -112,4 +112,4 @@ public:
   virtual int pointNumBytes() = 0;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

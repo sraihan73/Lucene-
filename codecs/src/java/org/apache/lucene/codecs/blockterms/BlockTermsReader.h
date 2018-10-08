@@ -13,63 +13,21 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
 
-namespace org::apache::lucene::codecs
-{
-class PostingsReaderBase;
-}
-namespace org::apache::lucene::codecs::blockterms
-{
-class FieldReader;
-}
-namespace org::apache::lucene::codecs::blockterms
-{
-class TermsIndexReaderBase;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::codecs
-{
-class BlockTermState;
-}
-namespace org::apache::lucene::codecs::blockterms
-{
-class FieldIndexEnum;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::store
-{
-class ByteArrayDataInput;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
-namespace org::apache::lucene::index
-{
-class TermState;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
+#include  "core/src/java/org/apache/lucene/codecs/PostingsReaderBase.h"
+#include  "core/src/java/org/apache/lucene/codecs/blockterms/FieldReader.h"
+#include  "core/src/java/org/apache/lucene/codecs/blockterms/TermsIndexReaderBase.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/codecs/BlockTermState.h"
+#include  "core/src/java/org/apache/lucene/codecs/blockterms/FieldIndexEnum.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/store/ByteArrayDataInput.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/TermState.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -365,4 +323,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::blockterms
+} // #include  "core/src/java/org/apache/lucene/codecs/blockterms/

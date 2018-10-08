@@ -8,10 +8,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::replicator
-{
-class Replicator;
-}
+#include  "core/src/java/org/apache/lucene/replicator/Replicator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -117,4 +114,4 @@ public:
                                                            IOException);
 };
 
-} // namespace org::apache::lucene::replicator::http
+} // #include  "core/src/java/org/apache/lucene/replicator/http/

@@ -9,63 +9,21 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class Term;
-}
+#include  "core/src/java/org/apache/lucene/index/Term.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class Weight;
-}
-namespace org::apache::lucene::index
-{
-class TermContext;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Similarity;
-}
-namespace org::apache::lucene::search::similarities
-{
-class SimWeight;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class PhraseMatcher;
-}
-namespace org::apache::lucene::index
-{
-class LeafReader;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
+#include  "core/src/java/org/apache/lucene/index/TermContext.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Similarity.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/SimWeight.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/PhraseMatcher.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -375,4 +333,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

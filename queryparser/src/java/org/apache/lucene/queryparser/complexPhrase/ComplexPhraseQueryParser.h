@@ -7,43 +7,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::complexPhrase
-{
-class ComplexPhraseQuery;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/complexPhrase/ComplexPhraseQuery.h"
 
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::queryparser::classic
-{
-class ParseException;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search
-{
-class BooleanQuery;
-}
-namespace org::apache::lucene::search
-{
-class SynonymQuery;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanQuery;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/queryparser/classic/ParseException.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/BooleanQuery.h"
+#include  "core/src/java/org/apache/lucene/search/SynonymQuery.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanQuery.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -234,4 +207,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::complexPhrase
+} // #include  "core/src/java/org/apache/lucene/queryparser/complexPhrase/

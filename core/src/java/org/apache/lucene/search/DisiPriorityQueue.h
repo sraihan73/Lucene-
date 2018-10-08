@@ -5,10 +5,7 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class DisiWrapper;
-}
+#include  "core/src/java/org/apache/lucene/search/DisiWrapper.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -89,4 +86,4 @@ public:
   std::shared_ptr<Iterator<std::shared_ptr<DisiWrapper>>> iterator() override;
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

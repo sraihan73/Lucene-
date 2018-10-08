@@ -9,39 +9,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::codecs
-{
-class PointsReader;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::codecs::simpletext
-{
-class SimpleTextBKDWriter;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/codecs/PointsReader.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/codecs/simpletext/SimpleTextBKDWriter.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -169,4 +145,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::simpletext
+} // #include  "core/src/java/org/apache/lucene/codecs/simpletext/

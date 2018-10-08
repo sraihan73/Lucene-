@@ -127,4 +127,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::analysis::ja::dict
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/dict/

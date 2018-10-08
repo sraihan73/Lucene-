@@ -8,19 +8,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class NearestNeighbor;
-}
+#include  "core/src/java/org/apache/lucene/document/NearestNeighbor.h"
 
-namespace org::apache::lucene::document
-{
-class NearestHit;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriterConfig;
-}
+#include  "core/src/java/org/apache/lucene/document/NearestHit.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriterConfig.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -92,4 +83,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::document
+} // #include  "core/src/java/org/apache/lucene/document/

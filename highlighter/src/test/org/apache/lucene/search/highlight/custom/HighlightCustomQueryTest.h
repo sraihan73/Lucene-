@@ -8,31 +8,13 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::highlight
-{
-class InvalidTokenOffsetsException;
-}
+#include  "core/src/java/org/apache/lucene/search/highlight/InvalidTokenOffsetsException.h"
 
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search::highlight
-{
-class WeightedSpanTerm;
-}
-namespace org::apache::lucene::search::highlight
-{
-class WeightedSpanTermExtractor;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/WeightedSpanTerm.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/WeightedSpanTermExtractor.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -202,4 +184,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::highlight::custom
+} // #include  "core/src/java/org/apache/lucene/search/highlight/custom/

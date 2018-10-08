@@ -4,15 +4,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
 
-namespace org::apache::lucene::index
-{
-class Term;
-}
+#include  "core/src/java/org/apache/lucene/index/Term.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -62,4 +56,4 @@ public:
   virtual std::shared_ptr<std::deque<std::deque<char>>> getPayloads();
 };
 
-} // namespace org::apache::lucene::payloads
+} // #include  "core/src/java/org/apache/lucene/payloads/

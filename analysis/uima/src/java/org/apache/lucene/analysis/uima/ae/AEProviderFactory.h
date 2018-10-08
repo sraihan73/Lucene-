@@ -7,10 +7,7 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::uima::ae
-{
-class AEProvider;
-}
+#include  "core/src/java/org/apache/lucene/analysis/uima/ae/AEProvider.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -81,4 +78,4 @@ public:
                 std::unordered_map<std::wstring, std::any> &runtimeParameters);
 };
 
-} // namespace org::apache::lucene::analysis::uima::ae
+} // #include  "core/src/java/org/apache/lucene/analysis/uima/ae/

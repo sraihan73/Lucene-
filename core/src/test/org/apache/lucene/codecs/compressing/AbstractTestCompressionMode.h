@@ -4,19 +4,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs::compressing
-{
-class CompressionMode;
-}
+#include  "core/src/java/org/apache/lucene/codecs/compressing/CompressionMode.h"
 
-namespace org::apache::lucene::codecs::compressing
-{
-class Compressor;
-}
-namespace org::apache::lucene::codecs::compressing
-{
-class Decompressor;
-}
+#include  "core/src/java/org/apache/lucene/codecs/compressing/Compressor.h"
+#include  "core/src/java/org/apache/lucene/codecs/compressing/Decompressor.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -96,4 +87,4 @@ protected:
         org.apache.lucene.util.LuceneTestCase::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::codecs::compressing
+} // #include  "core/src/java/org/apache/lucene/codecs/compressing/

@@ -4,10 +4,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
 
 namespace org::apache::lucene::util::fst
 {
@@ -91,4 +88,4 @@ public:
                        std::shared_ptr<FST<T>> fst) ;
 };
 
-} // namespace org::apache::lucene::search::suggest::analyzing
+} // #include  "core/src/java/org/apache/lucene/search/suggest/analyzing/

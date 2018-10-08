@@ -12,35 +12,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class Document;
-}
+#include  "core/src/java/org/apache/lucene/document/Document.h"
 
-namespace org::apache::lucene::search::grouping
-{
-class IndexContext;
-}
-namespace org::apache::lucene::search::grouping
-{
-class GroupedFacetResult;
-}
-namespace org::apache::lucene::search::grouping
-{
-class TermGroupFacetCollector;
-}
-namespace org::apache::lucene::search::grouping
-{
-class GroupFacetCollector;
-}
-namespace org::apache::lucene::index
-{
-class DirectoryReader;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/search/grouping/IndexContext.h"
+#include  "core/src/java/org/apache/lucene/search/grouping/GroupedFacetResult.h"
+#include  "core/src/java/org/apache/lucene/search/grouping/TermGroupFacetCollector.h"
+#include  "core/src/java/org/apache/lucene/search/grouping/GroupFacetCollector.h"
+#include  "core/src/java/org/apache/lucene/index/DirectoryReader.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -197,4 +176,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::grouping
+} // #include  "core/src/java/org/apache/lucene/search/grouping/

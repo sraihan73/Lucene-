@@ -7,10 +7,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::tartarus::snowball
-{
-class Among;
-}
+#include  "core/src/java/org/tartarus/snowball/Among.h"
 
 /*
 
@@ -191,4 +188,4 @@ protected:
   */
 };
 
-} // namespace org::tartarus::snowball
+} // #include  "core/src/java/org/tartarus/snowball/

@@ -4,23 +4,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class Counter;
-}
+#include  "core/src/java/org/apache/lucene/util/Counter.h"
 
-namespace org::apache::lucene::util
-{
-class IntBlockPool;
-}
-namespace org::apache::lucene::util
-{
-class SliceReader;
-}
-namespace org::apache::lucene::index
-{
-class StartEndAndValues;
-}
+#include  "core/src/java/org/apache/lucene/util/IntBlockPool.h"
+#include  "core/src/java/org/apache/lucene/util/SliceReader.h"
+#include  "core/src/java/org/apache/lucene/index/StartEndAndValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -110,4 +98,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

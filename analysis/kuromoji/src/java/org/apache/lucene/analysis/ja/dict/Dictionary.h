@@ -100,4 +100,4 @@ public:
   // 'getAdditionalData' if other dictionaries like unidic have additional data
 };
 
-} // namespace org::apache::lucene::analysis::ja::dict
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/dict/

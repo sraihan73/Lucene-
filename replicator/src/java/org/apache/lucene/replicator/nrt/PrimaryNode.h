@@ -10,31 +10,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class SegmentInfos;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentInfos.h"
 
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::replicator::nrt
-{
-class CopyState;
-}
-namespace org::apache::lucene::search
-{
-class SearcherFactory;
-}
-namespace org::apache::lucene::index
-{
-class SegmentCommitInfo;
-}
-namespace org::apache::lucene::replicator::nrt
-{
-class FileMetaData;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/replicator/nrt/CopyState.h"
+#include  "core/src/java/org/apache/lucene/search/SearcherFactory.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentCommitInfo.h"
+#include  "core/src/java/org/apache/lucene/replicator/nrt/FileMetaData.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -178,4 +160,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::replicator::nrt
+} // #include  "core/src/java/org/apache/lucene/replicator/nrt/

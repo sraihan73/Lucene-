@@ -11,10 +11,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ja::dict
-{
-class TokenInfoFST;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ja/dict/TokenInfoFST.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -142,4 +139,4 @@ private:
   std::wstring getFeature(int wordId, std::deque<int> &fields);
 };
 
-} // namespace org::apache::lucene::analysis::ja::dict
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/dict/

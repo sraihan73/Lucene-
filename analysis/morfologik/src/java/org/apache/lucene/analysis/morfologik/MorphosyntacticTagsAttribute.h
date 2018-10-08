@@ -52,4 +52,4 @@ public:
   virtual void clear() = 0;
 };
 
-} // namespace org::apache::lucene::analysis::morfologik
+} // #include  "core/src/java/org/apache/lucene/analysis/morfologik/

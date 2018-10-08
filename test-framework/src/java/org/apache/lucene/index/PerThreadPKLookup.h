@@ -6,31 +6,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
 
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -100,4 +82,4 @@ public:
   // TODO: add reopen method to carry over re-used enums...?
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

@@ -5,55 +5,19 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class DocValuesFormat;
-}
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesFormat.h"
 
-namespace org::apache::lucene::codecs
-{
-class DocValuesConsumer;
-}
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::codecs
-{
-class DocValuesProducer;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
-namespace org::apache::lucene::index
-{
-class BinaryDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedNumericDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedSetDocValues;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesConsumer.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesProducer.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/BinaryDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedNumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedSetDocValues.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -210,4 +174,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::asserting
+} // #include  "core/src/java/org/apache/lucene/codecs/asserting/

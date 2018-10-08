@@ -9,79 +9,25 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
 
-namespace org::apache::lucene::facet::taxonomy
-{
-class TaxonomyReader;
-}
-namespace org::apache::lucene::facet::sortedset
-{
-class SortedSetDocValuesReaderState;
-}
-namespace org::apache::lucene::facet
-{
-class FacetsConfig;
-}
-namespace org::apache::lucene::facet
-{
-class Facets;
-}
-namespace org::apache::lucene::facet
-{
-class FacetsCollector;
-}
-namespace org::apache::lucene::search
-{
-class Collector;
-}
-namespace org::apache::lucene::facet
-{
-class DrillDownQuery;
-}
-namespace org::apache::lucene::facet
-{
-class DrillSidewaysResult;
-}
-namespace org::apache::lucene::search
-{
-class FieldDoc;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search
-{
-class Sort;
-}
-namespace org::apache::lucene::search
-{
-class TopFieldCollector;
-}
-namespace org::apache::lucene::search
-{
-class TopFieldDocs;
-}
-namespace org::apache::lucene::search
-{
-class ScoreDoc;
-}
-namespace org::apache::lucene::search
-{
-class TopDocs;
-}
-namespace org::apache::lucene::search
-{
-class TopScoreDocCollector;
-}
-namespace org::apache::lucene::facet
-{
-class CallableResult;
-}
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/TaxonomyReader.h"
+#include  "core/src/java/org/apache/lucene/facet/sortedset/SortedSetDocValuesReaderState.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetsConfig.h"
+#include  "core/src/java/org/apache/lucene/facet/Facets.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetsCollector.h"
+#include  "core/src/java/org/apache/lucene/search/Collector.h"
+#include  "core/src/java/org/apache/lucene/facet/DrillDownQuery.h"
+#include  "core/src/java/org/apache/lucene/facet/DrillSidewaysResult.h"
+#include  "core/src/java/org/apache/lucene/search/FieldDoc.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/Sort.h"
+#include  "core/src/java/org/apache/lucene/search/TopFieldCollector.h"
+#include  "core/src/java/org/apache/lucene/search/TopFieldDocs.h"
+#include  "core/src/java/org/apache/lucene/search/ScoreDoc.h"
+#include  "core/src/java/org/apache/lucene/search/TopDocs.h"
+#include  "core/src/java/org/apache/lucene/search/TopScoreDocCollector.h"
+#include  "core/src/java/org/apache/lucene/facet/CallableResult.h"
 namespace org::apache::lucene::search
 {
 template <typename Ctypename T>
@@ -459,4 +405,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::facet
+} // #include  "core/src/java/org/apache/lucene/facet/

@@ -93,4 +93,4 @@ public:
   static bool isRunningNested();
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

@@ -7,28 +7,16 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::join
-{
-class BitSetProducer;
-}
+#include  "core/src/java/org/apache/lucene/search/join/BitSetProducer.h"
 
 namespace org::apache::lucene::search
 {
 template <typename T>
 class FieldComparator;
 }
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -339,4 +327,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::join
+} // #include  "core/src/java/org/apache/lucene/search/join/

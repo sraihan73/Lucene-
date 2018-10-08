@@ -6,31 +6,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class Query;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
 
-namespace org::apache::lucene::util::automaton
-{
-class CharacterRunAutomaton;
-}
-namespace org::apache::lucene::search
-{
-class FuzzyQuery;
-}
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
-namespace org::apache::lucene::search
-{
-class AutomatonQuery;
-}
-namespace org::apache::lucene::util::automaton
-{
-class ByteRunAutomaton;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/CharacterRunAutomaton.h"
+#include  "core/src/java/org/apache/lucene/search/FuzzyQuery.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
+#include  "core/src/java/org/apache/lucene/search/AutomatonQuery.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/ByteRunAutomaton.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -158,4 +140,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::search::uhighlight
+} // #include  "core/src/java/org/apache/lucene/search/uhighlight/

@@ -13,35 +13,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::search::suggest::analyzing
-{
-class AnalyzingInfixSuggester;
-}
-namespace org::apache::lucene::search::suggest
-{
-class Input;
-}
-namespace org::apache::lucene::store
-{
-class BaseDirectoryWrapper;
-}
-namespace org::apache::lucene::analysis
-{
-class CharArraySet;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/analyzing/AnalyzingInfixSuggester.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/Input.h"
+#include  "core/src/java/org/apache/lucene/store/BaseDirectoryWrapper.h"
+#include  "core/src/java/org/apache/lucene/analysis/CharArraySet.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -381,4 +360,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::analyzing
+} // #include  "core/src/java/org/apache/lucene/search/suggest/analyzing/

@@ -5,15 +5,9 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::replicator::nrt
-{
-class PrimaryNode;
-}
+#include  "core/src/java/org/apache/lucene/replicator/nrt/PrimaryNode.h"
 
-namespace org::apache::lucene::index
-{
-class LeafReader;
-}
+#include  "core/src/java/org/apache/lucene/index/LeafReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -62,4 +56,4 @@ public:
   void warm(std::shared_ptr<LeafReader> reader)  override;
 };
 
-} // namespace org::apache::lucene::replicator::nrt
+} // #include  "core/src/java/org/apache/lucene/replicator/nrt/

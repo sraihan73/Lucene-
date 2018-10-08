@@ -4,10 +4,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class DoubleValuesSource;
-}
+#include  "core/src/java/org/apache/lucene/search/DoubleValuesSource.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -55,4 +52,4 @@ public:
   getDoubleValuesSource(const std::wstring &name) = 0;
 };
 
-} // namespace org::apache::lucene::expressions
+} // #include  "core/src/java/org/apache/lucene/expressions/

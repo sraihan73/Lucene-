@@ -13,43 +13,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
 
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::index
-{
-class SortedNumericDocValues;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::search::join
-{
-class GenericTermsCollector;
-}
-namespace org::apache::lucene::index
-{
-class OrdinalMap;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/index/SortedNumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/search/join/GenericTermsCollector.h"
+#include  "core/src/java/org/apache/lucene/index/OrdinalMap.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -480,4 +453,4 @@ public:
       int max) ;
 };
 
-} // namespace org::apache::lucene::search::join
+} // #include  "core/src/java/org/apache/lucene/search/join/

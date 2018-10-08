@@ -9,27 +9,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
 
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class MergeState;
-}
-namespace org::apache::lucene::index
-{
-class IntersectVisitor;
-}
-namespace org::apache::lucene::index
-{
-class DocMap;
-}
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/MergeState.h"
+#include  "core/src/java/org/apache/lucene/index/IntersectVisitor.h"
+#include  "core/src/java/org/apache/lucene/index/DocMap.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -193,4 +178,4 @@ public:
   virtual void finish() = 0;
 };
 
-} // namespace org::apache::lucene::codecs
+} // #include  "core/src/java/org/apache/lucene/codecs/

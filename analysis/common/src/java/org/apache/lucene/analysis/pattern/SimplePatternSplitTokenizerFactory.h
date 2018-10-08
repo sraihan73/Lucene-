@@ -7,19 +7,10 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
 
-namespace org::apache::lucene::analysis::pattern
-{
-class SimplePatternSplitTokenizer;
-}
-namespace org::apache::lucene::util
-{
-class AttributeFactory;
-}
+#include  "core/src/java/org/apache/lucene/analysis/pattern/SimplePatternSplitTokenizer.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeFactory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -102,4 +93,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::pattern
+} // #include  "core/src/java/org/apache/lucene/analysis/pattern/

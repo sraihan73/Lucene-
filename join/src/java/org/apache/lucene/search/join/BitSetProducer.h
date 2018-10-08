@@ -3,15 +3,9 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
 
-namespace org::apache::lucene::util
-{
-class BitSet;
-}
+#include  "core/src/java/org/apache/lucene/util/BitSet.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -51,4 +45,4 @@ public:
   getBitSet(std::shared_ptr<LeafReaderContext> context) = 0;
 };
 
-} // namespace org::apache::lucene::search::join
+} // #include  "core/src/java/org/apache/lucene/search/join/

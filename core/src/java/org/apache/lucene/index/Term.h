@@ -6,15 +6,9 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -121,4 +115,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

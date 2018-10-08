@@ -78,4 +78,4 @@ public:
   int compareTo(std::shared_ptr<QualityQuery> other) override;
 };
 
-} // namespace org::apache::lucene::benchmark::quality
+} // #include  "core/src/java/org/apache/lucene/benchmark/quality/

@@ -7,39 +7,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::suggest::jaspell
-{
-class JaspellTernarySearchTrie;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/jaspell/JaspellTernarySearchTrie.h"
 
-namespace org::apache::lucene::search::suggest
-{
-class InputIterator;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::search::suggest
-{
-class Lookup;
-}
-namespace org::apache::lucene::search::suggest
-{
-class LookupResult;
-}
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
-namespace org::apache::lucene::search::suggest::jaspell
-{
-class TSTNode;
-}
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/InputIterator.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/Lookup.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/LookupResult.h"
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/jaspell/TSTNode.h"
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -152,4 +128,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::jaspell
+} // #include  "core/src/java/org/apache/lucene/search/suggest/jaspell/

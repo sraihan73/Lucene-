@@ -4,23 +4,11 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
 
-namespace org::apache::lucene::index
-{
-class Sorter;
-}
-namespace org::apache::lucene::index
-{
-class DocMap;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
+#include  "core/src/java/org/apache/lucene/index/Sorter.h"
+#include  "core/src/java/org/apache/lucene/index/DocMap.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -60,4 +48,4 @@ public:
   getHasDocValues(const std::wstring &field) = 0;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

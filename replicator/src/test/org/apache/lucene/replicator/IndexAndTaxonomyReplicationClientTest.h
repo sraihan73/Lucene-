@@ -9,67 +9,22 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::index
-{
-class DirectoryReader;
-}
-namespace org::apache::lucene::facet::taxonomy::directory
-{
-class DirectoryTaxonomyReader;
-}
-namespace org::apache::lucene::facet
-{
-class FacetsConfig;
-}
-namespace org::apache::lucene::store
-{
-class MockDirectoryWrapper;
-}
-namespace org::apache::lucene::replicator
-{
-class Replicator;
-}
-namespace org::apache::lucene::replicator
-{
-class ReplicationClient;
-}
-namespace org::apache::lucene::replicator
-{
-class SourceDirectoryFactory;
-}
-namespace org::apache::lucene::replicator
-{
-class ReplicationHandler;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::replicator
-{
-class IndexAndTaxonomyRevision;
-}
-namespace org::apache::lucene::replicator
-{
-class SnapshotDirectoryTaxonomyWriter;
-}
-namespace org::apache::lucene::replicator
-{
-class Revision;
-}
-namespace org::apache::lucene::document
-{
-class Document;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class TaxonomyWriter;
-}
+#include  "core/src/java/org/apache/lucene/index/DirectoryReader.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/directory/DirectoryTaxonomyReader.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetsConfig.h"
+#include  "core/src/java/org/apache/lucene/store/MockDirectoryWrapper.h"
+#include  "core/src/java/org/apache/lucene/replicator/Replicator.h"
+#include  "core/src/java/org/apache/lucene/replicator/ReplicationClient.h"
+#include  "core/src/java/org/apache/lucene/replicator/SourceDirectoryFactory.h"
+#include  "core/src/java/org/apache/lucene/replicator/ReplicationHandler.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/replicator/IndexAndTaxonomyRevision.h"
+#include  "core/src/java/org/apache/lucene/replicator/SnapshotDirectoryTaxonomyWriter.h"
+#include  "core/src/java/org/apache/lucene/replicator/Revision.h"
+#include  "core/src/java/org/apache/lucene/document/Document.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/TaxonomyWriter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -319,4 +274,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::replicator
+} // #include  "core/src/java/org/apache/lucene/replicator/

@@ -11,47 +11,17 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::search::suggest
-{
-class Lookup;
-}
-namespace org::apache::lucene::search::suggest
-{
-class LookupResult;
-}
-namespace org::apache::lucene::search
-{
-class BooleanClause;
-}
-namespace org::apache::lucene::search
-{
-class BooleanQuery;
-}
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class TopFieldDocs;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/Lookup.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/LookupResult.h"
+#include  "core/src/java/org/apache/lucene/search/BooleanClause.h"
+#include  "core/src/java/org/apache/lucene/search/BooleanQuery.h"
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/TopFieldDocs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -288,4 +258,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::analyzing
+} // #include  "core/src/java/org/apache/lucene/search/suggest/analyzing/

@@ -7,39 +7,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::highlight
-{
-class WeightedSpanTerm;
-}
+#include  "core/src/java/org/apache/lucene/search/highlight/WeightedSpanTerm.h"
 
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PositionIncrementAttribute;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::search::highlight
-{
-class WeightedSpanTermExtractor;
-}
-namespace org::apache::lucene::search::highlight
-{
-class TextFragment;
-}
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PositionIncrementAttribute.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/WeightedSpanTermExtractor.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/TextFragment.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -236,4 +212,4 @@ public:
   virtual void setMaxDocCharsToAnalyze(int maxDocCharsToAnalyze);
 };
 
-} // namespace org::apache::lucene::search::highlight
+} // #include  "core/src/java/org/apache/lucene/search/highlight/

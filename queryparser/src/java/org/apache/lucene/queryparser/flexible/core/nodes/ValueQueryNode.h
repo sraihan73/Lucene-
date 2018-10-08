@@ -38,4 +38,4 @@ public:
   virtual T getValue() = 0;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::core::nodes
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/core/nodes/

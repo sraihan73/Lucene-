@@ -7,55 +7,19 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
 
-namespace org::apache::lucene::util
-{
-class ByteBlockPool;
-}
-namespace org::apache::lucene::util
-{
-class Counter;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterPerThread;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::codecs
-{
-class PointsWriter;
-}
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::index
-{
-class Sorter;
-}
-namespace org::apache::lucene::index
-{
-class DocMap;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
-namespace org::apache::lucene::codecs
-{
-class MutablePointValues;
-}
-namespace org::apache::lucene::index
-{
-class IntersectVisitor;
-}
+#include  "core/src/java/org/apache/lucene/util/ByteBlockPool.h"
+#include  "core/src/java/org/apache/lucene/util/Counter.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterPerThread.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/codecs/PointsWriter.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/index/Sorter.h"
+#include  "core/src/java/org/apache/lucene/index/DocMap.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
+#include  "core/src/java/org/apache/lucene/codecs/MutablePointValues.h"
+#include  "core/src/java/org/apache/lucene/index/IntersectVisitor.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -265,4 +229,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

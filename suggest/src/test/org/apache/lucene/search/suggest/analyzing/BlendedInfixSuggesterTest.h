@@ -9,27 +9,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::search::suggest::analyzing
-{
-class BlendedInfixSuggester;
-}
-namespace org::apache::lucene::search::suggest
-{
-class Lookup;
-}
-namespace org::apache::lucene::search::suggest
-{
-class LookupResult;
-}
-namespace org::apache::lucene::search::suggest
-{
-class Input;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/analyzing/BlendedInfixSuggester.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/Lookup.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/LookupResult.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/Input.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -107,4 +92,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::analyzing
+} // #include  "core/src/java/org/apache/lucene/search/suggest/analyzing/

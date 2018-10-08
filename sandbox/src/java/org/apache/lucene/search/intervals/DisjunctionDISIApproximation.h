@@ -3,19 +3,10 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class DisiPriorityQueue;
-}
+#include  "core/src/java/org/apache/lucene/search/DisiPriorityQueue.h"
 
-namespace org::apache::lucene::search::intervals
-{
-class DisiPriorityQueue;
-}
-namespace org::apache::lucene::search
-{
-class DisjunctionDISIApproximation;
-}
+#include  "core/src/java/org/apache/lucene/search/intervals/DisiPriorityQueue.h"
+#include  "core/src/java/org/apache/lucene/search/DisjunctionDISIApproximation.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -70,4 +61,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::intervals
+} // #include  "core/src/java/org/apache/lucene/search/intervals/

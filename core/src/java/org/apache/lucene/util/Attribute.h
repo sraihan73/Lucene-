@@ -27,4 +27,4 @@ class Attribute
   GET_CLASS_NAME(Attribute)
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

@@ -10,23 +10,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class Document;
-}
+#include  "core/src/java/org/apache/lucene/document/Document.h"
 
-namespace org::apache::lucene::benchmark::byTask
-{
-class PerfRunData;
-}
-namespace org::apache::lucene::benchmark::byTask::utils
-{
-class StreamUtils;
-}
-namespace org::apache::lucene::benchmark::byTask::tasks
-{
-class WriteLineDocTask;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/PerfRunData.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/utils/StreamUtils.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/tasks/WriteLineDocTask.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -273,4 +261,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::tasks
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/tasks/

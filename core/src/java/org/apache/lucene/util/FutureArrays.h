@@ -142,4 +142,4 @@ public:
                      std::deque<int64_t> &b, int bFromIndex, int bToIndex);
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

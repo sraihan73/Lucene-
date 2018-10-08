@@ -9,35 +9,14 @@
 #include <typeinfo>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::byTask
-{
-class PerfRunData;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/PerfRunData.h"
 
-namespace org::apache::lucene::benchmark::byTask::utils
-{
-class Config;
-}
-namespace org::apache::lucene::index
-{
-class IndexDeletionPolicy;
-}
-namespace org::apache::lucene::index
-{
-class IndexCommit;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriterConfig;
-}
-namespace org::apache::lucene::codecs
-{
-class PostingsFormat;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/utils/Config.h"
+#include  "core/src/java/org/apache/lucene/index/IndexDeletionPolicy.h"
+#include  "core/src/java/org/apache/lucene/index/IndexCommit.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriterConfig.h"
+#include  "core/src/java/org/apache/lucene/codecs/PostingsFormat.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -144,4 +123,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::tasks
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/tasks/

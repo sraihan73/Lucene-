@@ -3,15 +3,9 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::quality
-{
-class QualityQuery;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/quality/QualityQuery.h"
 
-namespace org::apache::lucene::search
-{
-class Query;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -52,4 +46,4 @@ public:
   virtual std::shared_ptr<Query> parse(std::shared_ptr<QualityQuery> qq) = 0;
 };
 
-} // namespace org::apache::lucene::benchmark::quality
+} // #include  "core/src/java/org/apache/lucene/benchmark/quality/

@@ -3,75 +3,24 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::expressions::js
-{
-class JavascriptParser;
-}
+#include  "core/src/java/org/apache/lucene/expressions/js/JavascriptParser.h"
 
-namespace org::apache::lucene::expressions::js
-{
-class CompileContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class ConditionalContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BoolorContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BoolcompContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class NumericContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class AddsubContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class UnaryContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class PrecedenceContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class MuldivContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class ExternalContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BwshiftContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BworContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BoolandContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BwxorContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BwandContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BooleqneContext;
-}
+#include  "core/src/java/org/apache/lucene/expressions/js/CompileContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/ConditionalContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BoolorContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BoolcompContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/NumericContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/AddsubContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/UnaryContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/PrecedenceContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/MuldivContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/ExternalContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BwshiftContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BworContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BoolandContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BwxorContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BwandContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BooleqneContext.h"
 
 // ANTLR GENERATED CODE: DO NOT EDIT
 namespace org::apache::lucene::expressions::js
@@ -215,4 +164,4 @@ public:
   visitBooleqne(std::shared_ptr<JavascriptParser::BooleqneContext> ctx) = 0;
 };
 
-} // namespace org::apache::lucene::expressions::js
+} // #include  "core/src/java/org/apache/lucene/expressions/js/

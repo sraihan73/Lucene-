@@ -7,19 +7,10 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::similarities
-{
-class Similarity;
-}
+#include  "core/src/java/org/apache/lucene/search/similarities/Similarity.h"
 
-namespace org::apache::lucene::search
-{
-class Explanation;
-}
-namespace org::apache::lucene::misc
-{
-class SweetSpotSimilarity;
-}
+#include  "core/src/java/org/apache/lucene/search/Explanation.h"
+#include  "core/src/java/org/apache/lucene/misc/SweetSpotSimilarity.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -132,4 +123,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::misc
+} // #include  "core/src/java/org/apache/lucene/misc/

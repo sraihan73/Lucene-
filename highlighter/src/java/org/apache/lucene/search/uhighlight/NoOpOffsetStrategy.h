@@ -4,19 +4,10 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::uhighlight
-{
-class UnifiedHighlighter;
-}
+#include  "core/src/java/org/apache/lucene/search/uhighlight/UnifiedHighlighter.h"
 
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class OffsetsEnum;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/OffsetsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -69,4 +60,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::uhighlight
+} // #include  "core/src/java/org/apache/lucene/search/uhighlight/

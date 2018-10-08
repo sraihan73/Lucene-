@@ -7,27 +7,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class AttributeFactory;
-}
+#include  "core/src/java/org/apache/lucene/util/AttributeFactory.h"
 
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
-namespace org::apache::lucene::analysis
-{
-class CharacterUtils;
-}
-namespace org::apache::lucene::analysis
-{
-class CharacterBuffer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/CharacterUtils.h"
+#include  "core/src/java/org/apache/lucene/analysis/CharacterBuffer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more

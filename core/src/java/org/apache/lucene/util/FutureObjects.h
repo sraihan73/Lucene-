@@ -67,4 +67,4 @@ public:
   static int checkFromIndexSize(int fromIndex, int size, int length);
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

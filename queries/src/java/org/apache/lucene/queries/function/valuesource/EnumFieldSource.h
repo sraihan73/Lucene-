@@ -9,28 +9,16 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
 
-namespace org::apache::lucene::queries::function
-{
-class FunctionValues;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
+#include  "core/src/java/org/apache/lucene/queries/function/FunctionValues.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
 namespace org::apache::lucene::util::@ mutable { class MutableValueInt; }
 namespace org::apache::lucene::queries::function
 {
 class ValueSourceScorer;
 }
-namespace org::apache::lucene::queries::function
-{
-class ValueFiller;
-}
+#include  "core/src/java/org/apache/lucene/queries/function/ValueFiller.h"
 namespace org::apache::lucene::util::@ mutable { class MutableValue; }
 
 /*
@@ -202,4 +190,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queries::function::valuesource
+} // #include  "core/src/java/org/apache/lucene/queries/function/valuesource/

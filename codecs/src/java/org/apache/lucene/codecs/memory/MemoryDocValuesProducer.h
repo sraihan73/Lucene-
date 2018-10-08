@@ -12,96 +12,33 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs::memory
-{
-class NumericEntry;
-}
+#include  "core/src/java/org/apache/lucene/codecs/memory/NumericEntry.h"
 
-namespace org::apache::lucene::codecs::memory
-{
-class BinaryEntry;
-}
-namespace org::apache::lucene::codecs::memory
-{
-class FSTEntry;
-}
-namespace org::apache::lucene::codecs::memory
-{
-class SortedSetEntry;
-}
-namespace org::apache::lucene::codecs::memory
-{
-class SortedNumericEntry;
-}
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::codecs::memory
-{
-class BytesAndAddresses;
-}
+#include  "core/src/java/org/apache/lucene/codecs/memory/BinaryEntry.h"
+#include  "core/src/java/org/apache/lucene/codecs/memory/FSTEntry.h"
+#include  "core/src/java/org/apache/lucene/codecs/memory/SortedSetEntry.h"
+#include  "core/src/java/org/apache/lucene/codecs/memory/SortedNumericEntry.h"
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/codecs/memory/BytesAndAddresses.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::util
-{
-class FixedBitSet;
-}
-namespace org::apache::lucene::util::packed
-{
-class MonotonicBlockPackedReader;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
-namespace org::apache::lucene::codecs
-{
-class DocValuesProducer;
-}
-namespace org::apache::lucene::util::packed
-{
-class PackedInts;
-}
-namespace org::apache::lucene::util::packed
-{
-class Reader;
-}
-namespace org::apache::lucene::util::packed
-{
-class BlockPackedReader;
-}
-namespace org::apache::lucene::util
-{
-class PagedBytes;
-}
-namespace org::apache::lucene::util
-{
-class Reader;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
-namespace org::apache::lucene::index
-{
-class LegacyNumericDocValues;
-}
-namespace org::apache::lucene::util::fst
-{
-class BytesReader;
-}
-namespace org::apache::lucene::util
-{
-class IntsRefBuilder;
-}
+#include  "core/src/java/org/apache/lucene/util/FixedBitSet.h"
+#include  "core/src/java/org/apache/lucene/util/packed/MonotonicBlockPackedReader.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesProducer.h"
+#include  "core/src/java/org/apache/lucene/util/packed/PackedInts.h"
+#include  "core/src/java/org/apache/lucene/util/packed/Reader.h"
+#include  "core/src/java/org/apache/lucene/util/packed/BlockPackedReader.h"
+#include  "core/src/java/org/apache/lucene/util/PagedBytes.h"
+#include  "core/src/java/org/apache/lucene/util/Reader.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/LegacyNumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/util/fst/BytesReader.h"
+#include  "core/src/java/org/apache/lucene/util/IntsRefBuilder.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
@@ -112,22 +49,10 @@ namespace org::apache::lucene::util::fst
 template <typename T>
 class Arc;
 }
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::index
-{
-class LegacyBinaryDocValues;
-}
-namespace org::apache::lucene::store
-{
-class ByteArrayDataInput;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/index/LegacyBinaryDocValues.h"
+#include  "core/src/java/org/apache/lucene/store/ByteArrayDataInput.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -789,4 +714,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::memory
+} // #include  "core/src/java/org/apache/lucene/codecs/memory/

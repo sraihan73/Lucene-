@@ -7,71 +7,23 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::index
-{
-class IndexDeletionPolicy;
-}
-namespace org::apache::lucene::index
-{
-class IndexCommit;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Similarity;
-}
-namespace org::apache::lucene::index
-{
-class MergeScheduler;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterPerThread;
-}
-namespace org::apache::lucene::index
-{
-class IndexingChain;
-}
-namespace org::apache::lucene::codecs
-{
-class Codec;
-}
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
-namespace org::apache::lucene::index
-{
-class MergePolicy;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterPerThreadPool;
-}
-namespace org::apache::lucene::index
-{
-class FlushPolicy;
-}
-namespace org::apache::lucene::search
-{
-class Sort;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::index
-{
-class IndexReaderWarmer;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriterConfig;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexDeletionPolicy.h"
+#include  "core/src/java/org/apache/lucene/index/IndexCommit.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Similarity.h"
+#include  "core/src/java/org/apache/lucene/index/MergeScheduler.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterPerThread.h"
+#include  "core/src/java/org/apache/lucene/index/IndexingChain.h"
+#include  "core/src/java/org/apache/lucene/codecs/Codec.h"
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
+#include  "core/src/java/org/apache/lucene/index/MergePolicy.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterPerThreadPool.h"
+#include  "core/src/java/org/apache/lucene/index/FlushPolicy.h"
+#include  "core/src/java/org/apache/lucene/search/Sort.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReaderWarmer.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriterConfig.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -503,4 +455,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

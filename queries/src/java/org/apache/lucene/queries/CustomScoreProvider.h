@@ -4,15 +4,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
 
-namespace org::apache::lucene::search
-{
-class Explanation;
-}
+#include  "core/src/java/org/apache/lucene/search/Explanation.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -144,4 +138,4 @@ public:
                 std::shared_ptr<Explanation> valSrcExpl) ;
 };
 
-} // namespace org::apache::lucene::queries
+} // #include  "core/src/java/org/apache/lucene/queries/

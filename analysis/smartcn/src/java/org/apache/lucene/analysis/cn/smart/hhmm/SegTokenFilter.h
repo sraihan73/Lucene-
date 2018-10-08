@@ -3,10 +3,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::cn::smart::hhmm
-{
-class SegToken;
-}
+#include  "core/src/java/org/apache/lucene/analysis/cn/smart/hhmm/SegToken.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -54,4 +51,4 @@ public:
   virtual std::shared_ptr<SegToken> filter(std::shared_ptr<SegToken> token);
 };
 
-} // namespace org::apache::lucene::analysis::cn::smart::hhmm
+} // #include  "core/src/java/org/apache/lucene/analysis/cn/smart/hhmm/

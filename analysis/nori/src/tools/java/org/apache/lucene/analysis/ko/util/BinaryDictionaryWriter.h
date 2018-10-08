@@ -88,4 +88,4 @@ protected:
   virtual void writeDictionary(const std::wstring &filename) ;
 };
 
-} // namespace org::apache::lucene::analysis::ko::util
+} // #include  "core/src/java/org/apache/lucene/analysis/ko/util/

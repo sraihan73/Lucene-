@@ -40,4 +40,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queries::function::valuesource
+} // #include  "core/src/java/org/apache/lucene/queries/function/valuesource/

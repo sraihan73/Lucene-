@@ -10,31 +10,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
 
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::geo
-{
-class Polygon;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class TopFieldDocs;
-}
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/geo/Polygon.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/TopFieldDocs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -286,4 +268,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::document
+} // #include  "core/src/java/org/apache/lucene/document/

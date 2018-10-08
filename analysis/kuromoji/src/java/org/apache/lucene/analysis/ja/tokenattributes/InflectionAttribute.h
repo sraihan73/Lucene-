@@ -5,10 +5,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ja
-{
-class Token;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ja/Token.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -47,4 +44,4 @@ public:
   virtual void setToken(std::shared_ptr<Token> token) = 0;
 };
 
-} // namespace org::apache::lucene::analysis::ja::tokenattributes
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/tokenattributes/

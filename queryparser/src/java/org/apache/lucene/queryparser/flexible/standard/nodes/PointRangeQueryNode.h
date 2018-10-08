@@ -7,19 +7,10 @@
 #include <typeinfo>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::flexible::standard::nodes
-{
-class PointQueryNode;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/PointQueryNode.h"
 
-namespace org::apache::lucene::queryparser::flexible::standard::config
-{
-class PointsConfig;
-}
-namespace org::apache::lucene::queryparser::flexible::core
-{
-class QueryNodeException;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/config/PointsConfig.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/QueryNodeException.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -120,4 +111,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::standard::nodes
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/

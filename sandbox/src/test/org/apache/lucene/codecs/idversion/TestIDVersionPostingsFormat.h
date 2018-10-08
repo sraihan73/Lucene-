@@ -13,43 +13,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::document
-{
-class Field;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::index
-{
-class RandomIndexWriter;
-}
-namespace org::apache::lucene::search
-{
-class SearcherManager;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/document/Field.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/index/RandomIndexWriter.h"
+#include  "core/src/java/org/apache/lucene/search/SearcherManager.h"
 namespace org::apache::lucene::search
 {
 template <typename Stypename T>
@@ -414,4 +387,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::idversion
+} // #include  "core/src/java/org/apache/lucene/codecs/idversion/

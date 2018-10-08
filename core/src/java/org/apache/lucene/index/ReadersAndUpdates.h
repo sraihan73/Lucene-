@@ -12,96 +12,33 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class SegmentCommitInfo;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentCommitInfo.h"
 
-namespace org::apache::lucene::index
-{
-class SegmentReader;
-}
-namespace org::apache::lucene::index
-{
-class PendingDeletes;
-}
-namespace org::apache::lucene::index
-{
-class DocValuesFieldUpdates;
-}
-namespace org::apache::lucene::index
-{
-class Sorter;
-}
-namespace org::apache::lucene::index
-{
-class DocMap;
-}
-namespace org::apache::lucene::store
-{
-class IOContext;
-}
-namespace org::apache::lucene::index
-{
-class MergePolicy;
-}
-namespace org::apache::lucene::index
-{
-class CodecReader;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::codecs
-{
-class DocValuesFormat;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class Iterator;
-}
-namespace org::apache::lucene::index
-{
-class BinaryDocValues;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentReader.h"
+#include  "core/src/java/org/apache/lucene/index/PendingDeletes.h"
+#include  "core/src/java/org/apache/lucene/index/DocValuesFieldUpdates.h"
+#include  "core/src/java/org/apache/lucene/index/Sorter.h"
+#include  "core/src/java/org/apache/lucene/index/DocMap.h"
+#include  "core/src/java/org/apache/lucene/store/IOContext.h"
+#include  "core/src/java/org/apache/lucene/index/MergePolicy.h"
+#include  "core/src/java/org/apache/lucene/index/CodecReader.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesFormat.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/Iterator.h"
+#include  "core/src/java/org/apache/lucene/index/BinaryDocValues.h"
 namespace org::apache::lucene::index
 {
 template <typename DocValuesInstance>
 class MergedDocValues;
 }
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
-namespace org::apache::lucene::codecs
-{
-class FieldInfosFormat;
-}
-namespace org::apache::lucene::index
-{
-class FieldNumbers;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/codecs/FieldInfosFormat.h"
+#include  "core/src/java/org/apache/lucene/index/FieldNumbers.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -591,4 +528,4 @@ public:
       IOException);
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

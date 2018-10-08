@@ -9,23 +9,11 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ja::dict
-{
-class UserDictionary;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ja/dict/UserDictionary.h"
 
-namespace org::apache::lucene::analysis::util
-{
-class ResourceLoader;
-}
-namespace org::apache::lucene::analysis::ja
-{
-class JapaneseTokenizer;
-}
-namespace org::apache::lucene::util
-{
-class AttributeFactory;
-}
+#include  "core/src/java/org/apache/lucene/analysis/util/ResourceLoader.h"
+#include  "core/src/java/org/apache/lucene/analysis/ja/JapaneseTokenizer.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeFactory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -153,4 +141,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::ja
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/

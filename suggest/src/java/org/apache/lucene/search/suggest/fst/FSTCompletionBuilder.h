@@ -5,23 +5,11 @@
 #include <stdexcept>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::suggest::fst
-{
-class BytesRefSorter;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/fst/BytesRefSorter.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::search::suggest::fst
-{
-class FSTCompletion;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/fst/FSTCompletion.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -233,4 +221,4 @@ private:
   buildAutomaton(std::shared_ptr<BytesRefSorter> sorter) ;
 };
 
-} // namespace org::apache::lucene::search::suggest::fst
+} // #include  "core/src/java/org/apache/lucene/search/suggest/fst/

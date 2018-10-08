@@ -3,19 +3,10 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
 
-namespace org::apache::lucene::search::intervals
-{
-class IntervalIterator;
-}
-namespace org::apache::lucene::search
-{
-class DisiWrapper;
-}
+#include  "core/src/java/org/apache/lucene/search/intervals/IntervalIterator.h"
+#include  "core/src/java/org/apache/lucene/search/DisiWrapper.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -59,4 +50,4 @@ public:
   DisiWrapper(std::shared_ptr<IntervalIterator> iterator);
 };
 
-} // namespace org::apache::lucene::search::intervals
+} // #include  "core/src/java/org/apache/lucene/search/intervals/

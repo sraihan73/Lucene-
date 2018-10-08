@@ -4,19 +4,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class LongValues;
-}
+#include  "core/src/java/org/apache/lucene/util/LongValues.h"
 
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::store
-{
-class RandomAccessInput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/store/RandomAccessInput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -136,4 +127,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::util::packed
+} // #include  "core/src/java/org/apache/lucene/util/packed/

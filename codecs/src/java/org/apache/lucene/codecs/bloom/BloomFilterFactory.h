@@ -3,19 +3,10 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs::bloom
-{
-class FuzzySet;
-}
+#include  "core/src/java/org/apache/lucene/codecs/bloom/FuzzySet.h"
 
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -84,4 +75,4 @@ public:
                            std::shared_ptr<FieldInfo> fieldInfo) = 0;
 };
 
-} // namespace org::apache::lucene::codecs::bloom
+} // #include  "core/src/java/org/apache/lucene/codecs/bloom/

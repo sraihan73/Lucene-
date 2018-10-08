@@ -6,23 +6,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial::query
-{
-class SpatialOperation;
-}
+#include  "core/src/java/org/apache/lucene/spatial/query/SpatialOperation.h"
 
-namespace org::apache::lucene::spatial
-{
-class SpatialStrategy;
-}
-namespace org::apache::lucene::spatial::query
-{
-class SpatialArgs;
-}
-namespace org::apache::lucene::spatial
-{
-class ObjGenerator;
-}
+#include  "core/src/java/org/apache/lucene/spatial/SpatialStrategy.h"
+#include  "core/src/java/org/apache/lucene/spatial/query/SpatialArgs.h"
+#include  "core/src/java/org/apache/lucene/spatial/ObjGenerator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -130,4 +118,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial
+} // #include  "core/src/java/org/apache/lucene/spatial/

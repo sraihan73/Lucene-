@@ -9,23 +9,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::byTask::tasks
-{
-class TaskSequence;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/tasks/TaskSequence.h"
 
-namespace org::apache::lucene::benchmark::byTask
-{
-class PerfRunData;
-}
-namespace org::apache::lucene::benchmark::byTask::utils
-{
-class Config;
-}
-namespace org::apache::lucene::benchmark::byTask::tasks
-{
-class PerfTask;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/PerfRunData.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/utils/Config.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/tasks/PerfTask.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -112,4 +100,4 @@ public:
   virtual ~Algorithm();
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::utils
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/utils/

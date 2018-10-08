@@ -35,4 +35,4 @@ class Encoder
 public:
   virtual std::wstring encodeText(const std::wstring &originalText) = 0;
 };
-} // namespace org::apache::lucene::search::highlight
+} // #include  "core/src/java/org/apache/lucene/search/highlight/

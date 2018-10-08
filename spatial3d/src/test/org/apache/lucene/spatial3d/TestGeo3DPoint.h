@@ -15,83 +15,26 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class Codec;
-}
+#include  "core/src/java/org/apache/lucene/codecs/Codec.h"
 
-namespace org::apache::lucene::codecs
-{
-class PointsFormat;
-}
-namespace org::apache::lucene::codecs
-{
-class PointsWriter;
-}
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::codecs
-{
-class PointsReader;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPoint;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoShape;
-}
-namespace org::apache::lucene::util
-{
-class FixedBitSet;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::geo
-{
-class Polygon;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class PlanetModel;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPolygon;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
-namespace org::apache::lucene::index
-{
-class IntersectVisitor;
-}
-namespace org::apache::lucene::spatial3d
-{
-class Cell;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/codecs/PointsFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/PointsWriter.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/codecs/PointsReader.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPoint.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoShape.h"
+#include  "core/src/java/org/apache/lucene/util/FixedBitSet.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/geo/Polygon.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/PlanetModel.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPolygon.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
+#include  "core/src/java/org/apache/lucene/index/IntersectVisitor.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/Cell.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -439,4 +382,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial3d
+} // #include  "core/src/java/org/apache/lucene/spatial3d/

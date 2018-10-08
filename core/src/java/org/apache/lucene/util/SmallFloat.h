@@ -96,4 +96,4 @@ public:
   static int byte4ToInt(char b);
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

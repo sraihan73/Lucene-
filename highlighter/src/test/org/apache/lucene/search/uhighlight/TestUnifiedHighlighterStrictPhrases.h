@@ -8,55 +8,19 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
 
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::analysis
-{
-class MockAnalyzer;
-}
-namespace org::apache::lucene::index
-{
-class RandomIndexWriter;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class UnifiedHighlighter;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::document
-{
-class Document;
-}
-namespace org::apache::lucene::search
-{
-class PhraseQuery;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class Passage;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search
-{
-class Weight;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/analysis/MockAnalyzer.h"
+#include  "core/src/java/org/apache/lucene/index/RandomIndexWriter.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/UnifiedHighlighter.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/document/Document.h"
+#include  "core/src/java/org/apache/lucene/search/PhraseQuery.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/Passage.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -283,4 +247,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::uhighlight
+} // #include  "core/src/java/org/apache/lucene/search/uhighlight/

@@ -12,15 +12,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::validation
-{
-class Dependency;
-}
+#include  "core/src/java/org/apache/lucene/validation/Dependency.h"
 
-namespace org::apache::lucene::validation::ivyde
-{
-class IvyNodeElement;
-}
+#include  "core/src/java/org/apache/lucene/validation/ivyde/IvyNodeElement.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -357,4 +351,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::validation
+} // #include  "core/src/java/org/apache/lucene/validation/

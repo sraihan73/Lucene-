@@ -9,35 +9,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
 
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::codecs
-{
-class PointsReader;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::util::bkd
-{
-class BKDWriter;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
-namespace org::apache::lucene::index
-{
-class MergeState;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/codecs/PointsReader.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/util/bkd/BKDWriter.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
+#include  "core/src/java/org/apache/lucene/index/MergeState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -144,4 +123,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::lucene60
+} // #include  "core/src/java/org/apache/lucene/codecs/lucene60/

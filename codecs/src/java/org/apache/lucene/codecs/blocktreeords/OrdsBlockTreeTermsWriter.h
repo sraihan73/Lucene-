@@ -9,97 +9,37 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs::blocktreeords
-{
-class FSTOrdsOutputs;
-}
+#include  "core/src/java/org/apache/lucene/codecs/blocktreeords/FSTOrdsOutputs.h"
 
-namespace org::apache::lucene::codecs::blocktreeords
-{
-class Output;
-}
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
-namespace org::apache::lucene::codecs
-{
-class PostingsWriterBase;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::codecs::blocktree
-{
-class BlockTreeTermsWriter;
-}
-namespace org::apache::lucene::codecs::blocktree
-{
-class FieldMetaData;
-}
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::index
-{
-class Fields;
-}
-namespace org::apache::lucene::codecs
-{
-class BlockTermState;
-}
+#include  "core/src/java/org/apache/lucene/codecs/blocktreeords/Output.h"
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
+#include  "core/src/java/org/apache/lucene/codecs/PostingsWriterBase.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/codecs/blocktree/BlockTreeTermsWriter.h"
+#include  "core/src/java/org/apache/lucene/codecs/blocktree/FieldMetaData.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/index/Fields.h"
+#include  "core/src/java/org/apache/lucene/codecs/BlockTermState.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::codecs::blocktree
-{
-class PendingBlock;
-}
-namespace org::apache::lucene::store
-{
-class RAMOutputStream;
-}
-namespace org::apache::lucene::util
-{
-class IntsRefBuilder;
-}
+#include  "core/src/java/org/apache/lucene/codecs/blocktree/PendingBlock.h"
+#include  "core/src/java/org/apache/lucene/store/RAMOutputStream.h"
+#include  "core/src/java/org/apache/lucene/util/IntsRefBuilder.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class Builder;
 }
-namespace org::apache::lucene::util
-{
-class FixedBitSet;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::codecs::blocktree
-{
-class PendingEntry;
-}
-namespace org::apache::lucene::codecs::blocktree
-{
-class PendingTerm;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
+#include  "core/src/java/org/apache/lucene/util/FixedBitSet.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/codecs/blocktree/PendingEntry.h"
+#include  "core/src/java/org/apache/lucene/codecs/blocktree/PendingTerm.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -501,4 +441,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::blocktreeords
+} // #include  "core/src/java/org/apache/lucene/codecs/blocktreeords/

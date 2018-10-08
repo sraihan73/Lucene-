@@ -42,4 +42,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::demo::facet
+} // #include  "core/src/java/org/apache/lucene/demo/facet/

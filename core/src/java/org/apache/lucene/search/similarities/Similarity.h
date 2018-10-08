@@ -4,39 +4,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class FieldInvertState;
-}
+#include  "core/src/java/org/apache/lucene/index/FieldInvertState.h"
 
-namespace org::apache::lucene::search
-{
-class CollectionStatistics;
-}
-namespace org::apache::lucene::search
-{
-class TermStatistics;
-}
-namespace org::apache::lucene::search::similarities
-{
-class SimWeight;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search::similarities
-{
-class SimScorer;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::search
-{
-class Explanation;
-}
+#include  "core/src/java/org/apache/lucene/search/CollectionStatistics.h"
+#include  "core/src/java/org/apache/lucene/search/TermStatistics.h"
+//#include  "core/src/java/org/apache/lucene/search/similarities/SimWeight.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+//#include  "core/src/java/org/apache/lucene/search/similarities/SimScorer.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/search/Explanation.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -251,4 +227,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::search::similarities
+} // #include  "core/src/java/org/apache/lucene/search/similarities/

@@ -4,10 +4,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -66,4 +63,4 @@ protected:
         java.io.InputStream::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::replicator
+} // #include  "core/src/java/org/apache/lucene/replicator/

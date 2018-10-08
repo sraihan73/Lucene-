@@ -9,19 +9,10 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
-namespace org::apache::lucene::misc
-{
-class TermStats;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
+#include  "core/src/java/org/apache/lucene/misc/TermStats.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -144,4 +135,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::misc
+} // #include  "core/src/java/org/apache/lucene/misc/

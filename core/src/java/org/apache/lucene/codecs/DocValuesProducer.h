@@ -4,31 +4,13 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
 
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
-namespace org::apache::lucene::index
-{
-class BinaryDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedNumericDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedSetDocValues;
-}
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/BinaryDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedNumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedSetDocValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -122,4 +104,4 @@ public:
   getMergeInstance() ;
 };
 
-} // namespace org::apache::lucene::codecs
+} // #include  "core/src/java/org/apache/lucene/codecs/

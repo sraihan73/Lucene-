@@ -7,39 +7,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::queryparser::flexible::core
-{
-class QueryNodeException;
-}
-namespace org::apache::lucene::queryparser::flexible::standard::config
-{
-class StandardQueryConfigHandler;
-}
-namespace org::apache::lucene::search
-{
-class MultiTermQuery;
-}
-namespace org::apache::lucene::search
-{
-class RewriteMethod;
-}
-namespace org::apache::lucene::queryparser::flexible::standard::config
-{
-class PointsConfig;
-}
-namespace org::apache::lucene::document
-{
-class DateTools;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/QueryNodeException.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/config/StandardQueryConfigHandler.h"
+#include  "core/src/java/org/apache/lucene/search/MultiTermQuery.h"
+#include  "core/src/java/org/apache/lucene/search/RewriteMethod.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/config/PointsConfig.h"
+#include  "core/src/java/org/apache/lucene/document/DateTools.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -393,4 +369,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::standard
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/

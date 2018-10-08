@@ -8,10 +8,7 @@
 #include <typeinfo>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class AttributeImpl;
-}
+#include  "core/src/java/org/apache/lucene/util/AttributeImpl.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more

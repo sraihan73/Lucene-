@@ -145,4 +145,4 @@ public:
   static const std::shared_ptr<Pattern> CODEC_FILE_PATTERN;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

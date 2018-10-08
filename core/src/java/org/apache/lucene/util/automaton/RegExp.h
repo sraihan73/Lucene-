@@ -10,19 +10,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
 
-namespace org::apache::lucene::util::automaton
-{
-class TooComplexToDeterminizeException;
-}
-namespace org::apache::lucene::util::automaton
-{
-class AutomatonProvider;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/TooComplexToDeterminizeException.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/AutomatonProvider.h"
 
 /*
  * dk.brics.automaton
@@ -620,4 +611,4 @@ public:
   int parseCharExp() ;
 };
 
-} // namespace org::apache::lucene::util::automaton
+} // #include  "core/src/java/org/apache/lucene/util/automaton/

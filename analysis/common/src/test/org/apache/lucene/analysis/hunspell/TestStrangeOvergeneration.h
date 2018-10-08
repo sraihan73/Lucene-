@@ -42,4 +42,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::hunspell
+} // #include  "core/src/java/org/apache/lucene/analysis/hunspell/

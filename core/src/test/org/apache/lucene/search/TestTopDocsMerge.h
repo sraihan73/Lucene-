@@ -10,27 +10,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
 
-namespace org::apache::lucene::index
-{
-class IndexReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class Collector;
-}
-namespace org::apache::lucene::search
-{
-class Weight;
-}
-namespace org::apache::lucene::search
-{
-class TopDocs;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/Collector.h"
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
+#include  "core/src/java/org/apache/lucene/search/TopDocs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -106,4 +91,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

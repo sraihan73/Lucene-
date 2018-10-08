@@ -8,27 +8,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::replicator::nrt
-{
-class ReplicaNode;
-}
+#include  "core/src/java/org/apache/lucene/replicator/nrt/ReplicaNode.h"
 
-namespace org::apache::lucene::replicator::nrt
-{
-class FileMetaData;
-}
-namespace org::apache::lucene::replicator::nrt
-{
-class OnceDone;
-}
-namespace org::apache::lucene::replicator::nrt
-{
-class CopyOneFile;
-}
-namespace org::apache::lucene::replicator::nrt
-{
-class CopyState;
-}
+#include  "core/src/java/org/apache/lucene/replicator/nrt/FileMetaData.h"
+#include  "core/src/java/org/apache/lucene/replicator/nrt/OnceDone.h"
+#include  "core/src/java/org/apache/lucene/replicator/nrt/CopyOneFile.h"
+#include  "core/src/java/org/apache/lucene/replicator/nrt/CopyState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -166,4 +151,4 @@ public:
   virtual int64_t getTotalBytesCopied() = 0;
 };
 
-} // namespace org::apache::lucene::replicator::nrt
+} // #include  "core/src/java/org/apache/lucene/replicator/nrt/

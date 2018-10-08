@@ -50,4 +50,4 @@ public:
 
   static std::shared_ptr<Average> from(std::deque<double> &values);
 };
-} // namespace org::apache::lucene::search::suggest
+} // #include  "core/src/java/org/apache/lucene/search/suggest/

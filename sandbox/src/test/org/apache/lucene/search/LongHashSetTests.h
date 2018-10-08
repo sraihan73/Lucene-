@@ -7,10 +7,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class LongHashSet;
-}
+#include  "core/src/java/org/apache/lucene/search/LongHashSet.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -60,4 +57,4 @@ protected:
         org.apache.lucene.util.LuceneTestCase::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

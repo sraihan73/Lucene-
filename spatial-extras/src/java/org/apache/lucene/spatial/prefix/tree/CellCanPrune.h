@@ -42,4 +42,4 @@ public:
   virtual int getSubCellsSize() = 0;
 };
 
-} // namespace org::apache::lucene::spatial::prefix::tree
+} // #include  "core/src/java/org/apache/lucene/spatial/prefix/tree/

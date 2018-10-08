@@ -9,43 +9,16 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::highlight
-{
-class Formatter;
-}
+#include  "core/src/java/org/apache/lucene/search/highlight/Formatter.h"
 
-namespace org::apache::lucene::search::highlight
-{
-class Encoder;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::search::highlight
-{
-class Scorer;
-}
-namespace org::apache::lucene::search::highlight
-{
-class Fragmenter;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::search::highlight
-{
-class InvalidTokenOffsetsException;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::search::highlight
-{
-class TextFragment;
-}
+#include  "core/src/java/org/apache/lucene/search/highlight/Encoder.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/Scorer.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/Fragmenter.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/InvalidTokenOffsetsException.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/TextFragment.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -288,4 +261,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::search::highlight
+} // #include  "core/src/java/org/apache/lucene/search/highlight/

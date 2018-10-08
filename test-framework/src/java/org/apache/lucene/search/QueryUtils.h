@@ -11,87 +11,27 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class Query;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
 
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::index
-{
-class Terms;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
-namespace org::apache::lucene::index
-{
-class BinaryDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedNumericDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedSetDocValues;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
-namespace org::apache::lucene::index
-{
-class Fields;
-}
-namespace org::apache::lucene::index
-{
-class StoredFieldVisitor;
-}
-namespace org::apache::lucene::index
-{
-class LeafMetaData;
-}
-namespace org::apache::lucene::index
-{
-class CacheHelper;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::index
-{
-class LeafReader;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/BinaryDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedNumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedSetDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
+#include  "core/src/java/org/apache/lucene/index/Fields.h"
+#include  "core/src/java/org/apache/lucene/index/StoredFieldVisitor.h"
+#include  "core/src/java/org/apache/lucene/index/LeafMetaData.h"
+#include  "core/src/java/org/apache/lucene/index/CacheHelper.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReader.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -422,4 +362,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

@@ -9,23 +9,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::replicator
-{
-class RevisionFile;
-}
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
-namespace org::apache::lucene::index
-{
-class IndexCommit;
-}
+#include  "core/src/java/org/apache/lucene/replicator/RevisionFile.h"
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
+#include  "core/src/java/org/apache/lucene/index/IndexCommit.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -179,4 +167,4 @@ public:
   virtual void setInfoStream(std::shared_ptr<InfoStream> infoStream);
 };
 
-} // namespace org::apache::lucene::replicator
+} // #include  "core/src/java/org/apache/lucene/replicator/

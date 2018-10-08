@@ -7,15 +7,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::flexible::core::util
-{
-class UnescapedCharSequence;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/util/UnescapedCharSequence.h"
 
-namespace org::apache::lucene::queryparser::flexible::standard::parser
-{
-class ParseException;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/parser/ParseException.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -124,4 +118,4 @@ private:
   static int hexToInt(wchar_t c) ;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::standard::parser
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/parser/

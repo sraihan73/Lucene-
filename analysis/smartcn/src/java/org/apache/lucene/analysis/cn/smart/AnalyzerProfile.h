@@ -59,4 +59,4 @@ private:
   static std::wstring getAnalysisDataDir(std::shared_ptr<Path> propFile);
 };
 
-} // namespace org::apache::lucene::analysis::cn::smart
+} // #include  "core/src/java/org/apache/lucene/analysis/cn/smart/

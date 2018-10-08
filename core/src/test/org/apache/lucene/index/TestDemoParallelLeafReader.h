@@ -14,79 +14,25 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
 
-namespace org::apache::lucene::index
-{
-class ReaderManager;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::index
-{
-class SegmentIDAndGen;
-}
-namespace org::apache::lucene::index
-{
-class LeafReader;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriterConfig;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::index
-{
-class DirectoryReader;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::index
-{
-class CacheKey;
-}
-namespace org::apache::lucene::index
-{
-class ParallelLeafReader;
-}
-namespace org::apache::lucene::index
-{
-class SegmentCommitInfo;
-}
-namespace org::apache::lucene::index
-{
-class CodecReader;
-}
-namespace org::apache::lucene::index
-{
-class MergePolicy;
-}
-namespace org::apache::lucene::index
-{
-class SegmentInfos;
-}
-namespace org::apache::lucene::index
-{
-class SegmentInfo;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class ScoreDoc;
-}
+#include  "core/src/java/org/apache/lucene/index/ReaderManager.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentIDAndGen.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReader.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriterConfig.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/index/DirectoryReader.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/index/CacheKey.h"
+#include  "core/src/java/org/apache/lucene/index/ParallelLeafReader.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentCommitInfo.h"
+#include  "core/src/java/org/apache/lucene/index/CodecReader.h"
+#include  "core/src/java/org/apache/lucene/index/MergePolicy.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentInfos.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentInfo.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/ScoreDoc.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -672,4 +618,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

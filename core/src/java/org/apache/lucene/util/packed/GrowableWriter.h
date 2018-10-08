@@ -4,19 +4,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::packed
-{
-class PackedInts;
-}
+#include  "core/src/java/org/apache/lucene/util/packed/PackedInts.h"
 
-namespace org::apache::lucene::util::packed
-{
-class Mutable;
-}
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
+#include  "core/src/java/org/apache/lucene/util/packed/Mutable.h"
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -106,4 +97,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::util::packed
+} // #include  "core/src/java/org/apache/lucene/util/packed/

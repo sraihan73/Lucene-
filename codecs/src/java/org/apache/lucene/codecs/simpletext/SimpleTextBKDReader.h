@@ -7,35 +7,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
 
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
-namespace org::apache::lucene::index
-{
-class IntersectVisitor;
-}
-namespace org::apache::lucene::util::bkd
-{
-class BKDReader;
-}
-namespace org::apache::lucene::util::bkd
-{
-class IntersectState;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
+#include  "core/src/java/org/apache/lucene/index/IntersectVisitor.h"
+#include  "core/src/java/org/apache/lucene/util/bkd/BKDReader.h"
+#include  "core/src/java/org/apache/lucene/util/bkd/IntersectState.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -233,4 +212,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::simpletext
+} // #include  "core/src/java/org/apache/lucene/codecs/simpletext/

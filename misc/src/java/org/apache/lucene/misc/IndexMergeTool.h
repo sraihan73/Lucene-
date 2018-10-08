@@ -37,4 +37,4 @@ class IndexMergeTool : public std::enable_shared_from_this<IndexMergeTool>
   static void main(std::deque<std::wstring> &args) ;
 };
 
-} // namespace org::apache::lucene::misc
+} // #include  "core/src/java/org/apache/lucene/misc/

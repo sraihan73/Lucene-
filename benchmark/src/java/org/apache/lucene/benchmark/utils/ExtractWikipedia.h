@@ -8,10 +8,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::byTask::feeds
-{
-class DocMaker;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/DocMaker.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -70,4 +67,4 @@ public:
 private:
   static void printUsage();
 };
-} // namespace org::apache::lucene::benchmark::utils
+} // #include  "core/src/java/org/apache/lucene/benchmark/utils/

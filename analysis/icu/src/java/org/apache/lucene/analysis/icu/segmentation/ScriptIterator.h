@@ -134,4 +134,4 @@ private:
   int getScript(int codepoint);
 };
 
-} // namespace org::apache::lucene::analysis::icu::segmentation
+} // #include  "core/src/java/org/apache/lucene/analysis/icu/segmentation/

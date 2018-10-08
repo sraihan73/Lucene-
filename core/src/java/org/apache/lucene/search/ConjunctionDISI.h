@@ -6,31 +6,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
 
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::search::spans
-{
-class Spans;
-}
-namespace org::apache::lucene::search
-{
-class TwoPhaseIterator;
-}
-namespace org::apache::lucene::util
-{
-class BitSetIterator;
-}
-namespace org::apache::lucene::util
-{
-class BitSet;
-}
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/search/spans/Spans.h"
+#include  "core/src/java/org/apache/lucene/search/TwoPhaseIterator.h"
+#include  "core/src/java/org/apache/lucene/util/BitSetIterator.h"
+#include  "core/src/java/org/apache/lucene/util/BitSet.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -253,4 +235,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

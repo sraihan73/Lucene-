@@ -10,67 +10,22 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
 
-namespace org::apache::lucene::document
-{
-class Document;
-}
-namespace org::apache::lucene::util
-{
-class AttributeImpl;
-}
-namespace org::apache::lucene::util
-{
-class AttributeReflector;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PositionIncrementAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PayloadAttribute;
-}
-namespace org::apache::lucene::index
-{
-class Fields;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
-namespace org::apache::lucene::index
-{
-class Terms;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
+#include  "core/src/java/org/apache/lucene/document/Document.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeImpl.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeReflector.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PositionIncrementAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PayloadAttribute.h"
+#include  "core/src/java/org/apache/lucene/index/Fields.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -541,4 +496,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

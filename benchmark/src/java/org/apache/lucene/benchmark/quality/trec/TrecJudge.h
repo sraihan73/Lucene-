@@ -7,15 +7,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::quality::trec
-{
-class QRelJudgement;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/quality/trec/QRelJudgement.h"
 
-namespace org::apache::lucene::benchmark::quality
-{
-class QualityQuery;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/quality/QualityQuery.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -99,4 +93,4 @@ public:
   int maxRecall(std::shared_ptr<QualityQuery> query) override;
 };
 
-} // namespace org::apache::lucene::benchmark::quality::trec
+} // #include  "core/src/java/org/apache/lucene/benchmark/quality/trec/

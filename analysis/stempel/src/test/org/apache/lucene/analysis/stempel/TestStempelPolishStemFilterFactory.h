@@ -69,4 +69,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::stempel
+} // #include  "core/src/java/org/apache/lucene/analysis/stempel/

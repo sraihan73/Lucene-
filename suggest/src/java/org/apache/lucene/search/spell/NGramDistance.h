@@ -69,4 +69,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::apache::lucene::search::spell
+} // #include  "core/src/java/org/apache/lucene/search/spell/

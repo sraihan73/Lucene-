@@ -7,31 +7,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
 
-namespace org::apache::lucene::index
-{
-class IndexCommit;
-}
-namespace org::apache::lucene::index
-{
-class SnapshotDeletionPolicy;
-}
-namespace org::apache::lucene::replicator
-{
-class RevisionFile;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::replicator
-{
-class Revision;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexCommit.h"
+#include  "core/src/java/org/apache/lucene/index/SnapshotDeletionPolicy.h"
+#include  "core/src/java/org/apache/lucene/replicator/RevisionFile.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/replicator/Revision.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -133,4 +115,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::apache::lucene::replicator
+} // #include  "core/src/java/org/apache/lucene/replicator/

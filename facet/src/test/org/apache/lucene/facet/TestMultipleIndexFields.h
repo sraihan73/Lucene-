@@ -7,43 +7,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet
-{
-class FacetField;
-}
+#include  "core/src/java/org/apache/lucene/facet/FacetField.h"
 
-namespace org::apache::lucene::facet
-{
-class FacetsConfig;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::facet
-{
-class Facets;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::facet
-{
-class FacetsCollector;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class TaxonomyReader;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class TaxonomyWriter;
-}
-namespace org::apache::lucene::index
-{
-class RandomIndexWriter;
-}
+#include  "core/src/java/org/apache/lucene/facet/FacetsConfig.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/facet/Facets.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetsCollector.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/TaxonomyReader.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/TaxonomyWriter.h"
+#include  "core/src/java/org/apache/lucene/index/RandomIndexWriter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -127,4 +100,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet
+} // #include  "core/src/java/org/apache/lucene/facet/

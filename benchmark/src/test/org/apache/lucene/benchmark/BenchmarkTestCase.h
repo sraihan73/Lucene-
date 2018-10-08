@@ -9,10 +9,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::byTask
-{
-class Benchmark;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/Benchmark.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -93,4 +90,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::benchmark
+} // #include  "core/src/java/org/apache/lucene/benchmark/

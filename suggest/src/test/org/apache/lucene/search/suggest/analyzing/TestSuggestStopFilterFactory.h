@@ -7,10 +7,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::suggest::analyzing
-{
-class SuggestStopFilterFactory;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/analyzing/SuggestStopFilterFactory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -59,4 +56,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::analyzing
+} // #include  "core/src/java/org/apache/lucene/search/suggest/analyzing/

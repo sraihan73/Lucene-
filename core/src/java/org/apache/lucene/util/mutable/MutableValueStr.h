@@ -4,10 +4,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
 
 namespace org::apache::lucene::util::@ mutable { class MutableValue; }
 
@@ -65,4 +62,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::util::mutable_
+} // #include  "core/src/java/org/apache/lucene/util/mutable_/

@@ -53,4 +53,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::bn
+} // #include  "core/src/java/org/apache/lucene/analysis/bn/

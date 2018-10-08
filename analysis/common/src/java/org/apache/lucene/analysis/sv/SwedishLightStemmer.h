@@ -77,4 +77,4 @@ public:
   virtual int stem(std::deque<wchar_t> &s, int len);
 };
 
-} // namespace org::apache::lucene::analysis::sv
+} // #include  "core/src/java/org/apache/lucene/analysis/sv/

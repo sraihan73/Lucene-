@@ -7,15 +7,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::pt
-{
-class RSLPStemmerBase;
-}
+#include  "core/src/java/org/apache/lucene/analysis/pt/RSLPStemmerBase.h"
 
-namespace org::apache::lucene::analysis::pt
-{
-class Step;
-}
+#include  "core/src/java/org/apache/lucene/analysis/pt/Step.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -80,4 +74,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::gl
+} // #include  "core/src/java/org/apache/lucene/analysis/gl/

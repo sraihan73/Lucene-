@@ -4,19 +4,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPath;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPath.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPoint;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class PlanetModel;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPoint.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/PlanetModel.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -70,4 +61,4 @@ private:
   filterPoints(std::deque<std::shared_ptr<GeoPoint>> &pathPoints);
 };
 
-} // namespace org::apache::lucene::spatial3d::geom
+} // #include  "core/src/java/org/apache/lucene/spatial3d/geom/

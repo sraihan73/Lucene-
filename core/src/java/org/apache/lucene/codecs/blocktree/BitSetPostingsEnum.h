@@ -5,19 +5,10 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BitSet;
-}
+#include  "core/src/java/org/apache/lucene/util/BitSet.h"
 
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -84,4 +75,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::blocktree
+} // #include  "core/src/java/org/apache/lucene/codecs/blocktree/

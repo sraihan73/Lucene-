@@ -8,23 +8,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class CharsRef;
-}
+#include  "core/src/java/org/apache/lucene/util/CharsRef.h"
 
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
-namespace org::apache::lucene::util::automaton
-{
-class Builder;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/Builder.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -243,4 +231,4 @@ private:
                  std::shared_ptr<std::wstring> current, int fromIndex);
 };
 
-} // namespace org::apache::lucene::util::automaton
+} // #include  "core/src/java/org/apache/lucene/util/automaton/

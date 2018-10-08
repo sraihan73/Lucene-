@@ -12,15 +12,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class Document;
-}
+#include  "core/src/java/org/apache/lucene/document/Document.h"
 
-namespace org::apache::lucene::search
-{
-class Sort;
-}
+#include  "core/src/java/org/apache/lucene/search/Sort.h"
 namespace org::apache::lucene::search::grouping
 {
 template <typename T>
@@ -31,10 +25,7 @@ namespace org::apache::lucene::search::grouping
 template <typename T>
 class TopGroupsCollector;
 }
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 namespace org::apache::lucene::search::grouping
 {
 template <typename T>
@@ -55,46 +46,16 @@ namespace org::apache::lucene::search::grouping
 template <typename T>
 class TopGroups;
 }
-namespace org::apache::lucene::search
-{
-class SortField;
-}
-namespace org::apache::lucene::index
-{
-class DirectoryReader;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::search::grouping
-{
-class ShardSearcher;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::index
-{
-class IndexReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class Collector;
-}
-namespace org::apache::lucene::search
-{
-class Weight;
-}
+#include  "core/src/java/org/apache/lucene/search/SortField.h"
+#include  "core/src/java/org/apache/lucene/index/DirectoryReader.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/search/grouping/ShardSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/Collector.h"
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -371,4 +332,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::grouping
+} // #include  "core/src/java/org/apache/lucene/search/grouping/

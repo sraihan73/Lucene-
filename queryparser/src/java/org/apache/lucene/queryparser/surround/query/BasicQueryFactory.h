@@ -5,23 +5,11 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::surround::query
-{
-class TooManyBasicQueries;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/surround/query/TooManyBasicQueries.h"
 
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::search
-{
-class TermQuery;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanTermQuery;
-}
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/search/TermQuery.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanTermQuery.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -97,4 +85,4 @@ public:
   bool equals(std::any obj) override;
 };
 
-} // namespace org::apache::lucene::queryparser::surround::query
+} // #include  "core/src/java/org/apache/lucene/queryparser/surround/query/

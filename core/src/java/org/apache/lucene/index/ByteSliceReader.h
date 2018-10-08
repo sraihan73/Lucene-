@@ -4,15 +4,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class ByteBlockPool;
-}
+#include  "core/src/java/org/apache/lucene/util/ByteBlockPool.h"
 
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -75,4 +69,4 @@ protected:
         org.apache.lucene.store.DataInput::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

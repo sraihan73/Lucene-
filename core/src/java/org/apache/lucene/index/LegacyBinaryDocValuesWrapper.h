@@ -4,19 +4,10 @@
 #include <stdexcept>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class Bits;
-}
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
 
-namespace org::apache::lucene::index
-{
-class LegacyBinaryDocValues;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/index/LegacyBinaryDocValues.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -82,4 +73,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

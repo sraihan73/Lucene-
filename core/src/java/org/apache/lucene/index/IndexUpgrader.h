@@ -7,19 +7,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::index
-{
-class IndexWriterConfig;
-}
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexWriterConfig.h"
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -129,4 +120,4 @@ public:
   void upgrade() ;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

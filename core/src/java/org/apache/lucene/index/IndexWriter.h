@@ -16,188 +16,56 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::index
-{
-class SegmentCommitInfo;
-}
-namespace org::apache::lucene::index
-{
-class SegmentInfos;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::index
-{
-class FieldNumbers;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriter;
-}
-namespace org::apache::lucene::index
-{
-class Event;
-}
-namespace org::apache::lucene::index
-{
-class IndexFileDeleter;
-}
-namespace org::apache::lucene::store
-{
-class Lock;
-}
-namespace org::apache::lucene::index
-{
-class MergeScheduler;
-}
-namespace org::apache::lucene::index
-{
-class MergePolicy;
-}
-namespace org::apache::lucene::index
-{
-class OneMerge;
-}
-namespace org::apache::lucene::index
-{
-class ReaderPool;
-}
-namespace org::apache::lucene::index
-{
-class BufferedUpdatesStream;
-}
-namespace org::apache::lucene::index
-{
-class LiveIndexWriterConfig;
-}
-namespace org::apache::lucene::index
-{
-class FlushNotifications;
-}
-namespace org::apache::lucene::index
-{
-class SegmentInfo;
-}
-namespace org::apache::lucene::index
-{
-class DirectoryReader;
-}
-namespace org::apache::lucene::store
-{
-class AlreadyClosedException;
-}
-namespace org::apache::lucene::codecs
-{
-class Codec;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriterConfig;
-}
-namespace org::apache::lucene::index
-{
-class CorruptIndexException;
-}
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterDeleteQueue;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentCommitInfo.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentInfos.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/index/FieldNumbers.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriter.h"
+#include  "core/src/java/org/apache/lucene/index/Event.h"
+#include  "core/src/java/org/apache/lucene/index/IndexFileDeleter.h"
+#include  "core/src/java/org/apache/lucene/store/Lock.h"
+#include  "core/src/java/org/apache/lucene/index/MergeScheduler.h"
+#include  "core/src/java/org/apache/lucene/index/MergePolicy.h"
+#include  "core/src/java/org/apache/lucene/index/OneMerge.h"
+#include  "core/src/java/org/apache/lucene/index/ReaderPool.h"
+#include  "core/src/java/org/apache/lucene/index/BufferedUpdatesStream.h"
+#include  "core/src/java/org/apache/lucene/index/LiveIndexWriterConfig.h"
+#include  "core/src/java/org/apache/lucene/index/FlushNotifications.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentInfo.h"
+#include  "core/src/java/org/apache/lucene/index/DirectoryReader.h"
+#include  "core/src/java/org/apache/lucene/store/AlreadyClosedException.h"
+#include  "core/src/java/org/apache/lucene/codecs/Codec.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriterConfig.h"
+#include  "core/src/java/org/apache/lucene/index/CorruptIndexException.h"
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterDeleteQueue.h"
 namespace org::apache::lucene::index
 {
 template <typename T>
 class Node;
 }
-namespace org::apache::lucene::document
-{
-class Field;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::index
-{
-class ReadersAndUpdates;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class DocValuesUpdate;
-}
-namespace org::apache::lucene::index
-{
-class FrozenBufferedUpdates;
-}
-namespace org::apache::lucene::index
-{
-class Sorter;
-}
-namespace org::apache::lucene::index
-{
-class DocMap;
-}
-namespace org::apache::lucene::index
-{
-class CodecReader;
-}
-namespace org::apache::lucene::store
-{
-class IOContext;
-}
-namespace org::apache::lucene::index
-{
-class DocValuesFieldUpdates;
-}
-namespace org::apache::lucene::index
-{
-class Iterator;
-}
-namespace org::apache::lucene::index
-{
-class MergeState;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::index
-{
-class LeafReader;
-}
-namespace org::apache::lucene::store
-{
-class TrackingDirectoryWrapper;
-}
-namespace org::apache::lucene::util
-{
-class IOUtils;
-}
+#include  "core/src/java/org/apache/lucene/document/Field.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/index/ReadersAndUpdates.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/DocValuesUpdate.h"
+#include  "core/src/java/org/apache/lucene/index/FrozenBufferedUpdates.h"
+#include  "core/src/java/org/apache/lucene/index/Sorter.h"
+#include  "core/src/java/org/apache/lucene/index/DocMap.h"
+#include  "core/src/java/org/apache/lucene/index/CodecReader.h"
+#include  "core/src/java/org/apache/lucene/store/IOContext.h"
+#include  "core/src/java/org/apache/lucene/index/DocValuesFieldUpdates.h"
+#include  "core/src/java/org/apache/lucene/index/Iterator.h"
+#include  "core/src/java/org/apache/lucene/index/MergeState.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReader.h"
+#include  "core/src/java/org/apache/lucene/store/TrackingDirectoryWrapper.h"
+#include  "core/src/java/org/apache/lucene/util/IOUtils.h"
 namespace org::apache::lucene::util
 {
 template <typename T>
@@ -2278,4 +2146,4 @@ private:
   void validate(std::shared_ptr<SegmentCommitInfo> info);
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

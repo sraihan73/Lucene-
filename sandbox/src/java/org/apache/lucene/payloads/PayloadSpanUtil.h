@@ -4,19 +4,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexReaderContext;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReaderContext.h"
 
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanQuery;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanQuery.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -83,4 +74,4 @@ private:
                    std::shared_ptr<SpanQuery> query) ;
 };
 
-} // namespace org::apache::lucene::payloads
+} // #include  "core/src/java/org/apache/lucene/payloads/

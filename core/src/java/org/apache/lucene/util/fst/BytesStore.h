@@ -5,24 +5,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
 
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::util::fst
-{
-class BytesReader;
-}
+#include  "core/src/java/org/apache/lucene/util/fst/BytesReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -210,4 +201,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::util::fst
+} // #include  "core/src/java/org/apache/lucene/util/fst/

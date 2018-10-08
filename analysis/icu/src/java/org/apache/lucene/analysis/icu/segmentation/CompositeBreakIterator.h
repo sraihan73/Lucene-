@@ -4,19 +4,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::icu::segmentation
-{
-class ICUTokenizerConfig;
-}
+#include  "core/src/java/org/apache/lucene/analysis/icu/segmentation/ICUTokenizerConfig.h"
 
-namespace org::apache::lucene::analysis::icu::segmentation
-{
-class BreakIteratorWrapper;
-}
-namespace org::apache::lucene::analysis::icu::segmentation
-{
-class ScriptIterator;
-}
+#include  "core/src/java/org/apache/lucene/analysis/icu/segmentation/BreakIteratorWrapper.h"
+#include  "core/src/java/org/apache/lucene/analysis/icu/segmentation/ScriptIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -118,4 +109,4 @@ private:
   std::shared_ptr<BreakIteratorWrapper> getBreakIterator(int scriptCode);
 };
 
-} // namespace org::apache::lucene::analysis::icu::segmentation
+} // #include  "core/src/java/org/apache/lucene/analysis/icu/segmentation/

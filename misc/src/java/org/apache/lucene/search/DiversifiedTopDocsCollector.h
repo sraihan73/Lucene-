@@ -54,30 +54,12 @@ namespace org::apache::lucene::search
   };
 }
 
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
-namespace org::apache::lucene::search
-{
-class ScoreDoc;
-}
-namespace org::apache::lucene::search
-{
-class TopDocs;
-}
-namespace org::apache::lucene::search
-{
-class LeafCollector;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/search/ScoreDoc.h"
+#include  "core/src/java/org/apache/lucene/search/TopDocs.h"
+#include  "core/src/java/org/apache/lucene/search/LeafCollector.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -219,4 +201,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

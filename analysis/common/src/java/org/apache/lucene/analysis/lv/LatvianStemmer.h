@@ -5,10 +5,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::lv
-{
-class Affix;
-}
+#include  "core/src/java/org/apache/lucene/analysis/lv/Affix.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -89,4 +86,4 @@ private:
   int numVowels(std::deque<wchar_t> &s, int len);
 };
 
-} // namespace org::apache::lucene::analysis::lv
+} // #include  "core/src/java/org/apache/lucene/analysis/lv/

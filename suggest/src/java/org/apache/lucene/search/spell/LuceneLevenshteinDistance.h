@@ -6,10 +6,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -73,4 +70,4 @@ public:
   bool equals(std::any obj) override;
 };
 
-} // namespace org::apache::lucene::search::spell
+} // #include  "core/src/java/org/apache/lucene/search/spell/

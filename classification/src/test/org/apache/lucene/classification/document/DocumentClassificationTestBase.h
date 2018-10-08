@@ -378,4 +378,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::classification::document
+} // #include  "core/src/java/org/apache/lucene/classification/document/

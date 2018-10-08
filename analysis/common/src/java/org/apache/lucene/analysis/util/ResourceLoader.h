@@ -51,4 +51,4 @@ public:
   template <typename T>
   T newInstance(const std::wstring &cname, std::type_info<T> &expectedType) = 0;
 };
-} // namespace org::apache::lucene::analysis::util
+} // #include  "core/src/java/org/apache/lucene/analysis/util/

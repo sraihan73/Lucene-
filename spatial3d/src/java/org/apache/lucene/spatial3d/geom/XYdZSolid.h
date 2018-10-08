@@ -7,27 +7,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class SidedPlane;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/SidedPlane.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class Plane;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPoint;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class PlanetModel;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoShape;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Plane.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPoint.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/PlanetModel.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoShape.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -139,4 +124,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial3d::geom
+} // #include  "core/src/java/org/apache/lucene/spatial3d/geom/

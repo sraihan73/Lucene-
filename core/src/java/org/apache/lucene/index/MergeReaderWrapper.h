@@ -4,79 +4,25 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class CodecReader;
-}
+#include  "core/src/java/org/apache/lucene/index/CodecReader.h"
 
-namespace org::apache::lucene::codecs
-{
-class FieldsProducer;
-}
-namespace org::apache::lucene::codecs
-{
-class NormsProducer;
-}
-namespace org::apache::lucene::codecs
-{
-class DocValuesProducer;
-}
-namespace org::apache::lucene::codecs
-{
-class StoredFieldsReader;
-}
-namespace org::apache::lucene::codecs
-{
-class TermVectorsReader;
-}
-namespace org::apache::lucene::index
-{
-class Terms;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
-namespace org::apache::lucene::index
-{
-class BinaryDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedNumericDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedSetDocValues;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::index
-{
-class Fields;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
-namespace org::apache::lucene::index
-{
-class StoredFieldVisitor;
-}
-namespace org::apache::lucene::index
-{
-class LeafMetaData;
-}
+#include  "core/src/java/org/apache/lucene/codecs/FieldsProducer.h"
+#include  "core/src/java/org/apache/lucene/codecs/NormsProducer.h"
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesProducer.h"
+#include  "core/src/java/org/apache/lucene/codecs/StoredFieldsReader.h"
+#include  "core/src/java/org/apache/lucene/codecs/TermVectorsReader.h"
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/BinaryDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedNumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedSetDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/index/Fields.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
+#include  "core/src/java/org/apache/lucene/index/StoredFieldVisitor.h"
+#include  "core/src/java/org/apache/lucene/index/LeafMetaData.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -183,4 +129,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

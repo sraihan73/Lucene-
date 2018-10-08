@@ -6,10 +6,7 @@
 #include <stdexcept>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -129,4 +126,4 @@ public:
   static bool within90LonDegrees(double lon, double minLon, double maxLon);
 };
 
-} // namespace org::apache::lucene::geo
+} // #include  "core/src/java/org/apache/lucene/geo/

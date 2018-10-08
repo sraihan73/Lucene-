@@ -12,47 +12,17 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::synonym
-{
-class SynonymGraphFilter;
-}
+#include  "core/src/java/org/apache/lucene/analysis/synonym/SynonymGraphFilter.h"
 
-namespace org::apache::lucene::analysis::core
-{
-class FlattenGraphFilter;
-}
-namespace org::apache::lucene::analysis::synonym
-{
-class SynonymMap;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
-namespace org::apache::lucene::analysis::synonym
-{
-class Builder;
-}
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
-namespace org::apache::lucene::util::automaton
-{
-class Builder;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
+#include  "core/src/java/org/apache/lucene/analysis/core/FlattenGraphFilter.h"
+#include  "core/src/java/org/apache/lucene/analysis/synonym/SynonymMap.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
+#include  "core/src/java/org/apache/lucene/analysis/synonym/Builder.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/Builder.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -627,4 +597,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::synonym
+} // #include  "core/src/java/org/apache/lucene/analysis/synonym/

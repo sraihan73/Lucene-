@@ -27,4 +27,4 @@ class Placeholder : public std::enable_shared_from_this<Placeholder>
   GET_CLASS_NAME(Placeholder)
 };
 
-} // namespace org::apache::lucene::codecs
+} // #include  "core/src/java/org/apache/lucene/codecs/

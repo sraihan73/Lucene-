@@ -4,10 +4,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -43,4 +40,4 @@ class BytesTermAttribute : public TermToBytesRefAttribute
 public:
   virtual void setBytesRef(std::shared_ptr<BytesRef> bytes) = 0;
 };
-} // namespace org::apache::lucene::analysis::tokenattributes
+} // #include  "core/src/java/org/apache/lucene/analysis/tokenattributes/

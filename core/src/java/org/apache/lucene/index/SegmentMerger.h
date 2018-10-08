@@ -6,51 +6,18 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::codecs
-{
-class Codec;
-}
-namespace org::apache::lucene::store
-{
-class IOContext;
-}
-namespace org::apache::lucene::index
-{
-class MergeState;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::index
-{
-class Builder;
-}
-namespace org::apache::lucene::index
-{
-class CodecReader;
-}
-namespace org::apache::lucene::index
-{
-class FieldNumbers;
-}
-namespace org::apache::lucene::index
-{
-class SegmentInfo;
-}
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
+#include  "core/src/java/org/apache/lucene/codecs/Codec.h"
+#include  "core/src/java/org/apache/lucene/store/IOContext.h"
+#include  "core/src/java/org/apache/lucene/index/MergeState.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/index/Builder.h"
+#include  "core/src/java/org/apache/lucene/index/CodecReader.h"
+#include  "core/src/java/org/apache/lucene/index/FieldNumbers.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentInfo.h"
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -152,4 +119,4 @@ private:
       IOException);
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

@@ -5,31 +5,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::util::automaton
-{
-class CharacterRunAutomaton;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class PhraseHelper;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class OffsetsEnum;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class UnifiedHighlighter;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/CharacterRunAutomaton.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/PhraseHelper.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/OffsetsEnum.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/UnifiedHighlighter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -88,4 +70,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::uhighlight
+} // #include  "core/src/java/org/apache/lucene/search/uhighlight/

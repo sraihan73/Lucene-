@@ -16,14 +16,8 @@ template <typename T>
 class Classifier;
 }
 
-namespace org::apache::lucene::classification::utils
-{
-class ConfusionMatrix;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/classification/utils/ConfusionMatrix.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -200,4 +194,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::classification::utils
+} // #include  "core/src/java/org/apache/lucene/classification/utils/

@@ -8,59 +8,20 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::similarities
-{
-class BasicModel;
-}
+#include  "core/src/java/org/apache/lucene/search/similarities/BasicModel.h"
 
-namespace org::apache::lucene::search::similarities
-{
-class AfterEffect;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Normalization;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Distribution;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Lambda;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Independence;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search::similarities
-{
-class SimilarityBase;
-}
-namespace org::apache::lucene::search::similarities
-{
-class BasicStats;
-}
-namespace org::apache::lucene::search
-{
-class CollectionStatistics;
-}
-namespace org::apache::lucene::search
-{
-class TermStatistics;
-}
+#include  "core/src/java/org/apache/lucene/search/similarities/AfterEffect.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Normalization.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Distribution.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Lambda.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Independence.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/SimilarityBase.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/BasicStats.h"
+#include  "core/src/java/org/apache/lucene/search/CollectionStatistics.h"
+#include  "core/src/java/org/apache/lucene/search/TermStatistics.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -375,4 +336,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::similarities
+} // #include  "core/src/java/org/apache/lucene/search/similarities/

@@ -8,10 +8,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::hunspell
-{
-class Stemmer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/hunspell/Stemmer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -66,4 +63,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::hunspell
+} // #include  "core/src/java/org/apache/lucene/analysis/hunspell/

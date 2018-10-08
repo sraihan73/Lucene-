@@ -4,23 +4,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRefArray;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRefArray.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::search::suggest
-{
-class InputIterator;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/InputIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -99,4 +87,4 @@ public:
   bool hasContexts() override;
 };
 
-} // namespace org::apache::lucene::search::suggest
+} // #include  "core/src/java/org/apache/lucene/search/suggest/

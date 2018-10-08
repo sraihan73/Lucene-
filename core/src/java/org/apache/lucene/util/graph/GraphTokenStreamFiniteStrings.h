@@ -8,43 +8,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
-namespace org::apache::lucene::util::automaton
-{
-class Transition;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class BytesTermAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PositionIncrementAttribute;
-}
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::util::automaton
-{
-class FiniteStringsIterator;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/Transition.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/BytesTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PositionIncrementAttribute.h"
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/FiniteStringsIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -207,4 +180,4 @@ private:
                                         std::shared_ptr<BitSet> visited,
                                         std::deque<int> &points);
 };
-} // namespace org::apache::lucene::util::graph
+} // #include  "core/src/java/org/apache/lucene/util/graph/

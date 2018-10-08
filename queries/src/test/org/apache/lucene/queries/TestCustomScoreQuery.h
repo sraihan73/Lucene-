@@ -8,43 +8,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class Query;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
 
-namespace org::apache::lucene::queries::function
-{
-class FunctionQuery;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::queries
-{
-class CustomScoreProvider;
-}
-namespace org::apache::lucene::search
-{
-class Explanation;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
-namespace org::apache::lucene::queries::function
-{
-class ValueSource;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class TopDocs;
-}
+#include  "core/src/java/org/apache/lucene/queries/function/FunctionQuery.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/queries/CustomScoreProvider.h"
+#include  "core/src/java/org/apache/lucene/search/Explanation.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/queries/function/ValueSource.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/TopDocs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -297,4 +270,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queries
+} // #include  "core/src/java/org/apache/lucene/queries/

@@ -83,4 +83,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::ko
+} // #include  "core/src/java/org/apache/lucene/analysis/ko/

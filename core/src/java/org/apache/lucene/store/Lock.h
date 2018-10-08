@@ -62,4 +62,4 @@ public:
   virtual void ensureValid() = 0;
 };
 
-} // namespace org::apache::lucene::store
+} // #include  "core/src/java/org/apache/lucene/store/

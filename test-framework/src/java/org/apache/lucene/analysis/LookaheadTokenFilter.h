@@ -6,15 +6,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class AttributeSource;
-}
+#include  "core/src/java/org/apache/lucene/util/AttributeSource.h"
 
-namespace org::apache::lucene::util
-{
-class State;
-}
+#include  "core/src/java/org/apache/lucene/util/State.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -356,4 +350,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis
+} // #include  "core/src/java/org/apache/lucene/analysis/

@@ -9,10 +9,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class TestRuleIgnoreAfterMaxFailures;
-}
+#include  "core/src/java/org/apache/lucene/util/TestRuleIgnoreAfterMaxFailures.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -150,4 +147,4 @@ private:
   void InitializeInstanceFields();
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

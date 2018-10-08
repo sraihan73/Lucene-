@@ -3,15 +3,9 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class LeafReader;
-}
+#include  "core/src/java/org/apache/lucene/index/LeafReader.h"
 
-namespace org::apache::lucene::index
-{
-class DirectoryReader;
-}
+#include  "core/src/java/org/apache/lucene/index/DirectoryReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -75,4 +69,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

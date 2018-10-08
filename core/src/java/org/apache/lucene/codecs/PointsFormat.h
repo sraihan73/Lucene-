@@ -7,23 +7,11 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class PointsWriter;
-}
+#include  "core/src/java/org/apache/lucene/codecs/PointsWriter.h"
 
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more

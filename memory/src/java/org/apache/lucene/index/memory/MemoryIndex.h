@@ -12,171 +12,48 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index::memory
-{
-class Info;
-}
+#include  "core/src/java/org/apache/lucene/index/memory/Info.h"
 
-namespace org::apache::lucene::util
-{
-class ByteBlockPool;
-}
-namespace org::apache::lucene::util
-{
-class IntBlockPool;
-}
-namespace org::apache::lucene::util
-{
-class SliceWriter;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefArray;
-}
-namespace org::apache::lucene::util
-{
-class Counter;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Similarity;
-}
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
-namespace org::apache::lucene::index
-{
-class IndexableField;
-}
-namespace org::apache::lucene::index
-{
-class IndexableFieldType;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefHash;
-}
-namespace org::apache::lucene::index::memory
-{
-class SliceByteStartArray;
-}
-namespace org::apache::lucene::index::memory
-{
-class BinaryDocValuesProducer;
-}
-namespace org::apache::lucene::index::memory
-{
-class NumericDocValuesProducer;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedNumericDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedSetDocValues;
-}
-namespace org::apache::lucene::index::memory
-{
-class MemoryFields;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::index
-{
-class BinaryDocValues;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
-namespace org::apache::lucene::index
-{
-class Terms;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
-namespace org::apache::lucene::index
-{
-class TermState;
-}
-namespace org::apache::lucene::util
-{
-class SliceReader;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::index
-{
-class Fields;
-}
-namespace org::apache::lucene::index
-{
-class StoredFieldVisitor;
-}
-namespace org::apache::lucene::index
-{
-class LeafMetaData;
-}
+#include  "core/src/java/org/apache/lucene/util/ByteBlockPool.h"
+#include  "core/src/java/org/apache/lucene/util/IntBlockPool.h"
+#include  "core/src/java/org/apache/lucene/util/SliceWriter.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefArray.h"
+#include  "core/src/java/org/apache/lucene/util/Counter.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Similarity.h"
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
+#include  "core/src/java/org/apache/lucene/index/IndexableField.h"
+#include  "core/src/java/org/apache/lucene/index/IndexableFieldType.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefHash.h"
+#include  "core/src/java/org/apache/lucene/index/memory/SliceByteStartArray.h"
+#include  "core/src/java/org/apache/lucene/index/memory/BinaryDocValuesProducer.h"
+#include  "core/src/java/org/apache/lucene/index/memory/NumericDocValuesProducer.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedNumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedSetDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/memory/MemoryFields.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/index/BinaryDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/TermState.h"
+#include  "core/src/java/org/apache/lucene/util/SliceReader.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/index/Fields.h"
+#include  "core/src/java/org/apache/lucene/index/StoredFieldVisitor.h"
+#include  "core/src/java/org/apache/lucene/index/LeafMetaData.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -1375,4 +1252,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::index::memory
+} // #include  "core/src/java/org/apache/lucene/index/memory/

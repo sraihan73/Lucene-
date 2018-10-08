@@ -7,15 +7,9 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::en
-{
-class PorterStemFilter;
-}
+#include  "core/src/java/org/apache/lucene/analysis/en/PorterStemFilter.h"
 
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -70,4 +64,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::en
+} // #include  "core/src/java/org/apache/lucene/analysis/en/

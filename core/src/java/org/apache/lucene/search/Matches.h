@@ -174,4 +174,4 @@ public:
   std::shared_ptr<MatchesIterator>
   getMatches(const std::wstring &field) override;
 };
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

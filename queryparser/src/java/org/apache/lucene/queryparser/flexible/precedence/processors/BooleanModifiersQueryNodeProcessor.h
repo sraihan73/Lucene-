@@ -6,10 +6,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::flexible::core
-{
-class QueryNodeException;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/QueryNodeException.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more

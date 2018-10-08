@@ -11,35 +11,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::similarities
-{
-class Similarity;
-}
+#include  "core/src/java/org/apache/lucene/search/similarities/Similarity.h"
 
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::facet
-{
-class FacetsConfig;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class TaxonomyWriter;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::facet
-{
-class Facets;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class TaxonomyReader;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetsConfig.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/TaxonomyWriter.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/facet/Facets.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/TaxonomyReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -161,4 +140,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::taxonomy
+} // #include  "core/src/java/org/apache/lucene/facet/taxonomy/

@@ -5,31 +5,13 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial
-{
-class ShapeValuesSource;
-}
+#include  "core/src/java/org/apache/lucene/spatial/ShapeValuesSource.h"
 
-namespace org::apache::lucene::spatial::query
-{
-class SpatialOperation;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
-namespace org::apache::lucene::search
-{
-class TwoPhaseIterator;
-}
-namespace org::apache::lucene::spatial
-{
-class ShapeValues;
-}
+#include  "core/src/java/org/apache/lucene/spatial/query/SpatialOperation.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
+#include  "core/src/java/org/apache/lucene/search/TwoPhaseIterator.h"
+#include  "core/src/java/org/apache/lucene/spatial/ShapeValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -137,4 +119,4 @@ public:
   bool isCacheable(std::shared_ptr<LeafReaderContext> ctx) override;
 };
 
-} // namespace org::apache::lucene::spatial::util
+} // #include  "core/src/java/org/apache/lucene/spatial/util/

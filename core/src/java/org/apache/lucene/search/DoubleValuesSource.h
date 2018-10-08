@@ -9,60 +9,24 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
 
-namespace org::apache::lucene::search
-{
-class DoubleValues;
-}
-namespace org::apache::lucene::search
-{
-class Explanation;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class SortField;
-}
-namespace org::apache::lucene::search
-{
-class LongValuesSource;
-}
-namespace org::apache::lucene::search
-{
-class LongValues;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
+#include  "core/src/java/org/apache/lucene/search/DoubleValues.h"
+#include  "core/src/java/org/apache/lucene/search/Explanation.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/SortField.h"
+#include  "core/src/java/org/apache/lucene/search/LongValuesSource.h"
+#include  "core/src/java/org/apache/lucene/search/LongValues.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
 namespace org::apache::lucene::search
 {
 template <typename T>
 class FieldComparator;
 }
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search
-{
-class Weight;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more

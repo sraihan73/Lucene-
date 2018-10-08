@@ -6,19 +6,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ko::dict
-{
-class Dictionary;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ko/dict/Dictionary.h"
 
-namespace org::apache::lucene::analysis::ko::dict
-{
-class Morpheme;
-}
-namespace org::apache::lucene::analysis::ko
-{
-class Token;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ko/dict/Morpheme.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/Token.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -79,4 +70,4 @@ public:
   virtual void setToken(std::shared_ptr<Token> token) = 0;
 };
 
-} // namespace org::apache::lucene::analysis::ko::tokenattributes
+} // #include  "core/src/java/org/apache/lucene/analysis/ko/tokenattributes/

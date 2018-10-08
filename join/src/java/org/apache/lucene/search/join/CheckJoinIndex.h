@@ -4,15 +4,9 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
-namespace org::apache::lucene::search::join
-{
-class BitSetProducer;
-}
+#include  "core/src/java/org/apache/lucene/search/join/BitSetProducer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -53,4 +47,4 @@ public:
         std::shared_ptr<BitSetProducer> parentsFilter) ;
 };
 
-} // namespace org::apache::lucene::search::join
+} // #include  "core/src/java/org/apache/lucene/search/join/

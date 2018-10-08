@@ -6,19 +6,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::compound::hyphenation
-{
-class HyphenationTree;
-}
+#include  "core/src/java/org/apache/lucene/analysis/compound/hyphenation/HyphenationTree.h"
 
-namespace org::apache::lucene::analysis
-{
-class CharArraySet;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
+#include  "core/src/java/org/apache/lucene/analysis/CharArraySet.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -158,4 +149,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::compound
+} // #include  "core/src/java/org/apache/lucene/analysis/compound/

@@ -6,19 +6,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::util::packed
-{
-class MyRandom;
-}
-namespace org::apache::lucene::store
-{
-class ByteArrayDataInput;
-}
+#include  "core/src/java/org/apache/lucene/util/packed/MyRandom.h"
+#include  "core/src/java/org/apache/lucene/store/ByteArrayDataInput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -95,4 +86,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::util::packed
+} // #include  "core/src/java/org/apache/lucene/util/packed/

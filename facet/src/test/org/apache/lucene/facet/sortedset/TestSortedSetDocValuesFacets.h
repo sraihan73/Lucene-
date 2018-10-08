@@ -10,19 +10,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
 
-namespace org::apache::lucene::facet
-{
-class Facets;
-}
-namespace org::apache::lucene::facet::sortedset
-{
-class SortedSetDocValuesReaderState;
-}
+#include  "core/src/java/org/apache/lucene/facet/Facets.h"
+#include  "core/src/java/org/apache/lucene/facet/sortedset/SortedSetDocValuesReaderState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -87,4 +78,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::sortedset
+} // #include  "core/src/java/org/apache/lucene/facet/sortedset/

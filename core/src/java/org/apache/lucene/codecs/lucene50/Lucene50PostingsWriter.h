@@ -6,47 +6,17 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
 
-namespace org::apache::lucene::codecs::lucene50
-{
-class Lucene50PostingsFormat;
-}
-namespace org::apache::lucene::codecs::lucene50
-{
-class IntBlockTermState;
-}
-namespace org::apache::lucene::codecs::lucene50
-{
-class ForUtil;
-}
-namespace org::apache::lucene::codecs::lucene50
-{
-class Lucene50SkipWriter;
-}
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::codecs
-{
-class BlockTermState;
-}
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
+#include  "core/src/java/org/apache/lucene/codecs/lucene50/Lucene50PostingsFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene50/IntBlockTermState.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene50/ForUtil.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene50/Lucene50SkipWriter.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/codecs/BlockTermState.h"
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -211,4 +181,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::lucene50
+} // #include  "core/src/java/org/apache/lucene/codecs/lucene50/

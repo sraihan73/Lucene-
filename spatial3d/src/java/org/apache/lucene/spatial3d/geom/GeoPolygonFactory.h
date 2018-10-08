@@ -13,59 +13,20 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPoint;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPoint.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPolygon;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class PlanetModel;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class BestShape;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoComplexPolygon;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class TileException;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class SafePath;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoCompositePolygon;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class MutableBoolean;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class SidedPlane;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class EdgeBuffer;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class Edge;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class Plane;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPolygon.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/PlanetModel.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/BestShape.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoComplexPolygon.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/TileException.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/SafePath.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoCompositePolygon.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/MutableBoolean.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/SidedPlane.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/EdgeBuffer.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Edge.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Plane.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -813,4 +774,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::spatial3d::geom
+} // #include  "core/src/java/org/apache/lucene/spatial3d/geom/

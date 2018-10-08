@@ -6,27 +6,12 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
 
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
-namespace org::apache::lucene::queryparser::flexible::precedence
-{
-class PrecedenceQueryParser;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::document
-{
-class DateTools;
-}
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/precedence/PrecedenceQueryParser.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/document/DateTools.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -256,4 +241,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::precedence
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/precedence/

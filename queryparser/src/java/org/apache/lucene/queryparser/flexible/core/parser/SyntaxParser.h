@@ -3,10 +3,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::flexible::core::nodes
-{
-class QueryNode;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/nodes/QueryNode.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -51,4 +48,4 @@ public:
         std::shared_ptr<std::wstring> field) = 0;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::core::parser
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/core/parser/

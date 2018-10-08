@@ -12,23 +12,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
 
-namespace org::apache::lucene::util::automaton
-{
-class Transition;
-}
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Transition.h"
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * dk.brics.automaton
@@ -465,4 +453,4 @@ private:
                                    int state, int level);
 };
 
-} // namespace org::apache::lucene::util::automaton
+} // #include  "core/src/java/org/apache/lucene/util/automaton/

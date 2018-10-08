@@ -5,31 +5,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
 
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::codecs
-{
-class BlockTermState;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/codecs/BlockTermState.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -125,4 +107,4 @@ public:
   override
 };
 
-} // namespace org::apache::lucene::codecs
+} // #include  "core/src/java/org/apache/lucene/codecs/

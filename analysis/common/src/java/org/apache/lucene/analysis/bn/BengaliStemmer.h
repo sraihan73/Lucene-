@@ -45,4 +45,4 @@ public:
   virtual int stem(std::deque<wchar_t> &buffer, int len);
 };
 
-} // namespace org::apache::lucene::analysis::bn
+} // #include  "core/src/java/org/apache/lucene/analysis/bn/

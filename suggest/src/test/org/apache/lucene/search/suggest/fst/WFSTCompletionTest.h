@@ -9,19 +9,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::suggest
-{
-class Lookup;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/Lookup.h"
 
-namespace org::apache::lucene::search::suggest
-{
-class LookupResult;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/LookupResult.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -91,4 +82,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::fst
+} // #include  "core/src/java/org/apache/lucene/search/suggest/fst/

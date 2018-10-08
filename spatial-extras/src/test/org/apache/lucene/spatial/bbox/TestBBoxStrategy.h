@@ -6,10 +6,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial::bbox
-{
-class BBoxStrategy;
-}
+#include  "core/src/java/org/apache/lucene/spatial/bbox/BBoxStrategy.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -135,4 +132,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial::bbox
+} // #include  "core/src/java/org/apache/lucene/spatial/bbox/

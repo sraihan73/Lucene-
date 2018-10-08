@@ -3,15 +3,9 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRefIterator;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRefIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -49,4 +43,4 @@ public:
   iterator(std::shared_ptr<Comparator<std::shared_ptr<BytesRef>>> comp) = 0;
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

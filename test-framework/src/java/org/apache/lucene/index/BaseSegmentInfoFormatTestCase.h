@@ -10,27 +10,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class SortField;
-}
+#include  "core/src/java/org/apache/lucene/search/SortField.h"
 
-namespace org::apache::lucene::store
-{
-class MockDirectoryWrapper;
-}
-namespace org::apache::lucene::index
-{
-class SegmentInfo;
-}
-namespace org::apache::lucene::util
-{
-class Version;
-}
-namespace org::apache::lucene::document
-{
-class Document;
-}
+#include  "core/src/java/org/apache/lucene/store/MockDirectoryWrapper.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentInfo.h"
+#include  "core/src/java/org/apache/lucene/util/Version.h"
+#include  "core/src/java/org/apache/lucene/document/Document.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -257,4 +242,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

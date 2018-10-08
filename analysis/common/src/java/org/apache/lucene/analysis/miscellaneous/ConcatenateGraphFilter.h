@@ -10,55 +10,19 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::miscellaneous
-{
-class BytesRefBuilderTermAttribute;
-}
+#include  "core/src/java/org/apache/lucene/analysis/miscellaneous/BytesRefBuilderTermAttribute.h"
 
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PositionIncrementAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::util::automaton
-{
-class LimitedFiniteStringsIterator;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util
-{
-class CharsRefBuilder;
-}
-namespace org::apache::lucene::util
-{
-class AttributeImpl;
-}
-namespace org::apache::lucene::util
-{
-class AttributeReflector;
-}
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PositionIncrementAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/LimitedFiniteStringsIterator.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/CharsRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeImpl.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeReflector.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -312,4 +276,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::miscellaneous
+} // #include  "core/src/java/org/apache/lucene/analysis/miscellaneous/

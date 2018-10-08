@@ -12,47 +12,17 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class PrefixCodedTerms;
-}
+#include  "core/src/java/org/apache/lucene/index/PrefixCodedTerms.h"
 
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::index
-{
-class SegmentCommitInfo;
-}
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
-namespace org::apache::lucene::index
-{
-class BufferedUpdates;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::index
-{
-class BufferedUpdatesStream;
-}
-namespace org::apache::lucene::index
-{
-class SegmentState;
-}
-namespace org::apache::lucene::index
-{
-class ApplyDeletesResult;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentCommitInfo.h"
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
+#include  "core/src/java/org/apache/lucene/index/BufferedUpdates.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/index/BufferedUpdatesStream.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentState.h"
+#include  "core/src/java/org/apache/lucene/index/ApplyDeletesResult.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -230,4 +200,4 @@ public:
   bool any();
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

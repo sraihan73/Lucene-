@@ -6,47 +6,17 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search::spell
-{
-class StringDistance;
-}
-namespace org::apache::lucene::search::spell
-{
-class SuggestWord;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search
-{
-class BooleanQuery;
-}
-namespace org::apache::lucene::search
-{
-class Builder;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriterConfig;
-}
-namespace org::apache::lucene::search::spell
-{
-class Dictionary;
-}
-namespace org::apache::lucene::document
-{
-class Document;
-}
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/spell/StringDistance.h"
+#include  "core/src/java/org/apache/lucene/search/spell/SuggestWord.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/BooleanQuery.h"
+#include  "core/src/java/org/apache/lucene/search/Builder.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriterConfig.h"
+#include  "core/src/java/org/apache/lucene/search/spell/Dictionary.h"
+#include  "core/src/java/org/apache/lucene/document/Document.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -439,4 +409,4 @@ public:
   virtual bool isClosed();
 };
 
-} // namespace org::apache::lucene::search::spell
+} // #include  "core/src/java/org/apache/lucene/search/spell/

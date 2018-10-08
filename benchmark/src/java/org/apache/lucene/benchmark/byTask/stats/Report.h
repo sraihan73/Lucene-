@@ -59,4 +59,4 @@ public:
   virtual int getReported();
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::stats
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/stats/

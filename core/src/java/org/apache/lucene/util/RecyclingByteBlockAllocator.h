@@ -4,10 +4,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class Counter;
-}
+#include  "core/src/java/org/apache/lucene/util/Counter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -119,4 +116,4 @@ protected:
         ByteBlockPool.Allocator::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

@@ -11,10 +11,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 namespace org::apache::lucene::util::fst
 {
@@ -26,67 +23,25 @@ namespace org::apache::lucene::util::fst
 template <typename Atypename B>
 class Pair;
 }
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStreamToAutomaton;
-}
-namespace org::apache::lucene::store
-{
-class ByteArrayDataInput;
-}
-namespace org::apache::lucene::search::suggest
-{
-class InputIterator;
-}
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
-namespace org::apache::lucene::util
-{
-class CharsRefBuilder;
-}
-namespace org::apache::lucene::search::suggest
-{
-class Lookup;
-}
-namespace org::apache::lucene::search::suggest
-{
-class LookupResult;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamToAutomaton.h"
+#include  "core/src/java/org/apache/lucene/store/ByteArrayDataInput.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/InputIterator.h"
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
+#include  "core/src/java/org/apache/lucene/util/CharsRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/Lookup.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/LookupResult.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
-namespace org::apache::lucene::search::suggest::analyzing
-{
-class FSTUtil;
-}
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/analyzing/FSTUtil.h"
 namespace org::apache::lucene::search::suggest::analyzing
 {
 template <typename T>
@@ -488,4 +443,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::analyzing
+} // #include  "core/src/java/org/apache/lucene/search/suggest/analyzing/

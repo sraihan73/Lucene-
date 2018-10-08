@@ -6,15 +6,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::spans
-{
-class SpanQuery;
-}
+#include  "core/src/java/org/apache/lucene/search/spans/SpanQuery.h"
 
-namespace org::apache::lucene::search::spans
-{
-class Spans;
-}
+#include  "core/src/java/org/apache/lucene/search/spans/Spans.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -151,4 +145,4 @@ public:
   assertFinished(std::shared_ptr<Spans> spans) ;
 };
 
-} // namespace org::apache::lucene::search::spans
+} // #include  "core/src/java/org/apache/lucene/search/spans/

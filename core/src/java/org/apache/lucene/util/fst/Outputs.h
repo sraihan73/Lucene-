@@ -116,4 +116,4 @@ public:
   virtual int64_t ramBytesUsed(T output) = 0;
 };
 
-} // namespace org::apache::lucene::util::fst
+} // #include  "core/src/java/org/apache/lucene/util/fst/

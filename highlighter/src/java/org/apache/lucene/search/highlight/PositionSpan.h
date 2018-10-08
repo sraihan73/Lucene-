@@ -33,4 +33,4 @@ public:
 
   PositionSpan(int start, int end);
 };
-} // namespace org::apache::lucene::search::highlight
+} // #include  "core/src/java/org/apache/lucene/search/highlight/

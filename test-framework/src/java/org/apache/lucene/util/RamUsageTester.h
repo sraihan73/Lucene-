@@ -196,4 +196,4 @@ private:
   createCacheEntry(std::type_info const clazz);
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

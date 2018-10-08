@@ -7,27 +7,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
 
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
-namespace org::apache::lucene::store
-{
-class ChecksumIndexInput;
-}
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
+#include  "core/src/java/org/apache/lucene/store/ChecksumIndexInput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -407,4 +392,4 @@ public:
   static void writeCRC(std::shared_ptr<IndexOutput> output) ;
 };
 
-} // namespace org::apache::lucene::codecs
+} // #include  "core/src/java/org/apache/lucene/codecs/

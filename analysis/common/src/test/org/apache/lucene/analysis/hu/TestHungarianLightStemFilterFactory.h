@@ -50,4 +50,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::hu
+} // #include  "core/src/java/org/apache/lucene/analysis/hu/

@@ -13,147 +13,42 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::store
-{
-class Lock;
-}
-namespace org::apache::lucene::index
-{
-class SegmentInfoStatus;
-}
-namespace org::apache::lucene::index
-{
-class SegmentInfos;
-}
-namespace org::apache::lucene::codecs
-{
-class Codec;
-}
-namespace org::apache::lucene::index
-{
-class LiveDocStatus;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfoStatus;
-}
-namespace org::apache::lucene::index
-{
-class FieldNormStatus;
-}
-namespace org::apache::lucene::index
-{
-class TermIndexStatus;
-}
-namespace org::apache::lucene::index
-{
-class StoredFieldStatus;
-}
-namespace org::apache::lucene::index
-{
-class TermVectorStatus;
-}
-namespace org::apache::lucene::index
-{
-class DocValuesStatus;
-}
-namespace org::apache::lucene::index
-{
-class PointsStatus;
-}
-namespace org::apache::lucene::index
-{
-class IndexSortStatus;
-}
-namespace org::apache::lucene::index
-{
-class CodecReader;
-}
-namespace org::apache::lucene::search
-{
-class Sort;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util
-{
-class FixedBitSet;
-}
-namespace org::apache::lucene::index
-{
-class Terms;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::index
-{
-class Fields;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::util
-{
-class Version;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
-namespace org::apache::lucene::index
-{
-class DocValuesIterator;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class BinaryDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedSetDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedNumericDocValues;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
-namespace org::apache::lucene::codecs
-{
-class DocValuesProducer;
-}
-namespace org::apache::lucene::index
-{
-class SegmentCommitInfo;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReader;
-}
+#include  "core/src/java/org/apache/lucene/store/Lock.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentInfoStatus.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentInfos.h"
+#include  "core/src/java/org/apache/lucene/codecs/Codec.h"
+#include  "core/src/java/org/apache/lucene/index/LiveDocStatus.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfoStatus.h"
+#include  "core/src/java/org/apache/lucene/index/FieldNormStatus.h"
+#include  "core/src/java/org/apache/lucene/index/TermIndexStatus.h"
+#include  "core/src/java/org/apache/lucene/index/StoredFieldStatus.h"
+#include  "core/src/java/org/apache/lucene/index/TermVectorStatus.h"
+#include  "core/src/java/org/apache/lucene/index/DocValuesStatus.h"
+#include  "core/src/java/org/apache/lucene/index/PointsStatus.h"
+#include  "core/src/java/org/apache/lucene/index/IndexSortStatus.h"
+#include  "core/src/java/org/apache/lucene/index/CodecReader.h"
+#include  "core/src/java/org/apache/lucene/search/Sort.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/FixedBitSet.h"
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/index/Fields.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/util/Version.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
+#include  "core/src/java/org/apache/lucene/index/DocValuesIterator.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/BinaryDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedSetDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedNumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesProducer.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentCommitInfo.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -1065,4 +960,4 @@ private:
   static double nsToSec(int64_t ns);
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

@@ -5,10 +5,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class Terms;
-}
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -69,4 +66,4 @@ public:
       std::shared_ptr<Terms> docTerms) ;
 };
 
-} // namespace org::apache::lucene::classification::utils
+} // #include  "core/src/java/org/apache/lucene/classification/utils/

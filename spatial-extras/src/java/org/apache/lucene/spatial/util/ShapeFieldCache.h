@@ -71,4 +71,4 @@ public:
   virtual std::deque<T> getShapes(int docid) { return cache[docid]; }
 };
 
-} // namespace org::apache::lucene::spatial::util
+} // #include  "core/src/java/org/apache/lucene/spatial/util/

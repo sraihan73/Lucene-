@@ -7,15 +7,9 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class Query;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
 
-namespace org::apache::lucene::queryparser::surround::query
-{
-class BasicQueryFactory;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/surround/query/BasicQueryFactory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -96,4 +90,4 @@ GET_CLASS_NAME(es)
   bool equals(std::any obj) override;
 };
 
-} // namespace org::apache::lucene::queryparser::surround::query
+} // #include  "core/src/java/org/apache/lucene/queryparser/surround/query/

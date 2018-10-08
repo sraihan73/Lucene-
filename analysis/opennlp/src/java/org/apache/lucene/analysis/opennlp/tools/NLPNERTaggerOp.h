@@ -62,4 +62,4 @@ public:
   virtual void reset();
 };
 
-} // namespace org::apache::lucene::analysis::opennlp::tools
+} // #include  "core/src/java/org/apache/lucene/analysis/opennlp/tools/

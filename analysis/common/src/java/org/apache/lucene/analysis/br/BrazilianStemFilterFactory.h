@@ -7,15 +7,9 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::br
-{
-class BrazilianStemFilter;
-}
+#include  "core/src/java/org/apache/lucene/analysis/br/BrazilianStemFilter.h"
 
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -72,4 +66,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::br
+} // #include  "core/src/java/org/apache/lucene/analysis/br/

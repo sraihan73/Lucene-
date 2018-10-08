@@ -6,39 +6,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::spell
-{
-class SpellCheckerMock;
-}
+#include  "core/src/java/org/apache/lucene/search/spell/SpellCheckerMock.h"
 
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search::spell
-{
-class SpellChecker;
-}
-namespace org::apache::lucene::search::spell
-{
-class StringDistance;
-}
-namespace org::apache::lucene::search::spell
-{
-class SuggestWord;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/spell/SpellChecker.h"
+#include  "core/src/java/org/apache/lucene/search/spell/StringDistance.h"
+#include  "core/src/java/org/apache/lucene/search/spell/SuggestWord.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -197,4 +173,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::spell
+} // #include  "core/src/java/org/apache/lucene/search/spell/

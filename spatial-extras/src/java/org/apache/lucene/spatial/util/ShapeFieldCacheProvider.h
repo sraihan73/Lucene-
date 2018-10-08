@@ -110,4 +110,4 @@ public:
   }
 };
 
-} // namespace org::apache::lucene::spatial::util
+} // #include  "core/src/java/org/apache/lucene/spatial/util/

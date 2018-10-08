@@ -5,23 +5,11 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs::blocktree
-{
-class BitSetPostingsEnum;
-}
+#include  "core/src/java/org/apache/lucene/codecs/blocktree/BitSetPostingsEnum.h"
 
-namespace org::apache::lucene::util
-{
-class BitSet;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
+#include  "core/src/java/org/apache/lucene/util/BitSet.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -87,4 +75,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::blocktree
+} // #include  "core/src/java/org/apache/lucene/codecs/blocktree/

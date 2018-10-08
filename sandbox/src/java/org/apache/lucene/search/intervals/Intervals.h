@@ -5,15 +5,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::search::intervals
-{
-class IntervalsSource;
-}
+#include  "core/src/java/org/apache/lucene/search/intervals/IntervalsSource.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -210,4 +204,4 @@ public:
   // TODO: beforeQuery, afterQuery, arbitrary IntervalFunctions
 };
 
-} // namespace org::apache::lucene::search::intervals
+} // #include  "core/src/java/org/apache/lucene/search/intervals/

@@ -12,27 +12,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::replicator::nrt
-{
-class Node;
-}
+#include  "core/src/java/org/apache/lucene/replicator/nrt/Node.h"
 
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
-namespace org::apache::lucene::replicator::nrt
-{
-class FileMetaData;
-}
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
-namespace org::apache::lucene::replicator::nrt
-{
-class CopyState;
-}
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
+#include  "core/src/java/org/apache/lucene/replicator/nrt/FileMetaData.h"
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
+#include  "core/src/java/org/apache/lucene/replicator/nrt/CopyState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -161,4 +146,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::replicator::nrt
+} // #include  "core/src/java/org/apache/lucene/replicator/nrt/

@@ -9,23 +9,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
 
-namespace org::apache::lucene::analysis
-{
-class Tokenizer;
-}
-namespace org::apache::lucene::analysis::minhash
-{
-class MinHashFilter;
-}
-namespace org::apache::lucene::analysis::minhash
-{
-class LongPair;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Tokenizer.h"
+#include  "core/src/java/org/apache/lucene/analysis/minhash/MinHashFilter.h"
+#include  "core/src/java/org/apache/lucene/analysis/minhash/LongPair.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -144,4 +132,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::minhash
+} // #include  "core/src/java/org/apache/lucene/analysis/minhash/

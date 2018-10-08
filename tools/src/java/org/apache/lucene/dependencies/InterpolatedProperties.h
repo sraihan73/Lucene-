@@ -75,4 +75,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::dependencies
+} // #include  "core/src/java/org/apache/lucene/dependencies/

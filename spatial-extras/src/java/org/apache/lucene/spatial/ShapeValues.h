@@ -45,4 +45,4 @@ public:
   virtual std::shared_ptr<Shape> value() = 0;
 };
 
-} // namespace org::apache::lucene::spatial
+} // #include  "core/src/java/org/apache/lucene/spatial/

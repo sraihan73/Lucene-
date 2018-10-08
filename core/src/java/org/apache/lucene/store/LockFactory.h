@@ -4,15 +4,9 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::store
-{
-class Lock;
-}
+#include  "core/src/java/org/apache/lucene/store/Lock.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -74,4 +68,4 @@ public:
                                            const std::wstring &lockName) = 0;
 };
 
-} // namespace org::apache::lucene::store
+} // #include  "core/src/java/org/apache/lucene/store/

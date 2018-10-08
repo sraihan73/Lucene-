@@ -53,4 +53,4 @@ private:
   static std::wstring unQuoteUnEscape(const std::wstring &original);
 };
 
-} // namespace org::apache::lucene::analysis::ko::util
+} // #include  "core/src/java/org/apache/lucene/analysis/ko/util/

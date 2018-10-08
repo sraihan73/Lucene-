@@ -103,4 +103,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::apache::lucene::facet::taxonomy
+} // #include  "core/src/java/org/apache/lucene/facet/taxonomy/

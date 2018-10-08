@@ -7,31 +7,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class Term;
-}
+#include  "core/src/java/org/apache/lucene/index/Term.h"
 
-namespace org::apache::lucene::facet
-{
-class FacetsConfig;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search
-{
-class BooleanQuery;
-}
-namespace org::apache::lucene::search
-{
-class Builder;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/facet/FacetsConfig.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/BooleanQuery.h"
+#include  "core/src/java/org/apache/lucene/search/Builder.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -155,4 +137,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet
+} // #include  "core/src/java/org/apache/lucene/facet/

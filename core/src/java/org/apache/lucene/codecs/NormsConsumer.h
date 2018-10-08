@@ -9,24 +9,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
 
-namespace org::apache::lucene::index
-{
-class MergeState;
-}
+#include  "core/src/java/org/apache/lucene/index/MergeState.h"
 namespace org::apache::lucene::index
 {
 template <typename T>
 class DocIDMerger;
 }
-namespace org::apache::lucene::index
-{
-class DocMap;
-}
+#include  "core/src/java/org/apache/lucene/index/DocMap.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -208,4 +199,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::codecs
+} // #include  "core/src/java/org/apache/lucene/codecs/

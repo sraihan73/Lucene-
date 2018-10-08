@@ -12,10 +12,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class EntrySet;
-}
+#include  "core/src/java/org/apache/lucene/analysis/EntrySet.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -785,4 +782,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis
+} // #include  "core/src/java/org/apache/lucene/analysis/

@@ -3,15 +3,9 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class BaseDirectoryWrapper;
-}
+#include  "core/src/java/org/apache/lucene/store/BaseDirectoryWrapper.h"
 
-namespace org::apache::lucene::util
-{
-class TestRuleMarkFailure;
-}
+#include  "core/src/java/org/apache/lucene/util/TestRuleMarkFailure.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -54,4 +48,4 @@ public:
   virtual ~CloseableDirectory();
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

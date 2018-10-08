@@ -6,10 +6,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::replicator
-{
-class RevisionFile;
-}
+#include  "core/src/java/org/apache/lucene/replicator/RevisionFile.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -85,4 +82,4 @@ public:
   virtual void release() = 0;
 };
 
-} // namespace org::apache::lucene::replicator
+} // #include  "core/src/java/org/apache/lucene/replicator/

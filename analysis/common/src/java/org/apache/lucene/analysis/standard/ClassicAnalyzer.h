@@ -5,19 +5,10 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class CharArraySet;
-}
+#include  "core/src/java/org/apache/lucene/analysis/CharArraySet.h"
 
-namespace org::apache::lucene::analysis::standard
-{
-class ClassicTokenizer;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
+#include  "core/src/java/org/apache/lucene/analysis/standard/ClassicTokenizer.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -142,4 +133,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::standard
+} // #include  "core/src/java/org/apache/lucene/analysis/standard/

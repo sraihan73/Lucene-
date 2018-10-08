@@ -52,4 +52,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::util::bkd
+} // #include  "core/src/java/org/apache/lucene/util/bkd/

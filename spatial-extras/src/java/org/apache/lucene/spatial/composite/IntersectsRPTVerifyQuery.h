@@ -6,59 +6,20 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial::composite
-{
-class IntersectsDifferentiatingQuery;
-}
+#include  "core/src/java/org/apache/lucene/spatial/composite/IntersectsDifferentiatingQuery.h"
 
-namespace org::apache::lucene::spatial::util
-{
-class ShapeValuesPredicate;
-}
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class SpatialPrefixTree;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class Weight;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
-namespace org::apache::lucene::search
-{
-class TwoPhaseIterator;
-}
-namespace org::apache::lucene::spatial::composite
-{
-class IntersectsDifferentiatingVisitor;
-}
-namespace org::apache::lucene::util
-{
-class DocIdSetBuilder;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSet;
-}
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class Cell;
-}
+#include  "core/src/java/org/apache/lucene/spatial/util/ShapeValuesPredicate.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/SpatialPrefixTree.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
+#include  "core/src/java/org/apache/lucene/search/TwoPhaseIterator.h"
+#include  "core/src/java/org/apache/lucene/spatial/composite/IntersectsDifferentiatingVisitor.h"
+#include  "core/src/java/org/apache/lucene/util/DocIdSetBuilder.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSet.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/Cell.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -273,4 +234,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial::composite
+} // #include  "core/src/java/org/apache/lucene/spatial/composite/

@@ -43,4 +43,4 @@ protected:
   virtual void failNoMatch();
 };
 
-} // namespace org::apache::lucene::facet::range
+} // #include  "core/src/java/org/apache/lucene/facet/range/

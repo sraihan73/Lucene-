@@ -9,10 +9,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::highlight
-{
-class TokenGroup;
-}
+#include  "core/src/java/org/apache/lucene/search/highlight/TokenGroup.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -122,4 +119,4 @@ public:
   static int hexToInt(const std::wstring &hex);
 };
 
-} // namespace org::apache::lucene::search::highlight
+} // #include  "core/src/java/org/apache/lucene/search/highlight/

@@ -6,32 +6,17 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::store
-{
-class ByteArrayDataInput;
-}
-namespace org::apache::lucene::codecs
-{
-class BlockTermState;
-}
-namespace org::apache::lucene::codecs::blocktree
-{
-class SegmentTermsEnum;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
+#include  "core/src/java/org/apache/lucene/store/ByteArrayDataInput.h"
+#include  "core/src/java/org/apache/lucene/codecs/BlockTermState.h"
+#include  "core/src/java/org/apache/lucene/codecs/blocktree/SegmentTermsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -219,4 +204,4 @@ private:
   void fillTerm();
 };
 
-} // namespace org::apache::lucene::codecs::blocktree
+} // #include  "core/src/java/org/apache/lucene/codecs/blocktree/

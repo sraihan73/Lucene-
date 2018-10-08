@@ -11,23 +11,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
 
-namespace org::apache::lucene::index
-{
-class DirectoryReader;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::search
-{
-class DoubleValuesSource;
-}
+#include  "core/src/java/org/apache/lucene/index/DirectoryReader.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/search/DoubleValuesSource.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -134,4 +122,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::expressions
+} // #include  "core/src/java/org/apache/lucene/expressions/

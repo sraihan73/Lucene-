@@ -4,15 +4,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class Fields;
-}
+#include  "core/src/java/org/apache/lucene/index/Fields.h"
 
-namespace org::apache::lucene::index
-{
-class MergeState;
-}
+#include  "core/src/java/org/apache/lucene/index/MergeState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -101,4 +95,4 @@ public:
   override
 };
 
-} // namespace org::apache::lucene::codecs
+} // #include  "core/src/java/org/apache/lucene/codecs/

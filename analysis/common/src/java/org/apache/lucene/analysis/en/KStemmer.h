@@ -7,10 +7,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::util
-{
-class OpenStringBuilder;
-}
+#include  "core/src/java/org/apache/lucene/analysis/util/OpenStringBuilder.h"
 
 namespace org::apache::lucene::analysis
 {
@@ -302,4 +299,4 @@ public:
   virtual bool stem(std::deque<wchar_t> &term, int len);
 };
 
-} // namespace org::apache::lucene::analysis::en
+} // #include  "core/src/java/org/apache/lucene/analysis/en/

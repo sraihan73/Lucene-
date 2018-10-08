@@ -46,4 +46,4 @@ public:
   getPOSTags(std::deque<std::wstring> &words);
 };
 
-} // namespace org::apache::lucene::analysis::opennlp::tools
+} // #include  "core/src/java/org/apache/lucene/analysis/opennlp/tools/

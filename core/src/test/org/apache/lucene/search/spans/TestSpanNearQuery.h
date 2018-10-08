@@ -47,4 +47,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::spans
+} // #include  "core/src/java/org/apache/lucene/search/spans/

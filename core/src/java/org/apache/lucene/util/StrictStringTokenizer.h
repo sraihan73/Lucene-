@@ -45,4 +45,4 @@ private:
   int pos = 0;
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

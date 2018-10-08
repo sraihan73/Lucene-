@@ -10,39 +10,15 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::codecs::blocktree
-{
-class BlockTreeTermsReader;
-}
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::codecs::blocktree
-{
-class Stats;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::util::automaton
-{
-class CompiledAutomaton;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/codecs/blocktree/BlockTreeTermsReader.h"
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/codecs/blocktree/Stats.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/CompiledAutomaton.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -158,4 +134,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::blocktree
+} // #include  "core/src/java/org/apache/lucene/codecs/blocktree/

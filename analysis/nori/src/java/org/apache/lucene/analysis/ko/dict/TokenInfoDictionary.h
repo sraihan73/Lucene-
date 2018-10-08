@@ -7,10 +7,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ko::dict
-{
-class TokenInfoFST;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ko/dict/TokenInfoFST.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -80,4 +77,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::ko::dict
+} // #include  "core/src/java/org/apache/lucene/analysis/ko/dict/

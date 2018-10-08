@@ -564,4 +564,4 @@ public:
   int64_t ramBytesUsed() override;
 };
 
-} // namespace org::apache::lucene::search::suggest::jaspell
+} // #include  "core/src/java/org/apache/lucene/search/suggest/jaspell/

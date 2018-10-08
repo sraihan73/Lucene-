@@ -11,43 +11,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class FakePassageFormatter;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class PassageFormatter;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class Pair;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class Passage;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class PassageScorer;
-}
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/FakePassageFormatter.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/PassageFormatter.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/Pair.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/Passage.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/PassageScorer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -283,4 +256,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::uhighlight
+} // #include  "core/src/java/org/apache/lucene/search/uhighlight/

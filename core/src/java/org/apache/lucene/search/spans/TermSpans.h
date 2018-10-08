@@ -4,27 +4,12 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
 
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Similarity;
-}
-namespace org::apache::lucene::search::similarities
-{
-class SimScorer;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanCollector;
-}
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Similarity.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/SimScorer.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanCollector.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -108,4 +93,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::spans
+} // #include  "core/src/java/org/apache/lucene/search/spans/

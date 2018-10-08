@@ -3,10 +3,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoCircle;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoCircle.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -62,4 +59,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial::spatial4j
+} // #include  "core/src/java/org/apache/lucene/spatial/spatial4j/

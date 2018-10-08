@@ -39,4 +39,4 @@ public:
   virtual std::shared_ptr<AnalysisEngine> getAE() = 0;
 };
 
-} // namespace org::apache::lucene::analysis::uima::ae
+} // #include  "core/src/java/org/apache/lucene/analysis/uima/ae/

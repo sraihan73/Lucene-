@@ -90,4 +90,4 @@ public:
   virtual int64_t ramBytesUsed();
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

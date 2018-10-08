@@ -6,15 +6,9 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
 
-namespace org::apache::lucene::store
-{
-class MockDirectoryWrapper;
-}
+#include  "core/src/java/org/apache/lucene/store/MockDirectoryWrapper.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -56,4 +50,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::store
+} // #include  "core/src/java/org/apache/lucene/store/

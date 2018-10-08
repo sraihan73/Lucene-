@@ -8,28 +8,16 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::index
-{
-class BinaryDocValues;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
+#include  "core/src/java/org/apache/lucene/index/BinaryDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
 namespace org::apache::lucene::util
 {
 template <typename T>
 class PriorityQueue;
 }
-namespace org::apache::lucene::util::packed
-{
-class PagedMutable;
-}
+#include  "core/src/java/org/apache/lucene/util/packed/PagedMutable.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -401,4 +389,4 @@ protected:
   };
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

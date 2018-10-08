@@ -6,19 +6,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class Cell;
-}
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/Cell.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class CellIterator;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/CellIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -77,4 +68,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial::prefix::tree
+} // #include  "core/src/java/org/apache/lucene/spatial/prefix/tree/

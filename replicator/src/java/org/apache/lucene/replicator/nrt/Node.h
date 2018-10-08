@@ -6,23 +6,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::search
-{
-class SearcherFactory;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::replicator::nrt
-{
-class FileMetaData;
-}
+#include  "core/src/java/org/apache/lucene/search/SearcherFactory.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/replicator/nrt/FileMetaData.h"
 namespace org::apache::lucene::search
 {
 template <typename G>
@@ -161,4 +149,4 @@ public:
   readLocalFileMetaData(const std::wstring &fileName) ;
 };
 
-} // namespace org::apache::lucene::replicator::nrt
+} // #include  "core/src/java/org/apache/lucene/replicator/nrt/

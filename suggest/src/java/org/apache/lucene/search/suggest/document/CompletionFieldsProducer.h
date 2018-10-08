@@ -6,31 +6,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class FieldsProducer;
-}
+#include  "core/src/java/org/apache/lucene/codecs/FieldsProducer.h"
 
-namespace org::apache::lucene::search::suggest::document
-{
-class CompletionsTermsReader;
-}
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
-namespace org::apache::lucene::index
-{
-class Terms;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/document/CompletionsTermsReader.h"
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -137,4 +119,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::document
+} // #include  "core/src/java/org/apache/lucene/search/suggest/document/

@@ -95,4 +95,4 @@ public:
   static void main(std::deque<std::wstring> &args) ;
 };
 
-} // namespace org::egothor::stemmer
+} // #include  "core/src/java/org/egothor/stemmer/

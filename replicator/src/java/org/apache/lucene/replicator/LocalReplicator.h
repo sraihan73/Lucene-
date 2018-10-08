@@ -8,15 +8,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::replicator
-{
-class Revision;
-}
+#include  "core/src/java/org/apache/lucene/replicator/Revision.h"
 
-namespace org::apache::lucene::replicator
-{
-class SessionToken;
-}
+#include  "core/src/java/org/apache/lucene/replicator/SessionToken.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -167,4 +161,4 @@ public:
   setExpirationThreshold(int64_t expirationThreshold) ;
 };
 
-} // namespace org::apache::lucene::replicator
+} // #include  "core/src/java/org/apache/lucene/replicator/

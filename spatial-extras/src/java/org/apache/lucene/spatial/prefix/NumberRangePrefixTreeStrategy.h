@@ -8,39 +8,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class NumberRangePrefixTree;
-}
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/NumberRangePrefixTree.h"
 
-namespace org::apache::lucene::search
-{
-class DoubleValuesSource;
-}
-namespace org::apache::lucene::index
-{
-class IndexReaderContext;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::spatial::prefix
-{
-class Facets;
-}
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class UnitNRShape;
-}
-namespace org::apache::lucene::spatial::prefix
-{
-class FacetParentVal;
-}
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class Cell;
-}
+#include  "core/src/java/org/apache/lucene/search/DoubleValuesSource.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReaderContext.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/Facets.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/UnitNRShape.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/FacetParentVal.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/Cell.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -250,4 +226,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial::prefix
+} // #include  "core/src/java/org/apache/lucene/spatial/prefix/

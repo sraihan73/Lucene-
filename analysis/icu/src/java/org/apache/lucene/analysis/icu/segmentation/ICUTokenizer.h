@@ -5,35 +5,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::icu::segmentation
-{
-class CompositeBreakIterator;
-}
+#include  "core/src/java/org/apache/lucene/analysis/icu/segmentation/CompositeBreakIterator.h"
 
-namespace org::apache::lucene::analysis::icu::segmentation
-{
-class ICUTokenizerConfig;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class TypeAttribute;
-}
-namespace org::apache::lucene::analysis::icu::tokenattributes
-{
-class ScriptAttribute;
-}
-namespace org::apache::lucene::util
-{
-class AttributeFactory;
-}
+#include  "core/src/java/org/apache/lucene/analysis/icu/segmentation/ICUTokenizerConfig.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/TypeAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/icu/tokenattributes/ScriptAttribute.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeFactory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -189,4 +168,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::icu::segmentation
+} // #include  "core/src/java/org/apache/lucene/analysis/icu/segmentation/

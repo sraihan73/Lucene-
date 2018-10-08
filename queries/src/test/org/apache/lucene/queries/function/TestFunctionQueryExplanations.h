@@ -46,4 +46,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queries::function
+} // #include  "core/src/java/org/apache/lucene/queries/function/

@@ -4,10 +4,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
 
 // This file has been automatically generated, DO NOT EDIT
 
@@ -69,4 +66,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::util::packed
+} // #include  "core/src/java/org/apache/lucene/util/packed/

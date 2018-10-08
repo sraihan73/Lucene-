@@ -37,4 +37,4 @@ public:
   static const int HOUR = 60 * MINUTE;
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

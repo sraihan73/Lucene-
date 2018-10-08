@@ -5,23 +5,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class BooleanClause;
-}
+#include  "core/src/java/org/apache/lucene/search/BooleanClause.h"
 
-namespace org::apache::lucene::search
-{
-class BooleanQuery;
-}
-namespace org::apache::lucene::search
-{
-class Builder;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
+#include  "core/src/java/org/apache/lucene/search/BooleanQuery.h"
+#include  "core/src/java/org/apache/lucene/search/Builder.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -59,4 +47,4 @@ public:
                    BooleanClause::Occur occur);
 };
 
-} // namespace org::apache::lucene::queryparser::surround::query
+} // #include  "core/src/java/org/apache/lucene/queryparser/surround/query/

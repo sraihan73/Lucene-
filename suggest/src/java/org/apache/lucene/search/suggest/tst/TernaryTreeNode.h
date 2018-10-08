@@ -57,4 +57,4 @@ public:
   virtual int64_t sizeInBytes();
 };
 
-} // namespace org::apache::lucene::search::suggest::tst
+} // #include  "core/src/java/org/apache/lucene/search/suggest/tst/

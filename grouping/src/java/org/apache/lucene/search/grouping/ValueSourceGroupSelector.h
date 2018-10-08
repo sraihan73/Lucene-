@@ -7,22 +7,10 @@
 // C++ NOTE: Forward class declarations:
 namespace org::apache::lucene::util::@ mutable { class MutableValue; }
 
-namespace org::apache::lucene::queries::function
-{
-class ValueSource;
-}
-namespace org::apache::lucene::queries::function
-{
-class FunctionValues;
-}
-namespace org::apache::lucene::queries::function
-{
-class ValueFiller;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
+#include  "core/src/java/org/apache/lucene/queries/function/ValueSource.h"
+#include  "core/src/java/org/apache/lucene/queries/function/FunctionValues.h"
+#include  "core/src/java/org/apache/lucene/queries/function/ValueFiller.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
 namespace org::apache::lucene::search::grouping
 {
 template <typename T>
@@ -106,4 +94,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::grouping
+} // #include  "core/src/java/org/apache/lucene/search/grouping/

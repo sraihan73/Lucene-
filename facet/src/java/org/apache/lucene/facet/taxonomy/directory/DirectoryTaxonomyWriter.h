@@ -6,55 +6,19 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::facet::taxonomy::writercache
-{
-class TaxonomyWriterCache;
-}
-namespace org::apache::lucene::facet::taxonomy::directory
-{
-class SinglePositionTokenStream;
-}
-namespace org::apache::lucene::document
-{
-class Field;
-}
-namespace org::apache::lucene::index
-{
-class ReaderManager;
-}
-namespace org::apache::lucene::facet::taxonomy::directory
-{
-class TaxonomyIndexArrays;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriterConfig;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class FacetLabel;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PositionIncrementAttribute;
-}
-namespace org::apache::lucene::facet::taxonomy::directory
-{
-class OrdinalMap;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/writercache/TaxonomyWriterCache.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/directory/SinglePositionTokenStream.h"
+#include  "core/src/java/org/apache/lucene/document/Field.h"
+#include  "core/src/java/org/apache/lucene/index/ReaderManager.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/directory/TaxonomyIndexArrays.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriterConfig.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/FacetLabel.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PositionIncrementAttribute.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/directory/OrdinalMap.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -590,4 +554,4 @@ public:
   int64_t getTaxonomyEpoch();
 };
 
-} // namespace org::apache::lucene::facet::taxonomy::directory
+} // #include  "core/src/java/org/apache/lucene/facet/taxonomy/directory/

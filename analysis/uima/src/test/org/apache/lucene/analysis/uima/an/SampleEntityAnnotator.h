@@ -54,4 +54,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::uima::an
+} // #include  "core/src/java/org/apache/lucene/analysis/uima/an/

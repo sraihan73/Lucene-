@@ -49,4 +49,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::el
+} // #include  "core/src/java/org/apache/lucene/analysis/el/

@@ -5,31 +5,13 @@
 #include <stdexcept>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
 
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
-namespace org::apache::lucene::util
-{
-class BitSet;
-}
-namespace org::apache::lucene::search::join
-{
-class BlockJoinSelector;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
+#include  "core/src/java/org/apache/lucene/util/BitSet.h"
+#include  "core/src/java/org/apache/lucene/search/join/BlockJoinSelector.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -201,4 +183,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::join
+} // #include  "core/src/java/org/apache/lucene/search/join/

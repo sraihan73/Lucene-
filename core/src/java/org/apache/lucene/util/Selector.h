@@ -43,4 +43,4 @@ protected:
   virtual void swap(int i, int j) = 0;
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

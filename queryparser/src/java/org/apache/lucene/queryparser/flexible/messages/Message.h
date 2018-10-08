@@ -42,4 +42,4 @@ public:
   virtual std::wstring getLocalizedMessage(std::shared_ptr<Locale> locale) = 0;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::messages
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/messages/

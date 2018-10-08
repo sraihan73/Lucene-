@@ -8,40 +8,19 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class Sort;
-}
+#include  "core/src/java/org/apache/lucene/search/Sort.h"
 
-namespace org::apache::lucene::search
-{
-class Weight;
-}
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
 namespace org::apache::lucene::search
 {
 template <typename T>
 class FieldComparator;
 }
-namespace org::apache::lucene::search
-{
-class LeafFieldComparator;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::search::grouping
-{
-class GroupQueue;
-}
+#include  "core/src/java/org/apache/lucene/search/LeafFieldComparator.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/search/grouping/GroupQueue.h"
 namespace org::apache::lucene::search::grouping
 {
 template <typename T>
@@ -266,4 +245,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::grouping
+} // #include  "core/src/java/org/apache/lucene/search/grouping/

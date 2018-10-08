@@ -7,51 +7,18 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class FrozenBufferedUpdates;
-}
+#include  "core/src/java/org/apache/lucene/index/FrozenBufferedUpdates.h"
 
-namespace org::apache::lucene::index
-{
-class FinishedSegments;
-}
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
-namespace org::apache::lucene::index
-{
-class SegmentCommitInfo;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::index
-{
-class ReadersAndUpdates;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReader;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util
-{
-class IOUtils;
-}
+#include  "core/src/java/org/apache/lucene/index/FinishedSegments.h"
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentCommitInfo.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/index/ReadersAndUpdates.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReader.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/IOUtils.h"
 namespace org::apache::lucene::util
 {
 template <typename T>
@@ -267,4 +234,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

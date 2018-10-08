@@ -52,4 +52,4 @@ public:
   virtual void setWeight(float weight);
 };
 
-} // namespace org::apache::lucene::search::highlight
+} // #include  "core/src/java/org/apache/lucene/search/highlight/

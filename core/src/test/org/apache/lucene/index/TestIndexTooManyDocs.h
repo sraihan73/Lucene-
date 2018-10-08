@@ -47,4 +47,4 @@ protected:
         org.apache.lucene.util.LuceneTestCase::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

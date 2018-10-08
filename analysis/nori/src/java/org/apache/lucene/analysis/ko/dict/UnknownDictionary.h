@@ -8,10 +8,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ko::dict
-{
-class CharacterDefinition;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ko/dict/CharacterDefinition.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -83,4 +80,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::ko::dict
+} // #include  "core/src/java/org/apache/lucene/analysis/ko/dict/

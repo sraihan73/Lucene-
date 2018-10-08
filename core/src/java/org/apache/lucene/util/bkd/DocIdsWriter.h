@@ -5,23 +5,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
 
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
-namespace org::apache::lucene::index
-{
-class IntersectVisitor;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
+#include  "core/src/java/org/apache/lucene/index/IntersectVisitor.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -98,4 +86,4 @@ private:
              std::shared_ptr<IntersectVisitor> visitor) ;
 };
 
-} // namespace org::apache::lucene::util::bkd
+} // #include  "core/src/java/org/apache/lucene/util/bkd/

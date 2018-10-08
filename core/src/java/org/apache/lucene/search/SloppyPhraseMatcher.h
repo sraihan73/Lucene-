@@ -9,43 +9,16 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class PhrasePositions;
-}
+#include  "core/src/java/org/apache/lucene/search/PhrasePositions.h"
 
-namespace org::apache::lucene::search
-{
-class PhraseQueue;
-}
-namespace org::apache::lucene::search
-{
-class PhraseQuery;
-}
-namespace org::apache::lucene::search
-{
-class PostingsAndFreq;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Similarity;
-}
-namespace org::apache::lucene::search::similarities
-{
-class SimScorer;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::util
-{
-class FixedBitSet;
-}
+#include  "core/src/java/org/apache/lucene/search/PhraseQueue.h"
+#include  "core/src/java/org/apache/lucene/search/PhraseQuery.h"
+#include  "core/src/java/org/apache/lucene/search/PostingsAndFreq.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Similarity.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/SimScorer.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/util/FixedBitSet.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -283,4 +256,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

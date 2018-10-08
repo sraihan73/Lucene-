@@ -5,10 +5,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::highlight
-{
-class TokenGroup;
-}
+#include  "core/src/java/org/apache/lucene/search/highlight/TokenGroup.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -61,4 +58,4 @@ public:
                              std::shared_ptr<TokenGroup> tokenGroup) override;
 };
 
-} // namespace org::apache::lucene::search::highlight
+} // #include  "core/src/java/org/apache/lucene/search/highlight/

@@ -57,4 +57,4 @@ public:
   virtual int count() = 0;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

@@ -81,4 +81,4 @@ private:
   int norm(std::deque<wchar_t> &s, int len);
 };
 
-} // namespace org::apache::lucene::analysis::fr
+} // #include  "core/src/java/org/apache/lucene/analysis/fr/

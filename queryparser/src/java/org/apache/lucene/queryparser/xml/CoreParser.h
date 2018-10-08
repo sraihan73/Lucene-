@@ -6,35 +6,14 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::queryparser::classic
-{
-class QueryParser;
-}
-namespace org::apache::lucene::queryparser::xml
-{
-class QueryBuilderFactory;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::queryparser::xml
-{
-class ParserException;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanQuery;
-}
-namespace org::apache::lucene::queryparser::xml
-{
-class QueryBuilder;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/classic/QueryParser.h"
+#include  "core/src/java/org/apache/lucene/queryparser/xml/QueryBuilderFactory.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/queryparser/xml/ParserException.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanQuery.h"
+#include  "core/src/java/org/apache/lucene/queryparser/xml/QueryBuilder.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -163,4 +142,4 @@ public:
       DISALLOW_EXTERNAL_ENTITY_RESOLVER;
 };
 
-} // namespace org::apache::lucene::queryparser::xml
+} // #include  "core/src/java/org/apache/lucene/queryparser/xml/

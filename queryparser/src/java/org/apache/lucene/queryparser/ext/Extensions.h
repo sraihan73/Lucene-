@@ -6,10 +6,7 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::ext
-{
-class ParserExtension;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/ext/ParserExtension.h"
 
 namespace org::apache::lucene::queryparser::ext
 {
@@ -217,4 +214,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::queryparser::ext
+} // #include  "core/src/java/org/apache/lucene/queryparser/ext/

@@ -4,23 +4,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class MutablePointValues;
-}
+#include  "core/src/java/org/apache/lucene/codecs/MutablePointValues.h"
 
-namespace org::apache::lucene::util
-{
-class Sorter;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util
-{
-class Selector;
-}
+#include  "core/src/java/org/apache/lucene/util/Sorter.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/Selector.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -246,4 +234,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::util::bkd
+} // #include  "core/src/java/org/apache/lucene/util/bkd/

@@ -7,10 +7,7 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::charfilter
-{
-class HTMLStripCharFilter;
-}
+#include  "core/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -66,4 +63,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::charfilter
+} // #include  "core/src/java/org/apache/lucene/analysis/charfilter/

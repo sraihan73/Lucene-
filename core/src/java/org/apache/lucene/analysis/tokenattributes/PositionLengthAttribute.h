@@ -55,4 +55,4 @@ public:
   virtual int getPositionLength() = 0;
 };
 
-} // namespace org::apache::lucene::analysis::tokenattributes
+} // #include  "core/src/java/org/apache/lucene/analysis/tokenattributes/

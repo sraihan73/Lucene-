@@ -6,39 +6,15 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class DisiPriorityQueue;
-}
+#include  "core/src/java/org/apache/lucene/search/DisiPriorityQueue.h"
 
-namespace org::apache::lucene::search
-{
-class DisjunctionDISIApproximation;
-}
-namespace org::apache::lucene::search
-{
-class TwoPhase;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::search
-{
-class Weight;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
-namespace org::apache::lucene::search
-{
-class TwoPhaseIterator;
-}
-namespace org::apache::lucene::search
-{
-class DisiWrapper;
-}
+#include  "core/src/java/org/apache/lucene/search/DisjunctionDISIApproximation.h"
+#include  "core/src/java/org/apache/lucene/search/TwoPhase.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
+#include  "core/src/java/org/apache/lucene/search/TwoPhaseIterator.h"
+#include  "core/src/java/org/apache/lucene/search/DisiWrapper.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -144,4 +120,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

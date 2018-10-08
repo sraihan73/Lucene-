@@ -10,15 +10,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class MergePolicy;
-}
+#include  "core/src/java/org/apache/lucene/index/MergePolicy.h"
 
-namespace org::apache::lucene::index
-{
-class CodecReader;
-}
+#include  "core/src/java/org/apache/lucene/index/CodecReader.h"
 namespace org::apache::lucene::util
 {
 template <typename T>
@@ -99,4 +93,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

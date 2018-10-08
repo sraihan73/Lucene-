@@ -5,10 +5,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class RandomAccessInput;
-}
+#include  "core/src/java/org/apache/lucene/store/RandomAccessInput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -162,4 +159,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::store
+} // #include  "core/src/java/org/apache/lucene/store/

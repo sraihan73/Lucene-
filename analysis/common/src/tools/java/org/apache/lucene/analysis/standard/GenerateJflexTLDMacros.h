@@ -115,4 +115,4 @@ private:
   std::wstring getCaseInsensitiveRegex(const std::wstring &ASCIITLD);
 };
 
-} // namespace org::apache::lucene::analysis::standard
+} // #include  "core/src/java/org/apache/lucene/analysis/standard/

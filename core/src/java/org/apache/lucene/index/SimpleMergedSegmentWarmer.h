@@ -3,15 +3,9 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
 
-namespace org::apache::lucene::index
-{
-class LeafReader;
-}
+#include  "core/src/java/org/apache/lucene/index/LeafReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -58,4 +52,4 @@ public:
   void warm(std::shared_ptr<LeafReader> reader)  override;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

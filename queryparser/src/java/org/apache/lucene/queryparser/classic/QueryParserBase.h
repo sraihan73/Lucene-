@@ -8,43 +8,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class RewriteMethod;
-}
+#include  "core/src/java/org/apache/lucene/search/RewriteMethod.h"
 
-namespace org::apache::lucene::document
-{
-class DateTools;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::queryparser::classic
-{
-class CharStream;
-}
-namespace org::apache::lucene::queryparser::classic
-{
-class ParseException;
-}
-namespace org::apache::lucene::queryparser::classic
-{
-class QueryParser;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::queryparser::classic
-{
-class Token;
-}
+#include  "core/src/java/org/apache/lucene/document/DateTools.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/queryparser/classic/CharStream.h"
+#include  "core/src/java/org/apache/lucene/queryparser/classic/ParseException.h"
+#include  "core/src/java/org/apache/lucene/queryparser/classic/QueryParser.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/queryparser/classic/Token.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -609,4 +582,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::classic
+} // #include  "core/src/java/org/apache/lucene/queryparser/classic/

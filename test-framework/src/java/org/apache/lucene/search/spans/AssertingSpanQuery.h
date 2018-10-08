@@ -5,27 +5,12 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::spans
-{
-class SpanQuery;
-}
+#include  "core/src/java/org/apache/lucene/search/spans/SpanQuery.h"
 
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanWeight;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanWeight.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -89,4 +74,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::spans
+} // #include  "core/src/java/org/apache/lucene/search/spans/

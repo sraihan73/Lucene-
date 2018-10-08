@@ -5,10 +5,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ko::util
-{
-class ConnectionCostsWriter;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ko/util/ConnectionCostsWriter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -42,4 +39,4 @@ public:
   build(const std::wstring &filename) ;
 };
 
-} // namespace org::apache::lucene::analysis::ko::util
+} // #include  "core/src/java/org/apache/lucene/analysis/ko/util/

@@ -78,4 +78,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::core::messages
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/core/messages/

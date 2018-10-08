@@ -8,87 +8,27 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::util::automaton
-{
-class CharacterRunAutomaton;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class PhraseHelper;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class UnifiedHighlighter;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class OffsetsEnum;
-}
-namespace org::apache::lucene::index
-{
-class LeafReader;
-}
-namespace org::apache::lucene::analysis
-{
-class MockAnalyzer;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class PassageScorer;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class PassageFormatter;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanQuery;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class LimitedStoredFieldVisitor;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class FieldHighlighter;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class FieldOffsetStrategy;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class Passage;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/CharacterRunAutomaton.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/PhraseHelper.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/UnifiedHighlighter.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/OffsetsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReader.h"
+#include  "core/src/java/org/apache/lucene/analysis/MockAnalyzer.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/PassageScorer.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/PassageFormatter.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanQuery.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/LimitedStoredFieldVisitor.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/FieldHighlighter.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/FieldOffsetStrategy.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/Passage.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -360,4 +300,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::uhighlight::visibility
+} // #include  "core/src/java/org/apache/lucene/search/uhighlight/visibility/

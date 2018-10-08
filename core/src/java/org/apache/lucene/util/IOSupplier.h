@@ -29,4 +29,4 @@ namespace org::apache::lucene::util
 template <typename T>
 using IOSupplier = std::function<T()>;
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

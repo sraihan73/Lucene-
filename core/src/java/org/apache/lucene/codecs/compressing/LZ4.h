@@ -4,23 +4,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
 
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
-namespace org::apache::lucene::util::packed
-{
-class PackedInts;
-}
-namespace org::apache::lucene::util::packed
-{
-class Mutable;
-}
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
+#include  "core/src/java/org/apache/lucene/util/packed/PackedInts.h"
+#include  "core/src/java/org/apache/lucene/util/packed/Mutable.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -202,4 +190,4 @@ public:
                          std::shared_ptr<HCHashTable> ht) ;
 };
 
-} // namespace org::apache::lucene::codecs::compressing
+} // #include  "core/src/java/org/apache/lucene/codecs/compressing/

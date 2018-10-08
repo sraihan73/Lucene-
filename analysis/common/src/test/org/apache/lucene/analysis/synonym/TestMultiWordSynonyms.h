@@ -47,4 +47,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::synonym
+} // #include  "core/src/java/org/apache/lucene/analysis/synonym/

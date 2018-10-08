@@ -9,10 +9,7 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class CharsRef;
-}
+#include  "core/src/java/org/apache/lucene/util/CharsRef.h"
 
 namespace org::apache::lucene::util::fst
 {
@@ -105,4 +102,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::analysis::charfilter
+} // #include  "core/src/java/org/apache/lucene/analysis/charfilter/

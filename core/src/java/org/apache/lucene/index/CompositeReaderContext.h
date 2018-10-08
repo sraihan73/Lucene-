@@ -5,23 +5,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexReaderContext;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReaderContext.h"
 
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::index
-{
-class CompositeReader;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/index/CompositeReader.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -123,4 +111,4 @@ protected:
         IndexReaderContext::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

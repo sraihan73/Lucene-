@@ -10,23 +10,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::analysis::miscellaneous
-{
-class PerFieldAnalyzerWrapper;
-}
-namespace org::apache::lucene::analysis
-{
-class ReuseStrategy;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
+#include  "core/src/java/org/apache/lucene/analysis/miscellaneous/PerFieldAnalyzerWrapper.h"
+#include  "core/src/java/org/apache/lucene/analysis/ReuseStrategy.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -133,4 +121,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::miscellaneous
+} // #include  "core/src/java/org/apache/lucene/analysis/miscellaneous/

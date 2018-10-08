@@ -10,27 +10,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPoint;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::search
-{
-class SortField;
-}
-namespace org::apache::lucene::geo
-{
-class Polygon;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPoint.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/search/SortField.h"
+#include  "core/src/java/org/apache/lucene/geo/Polygon.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -470,4 +455,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial3d
+} // #include  "core/src/java/org/apache/lucene/spatial3d/

@@ -5,15 +5,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class LeafFieldComparator;
-}
+#include  "core/src/java/org/apache/lucene/search/LeafFieldComparator.h"
 
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -64,4 +58,4 @@ public:
   void setScorer(std::shared_ptr<Scorer> scorer)  override;
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

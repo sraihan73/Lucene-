@@ -7,35 +7,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::geo
-{
-class Polygon;
-}
+#include  "core/src/java/org/apache/lucene/geo/Polygon.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPolygon;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPath;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoCircle;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoBBox;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPolygonFactory;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class PolygonDescription;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPolygon.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPath.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoCircle.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoBBox.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPolygonFactory.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/PolygonDescription.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -190,4 +169,4 @@ private:
   convertToDescription(std::deque<Polygon> &polygons);
 };
 
-} // namespace org::apache::lucene::spatial3d
+} // #include  "core/src/java/org/apache/lucene/spatial3d/

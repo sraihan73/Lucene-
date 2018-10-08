@@ -8,103 +8,31 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs::lucene70
-{
-class NumericEntry;
-}
+#include  "core/src/java/org/apache/lucene/codecs/lucene70/NumericEntry.h"
 
-namespace org::apache::lucene::codecs::lucene70
-{
-class BinaryEntry;
-}
-namespace org::apache::lucene::codecs::lucene70
-{
-class SortedEntry;
-}
-namespace org::apache::lucene::codecs::lucene70
-{
-class SortedSetEntry;
-}
-namespace org::apache::lucene::codecs::lucene70
-{
-class SortedNumericEntry;
-}
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::store
-{
-class ChecksumIndexInput;
-}
-namespace org::apache::lucene::codecs::lucene70
-{
-class TermsDictEntry;
-}
-namespace org::apache::lucene::util::packed
-{
-class DirectMonotonicReader;
-}
-namespace org::apache::lucene::util::packed
-{
-class Meta;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
-namespace org::apache::lucene::codecs::lucene70
-{
-class IndexedDISI;
-}
-namespace org::apache::lucene::store
-{
-class RandomAccessInput;
-}
-namespace org::apache::lucene::util
-{
-class LongValues;
-}
-namespace org::apache::lucene::index
-{
-class BinaryDocValues;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
-namespace org::apache::lucene::index
-{
-class SortedNumericDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedSetDocValues;
-}
+#include  "core/src/java/org/apache/lucene/codecs/lucene70/BinaryEntry.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene70/SortedEntry.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene70/SortedSetEntry.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene70/SortedNumericEntry.h"
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/store/ChecksumIndexInput.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene70/TermsDictEntry.h"
+#include  "core/src/java/org/apache/lucene/util/packed/DirectMonotonicReader.h"
+#include  "core/src/java/org/apache/lucene/util/packed/Meta.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene70/IndexedDISI.h"
+#include  "core/src/java/org/apache/lucene/store/RandomAccessInput.h"
+#include  "core/src/java/org/apache/lucene/util/LongValues.h"
+#include  "core/src/java/org/apache/lucene/index/BinaryDocValues.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/SortedNumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedSetDocValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -1416,4 +1344,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::lucene70
+} // #include  "core/src/java/org/apache/lucene/codecs/lucene70/

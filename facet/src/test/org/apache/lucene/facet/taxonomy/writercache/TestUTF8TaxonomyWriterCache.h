@@ -10,10 +10,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet::taxonomy
-{
-class FacetLabel;
-}
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/FacetLabel.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -76,4 +73,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::taxonomy::writercache
+} // #include  "core/src/java/org/apache/lucene/facet/taxonomy/writercache/

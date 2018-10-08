@@ -7,10 +7,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::opennlp::tools
-{
-class NLPSentenceDetectorOp;
-}
+#include  "core/src/java/org/apache/lucene/analysis/opennlp/tools/NLPSentenceDetectorOp.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -89,4 +86,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::opennlp
+} // #include  "core/src/java/org/apache/lucene/analysis/opennlp/

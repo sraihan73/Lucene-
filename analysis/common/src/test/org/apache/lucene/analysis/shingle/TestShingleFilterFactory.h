@@ -122,4 +122,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::shingle
+} // #include  "core/src/java/org/apache/lucene/analysis/shingle/

@@ -11,35 +11,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPoint;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPoint.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class Membership;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class Vector;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class PlanetModel;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class Bounds;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class XYZBounds;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class LatLonBounds;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Membership.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Vector.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/PlanetModel.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Bounds.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/XYZBounds.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/LatLonBounds.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more

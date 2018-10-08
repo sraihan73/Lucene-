@@ -8,43 +8,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class FreqProxTermsWriterPerField;
-}
+#include  "core/src/java/org/apache/lucene/index/FreqProxTermsWriterPerField.h"
 
-namespace org::apache::lucene::index
-{
-class Terms;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::index
-{
-class FreqProxPostingsArray;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
-namespace org::apache::lucene::index
-{
-class TermState;
-}
-namespace org::apache::lucene::index
-{
-class ByteSliceReader;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/FreqProxPostingsArray.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/TermState.h"
+#include  "core/src/java/org/apache/lucene/index/ByteSliceReader.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -320,4 +293,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

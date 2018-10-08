@@ -71,4 +71,4 @@ public:
   static constexpr int FULLWIDTH_NUMBER = 7;
 };
 
-} // namespace org::apache::lucene::analysis::cn::smart
+} // #include  "core/src/java/org/apache/lucene/analysis/cn/smart/

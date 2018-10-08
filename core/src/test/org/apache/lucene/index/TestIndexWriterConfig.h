@@ -8,15 +8,9 @@
 #include <unordered_set>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class DocConsumer;
-}
+#include  "core/src/java/org/apache/lucene/index/DocConsumer.h"
 
-namespace org::apache::lucene::index
-{
-class DocumentsWriterPerThread;
-}
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterPerThread.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -122,4 +116,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

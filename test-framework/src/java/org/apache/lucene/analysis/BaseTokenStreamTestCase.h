@@ -14,39 +14,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class AttributeImpl;
-}
+#include  "core/src/java/org/apache/lucene/util/AttributeImpl.h"
 
-namespace org::apache::lucene::util
-{
-class AttributeReflector;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::index
-{
-class RandomIndexWriter;
-}
-namespace org::apache::lucene::document
-{
-class Field;
-}
-namespace org::apache::lucene::analysis
-{
-class MockTokenizer;
-}
-namespace org::apache::lucene::util
-{
-class AttributeFactory;
-}
+#include  "core/src/java/org/apache/lucene/util/AttributeReflector.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/index/RandomIndexWriter.h"
+#include  "core/src/java/org/apache/lucene/document/Field.h"
+#include  "core/src/java/org/apache/lucene/analysis/MockTokenizer.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeFactory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -495,4 +471,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis
+} // #include  "core/src/java/org/apache/lucene/analysis/

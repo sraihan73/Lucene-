@@ -9,23 +9,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class LongsRef;
-}
+#include  "core/src/java/org/apache/lucene/util/LongsRef.h"
 
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more

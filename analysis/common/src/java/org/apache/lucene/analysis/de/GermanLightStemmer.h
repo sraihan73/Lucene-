@@ -80,4 +80,4 @@ private:
   int step2(std::deque<wchar_t> &s, int len);
 };
 
-} // namespace org::apache::lucene::analysis::de
+} // #include  "core/src/java/org/apache/lucene/analysis/de/

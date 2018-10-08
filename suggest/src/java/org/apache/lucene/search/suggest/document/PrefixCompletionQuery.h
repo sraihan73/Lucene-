@@ -5,31 +5,13 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::suggest::document
-{
-class CompletionAnalyzer;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/document/CompletionAnalyzer.h"
 
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::search::suggest
-{
-class BitsProducer;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class Weight;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/BitsProducer.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -117,4 +99,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::document
+} // #include  "core/src/java/org/apache/lucene/search/suggest/document/

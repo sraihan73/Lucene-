@@ -7,10 +7,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 namespace org::apache::lucene::util::fst
 {
@@ -27,47 +24,20 @@ namespace org::apache::lucene::util::fst
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::search::suggest::document
-{
-class CompletionScorer;
-}
-namespace org::apache::lucene::search::suggest::document
-{
-class TopSuggestDocsCollector;
-}
-namespace org::apache::lucene::util
-{
-class CharsRefBuilder;
-}
-namespace org::apache::lucene::search::suggest::document
-{
-class ScoringPathComparator;
-}
-namespace org::apache::lucene::store
-{
-class ByteArrayDataInput;
-}
-namespace org::apache::lucene::util::fst
-{
-class Util;
-}
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/document/CompletionScorer.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/document/TopSuggestDocsCollector.h"
+#include  "core/src/java/org/apache/lucene/util/CharsRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/document/ScoringPathComparator.h"
+#include  "core/src/java/org/apache/lucene/store/ByteArrayDataInput.h"
+#include  "core/src/java/org/apache/lucene/util/fst/Util.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FSTPath;
 }
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -344,4 +314,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::search::suggest::document
+} // #include  "core/src/java/org/apache/lucene/search/suggest/document/

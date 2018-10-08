@@ -7,19 +7,10 @@
 #include <typeinfo>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::byTask
-{
-class PerfRunData;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/PerfRunData.h"
 
-namespace org::apache::lucene::search
-{
-class Collector;
-}
-namespace org::apache::lucene::benchmark::byTask::feeds
-{
-class QueryMaker;
-}
+#include  "core/src/java/org/apache/lucene/search/Collector.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/QueryMaker.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -84,4 +75,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::tasks
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/tasks/

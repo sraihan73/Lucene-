@@ -72,4 +72,4 @@ public:
   int getBeginLine() override;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::standard::parser
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/parser/

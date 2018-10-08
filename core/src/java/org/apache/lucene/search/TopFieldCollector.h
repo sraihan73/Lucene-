@@ -8,58 +8,18 @@
 #include <deque>
 #include <queue>
 
-// C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-template <typename T>
-class FieldValueHitQueue;
-}
-
-namespace org::apache::lucene::search
-{
-class Entry;
-}
-namespace org::apache::lucene::search
-{
-class LeafFieldComparator;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::search
-{
-class Sort;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class LeafCollector;
-}
-namespace org::apache::lucene::search
-{
-class FieldDoc;
-}
-namespace org::apache::lucene::search
-{
-class ScoreDoc;
-}
-namespace org::apache::lucene::util
-{
-template <typename T>
-class PriorityQueue;
-}
-namespace org::apache::lucene::search
-{
-class TopDocs;
-}
-namespace org::apache::lucene::search
-{
-class TopFieldDocs;
-}
+#include  "core/src/java/org/apache/lucene/search/FieldValueHitQueue.h"
+//#include  "core/src/java/org/apache/lucene/search/Entry.h"
+#include  "core/src/java/org/apache/lucene/search/LeafFieldComparator.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/search/Sort.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/LeafCollector.h"
+#include  "core/src/java/org/apache/lucene/search/FieldDoc.h"
+#include  "core/src/java/org/apache/lucene/search/ScoreDoc.h"
+#include  "core/src/java/org/apache/lucene/util/PriorityQueue.h"
+#include  "core/src/java/org/apache/lucene/search/TopDocs.h"
+#include  "core/src/java/org/apache/lucene/search/TopFieldDocs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more

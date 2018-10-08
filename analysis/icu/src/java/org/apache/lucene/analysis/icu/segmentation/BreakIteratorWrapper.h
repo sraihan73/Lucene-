@@ -4,10 +4,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::icu::segmentation
-{
-class CharArrayIterator;
-}
+#include  "core/src/java/org/apache/lucene/analysis/icu/segmentation/CharArrayIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -76,4 +73,4 @@ public:
   void setText(std::deque<wchar_t> &text, int start, int length);
 };
 
-} // namespace org::apache::lucene::analysis::icu::segmentation
+} // #include  "core/src/java/org/apache/lucene/analysis/icu/segmentation/

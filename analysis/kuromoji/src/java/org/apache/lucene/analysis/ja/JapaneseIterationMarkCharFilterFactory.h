@@ -8,15 +8,9 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class CharFilter;
-}
+#include  "core/src/java/org/apache/lucene/analysis/CharFilter.h"
 
-namespace org::apache::lucene::analysis::util
-{
-class AbstractAnalysisFactory;
-}
+#include  "core/src/java/org/apache/lucene/analysis/util/AbstractAnalysisFactory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -85,4 +79,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::ja
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/

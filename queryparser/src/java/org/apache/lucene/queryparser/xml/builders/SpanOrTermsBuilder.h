@@ -6,19 +6,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::search::spans
-{
-class SpanQuery;
-}
-namespace org::apache::lucene::queryparser::xml
-{
-class ParserException;
-}
+#include  "core/src/java/org/apache/lucene/search/spans/SpanQuery.h"
+#include  "core/src/java/org/apache/lucene/queryparser/xml/ParserException.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -68,4 +59,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::xml::builders
+} // #include  "core/src/java/org/apache/lucene/queryparser/xml/builders/

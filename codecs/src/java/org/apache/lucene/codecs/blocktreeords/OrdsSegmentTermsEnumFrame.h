@@ -7,40 +7,19 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs::blocktreeords
-{
-class FSTOrdsOutputs;
-}
+#include  "core/src/java/org/apache/lucene/codecs/blocktreeords/FSTOrdsOutputs.h"
 
-namespace org::apache::lucene::codecs::blocktreeords
-{
-class Output;
-}
+#include  "core/src/java/org/apache/lucene/codecs/blocktreeords/Output.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::store
-{
-class ByteArrayDataInput;
-}
-namespace org::apache::lucene::codecs
-{
-class BlockTermState;
-}
-namespace org::apache::lucene::codecs::blocktreeords
-{
-class OrdsSegmentTermsEnum;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
+#include  "core/src/java/org/apache/lucene/store/ByteArrayDataInput.h"
+#include  "core/src/java/org/apache/lucene/codecs/BlockTermState.h"
+#include  "core/src/java/org/apache/lucene/codecs/blocktreeords/OrdsSegmentTermsEnum.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -231,4 +210,4 @@ private:
   void fillTerm();
 };
 
-} // namespace org::apache::lucene::codecs::blocktreeords
+} // #include  "core/src/java/org/apache/lucene/codecs/blocktreeords/

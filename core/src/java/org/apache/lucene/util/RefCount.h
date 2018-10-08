@@ -90,4 +90,4 @@ public:
   void incRef() { refCount->incrementAndGet(); }
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

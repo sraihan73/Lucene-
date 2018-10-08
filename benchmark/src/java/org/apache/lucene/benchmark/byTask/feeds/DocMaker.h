@@ -9,31 +9,13 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::byTask::feeds
-{
-class DocData;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/DocData.h"
 
-namespace org::apache::lucene::document
-{
-class Field;
-}
-namespace org::apache::lucene::document
-{
-class Document;
-}
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
-namespace org::apache::lucene::benchmark::byTask::utils
-{
-class Config;
-}
-namespace org::apache::lucene::benchmark::byTask::feeds
-{
-class ContentSource;
-}
+#include  "core/src/java/org/apache/lucene/document/Field.h"
+#include  "core/src/java/org/apache/lucene/document/Document.h"
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/utils/Config.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/ContentSource.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -250,4 +232,4 @@ public:
                          std::shared_ptr<ContentSource> source);
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::feeds
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/

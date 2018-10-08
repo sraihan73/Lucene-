@@ -6,23 +6,11 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class DocValuesConsumer;
-}
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesConsumer.h"
 
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::codecs
-{
-class DocValuesProducer;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesProducer.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -109,4 +97,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::memory
+} // #include  "core/src/java/org/apache/lucene/codecs/memory/

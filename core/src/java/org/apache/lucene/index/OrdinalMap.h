@@ -7,51 +7,18 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::index
-{
-class CacheKey;
-}
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
-namespace org::apache::lucene::index
-{
-class SortedSetDocValues;
-}
-namespace org::apache::lucene::util::packed
-{
-class PackedLongValues;
-}
-namespace org::apache::lucene::util
-{
-class LongValues;
-}
-namespace org::apache::lucene::util::packed
-{
-class PackedInts;
-}
-namespace org::apache::lucene::util::packed
-{
-class Mutable;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/index/CacheKey.h"
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/SortedSetDocValues.h"
+#include  "core/src/java/org/apache/lucene/util/packed/PackedLongValues.h"
+#include  "core/src/java/org/apache/lucene/util/LongValues.h"
+#include  "core/src/java/org/apache/lucene/util/packed/PackedInts.h"
+#include  "core/src/java/org/apache/lucene/util/packed/Mutable.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -330,4 +297,4 @@ public:
   getChildResources() override;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

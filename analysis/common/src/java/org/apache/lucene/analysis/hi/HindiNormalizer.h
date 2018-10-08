@@ -59,4 +59,4 @@ public:
   virtual int normalize(std::deque<wchar_t> &s, int len);
 };
 
-} // namespace org::apache::lucene::analysis::hi
+} // #include  "core/src/java/org/apache/lucene/analysis/hi/

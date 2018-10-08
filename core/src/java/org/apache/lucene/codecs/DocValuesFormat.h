@@ -12,22 +12,10 @@ template <typename S>
 class NamedSPILoader;
 }
 
-namespace org::apache::lucene::codecs
-{
-class DocValuesConsumer;
-}
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::codecs
-{
-class DocValuesProducer;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesConsumer.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesProducer.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -152,4 +140,4 @@ public:
   static void reloadDocValuesFormats(std::shared_ptr<ClassLoader> classloader);
 };
 
-} // namespace org::apache::lucene::codecs
+} // #include  "core/src/java/org/apache/lucene/codecs/

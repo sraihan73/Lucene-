@@ -5,31 +5,13 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class Cell;
-}
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/Cell.h"
 
-namespace org::apache::lucene::index
-{
-class IndexReaderContext;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::spatial::prefix
-{
-class PrefixTreeStrategy;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSet;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReaderContext.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/PrefixTreeStrategy.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSet.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -225,4 +207,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::spatial::prefix
+} // #include  "core/src/java/org/apache/lucene/spatial/prefix/

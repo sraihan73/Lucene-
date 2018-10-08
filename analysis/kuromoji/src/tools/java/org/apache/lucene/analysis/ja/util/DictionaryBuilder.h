@@ -46,4 +46,4 @@ public:
   static void main(std::deque<std::wstring> &args) ;
 };
 
-} // namespace org::apache::lucene::analysis::ja::util
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/util/

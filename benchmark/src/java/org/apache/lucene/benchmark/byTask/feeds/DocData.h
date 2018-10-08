@@ -72,4 +72,4 @@ public:
   virtual void setTitle(const std::wstring &title);
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::feeds
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/

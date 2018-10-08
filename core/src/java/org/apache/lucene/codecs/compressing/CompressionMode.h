@@ -8,35 +8,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs::compressing
-{
-class LZ4;
-}
+#include  "core/src/java/org/apache/lucene/codecs/compressing/LZ4.h"
 
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::codecs::compressing
-{
-class Decompressor;
-}
-namespace org::apache::lucene::codecs::compressing
-{
-class HashTable;
-}
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
-namespace org::apache::lucene::codecs::compressing
-{
-class HCHashTable;
-}
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/codecs/compressing/Decompressor.h"
+#include  "core/src/java/org/apache/lucene/codecs/compressing/HashTable.h"
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
+#include  "core/src/java/org/apache/lucene/codecs/compressing/HCHashTable.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more

@@ -56,4 +56,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::no
+} // #include  "core/src/java/org/apache/lucene/analysis/no/

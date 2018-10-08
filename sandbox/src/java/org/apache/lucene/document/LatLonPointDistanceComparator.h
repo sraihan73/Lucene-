@@ -8,23 +8,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class SortedNumericDocValues;
-}
+#include  "core/src/java/org/apache/lucene/index/SortedNumericDocValues.h"
 
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class LeafFieldComparator;
-}
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/LeafFieldComparator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -143,4 +131,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::document
+} // #include  "core/src/java/org/apache/lucene/document/

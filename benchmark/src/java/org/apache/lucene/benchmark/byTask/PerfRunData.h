@@ -11,67 +11,22 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::byTask::stats
-{
-class Points;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/stats/Points.h"
 
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::benchmark::byTask::utils
-{
-class AnalyzerFactory;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::benchmark::byTask::feeds
-{
-class DocMaker;
-}
-namespace org::apache::lucene::benchmark::byTask::feeds
-{
-class ContentSource;
-}
-namespace org::apache::lucene::benchmark::byTask::feeds
-{
-class FacetSource;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class TaxonomyWriter;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class TaxonomyReader;
-}
-namespace org::apache::lucene::benchmark::byTask::feeds
-{
-class QueryMaker;
-}
-namespace org::apache::lucene::index
-{
-class DirectoryReader;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::benchmark::byTask::utils
-{
-class Config;
-}
-namespace org::apache::lucene::benchmark::byTask::tasks
-{
-class ReadTask;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/utils/AnalyzerFactory.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/DocMaker.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/ContentSource.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/FacetSource.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/TaxonomyWriter.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/TaxonomyReader.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/QueryMaker.h"
+#include  "core/src/java/org/apache/lucene/index/DirectoryReader.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/utils/Config.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/tasks/ReadTask.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -338,4 +293,4 @@ public:
   getAnalyzerFactories();
 };
 
-} // namespace org::apache::lucene::benchmark::byTask
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/

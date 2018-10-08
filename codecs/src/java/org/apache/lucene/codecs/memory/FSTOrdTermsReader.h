@@ -16,64 +16,25 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs::memory
-{
-class TermsReader;
-}
+#include  "core/src/java/org/apache/lucene/codecs/memory/TermsReader.h"
 
-namespace org::apache::lucene::codecs
-{
-class PostingsReaderBase;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::index
-{
-class SegmentInfo;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
+#include  "core/src/java/org/apache/lucene/codecs/PostingsReaderBase.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentInfo.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::codecs
-{
-class BlockTermState;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util::automaton
-{
-class CompiledAutomaton;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
-namespace org::apache::lucene::store
-{
-class ByteArrayDataInput;
-}
-namespace org::apache::lucene::index
-{
-class TermState;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
+#include  "core/src/java/org/apache/lucene/codecs/BlockTermState.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/CompiledAutomaton.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
+#include  "core/src/java/org/apache/lucene/store/ByteArrayDataInput.h"
+#include  "core/src/java/org/apache/lucene/index/TermState.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
@@ -84,22 +45,10 @@ namespace org::apache::lucene::util::fst
 template <typename T>
 class InputOutput;
 }
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::codecs::memory
-{
-class Frame;
-}
-namespace org::apache::lucene::util::fst
-{
-class BytesReader;
-}
-namespace org::apache::lucene::util::automaton
-{
-class ByteRunAutomaton;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/codecs/memory/Frame.h"
+#include  "core/src/java/org/apache/lucene/util/fst/BytesReader.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/ByteRunAutomaton.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -523,4 +472,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::memory
+} // #include  "core/src/java/org/apache/lucene/codecs/memory/

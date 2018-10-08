@@ -13,27 +13,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class CharArraySet;
-}
+#include  "core/src/java/org/apache/lucene/analysis/CharArraySet.h"
 
-namespace org::apache::lucene::analysis::charfilter
-{
-class NormalizeCharMap;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
+#include  "core/src/java/org/apache/lucene/analysis/charfilter/NormalizeCharMap.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -237,4 +222,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::core
+} // #include  "core/src/java/org/apache/lucene/analysis/core/

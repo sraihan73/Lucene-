@@ -5,35 +5,14 @@
 #include <stdexcept>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet::taxonomy
-{
-class SearcherAndTaxonomy;
-}
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/SearcherAndTaxonomy.h"
 
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::facet::taxonomy::directory
-{
-class DirectoryTaxonomyReader;
-}
-namespace org::apache::lucene::search
-{
-class SearcherFactory;
-}
-namespace org::apache::lucene::facet::taxonomy::directory
-{
-class DirectoryTaxonomyWriter;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/directory/DirectoryTaxonomyReader.h"
+#include  "core/src/java/org/apache/lucene/search/SearcherFactory.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/directory/DirectoryTaxonomyWriter.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -152,4 +131,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::taxonomy
+} // #include  "core/src/java/org/apache/lucene/facet/taxonomy/

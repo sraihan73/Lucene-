@@ -8,19 +8,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet::range
-{
-class Range;
-}
+#include  "core/src/java/org/apache/lucene/facet/range/Range.h"
 
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::facet
-{
-class FacetResult;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetResult.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -97,4 +88,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::range
+} // #include  "core/src/java/org/apache/lucene/facet/range/

@@ -5,19 +5,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
-namespace org::apache::lucene::search::vectorhighlight
-{
-class FieldFragList;
-}
-namespace org::apache::lucene::search::highlight
-{
-class Encoder;
-}
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/FieldFragList.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/Encoder.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -131,4 +122,4 @@ public:
                   std::shared_ptr<Encoder> encoder) = 0;
 };
 
-} // namespace org::apache::lucene::search::vectorhighlight
+} // #include  "core/src/java/org/apache/lucene/search/vectorhighlight/

@@ -8,35 +8,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::geo
-{
-class DistancePredicate;
-}
+#include  "core/src/java/org/apache/lucene/geo/DistancePredicate.h"
 
-namespace org::apache::lucene::geo
-{
-class PolygonPredicate;
-}
-namespace org::apache::lucene::geo
-{
-class Polygon;
-}
-namespace org::apache::lucene::geo
-{
-class Polygon2D;
-}
-namespace org::apache::lucene::geo
-{
-class Grid;
-}
-namespace org::apache::lucene::geo
-{
-class Rectangle;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
+#include  "core/src/java/org/apache/lucene/geo/PolygonPredicate.h"
+#include  "core/src/java/org/apache/lucene/geo/Polygon.h"
+#include  "core/src/java/org/apache/lucene/geo/Polygon2D.h"
+#include  "core/src/java/org/apache/lucene/geo/Grid.h"
+#include  "core/src/java/org/apache/lucene/geo/Rectangle.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -268,4 +247,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::geo
+} // #include  "core/src/java/org/apache/lucene/geo/

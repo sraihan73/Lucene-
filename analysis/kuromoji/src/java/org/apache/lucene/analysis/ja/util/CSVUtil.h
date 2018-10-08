@@ -59,4 +59,4 @@ public:
   static std::wstring quoteEscape(const std::wstring &original);
 };
 
-} // namespace org::apache::lucene::analysis::ja::util
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/util/

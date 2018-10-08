@@ -5,15 +5,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::expressions
-{
-class Expression;
-}
+#include  "core/src/java/org/apache/lucene/expressions/Expression.h"
 
-namespace org::apache::lucene::search
-{
-class DoubleValues;
-}
+#include  "core/src/java/org/apache/lucene/search/DoubleValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -60,4 +54,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::expressions
+} // #include  "core/src/java/org/apache/lucene/expressions/

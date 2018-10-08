@@ -4,10 +4,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -74,4 +71,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::sortedset
+} // #include  "core/src/java/org/apache/lucene/facet/sortedset/

@@ -6,28 +6,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
 namespace org::apache::lucene::util
 {
 template <typename T>
 class RollingBuffer;
 }
-namespace org::apache::lucene::util::automaton
-{
-class Builder;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Builder.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -155,4 +143,4 @@ private:
            int pos);
 };
 
-} // namespace org::apache::lucene::analysis
+} // #include  "core/src/java/org/apache/lucene/analysis/

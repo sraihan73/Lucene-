@@ -4,10 +4,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::bkd
-{
-class PointReader;
-}
+#include  "core/src/java/org/apache/lucene/util/bkd/PointReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -56,4 +53,4 @@ public:
   virtual void destroy() = 0;
 };
 
-} // namespace org::apache::lucene::util::bkd
+} // #include  "core/src/java/org/apache/lucene/util/bkd/

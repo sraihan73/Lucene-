@@ -9,95 +9,29 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class Counter;
-}
+#include  "core/src/java/org/apache/lucene/util/Counter.h"
 
-namespace org::apache::lucene::index
-{
-class DocumentsWriterPerThread;
-}
-namespace org::apache::lucene::index
-{
-class DocState;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::index
-{
-class Builder;
-}
-namespace org::apache::lucene::index
-{
-class TermsHash;
-}
-namespace org::apache::lucene::index
-{
-class StoredFieldsConsumer;
-}
-namespace org::apache::lucene::index
-{
-class PerField;
-}
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::index
-{
-class Sorter;
-}
-namespace org::apache::lucene::index
-{
-class DocMap;
-}
-namespace org::apache::lucene::index
-{
-class IndexableField;
-}
-namespace org::apache::lucene::index
-{
-class IndexableFieldType;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Similarity;
-}
-namespace org::apache::lucene::index
-{
-class FieldInvertState;
-}
-namespace org::apache::lucene::index
-{
-class TermsHashPerField;
-}
-namespace org::apache::lucene::index
-{
-class DocValuesWriter;
-}
-namespace org::apache::lucene::index
-{
-class PointValuesWriter;
-}
-namespace org::apache::lucene::index
-{
-class NormValuesWriter;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterPerThread.h"
+#include  "core/src/java/org/apache/lucene/index/DocState.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/index/Builder.h"
+#include  "core/src/java/org/apache/lucene/index/TermsHash.h"
+#include  "core/src/java/org/apache/lucene/index/StoredFieldsConsumer.h"
+#include  "core/src/java/org/apache/lucene/index/PerField.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/index/Sorter.h"
+#include  "core/src/java/org/apache/lucene/index/DocMap.h"
+#include  "core/src/java/org/apache/lucene/index/IndexableField.h"
+#include  "core/src/java/org/apache/lucene/index/IndexableFieldType.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Similarity.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInvertState.h"
+#include  "core/src/java/org/apache/lucene/index/TermsHashPerField.h"
+#include  "core/src/java/org/apache/lucene/index/DocValuesWriter.h"
+#include  "core/src/java/org/apache/lucene/index/PointValuesWriter.h"
+#include  "core/src/java/org/apache/lucene/index/NormValuesWriter.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -295,4 +229,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

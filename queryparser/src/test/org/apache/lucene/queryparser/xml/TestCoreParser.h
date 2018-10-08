@@ -7,39 +7,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::queryparser::xml
-{
-class CoreParser;
-}
-namespace org::apache::lucene::queryparser::xml
-{
-class CoreParserTestIndexData;
-}
-namespace org::apache::lucene::queryparser::xml
-{
-class ParserException;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanQuery;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/xml/CoreParser.h"
+#include  "core/src/java/org/apache/lucene/queryparser/xml/CoreParserTestIndexData.h"
+#include  "core/src/java/org/apache/lucene/queryparser/xml/ParserException.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanQuery.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -186,4 +162,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::xml
+} // #include  "core/src/java/org/apache/lucene/queryparser/xml/

@@ -4,15 +4,9 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
 
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -83,4 +77,4 @@ public:
   virtual void setFragmentSize(int size);
 };
 
-} // namespace org::apache::lucene::search::highlight
+} // #include  "core/src/java/org/apache/lucene/search/highlight/

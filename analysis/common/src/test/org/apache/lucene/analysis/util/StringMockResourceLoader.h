@@ -48,4 +48,4 @@ public:
   openResource(const std::wstring &resource)  override;
 };
 
-} // namespace org::apache::lucene::analysis::util
+} // #include  "core/src/java/org/apache/lucene/analysis/util/

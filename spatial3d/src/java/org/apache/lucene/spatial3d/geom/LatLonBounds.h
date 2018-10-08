@@ -7,27 +7,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class Bounds;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Bounds.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class Membership;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class Plane;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class PlanetModel;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPoint;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Membership.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Plane.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/PlanetModel.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPoint.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -239,4 +224,4 @@ private:
   void addLongitudeBound(double longitude);
 };
 
-} // namespace org::apache::lucene::spatial3d::geom
+} // #include  "core/src/java/org/apache/lucene/spatial3d/geom/

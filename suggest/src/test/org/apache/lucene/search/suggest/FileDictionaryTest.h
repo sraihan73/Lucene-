@@ -76,4 +76,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest
+} // #include  "core/src/java/org/apache/lucene/search/suggest/

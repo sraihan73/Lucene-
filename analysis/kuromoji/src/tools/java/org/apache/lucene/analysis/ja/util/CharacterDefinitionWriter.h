@@ -63,4 +63,4 @@ public:
   void write(const std::wstring &baseDir) ;
 };
 
-} // namespace org::apache::lucene::analysis::ja::util
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/util/

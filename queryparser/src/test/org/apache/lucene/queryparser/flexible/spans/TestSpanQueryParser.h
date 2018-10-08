@@ -5,31 +5,13 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::flexible::core::processors
-{
-class QueryNodeProcessorPipeline;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/processors/QueryNodeProcessorPipeline.h"
 
-namespace org::apache::lucene::queryparser::flexible::spans
-{
-class SpansQueryConfigHandler;
-}
-namespace org::apache::lucene::queryparser::flexible::spans
-{
-class SpansQueryTreeBuilder;
-}
-namespace org::apache::lucene::queryparser::flexible::core::parser
-{
-class SyntaxParser;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanQuery;
-}
-namespace org::apache::lucene::queryparser::flexible::core
-{
-class QueryNodeException;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/spans/SpansQueryConfigHandler.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/spans/SpansQueryTreeBuilder.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/parser/SyntaxParser.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanQuery.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/QueryNodeException.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -165,4 +147,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::spans
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/spans/

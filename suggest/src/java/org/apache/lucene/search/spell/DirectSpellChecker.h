@@ -11,35 +11,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::spell
-{
-class StringDistance;
-}
+#include  "core/src/java/org/apache/lucene/search/spell/StringDistance.h"
 
-namespace org::apache::lucene::search::spell
-{
-class SuggestWord;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::util
-{
-class CharsRefBuilder;
-}
-namespace org::apache::lucene::search::spell
-{
-class ScoreTerm;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/search/spell/SuggestWord.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/util/CharsRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/search/spell/ScoreTerm.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -383,4 +362,4 @@ protected:
   };
 };
 
-} // namespace org::apache::lucene::search::spell
+} // #include  "core/src/java/org/apache/lucene/search/spell/

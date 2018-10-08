@@ -7,31 +7,13 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::search::spell
-{
-class Dictionary;
-}
-namespace org::apache::lucene::search::suggest
-{
-class InputIterator;
-}
-namespace org::apache::lucene::search
-{
-class BooleanQuery;
-}
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
+#include  "core/src/java/org/apache/lucene/search/spell/Dictionary.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/InputIterator.h"
+#include  "core/src/java/org/apache/lucene/search/BooleanQuery.h"
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -301,4 +283,4 @@ public:
   virtual bool load(std::shared_ptr<DataInput> input) = 0;
 };
 
-} // namespace org::apache::lucene::search::suggest
+} // #include  "core/src/java/org/apache/lucene/search/suggest/

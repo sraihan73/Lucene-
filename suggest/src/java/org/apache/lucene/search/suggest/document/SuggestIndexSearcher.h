@@ -3,23 +3,11 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
-namespace org::apache::lucene::search::suggest::document
-{
-class CompletionQuery;
-}
-namespace org::apache::lucene::search::suggest::document
-{
-class TopSuggestDocs;
-}
-namespace org::apache::lucene::search::suggest::document
-{
-class TopSuggestDocsCollector;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/document/CompletionQuery.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/document/TopSuggestDocs.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/document/TopSuggestDocsCollector.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -97,4 +85,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::document
+} // #include  "core/src/java/org/apache/lucene/search/suggest/document/

@@ -5,35 +5,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class LongValues;
-}
+#include  "core/src/java/org/apache/lucene/search/LongValues.h"
 
-namespace org::apache::lucene::search
-{
-class DisiWrapper;
-}
-namespace org::apache::lucene::search
-{
-class DisiPriorityQueue;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::search
-{
-class Weight;
-}
-namespace org::apache::lucene::search
-{
-class DocIdSetIterator;
-}
-namespace org::apache::lucene::search
-{
-class TwoPhaseIterator;
-}
+#include  "core/src/java/org/apache/lucene/search/DisiWrapper.h"
+#include  "core/src/java/org/apache/lucene/search/DisiPriorityQueue.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
+#include  "core/src/java/org/apache/lucene/search/DocIdSetIterator.h"
+#include  "core/src/java/org/apache/lucene/search/TwoPhaseIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -162,4 +141,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

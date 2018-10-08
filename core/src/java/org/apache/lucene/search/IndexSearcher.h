@@ -9,128 +9,41 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::similarities
-{
-class Similarity;
-}
+#include  "core/src/java/org/apache/lucene/search/similarities/Similarity.h"
 
-namespace org::apache::lucene::index
-{
-class FieldInvertState;
-}
-namespace org::apache::lucene::search
-{
-class CollectionStatistics;
-}
-namespace org::apache::lucene::search
-{
-class TermStatistics;
-}
-namespace org::apache::lucene::search::similarities
-{
-class SimWeight;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search::similarities
-{
-class SimScorer;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::search
-{
-class QueryCache;
-}
-namespace org::apache::lucene::search
-{
-class QueryCachingPolicy;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::index
-{
-class IndexReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class LeafSlice;
-}
-namespace org::apache::lucene::document
-{
-class Document;
-}
-namespace org::apache::lucene::index
-{
-class StoredFieldVisitor;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search
-{
-class TotalHitCountCollector;
-}
-namespace org::apache::lucene::search
-{
-class ScoreDoc;
-}
-namespace org::apache::lucene::search
-{
-class TopDocs;
-}
-namespace org::apache::lucene::search
-{
-class TopScoreDocCollector;
-}
-namespace org::apache::lucene::search
-{
-class Collector;
-}
-namespace org::apache::lucene::search
-{
-class Sort;
-}
-namespace org::apache::lucene::search
-{
-class TopFieldDocs;
-}
-namespace org::apache::lucene::search
-{
-class FieldDoc;
-}
-namespace org::apache::lucene::search
-{
-class TopFieldCollector;
-}
+#include  "core/src/java/org/apache/lucene/index/FieldInvertState.h"
+#include  "core/src/java/org/apache/lucene/search/CollectionStatistics.h"
+#include  "core/src/java/org/apache/lucene/search/TermStatistics.h"
+//#include  "core/src/java/org/apache/lucene/search/similarities/SimWeight.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+//#include  "core/src/java/org/apache/lucene/search/similarities/SimScorer.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/search/QueryCache.h"
+#include  "core/src/java/org/apache/lucene/search/QueryCachingPolicy.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReaderContext.h"
+//#include  "core/src/java/org/apache/lucene/search/LeafSlice.h"
+#include  "core/src/java/org/apache/lucene/document/Document.h"
+#include  "core/src/java/org/apache/lucene/index/StoredFieldVisitor.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/TotalHitCountCollector.h"
+#include  "core/src/java/org/apache/lucene/search/ScoreDoc.h"
+#include  "core/src/java/org/apache/lucene/search/TopDocs.h"
+#include  "core/src/java/org/apache/lucene/search/TopScoreDocCollector.h"
+#include  "core/src/java/org/apache/lucene/search/Collector.h"
+#include  "core/src/java/org/apache/lucene/search/Sort.h"
+#include  "core/src/java/org/apache/lucene/search/TopFieldDocs.h"
+#include  "core/src/java/org/apache/lucene/search/FieldDoc.h"
+#include  "core/src/java/org/apache/lucene/search/TopFieldCollector.h"
 namespace org::apache::lucene::search
 {
 template <typename Ctypename T>
 class CollectorManager;
 }
-namespace org::apache::lucene::search
-{
-class Weight;
-}
-namespace org::apache::lucene::search
-{
-class Explanation;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::index
-{
-class TermContext;
-}
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
+#include  "core/src/java/org/apache/lucene/search/Explanation.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/index/TermContext.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -856,4 +769,4 @@ public:
   collectionStatistics(const std::wstring &field) ;
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

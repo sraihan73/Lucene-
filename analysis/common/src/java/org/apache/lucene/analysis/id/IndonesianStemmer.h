@@ -74,4 +74,4 @@ private:
   int removeSuffix(std::deque<wchar_t> &text, int length);
 };
 
-} // namespace org::apache::lucene::analysis::id
+} // #include  "core/src/java/org/apache/lucene/analysis/id/

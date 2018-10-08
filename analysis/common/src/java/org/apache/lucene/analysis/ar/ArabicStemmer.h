@@ -104,4 +104,4 @@ public:
                                    std::deque<wchar_t> &suffix);
 };
 
-} // namespace org::apache::lucene::analysis::ar
+} // #include  "core/src/java/org/apache/lucene/analysis/ar/

@@ -3,6 +3,7 @@
 #include <any>
 #include <string>
 #include <typeinfo>
+#include <functional>
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -30,4 +31,4 @@ namespace org::apache::lucene::util
 using AttributeReflector = std::function<void(
     std::type_info attClass, std::wstring key, std::any value)>;
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

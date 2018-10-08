@@ -3,10 +3,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::util
-{
-class AbstractAnalysisFactory;
-}
+#include  "core/src/java/org/apache/lucene/analysis/util/AbstractAnalysisFactory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -49,4 +46,4 @@ public:
   virtual std::shared_ptr<AbstractAnalysisFactory> getMultiTermComponent() = 0;
 };
 
-} // namespace org::apache::lucene::analysis::util
+} // #include  "core/src/java/org/apache/lucene/analysis/util/

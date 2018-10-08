@@ -10,100 +10,34 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ko::dict
-{
-class Dictionary;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ko/dict/Dictionary.h"
 
-namespace org::apache::lucene::analysis::ko::dict
-{
-class TokenInfoFST;
-}
-namespace org::apache::lucene::analysis::ko::dict
-{
-class TokenInfoDictionary;
-}
-namespace org::apache::lucene::analysis::ko::dict
-{
-class UnknownDictionary;
-}
-namespace org::apache::lucene::analysis::ko::dict
-{
-class ConnectionCosts;
-}
-namespace org::apache::lucene::analysis::ko::dict
-{
-class UserDictionary;
-}
-namespace org::apache::lucene::analysis::ko::dict
-{
-class CharacterDefinition;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ko/dict/TokenInfoFST.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/dict/TokenInfoDictionary.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/dict/UnknownDictionary.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/dict/ConnectionCosts.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/dict/UserDictionary.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/dict/CharacterDefinition.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::util::fst
-{
-class BytesReader;
-}
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
-namespace org::apache::lucene::analysis::util
-{
-class RollingCharBuffer;
-}
-namespace org::apache::lucene::analysis::ko
-{
-class WrappedPositionArray;
-}
-namespace org::apache::lucene::analysis::ko
-{
-class Token;
-}
-namespace org::apache::lucene::analysis
-{
-class Token;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PositionIncrementAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class PositionLengthAttribute;
-}
-namespace org::apache::lucene::analysis::ko::tokenattributes
-{
-class PartOfSpeechAttribute;
-}
-namespace org::apache::lucene::analysis::ko::tokenattributes
-{
-class ReadingAttribute;
-}
-namespace org::apache::lucene::util
-{
-class AttributeFactory;
-}
-namespace org::apache::lucene::analysis::ko
-{
-class GraphvizFormatter;
-}
-namespace org::apache::lucene::analysis::ko
-{
-class POS;
-}
+#include  "core/src/java/org/apache/lucene/util/fst/BytesReader.h"
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
+#include  "core/src/java/org/apache/lucene/analysis/util/RollingCharBuffer.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/WrappedPositionArray.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/Token.h"
+#include  "core/src/java/org/apache/lucene/analysis/Token.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PositionIncrementAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/PositionLengthAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/tokenattributes/PartOfSpeechAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/tokenattributes/ReadingAttribute.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeFactory.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/GraphvizFormatter.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/POS.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more

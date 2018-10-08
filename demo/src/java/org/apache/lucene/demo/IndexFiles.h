@@ -7,10 +7,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -100,4 +97,4 @@ public:
                        int64_t lastModified) ;
 };
 
-} // namespace org::apache::lucene::demo
+} // #include  "core/src/java/org/apache/lucene/demo/

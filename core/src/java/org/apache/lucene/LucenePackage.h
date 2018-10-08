@@ -34,4 +34,4 @@ public:
   static std::shared_ptr<Package> get();
 };
 
-} // namespace org::apache::lucene
+} // #include  "core/src/java/org/apache/lucene/

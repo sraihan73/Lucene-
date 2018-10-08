@@ -6,10 +6,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ja::util
-{
-class CharacterDefinitionWriter;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ja/util/CharacterDefinitionWriter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -64,4 +61,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::ja::util
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/util/

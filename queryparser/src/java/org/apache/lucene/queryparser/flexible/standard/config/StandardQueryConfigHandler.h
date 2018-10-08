@@ -6,31 +6,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::search
-{
-class MultiTermQuery;
-}
-namespace org::apache::lucene::search
-{
-class RewriteMethod;
-}
-namespace org::apache::lucene::document
-{
-class DateTools;
-}
-namespace org::apache::lucene::queryparser::flexible::standard::config
-{
-class FuzzyConfig;
-}
-namespace org::apache::lucene::queryparser::flexible::standard::config
-{
-class PointsConfig;
-}
+#include  "core/src/java/org/apache/lucene/search/MultiTermQuery.h"
+#include  "core/src/java/org/apache/lucene/search/RewriteMethod.h"
+#include  "core/src/java/org/apache/lucene/document/DateTools.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/config/FuzzyConfig.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/config/PointsConfig.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -252,4 +234,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::standard::config
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/config/

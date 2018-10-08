@@ -164,4 +164,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::tokenattributes
+} // #include  "core/src/java/org/apache/lucene/analysis/tokenattributes/

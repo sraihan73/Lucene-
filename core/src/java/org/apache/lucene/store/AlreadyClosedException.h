@@ -34,13 +34,6 @@ public:
   AlreadyClosedException(const std::wstring &message);
 
   AlreadyClosedException(const std::wstring &message, std::runtime_error cause);
-
-protected:
-  std::shared_ptr<AlreadyClosedException> shared_from_this()
-  {
-    return std::static_pointer_cast<AlreadyClosedException>(
-        IllegalStateException::shared_from_this());
-  }
 };
 
-} // namespace org::apache::lucene::store
+} // #include  "core/src/java/org/apache/lucene/store/

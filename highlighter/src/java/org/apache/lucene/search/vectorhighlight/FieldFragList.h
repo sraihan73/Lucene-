@@ -6,27 +6,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::vectorhighlight
-{
-class WeightedFragInfo;
-}
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/WeightedFragInfo.h"
 
-namespace org::apache::lucene::search::vectorhighlight
-{
-class FieldPhraseList;
-}
-namespace org::apache::lucene::search::vectorhighlight
-{
-class WeightedPhraseInfo;
-}
-namespace org::apache::lucene::search::vectorhighlight
-{
-class SubInfo;
-}
-namespace org::apache::lucene::search::vectorhighlight
-{
-class Toffs;
-}
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/FieldPhraseList.h"
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/WeightedPhraseInfo.h"
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/SubInfo.h"
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/Toffs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -157,4 +142,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::search::vectorhighlight
+} // #include  "core/src/java/org/apache/lucene/search/vectorhighlight/

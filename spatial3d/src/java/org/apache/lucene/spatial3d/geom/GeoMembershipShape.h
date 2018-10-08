@@ -32,4 +32,4 @@ class GeoMembershipShape : public GeoShape,
   GET_CLASS_NAME(GeoMembershipShape)
 };
 
-} // namespace org::apache::lucene::spatial3d::geom
+} // #include  "core/src/java/org/apache/lucene/spatial3d/geom/

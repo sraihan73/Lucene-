@@ -90,4 +90,4 @@ private:
   bool isVowel(wchar_t ch);
 };
 
-} // namespace org::apache::lucene::analysis::fi
+} // #include  "core/src/java/org/apache/lucene/analysis/fi/

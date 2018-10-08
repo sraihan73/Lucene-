@@ -7,10 +7,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -84,4 +81,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::collation
+} // #include  "core/src/java/org/apache/lucene/collation/

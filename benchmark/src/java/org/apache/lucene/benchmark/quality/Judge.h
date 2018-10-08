@@ -5,10 +5,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::quality
-{
-class QualityQuery;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/quality/QualityQuery.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -68,4 +65,4 @@ public:
   virtual int maxRecall(std::shared_ptr<QualityQuery> query) = 0;
 };
 
-} // namespace org::apache::lucene::benchmark::quality
+} // #include  "core/src/java/org/apache/lucene/benchmark/quality/

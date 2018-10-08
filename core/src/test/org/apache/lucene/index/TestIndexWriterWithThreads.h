@@ -7,35 +7,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class AlreadyClosedException;
-}
+#include  "core/src/java/org/apache/lucene/store/AlreadyClosedException.h"
 
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::store
-{
-class MockDirectoryWrapper;
-}
-namespace org::apache::lucene::store
-{
-class Failure;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::store
-{
-class BaseDirectoryWrapper;
-}
-namespace org::apache::lucene::util
-{
-class LineFileDocs;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/store/MockDirectoryWrapper.h"
+#include  "core/src/java/org/apache/lucene/store/Failure.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/store/BaseDirectoryWrapper.h"
+#include  "core/src/java/org/apache/lucene/util/LineFileDocs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -324,4 +303,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

@@ -7,15 +7,9 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class Document;
-}
+#include  "core/src/java/org/apache/lucene/document/Document.h"
 
-namespace org::apache::lucene::document
-{
-class Field;
-}
+#include  "core/src/java/org/apache/lucene/document/Field.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -105,4 +99,4 @@ public:
   virtual std::shared_ptr<Document> nextDoc() ;
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

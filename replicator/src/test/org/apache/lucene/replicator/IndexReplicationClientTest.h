@@ -9,43 +9,16 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::index
-{
-class DirectoryReader;
-}
-namespace org::apache::lucene::store
-{
-class MockDirectoryWrapper;
-}
-namespace org::apache::lucene::replicator
-{
-class Replicator;
-}
-namespace org::apache::lucene::replicator
-{
-class ReplicationClient;
-}
-namespace org::apache::lucene::replicator
-{
-class SourceDirectoryFactory;
-}
-namespace org::apache::lucene::replicator
-{
-class ReplicationHandler;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::replicator
-{
-class Revision;
-}
+#include  "core/src/java/org/apache/lucene/index/DirectoryReader.h"
+#include  "core/src/java/org/apache/lucene/store/MockDirectoryWrapper.h"
+#include  "core/src/java/org/apache/lucene/replicator/Replicator.h"
+#include  "core/src/java/org/apache/lucene/replicator/ReplicationClient.h"
+#include  "core/src/java/org/apache/lucene/replicator/SourceDirectoryFactory.h"
+#include  "core/src/java/org/apache/lucene/replicator/ReplicationHandler.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/replicator/Revision.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -268,4 +241,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::replicator
+} // #include  "core/src/java/org/apache/lucene/replicator/

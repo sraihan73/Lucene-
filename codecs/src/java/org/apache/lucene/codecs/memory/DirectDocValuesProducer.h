@@ -9,83 +9,26 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs::memory
-{
-class NumericEntry;
-}
+#include  "core/src/java/org/apache/lucene/codecs/memory/NumericEntry.h"
 
-namespace org::apache::lucene::codecs::memory
-{
-class BinaryEntry;
-}
-namespace org::apache::lucene::codecs::memory
-{
-class SortedEntry;
-}
-namespace org::apache::lucene::codecs::memory
-{
-class SortedSetEntry;
-}
-namespace org::apache::lucene::codecs::memory
-{
-class SortedNumericEntry;
-}
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::codecs::memory
-{
-class NumericRawValues;
-}
-namespace org::apache::lucene::codecs::memory
-{
-class BinaryRawValues;
-}
-namespace org::apache::lucene::codecs::memory
-{
-class SortedRawValues;
-}
-namespace org::apache::lucene::codecs::memory
-{
-class SortedSetRawValues;
-}
-namespace org::apache::lucene::codecs::memory
-{
-class SortedNumericRawValues;
-}
-namespace org::apache::lucene::util
-{
-class FixedBitSet;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
-namespace org::apache::lucene::index
-{
-class LegacyNumericDocValues;
-}
-namespace org::apache::lucene::index
-{
-class LegacyBinaryDocValues;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::codecs
-{
-class DocValuesProducer;
-}
+#include  "core/src/java/org/apache/lucene/codecs/memory/BinaryEntry.h"
+#include  "core/src/java/org/apache/lucene/codecs/memory/SortedEntry.h"
+#include  "core/src/java/org/apache/lucene/codecs/memory/SortedSetEntry.h"
+#include  "core/src/java/org/apache/lucene/codecs/memory/SortedNumericEntry.h"
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/codecs/memory/NumericRawValues.h"
+#include  "core/src/java/org/apache/lucene/codecs/memory/BinaryRawValues.h"
+#include  "core/src/java/org/apache/lucene/codecs/memory/SortedRawValues.h"
+#include  "core/src/java/org/apache/lucene/codecs/memory/SortedSetRawValues.h"
+#include  "core/src/java/org/apache/lucene/codecs/memory/SortedNumericRawValues.h"
+#include  "core/src/java/org/apache/lucene/util/FixedBitSet.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/LegacyNumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/index/LegacyBinaryDocValues.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesProducer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -718,4 +661,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::memory
+} // #include  "core/src/java/org/apache/lucene/codecs/memory/

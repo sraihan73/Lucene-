@@ -8,10 +8,7 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class SpatialPrefixTree;
-}
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/SpatialPrefixTree.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -80,4 +77,4 @@ protected:
   virtual std::shared_ptr<SpatialPrefixTree> newSPT() = 0;
 };
 
-} // namespace org::apache::lucene::spatial::prefix::tree
+} // #include  "core/src/java/org/apache/lucene/spatial/prefix/tree/

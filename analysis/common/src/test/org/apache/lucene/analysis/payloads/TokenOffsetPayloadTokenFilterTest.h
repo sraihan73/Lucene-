@@ -41,4 +41,4 @@ protected:
         org.apache.lucene.analysis.BaseTokenStreamTestCase::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::analysis::payloads
+} // #include  "core/src/java/org/apache/lucene/analysis/payloads/

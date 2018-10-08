@@ -9,24 +9,15 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class FieldComparatorSource;
-}
+#include  "core/src/java/org/apache/lucene/search/FieldComparatorSource.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 namespace org::apache::lucene::search
 {
 template <typename T>
 class FieldComparator;
 }
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -302,4 +293,4 @@ GET_CLASS_NAME(es)
   virtual bool needsScores();
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

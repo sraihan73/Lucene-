@@ -69,4 +69,4 @@ public:
   static std::deque<std::wstring> const tokenImage;
 };
 
-} // namespace org::apache::lucene::queryparser::surround::parser
+} // #include  "core/src/java/org/apache/lucene/queryparser/surround/parser/

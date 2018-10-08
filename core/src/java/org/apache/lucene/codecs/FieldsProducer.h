@@ -68,4 +68,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs
+} // #include  "core/src/java/org/apache/lucene/codecs/

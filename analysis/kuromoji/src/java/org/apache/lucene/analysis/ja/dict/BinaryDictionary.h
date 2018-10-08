@@ -8,10 +8,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -121,4 +118,4 @@ public:
   static constexpr int HAS_PRONUNCIATION = 4;
 };
 
-} // namespace org::apache::lucene::analysis::ja::dict
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/dict/

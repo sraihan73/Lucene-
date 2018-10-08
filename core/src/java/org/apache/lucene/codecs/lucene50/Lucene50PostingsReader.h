@@ -9,51 +9,18 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
 
-namespace org::apache::lucene::codecs::lucene50
-{
-class ForUtil;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
-namespace org::apache::lucene::codecs
-{
-class BlockTermState;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
-namespace org::apache::lucene::codecs::lucene50
-{
-class Lucene50SkipReader;
-}
-namespace org::apache::lucene::codecs::lucene50
-{
-class Lucene50PostingsFormat;
-}
-namespace org::apache::lucene::codecs::lucene50
-{
-class IntBlockTermState;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/codecs/lucene50/ForUtil.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
+#include  "core/src/java/org/apache/lucene/codecs/BlockTermState.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene50/Lucene50SkipReader.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene50/Lucene50PostingsFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene50/IntBlockTermState.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -546,4 +513,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::lucene50
+} // #include  "core/src/java/org/apache/lucene/codecs/lucene50/

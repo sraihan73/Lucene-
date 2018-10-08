@@ -6,23 +6,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class PlanetModel;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/PlanetModel.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class RandomGeo3dShapeGenerator;
-}
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class SpatialPrefixTree;
-}
-namespace org::apache::lucene::spatial::prefix
-{
-class RecursivePrefixTreeStrategy;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/RandomGeo3dShapeGenerator.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/SpatialPrefixTree.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/RecursivePrefixTreeStrategy.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -116,4 +104,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial::spatial4j
+} // #include  "core/src/java/org/apache/lucene/spatial/spatial4j/

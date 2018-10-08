@@ -8,39 +8,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet::sortedset
-{
-class SortedSetDocValuesReaderState;
-}
+#include  "core/src/java/org/apache/lucene/facet/sortedset/SortedSetDocValuesReaderState.h"
 
-namespace org::apache::lucene::index
-{
-class SortedSetDocValues;
-}
-namespace org::apache::lucene::facet
-{
-class FacetsCollector;
-}
-namespace org::apache::lucene::facet
-{
-class FacetResult;
-}
-namespace org::apache::lucene::facet::sortedset
-{
-class OrdRange;
-}
-namespace org::apache::lucene::index
-{
-class LeafReader;
-}
-namespace org::apache::lucene::index
-{
-class OrdinalMap;
-}
-namespace org::apache::lucene::facet
-{
-class MatchingDocs;
-}
+#include  "core/src/java/org/apache/lucene/index/SortedSetDocValues.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetsCollector.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetResult.h"
+#include  "core/src/java/org/apache/lucene/facet/sortedset/OrdRange.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReader.h"
+#include  "core/src/java/org/apache/lucene/index/OrdinalMap.h"
+#include  "core/src/java/org/apache/lucene/facet/MatchingDocs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -160,4 +136,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::sortedset
+} // #include  "core/src/java/org/apache/lucene/facet/sortedset/

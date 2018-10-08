@@ -106,4 +106,4 @@ private:
               int pos, int len);
 };
 
-} // namespace org::apache::lucene::analysis::in_
+} // #include  "core/src/java/org/apache/lucene/analysis/in_/

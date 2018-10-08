@@ -47,4 +47,4 @@ public:
   getS2CellShape(std::shared_ptr<S2CellId> cellId) = 0;
 };
 
-} // namespace org::apache::lucene::spatial::prefix::tree
+} // #include  "core/src/java/org/apache/lucene/spatial/prefix/tree/

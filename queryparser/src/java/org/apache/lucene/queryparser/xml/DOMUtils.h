@@ -6,10 +6,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::xml
-{
-class ParserException;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/xml/ParserException.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -118,4 +115,4 @@ public:
   static std::shared_ptr<Document> loadXML(std::shared_ptr<Reader> is);
 };
 
-} // namespace org::apache::lucene::queryparser::xml
+} // #include  "core/src/java/org/apache/lucene/queryparser/xml/

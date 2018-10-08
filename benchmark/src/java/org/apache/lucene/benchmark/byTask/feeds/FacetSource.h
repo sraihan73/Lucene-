@@ -5,15 +5,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet
-{
-class FacetField;
-}
+#include  "core/src/java/org/apache/lucene/facet/FacetField.h"
 
-namespace org::apache::lucene::facet
-{
-class FacetsConfig;
-}
+#include  "core/src/java/org/apache/lucene/facet/FacetsConfig.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -67,4 +61,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::feeds
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/

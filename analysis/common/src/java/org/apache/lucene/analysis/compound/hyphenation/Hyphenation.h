@@ -52,4 +52,4 @@ public:
   virtual std::deque<int> getHyphenationPoints();
 };
 
-} // namespace org::apache::lucene::analysis::compound::hyphenation
+} // #include  "core/src/java/org/apache/lucene/analysis/compound/hyphenation/

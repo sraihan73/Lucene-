@@ -76,4 +76,4 @@ public:
   static constexpr int SURROGATE = 8;
 };
 
-} // namespace org::apache::lucene::analysis::cn::smart
+} // #include  "core/src/java/org/apache/lucene/analysis/cn/smart/

@@ -41,4 +41,4 @@ public:
   getFailQueries(std::deque<std::wstring> &exceptionQueries, bool verbose);
 };
 
-} // namespace org::apache::lucene::queryparser::surround::query
+} // #include  "core/src/java/org/apache/lucene/queryparser/surround/query/

@@ -64,4 +64,4 @@ protected:
             .BaseTokenStreamFactoryTestCase::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::analysis::wikipedia
+} // #include  "core/src/java/org/apache/lucene/analysis/wikipedia/

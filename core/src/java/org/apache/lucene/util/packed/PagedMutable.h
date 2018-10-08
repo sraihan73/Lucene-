@@ -3,19 +3,10 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::packed
-{
-class PackedInts;
-}
+#include  "core/src/java/org/apache/lucene/util/packed/PackedInts.h"
 
-namespace org::apache::lucene::util::packed
-{
-class FormatAndBits;
-}
-namespace org::apache::lucene::util::packed
-{
-class Mutable;
-}
+#include  "core/src/java/org/apache/lucene/util/packed/FormatAndBits.h"
+#include  "core/src/java/org/apache/lucene/util/packed/Mutable.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -85,4 +76,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::util::packed
+} // #include  "core/src/java/org/apache/lucene/util/packed/

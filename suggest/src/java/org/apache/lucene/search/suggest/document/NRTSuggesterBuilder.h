@@ -4,10 +4,7 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 namespace org::apache::lucene::util::fst
 {
@@ -19,22 +16,10 @@ namespace org::apache::lucene::util::fst
 template <typename Atypename B>
 class Pair;
 }
-namespace org::apache::lucene::util
-{
-class IntsRefBuilder;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::search::suggest::document
-{
-class Entry;
-}
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
+#include  "core/src/java/org/apache/lucene/util/IntsRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/document/Entry.h"
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -161,4 +146,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::search::suggest::document
+} // #include  "core/src/java/org/apache/lucene/search/suggest/document/

@@ -6,19 +6,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::cn::smart::hhmm
-{
-class WordDictionary;
-}
+#include  "core/src/java/org/apache/lucene/analysis/cn/smart/hhmm/WordDictionary.h"
 
-namespace org::apache::lucene::analysis::cn::smart::hhmm
-{
-class SegGraph;
-}
-namespace org::apache::lucene::analysis::cn::smart::hhmm
-{
-class SegToken;
-}
+#include  "core/src/java/org/apache/lucene/analysis/cn/smart/hhmm/SegGraph.h"
+#include  "core/src/java/org/apache/lucene/analysis/cn/smart/hhmm/SegToken.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -82,4 +73,4 @@ public:
   process(const std::wstring &sentence);
 };
 
-} // namespace org::apache::lucene::analysis::cn::smart::hhmm
+} // #include  "core/src/java/org/apache/lucene/analysis/cn/smart/hhmm/

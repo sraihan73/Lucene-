@@ -51,4 +51,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::similarities
+} // #include  "core/src/java/org/apache/lucene/search/similarities/

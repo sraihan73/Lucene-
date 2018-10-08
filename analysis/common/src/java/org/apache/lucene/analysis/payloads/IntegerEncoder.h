@@ -6,10 +6,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -54,4 +51,4 @@ protected:
         AbstractEncoder::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::analysis::payloads
+} // #include  "core/src/java/org/apache/lucene/analysis/payloads/

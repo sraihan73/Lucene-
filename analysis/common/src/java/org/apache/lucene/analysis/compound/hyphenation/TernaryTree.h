@@ -7,10 +7,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::compound::hyphenation
-{
-class CharVector;
-}
+#include  "core/src/java/org/apache/lucene/analysis/compound/hyphenation/CharVector.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -317,4 +314,4 @@ public:
     */
 };
 
-} // namespace org::apache::lucene::analysis::compound::hyphenation
+} // #include  "core/src/java/org/apache/lucene/analysis/compound/hyphenation/

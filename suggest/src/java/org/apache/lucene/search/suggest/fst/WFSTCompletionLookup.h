@@ -10,35 +10,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::search::suggest
-{
-class InputIterator;
-}
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::search::suggest
-{
-class Lookup;
-}
-namespace org::apache::lucene::search::suggest
-{
-class LookupResult;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/InputIterator.h"
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/Lookup.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/LookupResult.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
@@ -49,26 +28,11 @@ namespace org::apache::lucene::util::fst
 template <typename T>
 class Arc;
 }
-namespace org::apache::lucene::store
-{
-class ByteArrayDataOutput;
-}
-namespace org::apache::lucene::util
-{
-class OfflineSorter;
-}
-namespace org::apache::lucene::util
-{
-class ByteSequencesWriter;
-}
-namespace org::apache::lucene::store
-{
-class ByteArrayDataInput;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
+#include  "core/src/java/org/apache/lucene/store/ByteArrayDataOutput.h"
+#include  "core/src/java/org/apache/lucene/util/OfflineSorter.h"
+#include  "core/src/java/org/apache/lucene/util/ByteSequencesWriter.h"
+#include  "core/src/java/org/apache/lucene/store/ByteArrayDataInput.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -253,4 +217,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::fst
+} // #include  "core/src/java/org/apache/lucene/search/suggest/fst/

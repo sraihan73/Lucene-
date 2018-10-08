@@ -59,4 +59,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::core::config
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/core/config/

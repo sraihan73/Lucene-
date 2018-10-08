@@ -9,10 +9,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoOutsideDistance;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoOutsideDistance.h"
 
 namespace org::apache::lucene::search
 {
@@ -80,4 +77,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial3d
+} // #include  "core/src/java/org/apache/lucene/spatial3d/

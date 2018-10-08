@@ -110,4 +110,4 @@ private:
   void resubstitute(std::shared_ptr<StringBuilder> buffer);
 };
 
-} // namespace org::apache::lucene::analysis::de
+} // #include  "core/src/java/org/apache/lucene/analysis/de/

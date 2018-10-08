@@ -10,47 +10,17 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class DocumentsWriterPerThread;
-}
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterPerThread.h"
 
-namespace org::apache::lucene::index
-{
-class BlockedFlush;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterStallControl;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterPerThreadPool;
-}
-namespace org::apache::lucene::index
-{
-class FlushPolicy;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriter;
-}
-namespace org::apache::lucene::index
-{
-class LiveIndexWriterConfig;
-}
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
-namespace org::apache::lucene::index
-{
-class ThreadState;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterDeleteQueue;
-}
+#include  "core/src/java/org/apache/lucene/index/BlockedFlush.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterStallControl.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterPerThreadPool.h"
+#include  "core/src/java/org/apache/lucene/index/FlushPolicy.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriter.h"
+#include  "core/src/java/org/apache/lucene/index/LiveIndexWriterConfig.h"
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
+#include  "core/src/java/org/apache/lucene/index/ThreadState.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterDeleteQueue.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -361,4 +331,4 @@ public:
   std::shared_ptr<DocumentsWriterPerThread> checkoutLargestNonPendingWriter();
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

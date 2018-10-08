@@ -6,27 +6,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
 
-namespace org::apache::lucene::util
-{
-class Counter;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefHash;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class FacetLabel;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/Counter.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefHash.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/FacetLabel.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -141,4 +126,4 @@ private:
   std::shared_ptr<BytesRef> toBytes(std::shared_ptr<FacetLabel> label);
 };
 
-} // namespace org::apache::lucene::facet::taxonomy::writercache
+} // #include  "core/src/java/org/apache/lucene/facet/taxonomy/writercache/

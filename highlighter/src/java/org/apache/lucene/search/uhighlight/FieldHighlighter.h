@@ -8,35 +8,14 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::uhighlight
-{
-class FieldOffsetStrategy;
-}
+#include  "core/src/java/org/apache/lucene/search/uhighlight/FieldOffsetStrategy.h"
 
-namespace org::apache::lucene::search::uhighlight
-{
-class PassageScorer;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class PassageFormatter;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class UnifiedHighlighter;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class Passage;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class OffsetsEnum;
-}
+#include  "core/src/java/org/apache/lucene/search/uhighlight/PassageScorer.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/PassageFormatter.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/UnifiedHighlighter.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/Passage.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/OffsetsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -122,4 +101,4 @@ private:
       int contentLength);
 };
 
-} // namespace org::apache::lucene::search::uhighlight
+} // #include  "core/src/java/org/apache/lucene/search/uhighlight/

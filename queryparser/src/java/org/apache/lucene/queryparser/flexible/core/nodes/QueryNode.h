@@ -7,10 +7,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::flexible::core::parser
-{
-class EscapeQuerySyntax;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/parser/EscapeQuerySyntax.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -118,4 +115,4 @@ public:
   virtual void removeChildren(std::shared_ptr<QueryNode> childNode) = 0;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::core::nodes
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/core/nodes/

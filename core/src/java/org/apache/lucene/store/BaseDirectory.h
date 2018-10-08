@@ -5,19 +5,10 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class LockFactory;
-}
+#include  "core/src/java/org/apache/lucene/store/LockFactory.h"
 
-namespace org::apache::lucene::store
-{
-class Lock;
-}
-namespace org::apache::lucene::store
-{
-class AlreadyClosedException;
-}
+#include  "core/src/java/org/apache/lucene/store/Lock.h"
+#include  "core/src/java/org/apache/lucene/store/AlreadyClosedException.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -77,4 +68,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::store
+} // #include  "core/src/java/org/apache/lucene/store/

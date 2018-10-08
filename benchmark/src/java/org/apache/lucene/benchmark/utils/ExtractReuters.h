@@ -64,4 +64,4 @@ private:
   static void usage(const std::wstring &msg);
 };
 
-} // namespace org::apache::lucene::benchmark::utils
+} // #include  "core/src/java/org/apache/lucene/benchmark/utils/

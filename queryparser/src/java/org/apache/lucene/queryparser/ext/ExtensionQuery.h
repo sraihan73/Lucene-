@@ -4,10 +4,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::classic
-{
-class QueryParser;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/classic/QueryParser.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -80,4 +77,4 @@ public:
   virtual std::shared_ptr<QueryParser> getTopLevelParser();
 };
 
-} // namespace org::apache::lucene::queryparser::ext
+} // #include  "core/src/java/org/apache/lucene/queryparser/ext/

@@ -5,27 +5,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
 
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
-namespace org::apache::lucene::util
-{
-class IntsRefBuilder;
-}
-namespace org::apache::lucene::util::automaton
-{
-class PathNode;
-}
-namespace org::apache::lucene::util::automaton
-{
-class Transition;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
+#include  "core/src/java/org/apache/lucene/util/IntsRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/PathNode.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/Transition.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -174,4 +159,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::util::automaton
+} // #include  "core/src/java/org/apache/lucene/util/automaton/

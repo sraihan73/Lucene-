@@ -4,15 +4,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPolygon;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPolygon.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoShape;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoShape.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -134,4 +128,4 @@ public:
   virtual std::shared_ptr<GeoShape> getInsideCompositeShape();
 };
 
-} // namespace org::apache::lucene::spatial3d::geom
+} // #include  "core/src/java/org/apache/lucene/spatial3d/geom/

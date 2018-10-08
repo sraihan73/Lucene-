@@ -84,4 +84,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::geo
+} // #include  "core/src/java/org/apache/lucene/geo/

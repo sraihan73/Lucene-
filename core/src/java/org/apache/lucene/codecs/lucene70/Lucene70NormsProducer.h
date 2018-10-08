@@ -7,39 +7,15 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs::lucene70
-{
-class NormsEntry;
-}
+#include  "core/src/java/org/apache/lucene/codecs/lucene70/NormsEntry.h"
 
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
-namespace org::apache::lucene::codecs::lucene70
-{
-class IndexedDISI;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
-namespace org::apache::lucene::store
-{
-class RandomAccessInput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene70/IndexedDISI.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
+#include  "core/src/java/org/apache/lucene/store/RandomAccessInput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -448,4 +424,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::lucene70
+} // #include  "core/src/java/org/apache/lucene/codecs/lucene70/

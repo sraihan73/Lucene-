@@ -4,39 +4,15 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class PostingsFormat;
-}
+#include  "core/src/java/org/apache/lucene/codecs/PostingsFormat.h"
 
-namespace org::apache::lucene::codecs
-{
-class FieldsConsumer;
-}
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::codecs
-{
-class FieldsProducer;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
-namespace org::apache::lucene::index
-{
-class Terms;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
-namespace org::apache::lucene::index
-{
-class Fields;
-}
+#include  "core/src/java/org/apache/lucene/codecs/FieldsConsumer.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/codecs/FieldsProducer.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
+#include  "core/src/java/org/apache/lucene/index/Fields.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -157,4 +133,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::asserting
+} // #include  "core/src/java/org/apache/lucene/codecs/asserting/

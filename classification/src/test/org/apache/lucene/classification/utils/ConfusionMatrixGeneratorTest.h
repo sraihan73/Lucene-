@@ -10,24 +10,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 namespace org::apache::lucene::classification
 {
 template <typename T>
 class ClassificationResult;
 }
-namespace org::apache::lucene::classification::utils
-{
-class ConfusionMatrixGenerator;
-}
-namespace org::apache::lucene::classification::utils
-{
-class ConfusionMatrix;
-}
+#include  "core/src/java/org/apache/lucene/classification/utils/ConfusionMatrixGenerator.h"
+#include  "core/src/java/org/apache/lucene/classification/utils/ConfusionMatrix.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -130,4 +121,4 @@ protected:
             .ClassificationTestBase<Object>::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::classification::utils
+} // #include  "core/src/java/org/apache/lucene/classification/utils/

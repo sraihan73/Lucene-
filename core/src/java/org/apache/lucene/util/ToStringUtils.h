@@ -45,4 +45,4 @@ public:
   static std::wstring longHex(int64_t x);
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

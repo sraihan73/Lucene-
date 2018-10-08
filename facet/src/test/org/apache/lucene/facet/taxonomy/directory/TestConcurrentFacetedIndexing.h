@@ -8,31 +8,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet::taxonomy::writercache
-{
-class TaxonomyWriterCache;
-}
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/writercache/TaxonomyWriterCache.h"
 
-namespace org::apache::lucene::facet::taxonomy
-{
-class FacetLabel;
-}
-namespace org::apache::lucene::facet
-{
-class FacetField;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::facet::taxonomy::directory
-{
-class DirectoryTaxonomyWriter;
-}
-namespace org::apache::lucene::facet
-{
-class FacetsConfig;
-}
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/FacetLabel.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetField.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/directory/DirectoryTaxonomyWriter.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetsConfig.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -137,4 +119,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::taxonomy::directory
+} // #include  "core/src/java/org/apache/lucene/facet/taxonomy/directory/

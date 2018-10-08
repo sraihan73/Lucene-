@@ -5,10 +5,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class Document;
-}
+#include  "core/src/java/org/apache/lucene/document/Document.h"
 
 namespace org::apache::lucene::classification
 {
@@ -97,4 +94,4 @@ GET_CLASS_NAME(ified.)
   virtual std::deque<ClassificationResult<T>>
   getClasses(std::shared_ptr<Document> document, int max) = 0;
 };
-} // namespace org::apache::lucene::classification::document
+} // #include  "core/src/java/org/apache/lucene/classification/document/

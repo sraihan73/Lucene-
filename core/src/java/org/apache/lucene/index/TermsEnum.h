@@ -5,23 +5,11 @@
 #include <stdexcept>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class AttributeSource;
-}
-
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class TermState;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
+#include  "core/src/java/org/apache/lucene/util/AttributeSource.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefIterator.h"
+#include  "core/src/java/org/apache/lucene/index/TermState.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -41,7 +29,6 @@ class PostingsEnum;
  */
 namespace org::apache::lucene::index
 {
-
 using AttributeSource = org::apache::lucene::util::AttributeSource;
 using BytesRef = org::apache::lucene::util::BytesRef;
 using BytesRefIterator = org::apache::lucene::util::BytesRefIterator;

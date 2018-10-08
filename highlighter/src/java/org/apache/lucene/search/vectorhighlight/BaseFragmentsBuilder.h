@@ -10,35 +10,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::vectorhighlight
-{
-class BoundaryScanner;
-}
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/BoundaryScanner.h"
 
-namespace org::apache::lucene::search::vectorhighlight
-{
-class FieldFragList;
-}
-namespace org::apache::lucene::search::vectorhighlight
-{
-class WeightedFragInfo;
-}
-namespace org::apache::lucene::search::highlight
-{
-class Encoder;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::document
-{
-class Field;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/FieldFragList.h"
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/WeightedFragInfo.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/Encoder.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/document/Field.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -237,4 +216,4 @@ protected:
   virtual std::wstring getPostTag(std::deque<std::wstring> &postTags, int num);
 };
 
-} // namespace org::apache::lucene::search::vectorhighlight
+} // #include  "core/src/java/org/apache/lucene/search/vectorhighlight/

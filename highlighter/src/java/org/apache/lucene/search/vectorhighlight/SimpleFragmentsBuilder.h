@@ -5,19 +5,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::vectorhighlight
-{
-class BoundaryScanner;
-}
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/BoundaryScanner.h"
 
-namespace org::apache::lucene::search::vectorhighlight
-{
-class FieldFragList;
-}
-namespace org::apache::lucene::search::vectorhighlight
-{
-class WeightedFragInfo;
-}
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/FieldFragList.h"
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/WeightedFragInfo.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -84,4 +75,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::vectorhighlight
+} // #include  "core/src/java/org/apache/lucene/search/vectorhighlight/

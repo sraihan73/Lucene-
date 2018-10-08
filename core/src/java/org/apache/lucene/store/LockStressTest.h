@@ -9,10 +9,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class FSLockFactory;
-}
+#include  "core/src/java/org/apache/lucene/store/FSLockFactory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -60,4 +57,4 @@ private:
       const std::wstring &lockFactoryClassName) ;
 };
 
-} // namespace org::apache::lucene::store
+} // #include  "core/src/java/org/apache/lucene/store/

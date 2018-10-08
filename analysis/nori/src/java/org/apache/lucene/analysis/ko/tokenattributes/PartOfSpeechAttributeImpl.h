@@ -9,31 +9,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ko
-{
-class Token;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ko/Token.h"
 
-namespace org::apache::lucene::analysis::ko
-{
-class POS;
-}
-namespace org::apache::lucene::analysis::ko::dict
-{
-class Dictionary;
-}
-namespace org::apache::lucene::analysis::ko::dict
-{
-class Morpheme;
-}
-namespace org::apache::lucene::util
-{
-class AttributeReflector;
-}
-namespace org::apache::lucene::util
-{
-class AttributeImpl;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ko/POS.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/dict/Dictionary.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/dict/Morpheme.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeReflector.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeImpl.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -103,4 +85,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::ko::tokenattributes
+} // #include  "core/src/java/org/apache/lucene/analysis/ko/tokenattributes/

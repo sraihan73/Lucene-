@@ -205,4 +205,4 @@ public:
   virtual std::wstring log();
 };
 
-} // namespace org::apache::lucene::analysis::br
+} // #include  "core/src/java/org/apache/lucene/analysis/br/

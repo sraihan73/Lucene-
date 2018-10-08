@@ -57,4 +57,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::classification
+} // #include  "core/src/java/org/apache/lucene/classification/

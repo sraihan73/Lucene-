@@ -4,10 +4,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class MergeState;
-}
+#include  "core/src/java/org/apache/lucene/index/MergeState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -50,4 +47,4 @@ public:
   MatchingReaders(std::shared_ptr<MergeState> mergeState);
 };
 
-} // namespace org::apache::lucene::codecs::compressing
+} // #include  "core/src/java/org/apache/lucene/codecs/compressing/

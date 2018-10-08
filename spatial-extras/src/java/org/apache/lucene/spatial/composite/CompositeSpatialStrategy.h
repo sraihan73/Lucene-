@@ -6,31 +6,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial::prefix
-{
-class RecursivePrefixTreeStrategy;
-}
+#include  "core/src/java/org/apache/lucene/spatial/prefix/RecursivePrefixTreeStrategy.h"
 
-namespace org::apache::lucene::spatial::serialized
-{
-class SerializedDVStrategy;
-}
-namespace org::apache::lucene::document
-{
-class Field;
-}
-namespace org::apache::lucene::search
-{
-class DoubleValuesSource;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::spatial::query
-{
-class SpatialArgs;
-}
+#include  "core/src/java/org/apache/lucene/spatial/serialized/SerializedDVStrategy.h"
+#include  "core/src/java/org/apache/lucene/document/Field.h"
+#include  "core/src/java/org/apache/lucene/search/DoubleValuesSource.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/spatial/query/SpatialArgs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -122,4 +104,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial::composite
+} // #include  "core/src/java/org/apache/lucene/spatial/composite/

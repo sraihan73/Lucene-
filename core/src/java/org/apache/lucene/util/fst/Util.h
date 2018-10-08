@@ -6,42 +6,27 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
 
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util
-{
-class IntsRefBuilder;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/IntsRefBuilder.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class Arc;
 }
-namespace org::apache::lucene::util::fst
-{
-class BytesReader;
-}
+#include  "core/src/java/org/apache/lucene/util/fst/BytesReader.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class Result;
 }
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -650,4 +635,4 @@ public:
               std::shared_ptr<BytesReader> in_) ;
 };
 
-} // namespace org::apache::lucene::util::fst
+} // #include  "core/src/java/org/apache/lucene/util/fst/

@@ -3,10 +3,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::spans
-{
-class SpanQuery;
-}
+#include  "core/src/java/org/apache/lucene/search/spans/SpanQuery.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -43,4 +40,4 @@ public:
   getSpanQuery(std::shared_ptr<Element> e) = 0;
 };
 
-} // namespace org::apache::lucene::queryparser::xml::builders
+} // #include  "core/src/java/org/apache/lucene/queryparser/xml/builders/

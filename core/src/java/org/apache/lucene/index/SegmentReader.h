@@ -6,75 +6,24 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class SegmentCommitInfo;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentCommitInfo.h"
 
-namespace org::apache::lucene::index
-{
-class LeafMetaData;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::index
-{
-class SegmentCoreReaders;
-}
-namespace org::apache::lucene::index
-{
-class SegmentDocValues;
-}
-namespace org::apache::lucene::codecs
-{
-class DocValuesProducer;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::store
-{
-class IOContext;
-}
-namespace org::apache::lucene::codecs
-{
-class TermVectorsReader;
-}
-namespace org::apache::lucene::codecs
-{
-class StoredFieldsReader;
-}
-namespace org::apache::lucene::codecs
-{
-class PointsReader;
-}
-namespace org::apache::lucene::codecs
-{
-class NormsProducer;
-}
-namespace org::apache::lucene::codecs
-{
-class FieldsProducer;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::index
-{
-class CacheHelper;
-}
-namespace org::apache::lucene::index
-{
-class CacheKey;
-}
+#include  "core/src/java/org/apache/lucene/index/LeafMetaData.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentCoreReaders.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentDocValues.h"
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesProducer.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/store/IOContext.h"
+#include  "core/src/java/org/apache/lucene/codecs/TermVectorsReader.h"
+#include  "core/src/java/org/apache/lucene/codecs/StoredFieldsReader.h"
+#include  "core/src/java/org/apache/lucene/codecs/PointsReader.h"
+#include  "core/src/java/org/apache/lucene/codecs/NormsProducer.h"
+#include  "core/src/java/org/apache/lucene/codecs/FieldsProducer.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/index/CacheHelper.h"
+#include  "core/src/java/org/apache/lucene/index/CacheKey.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -296,4 +245,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

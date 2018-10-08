@@ -12,31 +12,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::synonym
-{
-class SynonymMap;
-}
+#include  "core/src/java/org/apache/lucene/analysis/synonym/SynonymMap.h"
 
-namespace org::apache::lucene::analysis::synonym
-{
-class Builder;
-}
-namespace org::apache::lucene::analysis
-{
-class Tokenizer;
-}
-namespace org::apache::lucene::analysis::synonym
-{
-class SynonymFilter;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
+#include  "core/src/java/org/apache/lucene/analysis/synonym/Builder.h"
+#include  "core/src/java/org/apache/lucene/analysis/Tokenizer.h"
+#include  "core/src/java/org/apache/lucene/analysis/synonym/SynonymFilter.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -660,4 +642,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::synonym
+} // #include  "core/src/java/org/apache/lucene/analysis/synonym/

@@ -9,33 +9,21 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class CharsRef;
-}
+#include  "core/src/java/org/apache/lucene/util/CharsRef.h"
 
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::util::fst
-{
-class BytesReader;
-}
-namespace org::apache::lucene::analysis::util
-{
-class RollingCharBuffer;
-}
+#include  "core/src/java/org/apache/lucene/util/fst/BytesReader.h"
+#include  "core/src/java/org/apache/lucene/analysis/util/RollingCharBuffer.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class Arc;
 }
-namespace org::apache::lucene::analysis::charfilter
-{
-class NormalizeCharMap;
-}
+#include  "core/src/java/org/apache/lucene/analysis/charfilter/NormalizeCharMap.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -112,4 +100,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::charfilter
+} // #include  "core/src/java/org/apache/lucene/analysis/charfilter/

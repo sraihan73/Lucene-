@@ -7,23 +7,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::surround::query
-{
-class SingleFieldTestDb;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/surround/query/SingleFieldTestDb.h"
 
-namespace org::apache::lucene::queryparser::surround::query
-{
-class BasicQueryFactory;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/surround/query/BasicQueryFactory.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -113,4 +101,4 @@ public:
   virtual void doTest() ;
 };
 
-} // namespace org::apache::lucene::queryparser::surround::query
+} // #include  "core/src/java/org/apache/lucene/queryparser/surround/query/

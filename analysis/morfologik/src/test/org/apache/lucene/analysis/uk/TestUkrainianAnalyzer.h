@@ -61,4 +61,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::uk
+} // #include  "core/src/java/org/apache/lucene/analysis/uk/

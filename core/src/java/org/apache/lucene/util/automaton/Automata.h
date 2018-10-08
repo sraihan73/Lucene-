@@ -7,19 +7,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
 
-namespace org::apache::lucene::util::automaton
-{
-class Builder;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Builder.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * dk.brics.automaton
@@ -213,4 +204,4 @@ public:
       std::shared_ptr<std::deque<std::shared_ptr<BytesRef>>> utf8Strings);
 };
 
-} // namespace org::apache::lucene::util::automaton
+} // #include  "core/src/java/org/apache/lucene/util/automaton/

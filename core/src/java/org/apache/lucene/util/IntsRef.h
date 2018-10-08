@@ -31,9 +31,7 @@ namespace org::apache::lucene::util
  *  {@link #EMPTY_INTS} if necessary.
  *
  *  @lucene.internal */
-class IntsRef final : public std::enable_shared_from_this<IntsRef>,
-                      public Comparable<std::shared_ptr<IntsRef>>,
-                      public Cloneable
+class IntsRef final : public std::enable_shared_from_this<IntsRef>
 {
   GET_CLASS_NAME(IntsRef)
   /** An empty integer array for convenience */
@@ -68,16 +66,16 @@ public:
    *
    * @see #deepCopyOf
    */
-  std::shared_ptr<IntsRef> clone() override;
+  virtual std::shared_ptr<IntsRef> clone();
 
   virtual int hashCode();
 
-  bool equals(std::any other) override;
+  virtual bool equals(std::any other);
 
   bool intsEquals(std::shared_ptr<IntsRef> other);
 
   /** Signed int order comparison */
-  int compareTo(std::shared_ptr<IntsRef> other) override;
+  virtual int compareTo(std::shared_ptr<IntsRef> other);
 
   virtual std::wstring toString();
 
@@ -97,4 +95,4 @@ public:
   bool isValid();
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

@@ -7,15 +7,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::byTask
-{
-class PerfRunData;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/PerfRunData.h"
 
-namespace org::apache::lucene::store
-{
-class FSDirectory;
-}
+#include  "core/src/java/org/apache/lucene/store/FSDirectory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -90,4 +84,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::tasks
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/tasks/

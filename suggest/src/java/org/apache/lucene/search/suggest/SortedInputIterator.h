@@ -6,43 +6,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::suggest
-{
-class InputIterator;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/InputIterator.h"
 
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
-namespace org::apache::lucene::util
-{
-class OfflineSorter;
-}
-namespace org::apache::lucene::util
-{
-class ByteSequencesReader;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::store
-{
-class ByteArrayDataInput;
-}
-namespace org::apache::lucene::store
-{
-class ByteArrayDataOutput;
-}
-namespace org::apache::lucene::util
-{
-class ByteSequencesWriter;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
+#include  "core/src/java/org/apache/lucene/util/OfflineSorter.h"
+#include  "core/src/java/org/apache/lucene/util/ByteSequencesReader.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/store/ByteArrayDataInput.h"
+#include  "core/src/java/org/apache/lucene/store/ByteArrayDataOutput.h"
+#include  "core/src/java/org/apache/lucene/util/ByteSequencesWriter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -194,4 +167,4 @@ protected:
                 std::shared_ptr<ByteArrayDataInput> tmpInput);
 };
 
-} // namespace org::apache::lucene::search::suggest
+} // #include  "core/src/java/org/apache/lucene/search/suggest/

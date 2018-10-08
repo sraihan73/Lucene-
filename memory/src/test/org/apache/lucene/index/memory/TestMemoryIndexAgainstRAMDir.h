@@ -9,51 +9,18 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index::memory
-{
-class MemoryIndex;
-}
+#include  "core/src/java/org/apache/lucene/index/memory/MemoryIndex.h"
 
-namespace org::apache::lucene::index
-{
-class CompositeReader;
-}
-namespace org::apache::lucene::index
-{
-class LeafReader;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::util
-{
-class ByteBlockPool;
-}
-namespace org::apache::lucene::util
-{
-class Allocator;
-}
-namespace org::apache::lucene::index
-{
-class Terms;
-}
+#include  "core/src/java/org/apache/lucene/index/CompositeReader.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReader.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/util/ByteBlockPool.h"
+#include  "core/src/java/org/apache/lucene/util/Allocator.h"
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -253,4 +220,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index::memory
+} // #include  "core/src/java/org/apache/lucene/index/memory/

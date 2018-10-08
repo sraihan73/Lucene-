@@ -10,60 +10,24 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
 
-namespace org::apache::lucene::codecs::blocktreeords
-{
-class OrdsSegmentTermsEnumFrame;
-}
-namespace org::apache::lucene::codecs::blocktreeords
-{
-class OrdsFieldReader;
-}
-namespace org::apache::lucene::store
-{
-class ByteArrayDataInput;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
+#include  "core/src/java/org/apache/lucene/codecs/blocktreeords/OrdsSegmentTermsEnumFrame.h"
+#include  "core/src/java/org/apache/lucene/codecs/blocktreeords/OrdsFieldReader.h"
+#include  "core/src/java/org/apache/lucene/store/ByteArrayDataInput.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::util::fst
-{
-class BytesReader;
-}
-namespace org::apache::lucene::codecs::blocktreeords
-{
-class FSTOrdsOutputs;
-}
-namespace org::apache::lucene::codecs::blocktreeords
-{
-class Output;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
-namespace org::apache::lucene::index
-{
-class TermState;
-}
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
+#include  "core/src/java/org/apache/lucene/util/fst/BytesReader.h"
+#include  "core/src/java/org/apache/lucene/codecs/blocktreeords/FSTOrdsOutputs.h"
+#include  "core/src/java/org/apache/lucene/codecs/blocktreeords/Output.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/TermState.h"
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -253,4 +217,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::blocktreeords
+} // #include  "core/src/java/org/apache/lucene/codecs/blocktreeords/

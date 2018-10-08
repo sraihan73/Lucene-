@@ -3,15 +3,9 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class Bits;
-}
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
 
-namespace org::apache::lucene::index
-{
-class ReaderSlice;
-}
+#include  "core/src/java/org/apache/lucene/index/ReaderSlice.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -58,4 +52,4 @@ public:
   int length() override;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

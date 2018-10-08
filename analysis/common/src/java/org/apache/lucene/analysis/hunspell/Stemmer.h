@@ -9,36 +9,18 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::hunspell
-{
-class Dictionary;
-}
+#include  "core/src/java/org/apache/lucene/analysis/hunspell/Dictionary.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::store
-{
-class ByteArrayDataInput;
-}
-namespace org::apache::lucene::util
-{
-class CharsRef;
-}
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/store/ByteArrayDataInput.h"
+#include  "core/src/java/org/apache/lucene/util/CharsRef.h"
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::util::fst
-{
-class BytesReader;
-}
+#include  "core/src/java/org/apache/lucene/util/fst/BytesReader.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
@@ -249,4 +231,4 @@ private:
                            bool matchEmpty);
 };
 
-} // namespace org::apache::lucene::analysis::hunspell
+} // #include  "core/src/java/org/apache/lucene/analysis/hunspell/

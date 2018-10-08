@@ -114,4 +114,4 @@ public:
 /* JavaCC - OriginalChecksum=5ca20c9145f29a0f8909470a7f949fe4 (do not edit this
  * line) */
 
-} // namespace org::apache::lucene::queryparser::surround::parser
+} // #include  "core/src/java/org/apache/lucene/queryparser/surround/parser/

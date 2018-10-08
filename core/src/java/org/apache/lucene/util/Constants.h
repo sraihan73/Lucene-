@@ -110,4 +110,4 @@ public:
   static const std::wstring LUCENE_VERSION;
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

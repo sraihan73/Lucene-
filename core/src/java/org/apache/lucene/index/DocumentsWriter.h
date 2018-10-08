@@ -7,101 +7,38 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::index
-{
-class FieldNumbers;
-}
-namespace org::apache::lucene::index
-{
-class FlushNotifications;
-}
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
-namespace org::apache::lucene::index
-{
-class LiveIndexWriterConfig;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterDeleteQueue;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterFlushQueue;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterPerThreadPool;
-}
-namespace org::apache::lucene::index
-{
-class FlushPolicy;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterFlushControl;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::index
-{
-class DocValuesUpdate;
-}
-namespace org::apache::lucene::index
-{
-class FlushTicket;
-}
-namespace org::apache::lucene::util
-{
-class IOUtils;
-}
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/index/FieldNumbers.h"
+#include  "core/src/java/org/apache/lucene/index/FlushNotifications.h"
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
+#include  "core/src/java/org/apache/lucene/index/LiveIndexWriterConfig.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterDeleteQueue.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterFlushQueue.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterPerThreadPool.h"
+#include  "core/src/java/org/apache/lucene/index/FlushPolicy.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterFlushControl.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/index/DocValuesUpdate.h"
+#include  "core/src/java/org/apache/lucene/index/FlushTicket.h"
+#include  "core/src/java/org/apache/lucene/util/IOUtils.h"
 namespace org::apache::lucene::util
 {
 template <typename T>
 class IOConsumer;
 }
-namespace org::apache::lucene::store
-{
-class AlreadyClosedException;
-}
-namespace org::apache::lucene::index
-{
-class ThreadState;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterPerThread;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/store/AlreadyClosedException.h"
+#include  "core/src/java/org/apache/lucene/index/ThreadState.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterPerThread.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 namespace org::apache::lucene::index
 {
 template <typename T>
 class Node;
 }
-namespace org::apache::lucene::index
-{
-class SegmentInfo;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentInfo.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -443,4 +380,4 @@ public:
   int64_t ramBytesUsed() override;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

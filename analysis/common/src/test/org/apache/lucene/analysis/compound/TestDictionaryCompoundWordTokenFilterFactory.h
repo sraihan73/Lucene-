@@ -55,4 +55,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::compound
+} // #include  "core/src/java/org/apache/lucene/analysis/compound/

@@ -5,19 +5,10 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
 
 // -*- c-basic-offset: 2 -*-
 /*
@@ -95,4 +86,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::morfologik
+} // #include  "core/src/java/org/apache/lucene/analysis/morfologik/

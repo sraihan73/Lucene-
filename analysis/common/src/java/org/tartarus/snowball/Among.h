@@ -74,4 +74,4 @@ public:
   const std::shared_ptr<MethodHandle>
       method; // method to use if substring matches
 };
-} // namespace org::tartarus::snowball
+} // #include  "core/src/java/org/tartarus/snowball/

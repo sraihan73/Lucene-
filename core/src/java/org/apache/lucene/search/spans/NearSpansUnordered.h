@@ -5,19 +5,10 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::spans
-{
-class SpanTotalLengthEndPositionWindow;
-}
+#include  "core/src/java/org/apache/lucene/search/spans/SpanTotalLengthEndPositionWindow.h"
 
-namespace org::apache::lucene::search::spans
-{
-class Spans;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanCollector;
-}
+#include  "core/src/java/org/apache/lucene/search/spans/Spans.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanCollector.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -125,4 +116,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::spans
+} // #include  "core/src/java/org/apache/lucene/search/spans/

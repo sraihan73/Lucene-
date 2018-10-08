@@ -5,15 +5,9 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queries::function
-{
-class ValueSource;
-}
+#include  "core/src/java/org/apache/lucene/queries/function/ValueSource.h"
 
-namespace org::apache::lucene::queries::function
-{
-class FunctionValues;
-}
+#include  "core/src/java/org/apache/lucene/queries/function/FunctionValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -64,4 +58,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queries::function::valuesource
+} // #include  "core/src/java/org/apache/lucene/queries/function/valuesource/

@@ -52,4 +52,4 @@ public:
    */
   std::wstring string;
 };
-} // namespace org::apache::lucene::search::spell
+} // #include  "core/src/java/org/apache/lucene/search/spell/

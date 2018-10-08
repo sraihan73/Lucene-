@@ -55,4 +55,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::messages
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/messages/

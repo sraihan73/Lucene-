@@ -5,10 +5,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class Explanation;
-}
+#include  "core/src/java/org/apache/lucene/search/Explanation.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -88,4 +85,4 @@ public:
   override
 };
 
-} // namespace org::apache::lucene::queries::payloads
+} // #include  "core/src/java/org/apache/lucene/queries/payloads/

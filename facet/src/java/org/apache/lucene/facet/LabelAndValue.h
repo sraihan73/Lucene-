@@ -45,4 +45,4 @@ public:
   virtual int hashCode();
 };
 
-} // namespace org::apache::lucene::facet
+} // #include  "core/src/java/org/apache/lucene/facet/

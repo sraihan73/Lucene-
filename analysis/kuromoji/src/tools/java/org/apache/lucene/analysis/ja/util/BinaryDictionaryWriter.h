@@ -84,4 +84,4 @@ protected:
   virtual void writeDictionary(const std::wstring &filename) ;
 };
 
-} // namespace org::apache::lucene::analysis::ja::util
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/util/

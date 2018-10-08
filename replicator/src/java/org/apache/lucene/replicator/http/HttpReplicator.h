@@ -8,15 +8,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::replicator
-{
-class SessionToken;
-}
+#include  "core/src/java/org/apache/lucene/replicator/SessionToken.h"
 
-namespace org::apache::lucene::replicator
-{
-class Revision;
-}
+#include  "core/src/java/org/apache/lucene/replicator/Revision.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -148,4 +142,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::replicator::http
+} // #include  "core/src/java/org/apache/lucene/replicator/http/

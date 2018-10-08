@@ -10,55 +10,19 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class CodecReader;
-}
+#include  "core/src/java/org/apache/lucene/index/CodecReader.h"
 
-namespace org::apache::lucene::index
-{
-class MergeState;
-}
-namespace org::apache::lucene::index
-{
-class DocMap;
-}
-namespace org::apache::lucene::search
-{
-class Sort;
-}
-namespace org::apache::lucene::index
-{
-class LeafAndDocID;
-}
-namespace org::apache::lucene::index
-{
-class ComparableProvider;
-}
-namespace org::apache::lucene::util::packed
-{
-class PackedLongValues;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::search
-{
-class SortField;
-}
-namespace org::apache::lucene::index
-{
-class SortedDocValues;
-}
-namespace org::apache::lucene::util
-{
-class LongValues;
-}
-namespace org::apache::lucene::index
-{
-class NumericDocValues;
-}
+#include  "core/src/java/org/apache/lucene/index/MergeState.h"
+#include  "core/src/java/org/apache/lucene/index/DocMap.h"
+#include  "core/src/java/org/apache/lucene/search/Sort.h"
+#include  "core/src/java/org/apache/lucene/index/LeafAndDocID.h"
+#include  "core/src/java/org/apache/lucene/index/ComparableProvider.h"
+#include  "core/src/java/org/apache/lucene/util/packed/PackedLongValues.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/search/SortField.h"
+#include  "core/src/java/org/apache/lucene/index/SortedDocValues.h"
+#include  "core/src/java/org/apache/lucene/util/LongValues.h"
+#include  "core/src/java/org/apache/lucene/index/NumericDocValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -324,4 +288,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

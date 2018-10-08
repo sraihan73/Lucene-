@@ -5,31 +5,13 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class OfflineSorter;
-}
+#include  "core/src/java/org/apache/lucene/util/OfflineSorter.h"
 
-namespace org::apache::lucene::util
-{
-class ByteSequencesWriter;
-}
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefIterator;
-}
-namespace org::apache::lucene::util
-{
-class ByteSequencesReader;
-}
+#include  "core/src/java/org/apache/lucene/util/ByteSequencesWriter.h"
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefIterator.h"
+#include  "core/src/java/org/apache/lucene/util/ByteSequencesReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -117,4 +99,4 @@ public:
   getComparator() override;
 };
 
-} // namespace org::apache::lucene::search::suggest::fst
+} // #include  "core/src/java/org/apache/lucene/search/suggest/fst/

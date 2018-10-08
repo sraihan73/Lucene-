@@ -15,48 +15,21 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class DocValuesProducer;
-}
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesProducer.h"
 
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class MergeState;
-}
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/MergeState.h"
 namespace org::apache::lucene::index
 {
 template <typename T>
 class DocIDMerger;
 }
-namespace org::apache::lucene::index
-{
-class DocMap;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util
-{
-class LongBitSet;
-}
-namespace org::apache::lucene::util
-{
-class LongValues;
-}
-namespace org::apache::lucene::index
-{
-class OrdinalMap;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
+#include  "core/src/java/org/apache/lucene/index/DocMap.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/LongBitSet.h"
+#include  "core/src/java/org/apache/lucene/util/LongValues.h"
+#include  "core/src/java/org/apache/lucene/index/OrdinalMap.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -836,4 +809,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::codecs
+} // #include  "core/src/java/org/apache/lucene/codecs/

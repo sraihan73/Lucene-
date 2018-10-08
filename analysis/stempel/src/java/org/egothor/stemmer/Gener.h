@@ -5,15 +5,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::egothor::stemmer
-{
-class Trie;
-}
+#include  "core/src/java/org/egothor/stemmer/Trie.h"
 
-namespace org::egothor::stemmer
-{
-class Row;
-}
+#include  "core/src/java/org/egothor/stemmer/Row.h"
 
 /*
                     Egothor Software License version 1.00
@@ -111,4 +105,4 @@ protected:
   }
 };
 
-} // namespace org::egothor::stemmer
+} // #include  "core/src/java/org/egothor/stemmer/

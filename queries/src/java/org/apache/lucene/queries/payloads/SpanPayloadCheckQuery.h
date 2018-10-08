@@ -9,63 +9,21 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::search::spans
-{
-class SpanQuery;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanWeight;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::index
-{
-class TermContext;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search::spans
-{
-class Spans;
-}
-namespace org::apache::lucene::queries::payloads
-{
-class PayloadChecker;
-}
-namespace org::apache::lucene::search::spans
-{
-class FilterSpans;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanScorer;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
+#include  "core/src/java/org/apache/lucene/search/spans/SpanQuery.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanWeight.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/index/TermContext.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/spans/Spans.h"
+#include  "core/src/java/org/apache/lucene/queries/payloads/PayloadChecker.h"
+#include  "core/src/java/org/apache/lucene/search/spans/FilterSpans.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanScorer.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -245,4 +203,4 @@ protected:
         org.apache.lucene.search.spans.SpanQuery::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::queries::payloads
+} // #include  "core/src/java/org/apache/lucene/queries/payloads/

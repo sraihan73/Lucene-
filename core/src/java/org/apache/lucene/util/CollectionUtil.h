@@ -206,4 +206,4 @@ public:
   static void timSort(std::deque<T> &deque);
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

@@ -53,4 +53,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::cjk
+} // #include  "core/src/java/org/apache/lucene/analysis/cjk/

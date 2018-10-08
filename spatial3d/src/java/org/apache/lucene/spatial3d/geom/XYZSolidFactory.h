@@ -4,19 +4,10 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class PlanetModel;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/PlanetModel.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class XYZSolid;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class XYZBounds;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/XYZSolid.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/XYZBounds.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -75,4 +66,4 @@ public:
                std::shared_ptr<XYZBounds> bounds);
 };
 
-} // namespace org::apache::lucene::spatial3d::geom
+} // #include  "core/src/java/org/apache/lucene/spatial3d/geom/

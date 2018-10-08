@@ -8,19 +8,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class BufferedUpdates;
-}
+#include  "core/src/java/org/apache/lucene/index/BufferedUpdates.h"
 
-namespace org::apache::lucene::index
-{
-class DocumentsWriterDeleteQueue;
-}
-namespace org::apache::lucene::index
-{
-class DeleteSlice;
-}
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterDeleteQueue.h"
+#include  "core/src/java/org/apache/lucene/index/DeleteSlice.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -132,4 +123,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

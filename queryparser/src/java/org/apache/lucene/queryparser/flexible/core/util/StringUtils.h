@@ -34,4 +34,4 @@ public:
   static std::wstring toString(std::any obj);
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::core::util
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/core/util/

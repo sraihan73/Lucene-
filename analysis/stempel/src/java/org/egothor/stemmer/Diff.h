@@ -123,4 +123,4 @@ public:
   virtual std::wstring exec(const std::wstring &a, const std::wstring &b);
 };
 
-} // namespace org::egothor::stemmer
+} // #include  "core/src/java/org/egothor/stemmer/

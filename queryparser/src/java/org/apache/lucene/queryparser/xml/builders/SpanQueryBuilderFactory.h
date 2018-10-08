@@ -5,23 +5,11 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::xml::builders
-{
-class SpanQueryBuilder;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/xml/builders/SpanQueryBuilder.h"
 
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::queryparser::xml
-{
-class ParserException;
-}
-namespace org::apache::lucene::search::spans
-{
-class SpanQuery;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/queryparser/xml/ParserException.h"
+#include  "core/src/java/org/apache/lucene/search/spans/SpanQuery.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -72,4 +60,4 @@ public:
   getSpanQuery(std::shared_ptr<Element> e)  override;
 };
 
-} // namespace org::apache::lucene::queryparser::xml::builders
+} // #include  "core/src/java/org/apache/lucene/queryparser/xml/builders/

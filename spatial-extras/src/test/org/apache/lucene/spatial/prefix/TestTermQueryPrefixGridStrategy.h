@@ -41,4 +41,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial::prefix
+} // #include  "core/src/java/org/apache/lucene/spatial/prefix/

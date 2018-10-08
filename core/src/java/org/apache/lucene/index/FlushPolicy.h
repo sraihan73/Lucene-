@@ -4,27 +4,12 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class LiveIndexWriterConfig;
-}
+#include  "core/src/java/org/apache/lucene/index/LiveIndexWriterConfig.h"
 
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterFlushControl;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterPerThreadPool;
-}
-namespace org::apache::lucene::index
-{
-class ThreadState;
-}
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterFlushControl.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterPerThreadPool.h"
+#include  "core/src/java/org/apache/lucene/index/ThreadState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -137,4 +122,4 @@ private:
   bool assertMessage(const std::wstring &s);
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

@@ -5,10 +5,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class AttributeFactory;
-}
+#include  "core/src/java/org/apache/lucene/util/AttributeFactory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -87,4 +84,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::core
+} // #include  "core/src/java/org/apache/lucene/analysis/core/

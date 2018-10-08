@@ -6,19 +6,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::sinks
-{
-class States;
-}
+#include  "core/src/java/org/apache/lucene/analysis/sinks/States.h"
 
-namespace org::apache::lucene::util
-{
-class AttributeSource;
-}
-namespace org::apache::lucene::util
-{
-class State;
-}
+#include  "core/src/java/org/apache/lucene/util/AttributeSource.h"
+#include  "core/src/java/org/apache/lucene/util/State.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -174,4 +165,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::sinks
+} // #include  "core/src/java/org/apache/lucene/analysis/sinks/

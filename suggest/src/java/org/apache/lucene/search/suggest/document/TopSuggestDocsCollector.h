@@ -6,23 +6,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::suggest::document
-{
-class SuggestScoreDocPriorityQueue;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/document/SuggestScoreDocPriorityQueue.h"
 
-namespace org::apache::lucene::analysis
-{
-class CharArraySet;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search::suggest::document
-{
-class TopSuggestDocs;
-}
+#include  "core/src/java/org/apache/lucene/analysis/CharArraySet.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/document/TopSuggestDocs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -169,4 +157,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::document
+} // #include  "core/src/java/org/apache/lucene/search/suggest/document/

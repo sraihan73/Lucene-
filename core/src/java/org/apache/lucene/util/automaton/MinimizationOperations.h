@@ -6,15 +6,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
 
-namespace org::apache::lucene::util::automaton
-{
-class StateListNode;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/StateListNode.h"
 
 /*
  * dk.brics.automaton
@@ -114,4 +108,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::util::automaton
+} // #include  "core/src/java/org/apache/lucene/util/automaton/

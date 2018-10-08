@@ -10,10 +10,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
 namespace org::apache::lucene::util
 {
@@ -395,4 +392,4 @@ public:
   using IOConsumer = std::function<void(T input)>;
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

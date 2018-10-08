@@ -7,10 +7,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::byTask::utils
-{
-class Config;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/utils/Config.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -164,4 +161,4 @@ public:
   virtual void printStatistics(const std::wstring &itemsName);
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::feeds
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/

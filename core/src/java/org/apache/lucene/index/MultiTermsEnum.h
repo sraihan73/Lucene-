@@ -8,43 +8,16 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class TermsEnumWithSlice;
-}
+#include  "core/src/java/org/apache/lucene/index/TermsEnumWithSlice.h"
 
-namespace org::apache::lucene::index
-{
-class TermMergeQueue;
-}
-namespace org::apache::lucene::index
-{
-class MultiPostingsEnum;
-}
-namespace org::apache::lucene::index
-{
-class EnumWithSlice;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::index
-{
-class ReaderSlice;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
+#include  "core/src/java/org/apache/lucene/index/TermMergeQueue.h"
+#include  "core/src/java/org/apache/lucene/index/MultiPostingsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/EnumWithSlice.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/index/ReaderSlice.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -235,4 +208,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

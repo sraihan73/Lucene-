@@ -5,32 +5,17 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class ByteArrayDataInput;
-}
+#include  "core/src/java/org/apache/lucene/store/ByteArrayDataInput.h"
 
-namespace org::apache::lucene::util::automaton
-{
-class Transition;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Transition.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::codecs
-{
-class BlockTermState;
-}
-namespace org::apache::lucene::codecs::blocktree
-{
-class IntersectTermsEnum;
-}
+#include  "core/src/java/org/apache/lucene/codecs/BlockTermState.h"
+#include  "core/src/java/org/apache/lucene/codecs/blocktree/IntersectTermsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -171,4 +156,4 @@ public:
   void decodeMetaData() ;
 };
 
-} // namespace org::apache::lucene::codecs::blocktree
+} // #include  "core/src/java/org/apache/lucene/codecs/blocktree/

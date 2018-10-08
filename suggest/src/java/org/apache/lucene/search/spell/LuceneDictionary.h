@@ -4,15 +4,9 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
-namespace org::apache::lucene::search::suggest
-{
-class InputIterator;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/InputIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -59,4 +53,4 @@ public:
   std::shared_ptr<InputIterator> getEntryIterator()  override;
 };
 
-} // namespace org::apache::lucene::search::spell
+} // #include  "core/src/java/org/apache/lucene/search/spell/

@@ -95,4 +95,4 @@ public:
   fromGeoJSON(const std::wstring &geojson) ;
 };
 
-} // namespace org::apache::lucene::geo
+} // #include  "core/src/java/org/apache/lucene/geo/

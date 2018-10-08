@@ -3,19 +3,10 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class MatchNoDocsQuery;
-}
+#include  "core/src/java/org/apache/lucene/search/MatchNoDocsQuery.h"
 
-namespace org::apache::lucene::queryparser::flexible::core
-{
-class QueryNodeException;
-}
-namespace org::apache::lucene::queryparser::flexible::core::nodes
-{
-class QueryNode;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/QueryNodeException.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/nodes/QueryNode.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -59,4 +50,4 @@ public:
       std::shared_ptr<QueryNode> queryNode)  override;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::standard::builders
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/builders/

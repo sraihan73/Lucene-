@@ -14,51 +14,18 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class TermVectorsFormat;
-}
+#include  "core/src/java/org/apache/lucene/codecs/TermVectorsFormat.h"
 
-namespace org::apache::lucene::codecs
-{
-class FieldInfosFormat;
-}
-namespace org::apache::lucene::codecs
-{
-class SegmentInfoFormat;
-}
-namespace org::apache::lucene::codecs
-{
-class LiveDocsFormat;
-}
-namespace org::apache::lucene::codecs
-{
-class CompoundFormat;
-}
-namespace org::apache::lucene::codecs
-{
-class PostingsFormat;
-}
-namespace org::apache::lucene::codecs
-{
-class DocValuesFormat;
-}
-namespace org::apache::lucene::codecs
-{
-class StoredFieldsFormat;
-}
-namespace org::apache::lucene::codecs::lucene50
-{
-class Lucene50StoredFieldsFormat;
-}
-namespace org::apache::lucene::codecs
-{
-class PointsFormat;
-}
-namespace org::apache::lucene::codecs
-{
-class NormsFormat;
-}
+#include  "core/src/java/org/apache/lucene/codecs/FieldInfosFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/SegmentInfoFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/LiveDocsFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/CompoundFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/PostingsFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/StoredFieldsFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene50/Lucene50StoredFieldsFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/PointsFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/NormsFormat.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -270,4 +237,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::lucene60
+} // #include  "core/src/java/org/apache/lucene/codecs/lucene60/

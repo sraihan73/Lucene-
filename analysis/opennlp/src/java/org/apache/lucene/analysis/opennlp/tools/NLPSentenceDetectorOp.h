@@ -50,4 +50,4 @@ public:
   splitSentences(const std::wstring &line);
 };
 
-} // namespace org::apache::lucene::analysis::opennlp::tools
+} // #include  "core/src/java/org/apache/lucene/analysis/opennlp/tools/

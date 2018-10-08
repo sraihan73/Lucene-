@@ -51,4 +51,4 @@ public:
   bool reject(std::shared_ptr<Thread> t) override;
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

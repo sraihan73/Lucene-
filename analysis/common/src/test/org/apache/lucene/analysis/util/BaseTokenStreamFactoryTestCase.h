@@ -10,31 +10,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::util
-{
-class AbstractAnalysisFactory;
-}
+#include  "core/src/java/org/apache/lucene/analysis/util/AbstractAnalysisFactory.h"
 
-namespace org::apache::lucene::analysis::util
-{
-class ResourceLoader;
-}
-namespace org::apache::lucene::util
-{
-class Version;
-}
-namespace org::apache::lucene::analysis::util
-{
-class TokenizerFactory;
-}
-namespace org::apache::lucene::analysis::util
-{
-class TokenFilterFactory;
-}
-namespace org::apache::lucene::analysis::util
-{
-class CharFilterFactory;
-}
+#include  "core/src/java/org/apache/lucene/analysis/util/ResourceLoader.h"
+#include  "core/src/java/org/apache/lucene/util/Version.h"
+#include  "core/src/java/org/apache/lucene/analysis/util/TokenizerFactory.h"
+#include  "core/src/java/org/apache/lucene/analysis/util/TokenFilterFactory.h"
+#include  "core/src/java/org/apache/lucene/analysis/util/CharFilterFactory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -174,4 +156,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::util
+} // #include  "core/src/java/org/apache/lucene/analysis/util/

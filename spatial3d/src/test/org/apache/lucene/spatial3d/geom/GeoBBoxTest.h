@@ -64,4 +64,4 @@ public:
   virtual void testFailureCase2();
 };
 
-} // namespace org::apache::lucene::spatial3d::geom
+} // #include  "core/src/java/org/apache/lucene/spatial3d/geom/

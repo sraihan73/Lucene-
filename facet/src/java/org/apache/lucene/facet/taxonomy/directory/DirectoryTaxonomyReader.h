@@ -10,44 +10,20 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet::taxonomy::directory
-{
-class DirectoryTaxonomyWriter;
-}
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/directory/DirectoryTaxonomyWriter.h"
 
-namespace org::apache::lucene::index
-{
-class DirectoryReader;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class FacetLabel;
-}
-namespace org::apache::lucene::facet::taxonomy::directory
-{
-class TaxonomyIndexArrays;
-}
+#include  "core/src/java/org/apache/lucene/index/DirectoryReader.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/FacetLabel.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/directory/TaxonomyIndexArrays.h"
 namespace org::apache::lucene::facet::taxonomy
 {
 template <typename Ktypename V>
 class LRUHashMap;
 }
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class ParallelTaxonomyArrays;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/ParallelTaxonomyArrays.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -239,4 +215,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::taxonomy::directory
+} // #include  "core/src/java/org/apache/lucene/facet/taxonomy/directory/

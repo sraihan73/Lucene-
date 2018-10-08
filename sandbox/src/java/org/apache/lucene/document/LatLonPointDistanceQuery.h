@@ -9,59 +9,20 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
 
-namespace org::apache::lucene::search
-{
-class Weight;
-}
-namespace org::apache::lucene::geo
-{
-class GeoEncodingUtils;
-}
-namespace org::apache::lucene::geo
-{
-class DistancePredicate;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::search
-{
-class ScorerSupplier;
-}
-namespace org::apache::lucene::index
-{
-class LeafReader;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
-namespace org::apache::lucene::util
-{
-class DocIdSetBuilder;
-}
-namespace org::apache::lucene::index
-{
-class IntersectVisitor;
-}
-namespace org::apache::lucene::util
-{
-class BulkAdder;
-}
-namespace org::apache::lucene::util
-{
-class FixedBitSet;
-}
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
+#include  "core/src/java/org/apache/lucene/geo/GeoEncodingUtils.h"
+#include  "core/src/java/org/apache/lucene/geo/DistancePredicate.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/search/ScorerSupplier.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReader.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
+#include  "core/src/java/org/apache/lucene/util/DocIdSetBuilder.h"
+#include  "core/src/java/org/apache/lucene/index/IntersectVisitor.h"
+#include  "core/src/java/org/apache/lucene/util/BulkAdder.h"
+#include  "core/src/java/org/apache/lucene/util/FixedBitSet.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -299,4 +260,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::document
+} // #include  "core/src/java/org/apache/lucene/document/

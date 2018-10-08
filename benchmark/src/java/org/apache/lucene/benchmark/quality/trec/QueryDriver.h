@@ -36,4 +36,4 @@ class QueryDriver : public std::enable_shared_from_this<QueryDriver>
   static void main(std::deque<std::wstring> &args) ;
 };
 
-} // namespace org::apache::lucene::benchmark::quality::trec
+} // #include  "core/src/java/org/apache/lucene/benchmark/quality/trec/

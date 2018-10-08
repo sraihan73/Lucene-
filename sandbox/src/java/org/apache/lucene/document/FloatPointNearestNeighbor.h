@@ -11,35 +11,14 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::bkd
-{
-class BKDReader;
-}
+#include  "core/src/java/org/apache/lucene/util/bkd/BKDReader.h"
 
-namespace org::apache::lucene::util::bkd
-{
-class IndexTree;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::document
-{
-class NearestHit;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class TopFieldDocs;
-}
+#include  "core/src/java/org/apache/lucene/util/bkd/IndexTree.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/document/NearestHit.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/TopFieldDocs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -183,4 +162,4 @@ public:
           int topN, std::deque<float> &origin) ;
 };
 
-} // namespace org::apache::lucene::document
+} // #include  "core/src/java/org/apache/lucene/document/

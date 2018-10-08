@@ -4,23 +4,11 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::fr
-{
-class FrenchMinimalStemmer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/fr/FrenchMinimalStemmer.h"
 
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class KeywordAttribute;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/KeywordAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -79,4 +67,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::fr
+} // #include  "core/src/java/org/apache/lucene/analysis/fr/

@@ -4,19 +4,10 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class CharsRef;
-}
+#include  "core/src/java/org/apache/lucene/util/CharsRef.h"
 
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -98,4 +89,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::util::fst
+} // #include  "core/src/java/org/apache/lucene/util/fst/

@@ -6,10 +6,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ko
-{
-class POS;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ko/POS.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -106,4 +103,4 @@ public:
                int len) = 0;
 };
 
-} // namespace org::apache::lucene::analysis::ko::dict
+} // #include  "core/src/java/org/apache/lucene/analysis/ko/dict/

@@ -93,4 +93,4 @@ public:
   bool equals(std::any obj) override;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::standard::config
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/config/

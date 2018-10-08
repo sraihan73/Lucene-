@@ -8,19 +8,10 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class SortField;
-}
+#include  "core/src/java/org/apache/lucene/search/SortField.h"
 
-namespace org::apache::lucene::search
-{
-class DoubleValuesSource;
-}
-namespace org::apache::lucene::expressions
-{
-class Expression;
-}
+#include  "core/src/java/org/apache/lucene/search/DoubleValuesSource.h"
+#include  "core/src/java/org/apache/lucene/expressions/Expression.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -114,4 +105,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::expressions
+} // #include  "core/src/java/org/apache/lucene/expressions/

@@ -7,31 +7,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial
-{
-class SpatialStrategy;
-}
+#include  "core/src/java/org/apache/lucene/spatial/SpatialStrategy.h"
 
-namespace org::apache::lucene::spatial::query
-{
-class SpatialOperation;
-}
-namespace org::apache::lucene::benchmark::byTask::feeds
-{
-class SpatialDocMaker;
-}
-namespace org::apache::lucene::benchmark::byTask::feeds
-{
-class ShapeConverter;
-}
-namespace org::apache::lucene::benchmark::byTask::utils
-{
-class Config;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
+#include  "core/src/java/org/apache/lucene/spatial/query/SpatialOperation.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/SpatialDocMaker.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/ShapeConverter.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/utils/Config.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -99,4 +81,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::feeds
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/

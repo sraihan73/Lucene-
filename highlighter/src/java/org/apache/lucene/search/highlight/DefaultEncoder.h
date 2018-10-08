@@ -35,4 +35,4 @@ public:
 
   std::wstring encodeText(const std::wstring &originalText) override;
 };
-} // namespace org::apache::lucene::search::highlight
+} // #include  "core/src/java/org/apache/lucene/search/highlight/

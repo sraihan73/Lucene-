@@ -71,4 +71,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::phonetic
+} // #include  "core/src/java/org/apache/lucene/analysis/phonetic/

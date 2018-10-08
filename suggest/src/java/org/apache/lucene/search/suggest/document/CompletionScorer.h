@@ -4,31 +4,13 @@
 #include <stdexcept>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::suggest::document
-{
-class NRTSuggester;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/document/NRTSuggester.h"
 
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::search::suggest::document
-{
-class CompletionWeight;
-}
-namespace org::apache::lucene::index
-{
-class LeafReader;
-}
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
-namespace org::apache::lucene::search
-{
-class LeafCollector;
-}
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/document/CompletionWeight.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReader.h"
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
+#include  "core/src/java/org/apache/lucene/search/LeafCollector.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -127,4 +109,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::document
+} // #include  "core/src/java/org/apache/lucene/search/suggest/document/

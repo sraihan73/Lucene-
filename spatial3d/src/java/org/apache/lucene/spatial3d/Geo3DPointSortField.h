@@ -9,10 +9,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoDistanceShape;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoDistanceShape.h"
 
 namespace org::apache::lucene::search
 {
@@ -79,4 +76,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial3d
+} // #include  "core/src/java/org/apache/lucene/spatial3d/

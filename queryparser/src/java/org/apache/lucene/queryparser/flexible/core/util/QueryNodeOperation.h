@@ -5,10 +5,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::flexible::core::nodes
-{
-class QueryNode;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/nodes/QueryNode.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -59,4 +56,4 @@ public:
                                                std::shared_ptr<QueryNode> q2);
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::core::util
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/core/util/

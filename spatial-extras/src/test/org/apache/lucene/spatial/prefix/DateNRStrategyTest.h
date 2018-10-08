@@ -5,10 +5,7 @@
 #include <stdexcept>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class DateRangePrefixTree;
-}
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/DateRangePrefixTree.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -106,4 +103,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial::prefix
+} // #include  "core/src/java/org/apache/lucene/spatial/prefix/

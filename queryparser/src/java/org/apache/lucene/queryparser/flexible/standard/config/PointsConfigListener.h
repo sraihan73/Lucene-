@@ -6,15 +6,9 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::flexible::core::config
-{
-class QueryConfigHandler;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/config/QueryConfigHandler.h"
 
-namespace org::apache::lucene::queryparser::flexible::core::config
-{
-class FieldConfig;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/config/FieldConfig.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -74,4 +68,4 @@ public:
   void buildFieldConfig(std::shared_ptr<FieldConfig> fieldConfig) override;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::standard::config
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/config/

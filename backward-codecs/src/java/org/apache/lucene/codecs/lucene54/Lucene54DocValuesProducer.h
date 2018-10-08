@@ -16,79 +16,25 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs::lucene54
-{
-class NumericEntry;
-}
+#include  "core/src/java/org/apache/lucene/codecs/lucene54/NumericEntry.h"
 
-namespace org::apache::lucene::codecs::lucene54
-{
-class BinaryEntry;
-}
-namespace org::apache::lucene::codecs::lucene54
-{
-class SortedSetEntry;
-}
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::util::packed
-{
-class MonotonicBlockPackedReader;
-}
-namespace org::apache::lucene::codecs::lucene54
-{
-class ReverseTermsIndex;
-}
-namespace org::apache::lucene::util::packed
-{
-class DirectMonotonicReader;
-}
-namespace org::apache::lucene::util::packed
-{
-class Meta;
-}
-namespace org::apache::lucene::util
-{
-class LongValues;
-}
-namespace org::apache::lucene::store
-{
-class RandomAccessInput;
-}
-namespace org::apache::lucene::util
-{
-class PagedBytes;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class LegacyBinaryDocValues;
-}
-namespace org::apache::lucene::codecs::lucene54
-{
-class LongBinaryDocValues;
-}
-namespace org::apache::lucene::codecs
-{
-class DocValuesProducer;
-}
-namespace org::apache::lucene::util
-{
-class Reader;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
-namespace org::apache::lucene::codecs::lucene54
-{
-class CompressedBinaryTermsEnum;
-}
+#include  "core/src/java/org/apache/lucene/codecs/lucene54/BinaryEntry.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene54/SortedSetEntry.h"
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/util/packed/MonotonicBlockPackedReader.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene54/ReverseTermsIndex.h"
+#include  "core/src/java/org/apache/lucene/util/packed/DirectMonotonicReader.h"
+#include  "core/src/java/org/apache/lucene/util/packed/Meta.h"
+#include  "core/src/java/org/apache/lucene/util/LongValues.h"
+#include  "core/src/java/org/apache/lucene/store/RandomAccessInput.h"
+#include  "core/src/java/org/apache/lucene/util/PagedBytes.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/LegacyBinaryDocValues.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene54/LongBinaryDocValues.h"
+#include  "core/src/java/org/apache/lucene/codecs/DocValuesProducer.h"
+#include  "core/src/java/org/apache/lucene/util/Reader.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
+#include  "core/src/java/org/apache/lucene/codecs/lucene54/CompressedBinaryTermsEnum.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -1256,4 +1202,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::lucene54
+} // #include  "core/src/java/org/apache/lucene/codecs/lucene54/

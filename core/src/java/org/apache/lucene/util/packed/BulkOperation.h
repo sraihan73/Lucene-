@@ -6,10 +6,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::packed
-{
-class PackedInts;
-}
+#include  "core/src/java/org/apache/lucene/util/packed/PackedInts.h"
 
 // This file has been automatically generated, DO NOT EDIT
 
@@ -77,4 +74,4 @@ public:
   int computeIterations(int valueCount, int ramBudget);
 };
 
-} // namespace org::apache::lucene::util::packed
+} // #include  "core/src/java/org/apache/lucene/util/packed/

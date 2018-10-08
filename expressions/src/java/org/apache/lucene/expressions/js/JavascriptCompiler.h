@@ -10,83 +10,26 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::expressions
-{
-class Expression;
-}
+#include  "core/src/java/org/apache/lucene/expressions/Expression.h"
 
-namespace org::apache::lucene::expressions::js
-{
-class JavascriptParser;
-}
-namespace org::apache::lucene::expressions::js
-{
-class CompileContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class PrecedenceContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class NumericContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class ExternalContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class UnaryContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class MuldivContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class AddsubContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BwshiftContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BoolcompContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BooleqneContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BwandContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BwxorContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BworContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BoolandContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class BoolorContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class ConditionalContext;
-}
-namespace org::apache::lucene::expressions::js
-{
-class ExpressionContext;
-}
+#include  "core/src/java/org/apache/lucene/expressions/js/JavascriptParser.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/CompileContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/PrecedenceContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/NumericContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/ExternalContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/UnaryContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/MuldivContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/AddsubContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BwshiftContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BoolcompContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BooleqneContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BwandContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BwxorContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BworContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BoolandContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/BoolorContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/ConditionalContext.h"
+#include  "core/src/java/org/apache/lucene/expressions/js/ExpressionContext.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -418,4 +361,4 @@ GET_CLASS_NAME(of)
                                        std::shared_ptr<ClassLoader> parent);
 };
 
-} // namespace org::apache::lucene::expressions::js
+} // #include  "core/src/java/org/apache/lucene/expressions/js/

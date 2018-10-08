@@ -119,4 +119,4 @@ public:
   void onCommit(std::deque<T1> commits) = 0;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

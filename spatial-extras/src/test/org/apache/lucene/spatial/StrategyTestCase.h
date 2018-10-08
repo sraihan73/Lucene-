@@ -9,43 +9,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial::query
-{
-class SpatialArgsParser;
-}
+#include  "core/src/java/org/apache/lucene/spatial/query/SpatialArgsParser.h"
 
-namespace org::apache::lucene::spatial
-{
-class SpatialStrategy;
-}
-namespace org::apache::lucene::spatial
-{
-class SpatialMatchConcern;
-}
-namespace org::apache::lucene::document
-{
-class Document;
-}
-namespace org::apache::lucene::spatial
-{
-class SpatialTestData;
-}
-namespace org::apache::lucene::spatial
-{
-class SpatialTestQuery;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search
-{
-class DoubleValuesSource;
-}
-namespace org::apache::lucene::spatial::query
-{
-class SpatialOperation;
-}
+#include  "core/src/java/org/apache/lucene/spatial/SpatialStrategy.h"
+#include  "core/src/java/org/apache/lucene/spatial/SpatialMatchConcern.h"
+#include  "core/src/java/org/apache/lucene/document/Document.h"
+#include  "core/src/java/org/apache/lucene/spatial/SpatialTestData.h"
+#include  "core/src/java/org/apache/lucene/spatial/SpatialTestQuery.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/DoubleValuesSource.h"
+#include  "core/src/java/org/apache/lucene/spatial/query/SpatialOperation.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -165,4 +138,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial
+} // #include  "core/src/java/org/apache/lucene/spatial/

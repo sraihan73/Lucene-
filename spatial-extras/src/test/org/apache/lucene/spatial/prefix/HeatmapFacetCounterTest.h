@@ -5,19 +5,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class SpatialPrefixTree;
-}
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/SpatialPrefixTree.h"
 
-namespace org::apache::lucene::spatial::prefix
-{
-class HeatmapFacetCounter;
-}
-namespace org::apache::lucene::spatial::prefix
-{
-class Heatmap;
-}
+#include  "core/src/java/org/apache/lucene/spatial/prefix/HeatmapFacetCounter.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/Heatmap.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -119,4 +110,4 @@ protected:
         org.apache.lucene.spatial.StrategyTestCase::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::spatial::prefix
+} // #include  "core/src/java/org/apache/lucene/spatial/prefix/

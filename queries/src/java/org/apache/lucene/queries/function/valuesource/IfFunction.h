@@ -6,31 +6,13 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queries::function
-{
-class ValueSource;
-}
+#include  "core/src/java/org/apache/lucene/queries/function/ValueSource.h"
 
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::queries::function
-{
-class FunctionValues;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::queries::function
-{
-class ValueFiller;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/queries/function/FunctionValues.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/queries/function/ValueFiller.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -152,4 +134,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queries::function::valuesource
+} // #include  "core/src/java/org/apache/lucene/queries/function/valuesource/

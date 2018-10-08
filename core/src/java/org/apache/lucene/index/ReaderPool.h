@@ -9,47 +9,17 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class ReadersAndUpdates;
-}
+#include  "core/src/java/org/apache/lucene/index/ReadersAndUpdates.h"
 
-namespace org::apache::lucene::index
-{
-class SegmentCommitInfo;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::index
-{
-class FieldNumbers;
-}
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
-namespace org::apache::lucene::index
-{
-class SegmentInfos;
-}
-namespace org::apache::lucene::index
-{
-class StandardDirectoryReader;
-}
-namespace org::apache::lucene::index
-{
-class PendingDeletes;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReader;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentCommitInfo.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/index/FieldNumbers.h"
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentInfos.h"
+#include  "core/src/java/org/apache/lucene/index/StandardDirectoryReader.h"
+#include  "core/src/java/org/apache/lucene/index/PendingDeletes.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -242,4 +212,4 @@ private:
   // pool:
   bool noDups();
 };
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

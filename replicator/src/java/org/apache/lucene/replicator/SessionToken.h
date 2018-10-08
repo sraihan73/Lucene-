@@ -6,15 +6,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::replicator
-{
-class RevisionFile;
-}
+#include  "core/src/java/org/apache/lucene/replicator/RevisionFile.h"
 
-namespace org::apache::lucene::replicator
-{
-class Revision;
-}
+#include  "core/src/java/org/apache/lucene/replicator/Revision.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -81,4 +75,4 @@ public:
 
   virtual std::wstring toString();
 };
-} // namespace org::apache::lucene::replicator
+} // #include  "core/src/java/org/apache/lucene/replicator/

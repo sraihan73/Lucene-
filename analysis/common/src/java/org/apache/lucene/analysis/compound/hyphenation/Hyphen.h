@@ -55,4 +55,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::apache::lucene::analysis::compound::hyphenation
+} // #include  "core/src/java/org/apache/lucene/analysis/compound/hyphenation/

@@ -48,4 +48,4 @@ public:
   virtual void setType(const std::wstring &type) = 0;
 };
 
-} // namespace org::apache::lucene::analysis::tokenattributes
+} // #include  "core/src/java/org/apache/lucene/analysis/tokenattributes/

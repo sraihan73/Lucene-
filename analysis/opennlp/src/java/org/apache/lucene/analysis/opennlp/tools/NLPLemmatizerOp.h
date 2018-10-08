@@ -57,4 +57,4 @@ public:
             std::deque<std::wstring> &postags);
 };
 
-} // namespace org::apache::lucene::analysis::opennlp::tools
+} // #include  "core/src/java/org/apache/lucene/analysis/opennlp/tools/

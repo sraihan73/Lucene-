@@ -4,15 +4,9 @@
 #include <optional>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet::taxonomy::writercache
-{
-class NameIntCacheLRU;
-}
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/writercache/NameIntCacheLRU.h"
 
-namespace org::apache::lucene::facet::taxonomy
-{
-class FacetLabel;
-}
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/FacetLabel.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -97,4 +91,4 @@ public:
   bool put(std::shared_ptr<FacetLabel> categoryPath, int ordinal) override;
 };
 
-} // namespace org::apache::lucene::facet::taxonomy::writercache
+} // #include  "core/src/java/org/apache/lucene/facet/taxonomy/writercache/

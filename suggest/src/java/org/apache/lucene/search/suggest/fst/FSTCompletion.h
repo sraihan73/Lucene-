@@ -267,4 +267,4 @@ public:
   virtual std::shared_ptr<FST<std::any>> getFST();
 };
 
-} // namespace org::apache::lucene::search::suggest::fst
+} // #include  "core/src/java/org/apache/lucene/search/suggest/fst/

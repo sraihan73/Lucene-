@@ -6,35 +6,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::packed
-{
-class PackedInts;
-}
+#include  "core/src/java/org/apache/lucene/util/packed/PackedInts.h"
 
-namespace org::apache::lucene::util::packed
-{
-class Decoder;
-}
-namespace org::apache::lucene::util::packed
-{
-class Encoder;
-}
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
+#include  "core/src/java/org/apache/lucene/util/packed/Decoder.h"
+#include  "core/src/java/org/apache/lucene/util/packed/Encoder.h"
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -181,4 +160,4 @@ private:
   static int bitsRequired(std::deque<int> &data);
 };
 
-} // namespace org::apache::lucene::codecs::lucene50
+} // #include  "core/src/java/org/apache/lucene/codecs/lucene50/

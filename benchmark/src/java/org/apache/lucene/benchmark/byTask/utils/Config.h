@@ -183,4 +183,4 @@ public:
   virtual std::wstring getAlgorithmText();
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::utils
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/utils/

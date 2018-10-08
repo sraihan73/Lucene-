@@ -112,4 +112,4 @@ protected:
 /* JavaCC - OriginalChecksum=3ca7fbf7de9f2424b131a5499b0a78d0 (do not edit this
  * line) */
 
-} // namespace org::apache::lucene::queryparser::flexible::standard::parser
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/parser/

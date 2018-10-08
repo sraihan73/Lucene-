@@ -7,51 +7,18 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class SpatialPrefixTree;
-}
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/SpatialPrefixTree.h"
 
-namespace org::apache::lucene::spatial::prefix
-{
-class PointPrefixTreeFieldCacheProvider;
-}
-namespace org::apache::lucene::document
-{
-class Field;
-}
-namespace org::apache::lucene::spatial::prefix
-{
-class CellToBytesRefIterator;
-}
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class Cell;
-}
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
-namespace org::apache::lucene::search
-{
-class DoubleValuesSource;
-}
-namespace org::apache::lucene::index
-{
-class IndexReaderContext;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::spatial::prefix
-{
-class HeatmapFacetCounter;
-}
-namespace org::apache::lucene::spatial::prefix
-{
-class Heatmap;
-}
+#include  "core/src/java/org/apache/lucene/spatial/prefix/PointPrefixTreeFieldCacheProvider.h"
+#include  "core/src/java/org/apache/lucene/document/Field.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/CellToBytesRefIterator.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/Cell.h"
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
+#include  "core/src/java/org/apache/lucene/search/DoubleValuesSource.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReaderContext.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/HeatmapFacetCounter.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/Heatmap.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -253,4 +220,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial::prefix
+} // #include  "core/src/java/org/apache/lucene/spatial/prefix/

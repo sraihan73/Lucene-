@@ -5,15 +5,9 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class SortedSetDocValues;
-}
+#include  "core/src/java/org/apache/lucene/index/SortedSetDocValues.h"
 
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -102,4 +96,4 @@ public:
   virtual int getSize() = 0;
 };
 
-} // namespace org::apache::lucene::facet::sortedset
+} // #include  "core/src/java/org/apache/lucene/facet/sortedset/

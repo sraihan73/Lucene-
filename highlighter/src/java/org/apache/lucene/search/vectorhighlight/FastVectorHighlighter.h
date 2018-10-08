@@ -8,35 +8,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::vectorhighlight
-{
-class FragListBuilder;
-}
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/FragListBuilder.h"
 
-namespace org::apache::lucene::search::vectorhighlight
-{
-class FragmentsBuilder;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search::vectorhighlight
-{
-class FieldQuery;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search::highlight
-{
-class Encoder;
-}
-namespace org::apache::lucene::search::vectorhighlight
-{
-class FieldFragList;
-}
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/FragmentsBuilder.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/FieldQuery.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/Encoder.h"
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/FieldFragList.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -299,4 +278,4 @@ public:
   virtual void setPhraseLimit(int phraseLimit);
 };
 
-} // namespace org::apache::lucene::search::vectorhighlight
+} // #include  "core/src/java/org/apache/lucene/search/vectorhighlight/

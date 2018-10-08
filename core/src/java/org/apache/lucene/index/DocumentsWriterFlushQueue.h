@@ -4,36 +4,18 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class FlushTicket;
-}
+#include  "core/src/java/org/apache/lucene/index/FlushTicket.h"
 
-namespace org::apache::lucene::index
-{
-class DocumentsWriterDeleteQueue;
-}
-namespace org::apache::lucene::index
-{
-class DocumentsWriterPerThread;
-}
-namespace org::apache::lucene::index
-{
-class FlushedSegment;
-}
-namespace org::apache::lucene::util
-{
-class IOUtils;
-}
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterDeleteQueue.h"
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterPerThread.h"
+#include  "core/src/java/org/apache/lucene/index/FlushedSegment.h"
+#include  "core/src/java/org/apache/lucene/util/IOUtils.h"
 namespace org::apache::lucene::util
 {
 template <typename T>
 class IOConsumer;
 }
-namespace org::apache::lucene::index
-{
-class FrozenBufferedUpdates;
-}
+#include  "core/src/java/org/apache/lucene/index/FrozenBufferedUpdates.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -156,4 +138,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

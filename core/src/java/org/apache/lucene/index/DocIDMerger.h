@@ -6,15 +6,9 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class MergeState;
-}
+#include  "core/src/java/org/apache/lucene/index/MergeState.h"
 
-namespace org::apache::lucene::index
-{
-class DocMap;
-}
+#include  "core/src/java/org/apache/lucene/index/DocMap.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more

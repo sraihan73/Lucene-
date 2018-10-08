@@ -10,43 +10,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::replicator::nrt
-{
-class ReplicaFileDeleter;
-}
+#include  "core/src/java/org/apache/lucene/replicator/nrt/ReplicaFileDeleter.h"
 
-namespace org::apache::lucene::replicator::nrt
-{
-class CopyJob;
-}
-namespace org::apache::lucene::store
-{
-class Lock;
-}
-namespace org::apache::lucene::search
-{
-class SearcherFactory;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::replicator::nrt
-{
-class OnceDone;
-}
-namespace org::apache::lucene::replicator::nrt
-{
-class FileMetaData;
-}
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
-namespace org::apache::lucene::store
-{
-class IOContext;
-}
+#include  "core/src/java/org/apache/lucene/replicator/nrt/CopyJob.h"
+#include  "core/src/java/org/apache/lucene/store/Lock.h"
+#include  "core/src/java/org/apache/lucene/search/SearcherFactory.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/replicator/nrt/OnceDone.h"
+#include  "core/src/java/org/apache/lucene/replicator/nrt/FileMetaData.h"
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
+#include  "core/src/java/org/apache/lucene/store/IOContext.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -272,4 +245,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::replicator::nrt
+} // #include  "core/src/java/org/apache/lucene/replicator/nrt/

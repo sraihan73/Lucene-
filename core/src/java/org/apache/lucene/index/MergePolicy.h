@@ -10,52 +10,22 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class SegmentCommitInfo;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentCommitInfo.h"
 
-namespace org::apache::lucene::index
-{
-class SegmentReader;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::index
-{
-class CodecReader;
-}
-namespace org::apache::lucene::store
-{
-class MergeInfo;
-}
-namespace org::apache::lucene::index
-{
-class MergeAbortedException;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::index
-{
-class MergeContext;
-}
-namespace org::apache::lucene::index
-{
-class SegmentInfos;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentReader.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/index/CodecReader.h"
+#include  "core/src/java/org/apache/lucene/store/MergeInfo.h"
+#include  "core/src/java/org/apache/lucene/index/MergeAbortedException.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/index/MergeContext.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentInfos.h"
 namespace org::apache::lucene::util
 {
 template <typename T>
 class IOSupplier;
 }
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -658,4 +628,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

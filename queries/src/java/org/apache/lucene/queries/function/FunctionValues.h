@@ -8,25 +8,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
 
 namespace org::apache::lucene::util::@ mutable { class MutableValue; }
-namespace org::apache::lucene::util::@ mutable { class MutableValueFloat; }
+{
 namespace org::apache::lucene::search
 {
 class Explanation;
 }
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::queries::function
-{
-class ValueSourceScorer;
-}
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/queries/function/ValueSourceScorer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -322,4 +313,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::queries::function
+} // #include  "core/src/java/org/apache/lucene/queries/function/

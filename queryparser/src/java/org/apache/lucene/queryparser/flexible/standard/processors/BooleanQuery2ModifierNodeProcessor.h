@@ -8,23 +8,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::flexible::core::config
-{
-class QueryConfigHandler;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/config/QueryConfigHandler.h"
 
-namespace org::apache::lucene::queryparser::flexible::core::nodes
-{
-class QueryNode;
-}
-namespace org::apache::lucene::queryparser::flexible::core
-{
-class QueryNodeException;
-}
-namespace org::apache::lucene::queryparser::flexible::core::nodes
-{
-class ModifierQueryNode;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/nodes/QueryNode.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/QueryNodeException.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/nodes/ModifierQueryNode.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -143,4 +131,4 @@ public:
   std::shared_ptr<QueryConfigHandler> getQueryConfigHandler() override;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::standard::processors
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/processors/

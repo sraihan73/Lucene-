@@ -63,4 +63,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::pattern
+} // #include  "core/src/java/org/apache/lucene/analysis/pattern/

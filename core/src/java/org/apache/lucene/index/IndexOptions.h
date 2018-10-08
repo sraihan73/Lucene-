@@ -56,4 +56,4 @@ enum class IndexOptions {
   DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS,
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

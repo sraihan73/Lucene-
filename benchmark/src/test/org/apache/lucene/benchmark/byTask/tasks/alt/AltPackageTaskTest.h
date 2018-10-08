@@ -50,4 +50,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::tasks::alt
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/tasks/alt/

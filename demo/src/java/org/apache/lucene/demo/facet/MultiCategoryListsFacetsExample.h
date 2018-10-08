@@ -7,19 +7,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
-namespace org::apache::lucene::facet
-{
-class FacetsConfig;
-}
-namespace org::apache::lucene::facet
-{
-class FacetResult;
-}
+#include  "core/src/java/org/apache/lucene/facet/FacetsConfig.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetResult.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -76,4 +67,4 @@ public:
   static void main(std::deque<std::wstring> &args) ;
 };
 
-} // namespace org::apache::lucene::demo::facet
+} // #include  "core/src/java/org/apache/lucene/demo/facet/

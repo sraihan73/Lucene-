@@ -14,19 +14,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Tokenizer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Tokenizer.h"
 
-namespace org::apache::lucene::analysis
-{
-class TokenFilter;
-}
-namespace org::apache::lucene::analysis
-{
-class CharFilter;
-}
+#include  "core/src/java/org/apache/lucene/analysis/TokenFilter.h"
+#include  "core/src/java/org/apache/lucene/analysis/CharFilter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more

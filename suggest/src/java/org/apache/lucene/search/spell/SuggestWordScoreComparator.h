@@ -3,10 +3,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::spell
-{
-class SuggestWord;
-}
+#include  "core/src/java/org/apache/lucene/search/spell/SuggestWord.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -48,4 +45,4 @@ public:
               std::shared_ptr<SuggestWord> second) override;
 };
 
-} // namespace org::apache::lucene::search::spell
+} // #include  "core/src/java/org/apache/lucene/search/spell/

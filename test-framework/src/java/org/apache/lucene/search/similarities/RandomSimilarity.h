@@ -7,39 +7,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::similarities
-{
-class BM25Similarity;
-}
+#include  "core/src/java/org/apache/lucene/search/similarities/BM25Similarity.h"
 
-namespace org::apache::lucene::search::similarities
-{
-class Similarity;
-}
-namespace org::apache::lucene::search::similarities
-{
-class BasicModel;
-}
-namespace org::apache::lucene::search::similarities
-{
-class AfterEffect;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Normalization;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Distribution;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Lambda;
-}
-namespace org::apache::lucene::search::similarities
-{
-class Independence;
-}
+#include  "core/src/java/org/apache/lucene/search/similarities/Similarity.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/BasicModel.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/AfterEffect.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Normalization.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Distribution.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Lambda.h"
+#include  "core/src/java/org/apache/lucene/search/similarities/Independence.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -124,4 +100,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::similarities
+} // #include  "core/src/java/org/apache/lucene/search/similarities/

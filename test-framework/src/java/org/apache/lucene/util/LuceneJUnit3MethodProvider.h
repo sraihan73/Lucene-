@@ -41,4 +41,4 @@ public:
                  std::shared_ptr<ClassModel> classModel) override;
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

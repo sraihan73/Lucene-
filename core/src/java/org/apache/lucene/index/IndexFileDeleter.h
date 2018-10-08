@@ -11,39 +11,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class RefCount;
-}
+#include  "core/src/java/org/apache/lucene/index/RefCount.h"
 
-namespace org::apache::lucene::index
-{
-class CommitPoint;
-}
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::index
-{
-class IndexDeletionPolicy;
-}
-namespace org::apache::lucene::index
-{
-class SegmentInfos;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::store
-{
-class AlreadyClosedException;
-}
+#include  "core/src/java/org/apache/lucene/index/CommitPoint.h"
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/index/IndexDeletionPolicy.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentInfos.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/store/AlreadyClosedException.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -357,4 +333,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

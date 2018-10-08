@@ -7,10 +7,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::byTask::tasks
-{
-class PerfTask;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/tasks/PerfTask.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -166,4 +163,4 @@ public:
   virtual int getRound();
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::stats
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/stats/

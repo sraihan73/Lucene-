@@ -5,15 +5,9 @@
 #include <stdexcept>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class RandomAccessInput;
-}
+#include  "core/src/java/org/apache/lucene/store/RandomAccessInput.h"
 
-namespace org::apache::lucene::util
-{
-class LongValues;
-}
+#include  "core/src/java/org/apache/lucene/util/LongValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -366,4 +360,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::util::packed
+} // #include  "core/src/java/org/apache/lucene/util/packed/

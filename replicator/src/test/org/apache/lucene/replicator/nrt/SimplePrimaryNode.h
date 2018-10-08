@@ -11,47 +11,17 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::replicator::nrt
-{
-class MergePreCopy;
-}
+#include  "core/src/java/org/apache/lucene/replicator/nrt/MergePreCopy.h"
 
-namespace org::apache::lucene::replicator::nrt
-{
-class Connection;
-}
-namespace org::apache::lucene::replicator::nrt
-{
-class FileMetaData;
-}
-namespace org::apache::lucene::search
-{
-class SearcherFactory;
-}
-namespace org::apache::lucene::index
-{
-class IndexWriter;
-}
-namespace org::apache::lucene::index
-{
-class SegmentCommitInfo;
-}
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
-namespace org::apache::lucene::replicator::nrt
-{
-class CopyState;
-}
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
+#include  "core/src/java/org/apache/lucene/replicator/nrt/Connection.h"
+#include  "core/src/java/org/apache/lucene/replicator/nrt/FileMetaData.h"
+#include  "core/src/java/org/apache/lucene/search/SearcherFactory.h"
+#include  "core/src/java/org/apache/lucene/index/IndexWriter.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentCommitInfo.h"
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
+#include  "core/src/java/org/apache/lucene/replicator/nrt/CopyState.h"
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -257,4 +227,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::replicator::nrt
+} // #include  "core/src/java/org/apache/lucene/replicator/nrt/

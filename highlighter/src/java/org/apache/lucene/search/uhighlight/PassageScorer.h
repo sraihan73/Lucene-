@@ -5,10 +5,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::uhighlight
-{
-class Passage;
-}
+#include  "core/src/java/org/apache/lucene/search/uhighlight/Passage.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -114,4 +111,4 @@ public:
   virtual float score(std::shared_ptr<Passage> passage, int contentLength);
 };
 
-} // namespace org::apache::lucene::search::uhighlight
+} // #include  "core/src/java/org/apache/lucene/search/uhighlight/

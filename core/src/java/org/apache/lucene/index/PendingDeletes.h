@@ -5,52 +5,22 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class SegmentCommitInfo;
-}
+#include  "core/src/java/org/apache/lucene/index/SegmentCommitInfo.h"
 
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::util
-{
-class FixedBitSet;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReader;
-}
-namespace org::apache::lucene::index
-{
-class CodecReader;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/util/FixedBitSet.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReader.h"
+#include  "core/src/java/org/apache/lucene/index/CodecReader.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 namespace org::apache::lucene::util
 {
 template <typename T>
 class IOSupplier;
 }
-namespace org::apache::lucene::index
-{
-class DocValuesFieldUpdates;
-}
-namespace org::apache::lucene::index
-{
-class Iterator;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class MergePolicy;
-}
+#include  "core/src/java/org/apache/lucene/index/DocValuesFieldUpdates.h"
+#include  "core/src/java/org/apache/lucene/index/Iterator.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/MergePolicy.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -204,4 +174,4 @@ public:
   virtual bool verifyDocCounts(std::shared_ptr<CodecReader> reader);
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

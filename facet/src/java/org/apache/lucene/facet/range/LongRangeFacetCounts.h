@@ -5,27 +5,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet
-{
-class FacetsCollector;
-}
+#include  "core/src/java/org/apache/lucene/facet/FacetsCollector.h"
 
-namespace org::apache::lucene::facet::range
-{
-class LongRange;
-}
-namespace org::apache::lucene::search
-{
-class LongValuesSource;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::facet
-{
-class MatchingDocs;
-}
+#include  "core/src/java/org/apache/lucene/facet/range/LongRange.h"
+#include  "core/src/java/org/apache/lucene/search/LongValuesSource.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/facet/MatchingDocs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -104,4 +89,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::range
+} // #include  "core/src/java/org/apache/lucene/facet/range/

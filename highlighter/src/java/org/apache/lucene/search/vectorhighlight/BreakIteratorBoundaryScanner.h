@@ -44,4 +44,4 @@ public:
   int findEndOffset(std::shared_ptr<StringBuilder> buffer, int start) override;
 };
 
-} // namespace org::apache::lucene::search::vectorhighlight
+} // #include  "core/src/java/org/apache/lucene/search/vectorhighlight/

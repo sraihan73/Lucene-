@@ -5,15 +5,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class LongBitSet;
-}
+#include  "core/src/java/org/apache/lucene/util/LongBitSet.h"
 
-namespace org::apache::lucene::util::bkd
-{
-class PointWriter;
-}
+#include  "core/src/java/org/apache/lucene/util/bkd/PointWriter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -72,4 +66,4 @@ public:
                           bool doClearBits) ;
 };
 
-} // namespace org::apache::lucene::util::bkd
+} // #include  "core/src/java/org/apache/lucene/util/bkd/

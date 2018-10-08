@@ -9,23 +9,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::miscellaneous
-{
-class StemmerOverrideFilter;
-}
+#include  "core/src/java/org/apache/lucene/analysis/miscellaneous/StemmerOverrideFilter.h"
 
-namespace org::apache::lucene::analysis::miscellaneous
-{
-class StemmerOverrideMap;
-}
-namespace org::apache::lucene::analysis::util
-{
-class ResourceLoader;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
+#include  "core/src/java/org/apache/lucene/analysis/miscellaneous/StemmerOverrideMap.h"
+#include  "core/src/java/org/apache/lucene/analysis/util/ResourceLoader.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -95,4 +83,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::miscellaneous
+} // #include  "core/src/java/org/apache/lucene/analysis/miscellaneous/

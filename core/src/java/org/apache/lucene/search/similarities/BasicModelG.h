@@ -4,10 +4,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::similarities
-{
-class BasicStats;
-}
+#include  "core/src/java/org/apache/lucene/search/similarities/BasicStats.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -57,4 +54,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::similarities
+} // #include  "core/src/java/org/apache/lucene/search/similarities/

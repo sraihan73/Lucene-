@@ -19,95 +19,29 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class QueryCachingPolicy;
-}
+#include  "core/src/java/org/apache/lucene/search/QueryCachingPolicy.h"
 
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::util
-{
-class TestRuleStoreClassName;
-}
-namespace org::apache::lucene::util
-{
-class TestRuleSetupAndRestoreClassEnv;
-}
-namespace org::apache::lucene::util
-{
-class TestRuleMarkFailure;
-}
-namespace org::apache::lucene::util
-{
-class TestRuleTemporaryFilesCleanup;
-}
-namespace org::apache::lucene::util
-{
-class TestRuleIgnoreAfterMaxFailures;
-}
-namespace org::apache::lucene::util
-{
-class TestRuleSetupTeardownChained;
-}
-namespace org::apache::lucene::util
-{
-class TestRuleThreadAndTestName;
-}
-namespace org::apache::lucene::document
-{
-class FieldType;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::store
-{
-class BaseDirectoryWrapper;
-}
-namespace org::apache::lucene::store
-{
-class LockFactory;
-}
-namespace org::apache::lucene::store
-{
-class MockDirectoryWrapper;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::document
-{
-class Field;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::store
-{
-class IOContext;
-}
-namespace org::apache::lucene::search
-{
-class QueryCache;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::util
-{
-class FixedBitSet;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/util/TestRuleStoreClassName.h"
+#include  "core/src/java/org/apache/lucene/util/TestRuleSetupAndRestoreClassEnv.h"
+#include  "core/src/java/org/apache/lucene/util/TestRuleMarkFailure.h"
+#include  "core/src/java/org/apache/lucene/util/TestRuleTemporaryFilesCleanup.h"
+#include  "core/src/java/org/apache/lucene/util/TestRuleIgnoreAfterMaxFailures.h"
+#include  "core/src/java/org/apache/lucene/util/TestRuleSetupTeardownChained.h"
+#include  "core/src/java/org/apache/lucene/util/TestRuleThreadAndTestName.h"
+#include  "core/src/java/org/apache/lucene/document/FieldType.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/store/BaseDirectoryWrapper.h"
+#include  "core/src/java/org/apache/lucene/store/LockFactory.h"
+#include  "core/src/java/org/apache/lucene/store/MockDirectoryWrapper.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/document/Field.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/store/IOContext.h"
+#include  "core/src/java/org/apache/lucene/search/QueryCache.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/util/FixedBitSet.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -1552,4 +1486,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

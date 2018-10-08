@@ -3,15 +3,9 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class QueryCachingPolicy;
-}
+#include  "core/src/java/org/apache/lucene/search/QueryCachingPolicy.h"
 
-namespace org::apache::lucene::search
-{
-class Weight;
-}
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -54,4 +48,4 @@ public:
           std::shared_ptr<QueryCachingPolicy> policy) = 0;
 };
 
-} // namespace org::apache::lucene::search
+} // #include  "core/src/java/org/apache/lucene/search/

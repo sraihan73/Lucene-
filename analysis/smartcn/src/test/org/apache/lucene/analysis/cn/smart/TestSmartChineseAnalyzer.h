@@ -130,4 +130,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::cn::smart
+} // #include  "core/src/java/org/apache/lucene/analysis/cn/smart/

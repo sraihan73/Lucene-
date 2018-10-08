@@ -5,10 +5,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class CharArraySet;
-}
+#include  "core/src/java/org/apache/lucene/analysis/CharArraySet.h"
 
 namespace org::apache::lucene::analysis
 {
@@ -175,4 +172,4 @@ private:
   getBufferedReader(std::shared_ptr<Reader> reader);
 };
 
-} // namespace org::apache::lucene::analysis
+} // #include  "core/src/java/org/apache/lucene/analysis/

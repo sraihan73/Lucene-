@@ -5,10 +5,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class Codec;
-}
+#include  "core/src/java/org/apache/lucene/codecs/Codec.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -57,4 +54,4 @@ protected:
         org.apache.lucene.index.BaseNormsFormatTestCase::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::codecs::lucene53
+} // #include  "core/src/java/org/apache/lucene/codecs/lucene53/

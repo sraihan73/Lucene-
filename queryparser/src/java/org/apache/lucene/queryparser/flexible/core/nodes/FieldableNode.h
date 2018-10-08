@@ -50,4 +50,4 @@ public:
   virtual void setField(std::shared_ptr<std::wstring> fieldName) = 0;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::core::nodes
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/core/nodes/

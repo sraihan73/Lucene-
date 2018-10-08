@@ -6,19 +6,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ja::dict
-{
-class Dictionary;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ja/dict/Dictionary.h"
 
-namespace org::apache::lucene::analysis::ja
-{
-class JapaneseTokenizer;
-}
-namespace org::apache::lucene::analysis
-{
-class Token;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ja/JapaneseTokenizer.h"
+#include  "core/src/java/org/apache/lucene/analysis/Token.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -162,4 +153,4 @@ public:
   virtual int getPositionLength();
 };
 
-} // namespace org::apache::lucene::analysis::ja
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/

@@ -7,39 +7,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::quality
-{
-class QualityQuery;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/quality/QualityQuery.h"
 
-namespace org::apache::lucene::benchmark::quality
-{
-class QualityQueryParser;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::benchmark::quality
-{
-class Judge;
-}
-namespace org::apache::lucene::benchmark::quality
-{
-class QualityStats;
-}
-namespace org::apache::lucene::benchmark::quality::utils
-{
-class SubmissionReport;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search
-{
-class TopDocs;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/quality/QualityQueryParser.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/benchmark/quality/Judge.h"
+#include  "core/src/java/org/apache/lucene/benchmark/quality/QualityStats.h"
+#include  "core/src/java/org/apache/lucene/benchmark/quality/utils/SubmissionReport.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/TopDocs.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -167,4 +143,4 @@ public:
   virtual void setMaxResults(int maxResults);
 };
 
-} // namespace org::apache::lucene::benchmark::quality
+} // #include  "core/src/java/org/apache/lucene/benchmark/quality/

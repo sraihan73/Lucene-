@@ -92,4 +92,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::standard
+} // #include  "core/src/java/org/apache/lucene/analysis/standard/

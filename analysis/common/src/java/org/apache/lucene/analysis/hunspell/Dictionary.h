@@ -14,31 +14,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
 
-namespace org::apache::lucene::util::automaton
-{
-class CharacterRunAutomaton;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefHash;
-}
-namespace org::apache::lucene::analysis::hunspell
-{
-class FlagParsingStrategy;
-}
-namespace org::apache::lucene::util
-{
-class CharsRef;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/CharacterRunAutomaton.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefHash.h"
+#include  "core/src/java/org/apache/lucene/analysis/hunspell/FlagParsingStrategy.h"
+#include  "core/src/java/org/apache/lucene/util/CharsRef.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
@@ -49,14 +31,8 @@ namespace org::apache::lucene::util::fst
 template <typename T>
 class Builder;
 }
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -554,4 +530,4 @@ public:
   static std::shared_ptr<Path> getDefaultTempDir() ;
 };
 
-} // namespace org::apache::lucene::analysis::hunspell
+} // #include  "core/src/java/org/apache/lucene/analysis/hunspell/

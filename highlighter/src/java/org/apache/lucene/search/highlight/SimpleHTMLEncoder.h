@@ -42,4 +42,4 @@ public:
    */
   static std::wstring htmlEncode(const std::wstring &plainText);
 };
-} // namespace org::apache::lucene::search::highlight
+} // #include  "core/src/java/org/apache/lucene/search/highlight/

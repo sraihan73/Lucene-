@@ -5,27 +5,12 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs::compressing
-{
-class CompressingStoredFieldsFormat;
-}
+#include  "core/src/java/org/apache/lucene/codecs/compressing/CompressingStoredFieldsFormat.h"
 
-namespace org::apache::lucene::codecs::compressing
-{
-class CompressingTermVectorsFormat;
-}
-namespace org::apache::lucene::codecs::compressing
-{
-class CompressionMode;
-}
-namespace org::apache::lucene::codecs
-{
-class StoredFieldsFormat;
-}
-namespace org::apache::lucene::codecs
-{
-class TermVectorsFormat;
-}
+#include  "core/src/java/org/apache/lucene/codecs/compressing/CompressingTermVectorsFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/compressing/CompressionMode.h"
+#include  "core/src/java/org/apache/lucene/codecs/StoredFieldsFormat.h"
+#include  "core/src/java/org/apache/lucene/codecs/TermVectorsFormat.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -121,4 +106,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::compressing
+} // #include  "core/src/java/org/apache/lucene/codecs/compressing/

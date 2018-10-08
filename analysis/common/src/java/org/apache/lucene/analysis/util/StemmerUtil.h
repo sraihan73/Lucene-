@@ -91,4 +91,4 @@ public:
   static int deleteN(std::deque<wchar_t> &s, int pos, int len, int nChars);
 };
 
-} // namespace org::apache::lucene::analysis::util
+} // #include  "core/src/java/org/apache/lucene/analysis/util/

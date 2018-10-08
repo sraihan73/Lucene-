@@ -53,4 +53,4 @@ public:
   virtual bool isWithin(double const x, double const y, double const z) = 0;
 };
 
-} // namespace org::apache::lucene::spatial3d::geom
+} // #include  "core/src/java/org/apache/lucene/spatial3d/geom/

@@ -7,15 +7,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class AttributeImpl;
-}
+#include  "core/src/java/org/apache/lucene/util/AttributeImpl.h"
 
-namespace org::apache::lucene::util
-{
-class AttributeReflector;
-}
+#include  "core/src/java/org/apache/lucene/util/AttributeReflector.h"
 
 // -*- c-basic-offset: 2 -*-
 /*
@@ -98,4 +92,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::morfologik
+} // #include  "core/src/java/org/apache/lucene/analysis/morfologik/

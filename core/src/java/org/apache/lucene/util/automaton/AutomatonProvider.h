@@ -4,10 +4,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::automaton
-{
-class Automaton;
-}
+#include  "core/src/java/org/apache/lucene/util/automaton/Automaton.h"
 
 /*
  * dk.brics.automaton
@@ -62,4 +59,4 @@ public:
   virtual std::shared_ptr<Automaton> getAutomaton(const std::wstring &name) = 0;
 };
 
-} // namespace org::apache::lucene::util::automaton
+} // #include  "core/src/java/org/apache/lucene/util/automaton/

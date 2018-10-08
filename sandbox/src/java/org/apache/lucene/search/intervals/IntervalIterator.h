@@ -91,4 +91,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::intervals
+} // #include  "core/src/java/org/apache/lucene/search/intervals/

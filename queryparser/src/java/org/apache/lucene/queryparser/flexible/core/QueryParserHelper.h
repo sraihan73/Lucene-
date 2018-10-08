@@ -6,27 +6,12 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::flexible::core::processors
-{
-class QueryNodeProcessor;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/processors/QueryNodeProcessor.h"
 
-namespace org::apache::lucene::queryparser::flexible::core::parser
-{
-class SyntaxParser;
-}
-namespace org::apache::lucene::queryparser::flexible::core::builders
-{
-class QueryBuilder;
-}
-namespace org::apache::lucene::queryparser::flexible::core::config
-{
-class QueryConfigHandler;
-}
-namespace org::apache::lucene::queryparser::flexible::core
-{
-class QueryNodeException;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/parser/SyntaxParser.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/builders/QueryBuilder.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/config/QueryConfigHandler.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/QueryNodeException.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -241,4 +226,4 @@ public:
         const std::wstring &defaultField) ;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::core
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/core/

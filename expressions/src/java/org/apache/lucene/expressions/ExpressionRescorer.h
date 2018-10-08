@@ -4,27 +4,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::expressions
-{
-class Expression;
-}
+#include  "core/src/java/org/apache/lucene/expressions/Expression.h"
 
-namespace org::apache::lucene::expressions
-{
-class Bindings;
-}
-namespace org::apache::lucene::search
-{
-class DoubleValues;
-}
-namespace org::apache::lucene::search
-{
-class Explanation;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
+#include  "core/src/java/org/apache/lucene/expressions/Bindings.h"
+#include  "core/src/java/org/apache/lucene/search/DoubleValues.h"
+#include  "core/src/java/org/apache/lucene/search/Explanation.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -115,4 +100,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::expressions
+} // #include  "core/src/java/org/apache/lucene/expressions/

@@ -76,4 +76,4 @@ public:
   std::shared_ptr<CharArrayIterator> clone() override;
 };
 
-} // namespace org::apache::lucene::analysis::icu::segmentation
+} // #include  "core/src/java/org/apache/lucene/analysis/icu/segmentation/

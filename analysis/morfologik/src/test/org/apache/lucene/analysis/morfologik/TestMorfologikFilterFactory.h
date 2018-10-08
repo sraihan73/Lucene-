@@ -75,4 +75,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::morfologik
+} // #include  "core/src/java/org/apache/lucene/analysis/morfologik/

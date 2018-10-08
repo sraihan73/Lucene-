@@ -14,10 +14,7 @@ template <typename T>
 class Arc;
 }
 
-namespace org::apache::lucene::util::fst
-{
-class BytesReader;
-}
+#include  "core/src/java/org/apache/lucene/util/fst/BytesReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -1490,4 +1487,4 @@ public:
  */
 };
 
-} // namespace org::apache::lucene::util::fst
+} // #include  "core/src/java/org/apache/lucene/util/fst/

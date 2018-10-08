@@ -10,40 +10,19 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRefHash;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRefHash.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename T>
 class FST;
 }
-namespace org::apache::lucene::analysis::synonym
-{
-class MapEntry;
-}
-namespace org::apache::lucene::util
-{
-class CharsRef;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefBuilder;
-}
-namespace org::apache::lucene::util
-{
-class CharsRefBuilder;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/synonym/MapEntry.h"
+#include  "core/src/java/org/apache/lucene/util/CharsRef.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/util/CharsRefBuilder.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -215,4 +194,4 @@ public:
   };
 };
 
-} // namespace org::apache::lucene::analysis::synonym
+} // #include  "core/src/java/org/apache/lucene/analysis/synonym/

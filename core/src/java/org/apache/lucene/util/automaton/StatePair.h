@@ -78,4 +78,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::apache::lucene::util::automaton
+} // #include  "core/src/java/org/apache/lucene/util/automaton/

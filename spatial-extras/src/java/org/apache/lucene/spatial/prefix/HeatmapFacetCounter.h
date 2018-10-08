@@ -10,23 +10,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class IndexReaderContext;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReaderContext.h"
 
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::spatial::prefix
-{
-class PrefixTreeStrategy;
-}
-namespace org::apache::lucene::spatial::prefix::tree
-{
-class Cell;
-}
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/PrefixTreeStrategy.h"
+#include  "core/src/java/org/apache/lucene/spatial/prefix/tree/Cell.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -189,4 +177,4 @@ private:
   HeatmapFacetCounter();
 };
 
-} // namespace org::apache::lucene::spatial::prefix
+} // #include  "core/src/java/org/apache/lucene/spatial/prefix/

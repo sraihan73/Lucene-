@@ -11,67 +11,22 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs::compressing
-{
-class CompressingStoredFieldsIndexWriter;
-}
+#include  "core/src/java/org/apache/lucene/codecs/compressing/CompressingStoredFieldsIndexWriter.h"
 
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
-namespace org::apache::lucene::codecs::compressing
-{
-class Compressor;
-}
-namespace org::apache::lucene::codecs::compressing
-{
-class CompressionMode;
-}
-namespace org::apache::lucene::store
-{
-class GrowableByteArrayDataOutput;
-}
-namespace org::apache::lucene::index
-{
-class SegmentInfo;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::store
-{
-class IOContext;
-}
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class IndexableField;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfos;
-}
-namespace org::apache::lucene::index
-{
-class MergeState;
-}
-namespace org::apache::lucene::codecs::compressing
-{
-class CompressingStoredFieldsReader;
-}
-namespace org::apache::lucene::index
-{
-class DocMap;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
+#include  "core/src/java/org/apache/lucene/codecs/compressing/Compressor.h"
+#include  "core/src/java/org/apache/lucene/codecs/compressing/CompressionMode.h"
+#include  "core/src/java/org/apache/lucene/store/GrowableByteArrayDataOutput.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentInfo.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/store/IOContext.h"
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/IndexableField.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfos.h"
+#include  "core/src/java/org/apache/lucene/index/MergeState.h"
+#include  "core/src/java/org/apache/lucene/codecs/compressing/CompressingStoredFieldsReader.h"
+#include  "core/src/java/org/apache/lucene/index/DocMap.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -345,4 +300,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::compressing
+} // #include  "core/src/java/org/apache/lucene/codecs/compressing/

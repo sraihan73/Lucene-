@@ -3,10 +3,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::flexible::messages
-{
-class Message;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/messages/Message.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -47,4 +44,4 @@ public:
   virtual std::shared_ptr<Message> getMessageObject() = 0;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::messages
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/messages/

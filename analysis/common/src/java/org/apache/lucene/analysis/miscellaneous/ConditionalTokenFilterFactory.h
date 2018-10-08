@@ -9,23 +9,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::util
-{
-class TokenFilterFactory;
-}
+#include  "core/src/java/org/apache/lucene/analysis/util/TokenFilterFactory.h"
 
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::analysis::util
-{
-class ResourceLoader;
-}
-namespace org::apache::lucene::analysis::miscellaneous
-{
-class ConditionalTokenFilter;
-}
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/analysis/util/ResourceLoader.h"
+#include  "core/src/java/org/apache/lucene/analysis/miscellaneous/ConditionalTokenFilter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -107,4 +95,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::miscellaneous
+} // #include  "core/src/java/org/apache/lucene/analysis/miscellaneous/

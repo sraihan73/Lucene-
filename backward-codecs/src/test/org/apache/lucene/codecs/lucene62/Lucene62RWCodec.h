@@ -6,15 +6,9 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs
-{
-class SegmentInfoFormat;
-}
+#include  "core/src/java/org/apache/lucene/codecs/SegmentInfoFormat.h"
 
-namespace org::apache::lucene::codecs
-{
-class NormsFormat;
-}
+#include  "core/src/java/org/apache/lucene/codecs/NormsFormat.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -72,4 +66,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::lucene62
+} // #include  "core/src/java/org/apache/lucene/codecs/lucene62/

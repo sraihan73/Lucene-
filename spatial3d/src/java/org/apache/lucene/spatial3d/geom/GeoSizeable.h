@@ -3,10 +3,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPoint;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPoint.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -52,4 +49,4 @@ public:
   virtual std::shared_ptr<GeoPoint> getCenter() = 0;
 };
 
-} // namespace org::apache::lucene::spatial3d::geom
+} // #include  "core/src/java/org/apache/lucene/spatial3d/geom/

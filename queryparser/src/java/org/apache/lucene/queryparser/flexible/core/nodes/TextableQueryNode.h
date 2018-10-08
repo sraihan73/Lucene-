@@ -34,4 +34,4 @@ public:
   virtual void setText(std::shared_ptr<std::wstring> text) = 0;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::core::nodes
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/core/nodes/

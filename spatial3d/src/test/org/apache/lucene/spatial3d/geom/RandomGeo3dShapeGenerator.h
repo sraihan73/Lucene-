@@ -10,51 +10,18 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class PlanetModel;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/PlanetModel.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class Constraints;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPoint;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoAreaShape;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoShape;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPointShape;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoCircle;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoBBox;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPath;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoCompositeAreaShape;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPolygon;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Constraints.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPoint.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoAreaShape.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoShape.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPointShape.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoCircle.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoBBox.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPath.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoCompositeAreaShape.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPolygon.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -587,4 +554,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial3d::geom
+} // #include  "core/src/java/org/apache/lucene/spatial3d/geom/

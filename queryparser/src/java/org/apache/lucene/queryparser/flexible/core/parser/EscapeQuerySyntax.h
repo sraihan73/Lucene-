@@ -50,4 +50,4 @@ public:
          Type type) = 0;
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::core::parser
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/core/parser/

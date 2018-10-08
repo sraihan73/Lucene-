@@ -8,15 +8,9 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial::query
-{
-class SpatialArgs;
-}
+#include  "core/src/java/org/apache/lucene/spatial/query/SpatialArgs.h"
 
-namespace org::apache::lucene::spatial::query
-{
-class SpatialOperation;
-}
+#include  "core/src/java/org/apache/lucene/spatial/query/SpatialOperation.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -112,4 +106,4 @@ protected:
   parseMap(const std::wstring &body);
 };
 
-} // namespace org::apache::lucene::spatial::query
+} // #include  "core/src/java/org/apache/lucene/spatial/query/

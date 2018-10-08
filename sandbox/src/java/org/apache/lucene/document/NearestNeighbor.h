@@ -8,27 +8,12 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util::bkd
-{
-class BKDReader;
-}
+#include  "core/src/java/org/apache/lucene/util/bkd/BKDReader.h"
 
-namespace org::apache::lucene::util::bkd
-{
-class IndexTree;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::document
-{
-class NearestHit;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
+#include  "core/src/java/org/apache/lucene/util/bkd/IndexTree.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/document/NearestHit.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -182,4 +167,4 @@ private:
                                    double pointLon);
 };
 
-} // namespace org::apache::lucene::document
+} // #include  "core/src/java/org/apache/lucene/document/

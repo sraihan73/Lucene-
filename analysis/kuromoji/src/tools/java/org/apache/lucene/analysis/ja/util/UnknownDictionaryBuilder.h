@@ -6,10 +6,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ja::util
-{
-class UnknownDictionaryWriter;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ja/util/UnknownDictionaryWriter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -75,4 +72,4 @@ public:
       std::shared_ptr<UnknownDictionaryWriter> dictionary) ;
 };
 
-} // namespace org::apache::lucene::analysis::ja::util
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/util/

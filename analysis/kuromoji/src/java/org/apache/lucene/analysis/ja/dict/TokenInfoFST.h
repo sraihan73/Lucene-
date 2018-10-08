@@ -17,10 +17,7 @@ namespace org::apache::lucene::util::fst
 template <typename T>
 class Arc;
 }
-namespace org::apache::lucene::util::fst
-{
-class BytesReader;
-}
+#include  "core/src/java/org/apache/lucene/util/fst/BytesReader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -92,4 +89,4 @@ public:
   std::shared_ptr<FST<int64_t>> getInternalFST();
 };
 
-} // namespace org::apache::lucene::analysis::ja::dict
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/dict/

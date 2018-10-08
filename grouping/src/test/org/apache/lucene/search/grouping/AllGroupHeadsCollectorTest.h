@@ -11,36 +11,18 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class Bits;
-}
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
 
-namespace org::apache::lucene::search
-{
-class Sort;
-}
-namespace org::apache::lucene::search::grouping
-{
-class GroupDoc;
-}
-namespace org::apache::lucene::search
-{
-class SortField;
-}
+#include  "core/src/java/org/apache/lucene/search/Sort.h"
+#include  "core/src/java/org/apache/lucene/search/grouping/GroupDoc.h"
+#include  "core/src/java/org/apache/lucene/search/SortField.h"
 namespace org::apache::lucene::search::grouping
 {
 template <typename T>
 class AllGroupHeadsCollector;
 }
-namespace org::apache::lucene::document
-{
-class Document;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/document/Document.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -159,4 +141,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::grouping
+} // #include  "core/src/java/org/apache/lucene/search/grouping/

@@ -6,27 +6,12 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class RAMOutputStream;
-}
+#include  "core/src/java/org/apache/lucene/store/RAMOutputStream.h"
 
-namespace org::apache::lucene::document
-{
-class Document;
-}
-namespace org::apache::lucene::replicator::nrt
-{
-class NodeProcess;
-}
-namespace org::apache::lucene::store
-{
-class DataInput;
-}
-namespace org::apache::lucene::replicator::nrt
-{
-class Connection;
-}
+#include  "core/src/java/org/apache/lucene/document/Document.h"
+#include  "core/src/java/org/apache/lucene/replicator/nrt/NodeProcess.h"
+#include  "core/src/java/org/apache/lucene/store/DataInput.h"
+#include  "core/src/java/org/apache/lucene/replicator/nrt/Connection.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -139,4 +124,4 @@ public:
   virtual ~SimpleTransLog();
 };
 
-} // namespace org::apache::lucene::replicator::nrt
+} // #include  "core/src/java/org/apache/lucene/replicator/nrt/

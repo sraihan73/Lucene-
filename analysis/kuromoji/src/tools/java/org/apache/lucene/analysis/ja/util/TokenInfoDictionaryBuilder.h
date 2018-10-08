@@ -9,15 +9,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ja::util
-{
-class DictionaryBuilder;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ja/util/DictionaryBuilder.h"
 
-namespace org::apache::lucene::analysis::ja::util
-{
-class TokenInfoDictionaryWriter;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ja/util/TokenInfoDictionaryWriter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -142,4 +136,4 @@ public:
   formatEntry(std::deque<std::wstring> &features);
 };
 
-} // namespace org::apache::lucene::analysis::ja::util
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/util/

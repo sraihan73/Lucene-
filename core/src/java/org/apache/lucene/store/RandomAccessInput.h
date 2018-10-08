@@ -52,4 +52,4 @@ public:
   virtual int64_t readLong(int64_t pos) = 0;
 };
 
-} // namespace org::apache::lucene::store
+} // #include  "core/src/java/org/apache/lucene/store/

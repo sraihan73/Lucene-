@@ -59,4 +59,4 @@ public:
   void sort(int numBits, std::deque<int> &array_, int len);
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

@@ -8,23 +8,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Token;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Token.h"
 
-namespace org::apache::lucene::analysis::shingle
-{
-class ShingleFilter;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
+#include  "core/src/java/org/apache/lucene/analysis/shingle/ShingleFilter.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -606,4 +594,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::shingle
+} // #include  "core/src/java/org/apache/lucene/analysis/shingle/

@@ -7,23 +7,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ja::dict
-{
-class ConnectionCosts;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ja/dict/ConnectionCosts.h"
 
-namespace org::apache::lucene::analysis::ja
-{
-class JapaneseTokenizer;
-}
-namespace org::apache::lucene::analysis::ja
-{
-class Position;
-}
-namespace org::apache::lucene::analysis::ja
-{
-class WrappedPositionArray;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ja/JapaneseTokenizer.h"
+#include  "core/src/java/org/apache/lucene/analysis/ja/Position.h"
+#include  "core/src/java/org/apache/lucene/analysis/ja/WrappedPositionArray.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -103,4 +91,4 @@ private:
   std::wstring getNodeID(int pos, int idx);
 };
 
-} // namespace org::apache::lucene::analysis::ja
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/

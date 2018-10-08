@@ -33,4 +33,4 @@ namespace org::apache::lucene::util
 //  std::wstring reason();
 //}
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

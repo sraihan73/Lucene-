@@ -52,4 +52,4 @@ protected:
             .BaseTokenStreamFactoryTestCase::shared_from_this());
   }
 };
-} // namespace org::apache::lucene::analysis::core
+} // #include  "core/src/java/org/apache/lucene/analysis/core/

@@ -180,4 +180,4 @@ public:
       virtual std::shared_ptr<Path> toDelegate(std::shared_ptr<Path> path);
 };
 
-} // namespace org::apache::lucene::mockfile
+} // #include  "core/src/java/org/apache/lucene/mockfile/

@@ -7,24 +7,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::document
-{
-class Document;
-}
+#include  "core/src/java/org/apache/lucene/document/Document.h"
 
 namespace org::apache::lucene::search::grouping
 {
 template <typename T>
 class GroupDocs;
 }
-namespace org::apache::lucene::search
-{
-class Sort;
-}
-namespace org::apache::lucene::search::grouping
-{
-class GroupingSearch;
-}
+#include  "core/src/java/org/apache/lucene/search/Sort.h"
+#include  "core/src/java/org/apache/lucene/search/grouping/GroupingSearch.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -82,4 +73,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::grouping
+} // #include  "core/src/java/org/apache/lucene/search/grouping/

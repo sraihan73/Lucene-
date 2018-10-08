@@ -8,43 +8,16 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class PagedBytes;
-}
+#include  "core/src/java/org/apache/lucene/util/PagedBytes.h"
 
-namespace org::apache::lucene::util
-{
-class Reader;
-}
-namespace org::apache::lucene::codecs::blockterms
-{
-class FieldIndexData;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util::packed
-{
-class MonotonicBlockPackedReader;
-}
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
+#include  "core/src/java/org/apache/lucene/util/Reader.h"
+#include  "core/src/java/org/apache/lucene/codecs/blockterms/FieldIndexData.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/packed/MonotonicBlockPackedReader.h"
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -209,4 +182,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::blockterms
+} // #include  "core/src/java/org/apache/lucene/codecs/blockterms/

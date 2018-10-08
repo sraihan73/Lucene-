@@ -44,4 +44,4 @@ enum class SuggestMode {
   SUGGEST_ALWAYS
 };
 
-} // namespace org::apache::lucene::search::spell
+} // #include  "core/src/java/org/apache/lucene/search/spell/

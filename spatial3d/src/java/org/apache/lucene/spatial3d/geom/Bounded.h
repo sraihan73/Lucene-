@@ -3,10 +3,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class Bounds;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Bounds.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -47,4 +44,4 @@ public:
   virtual void getBounds(std::shared_ptr<Bounds> bounds) = 0;
 };
 
-} // namespace org::apache::lucene::spatial3d::geom
+} // #include  "core/src/java/org/apache/lucene/spatial3d/geom/

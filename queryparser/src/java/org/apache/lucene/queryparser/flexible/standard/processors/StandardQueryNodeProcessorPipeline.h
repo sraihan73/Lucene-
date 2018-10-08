@@ -3,10 +3,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::flexible::core::config
-{
-class QueryConfigHandler;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/core/config/QueryConfigHandler.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -65,4 +62,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::standard::processors
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/processors/

@@ -9,36 +9,18 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class CharArraySet;
-}
+#include  "core/src/java/org/apache/lucene/analysis/CharArraySet.h"
 
-namespace org::apache::lucene::analysis::miscellaneous
-{
-class StemmerOverrideFilter;
-}
-namespace org::apache::lucene::analysis::miscellaneous
-{
-class StemmerOverrideMap;
-}
+#include  "core/src/java/org/apache/lucene/analysis/miscellaneous/StemmerOverrideFilter.h"
+#include  "core/src/java/org/apache/lucene/analysis/miscellaneous/StemmerOverrideMap.h"
 namespace org::apache::lucene::analysis
 {
 template <typename V>
 class CharArrayMap;
 }
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStreamComponents;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStreamComponents.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -172,4 +154,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::nl
+} // #include  "core/src/java/org/apache/lucene/analysis/nl/

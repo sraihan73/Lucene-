@@ -6,10 +6,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::uhighlight
-{
-class Passage;
-}
+#include  "core/src/java/org/apache/lucene/search/uhighlight/Passage.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -56,4 +53,4 @@ public:
                           const std::wstring &content) = 0;
 };
 
-} // namespace org::apache::lucene::search::uhighlight
+} // #include  "core/src/java/org/apache/lucene/search/uhighlight/

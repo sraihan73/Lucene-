@@ -9,15 +9,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ko
-{
-class POS;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ko/POS.h"
 
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -109,4 +103,4 @@ public:
   /** flag that the entry has reading data. otherwise reading is surface form */
   static constexpr int HAS_READING = 2;
 };
-} // namespace org::apache::lucene::analysis::ko::dict
+} // #include  "core/src/java/org/apache/lucene/analysis/ko/dict/

@@ -93,4 +93,4 @@ public:
               std::shared_ptr<Locale> locale);
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::core::util
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/core/util/

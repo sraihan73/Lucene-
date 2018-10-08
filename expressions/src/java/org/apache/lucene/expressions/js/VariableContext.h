@@ -105,4 +105,4 @@ private:
               std::deque<std::shared_ptr<VariableContext>> &contexts);
 };
 
-} // namespace org::apache::lucene::expressions::js
+} // #include  "core/src/java/org/apache/lucene/expressions/js/

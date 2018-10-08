@@ -8,10 +8,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class ByteBufferGuard;
-}
+#include  "core/src/java/org/apache/lucene/store/ByteBufferGuard.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more

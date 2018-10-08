@@ -7,10 +7,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::suggest::tst
-{
-class TernaryTreeNode;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/tst/TernaryTreeNode.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -97,4 +94,4 @@ public:
                    std::shared_ptr<std::wstring> s, int x);
 };
 
-} // namespace org::apache::lucene::search::suggest::tst
+} // #include  "core/src/java/org/apache/lucene/search/suggest/tst/

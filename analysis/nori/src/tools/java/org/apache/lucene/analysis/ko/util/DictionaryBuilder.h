@@ -40,4 +40,4 @@ public:
   static void main(std::deque<std::wstring> &args) ;
 };
 
-} // namespace org::apache::lucene::analysis::ko::util
+} // #include  "core/src/java/org/apache/lucene/analysis/ko/util/

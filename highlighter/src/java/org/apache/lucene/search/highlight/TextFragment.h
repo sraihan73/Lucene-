@@ -61,4 +61,4 @@ public:
   virtual std::wstring toString();
 };
 
-} // namespace org::apache::lucene::search::highlight
+} // #include  "core/src/java/org/apache/lucene/search/highlight/

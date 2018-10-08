@@ -40,4 +40,4 @@ private:
   static std::shared_ptr<Properties> initProps();
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::programmatic
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/programmatic/

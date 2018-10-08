@@ -72,4 +72,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::charfilter
+} // #include  "core/src/java/org/apache/lucene/analysis/charfilter/

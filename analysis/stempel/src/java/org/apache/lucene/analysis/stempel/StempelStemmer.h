@@ -5,10 +5,7 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::egothor::stemmer
-{
-class Trie;
-}
+#include  "core/src/java/org/egothor/stemmer/Trie.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -80,4 +77,4 @@ public:
   stem(std::shared_ptr<std::wstring> word);
 };
 
-} // namespace org::apache::lucene::analysis::stempel
+} // #include  "core/src/java/org/apache/lucene/analysis/stempel/

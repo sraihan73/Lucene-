@@ -265,4 +265,4 @@ class AbstractRangeQueryNode : public QueryNodeImpl,
         }
 };
 
-} // namespace org::apache::lucene::queryparser::flexible::standard::nodes
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/

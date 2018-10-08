@@ -11,40 +11,19 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
-namespace org::apache::lucene::search::similarities
-{
-class TFIDFSimilarity;
-}
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
+#include  "core/src/java/org/apache/lucene/search/similarities/TFIDFSimilarity.h"
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
 namespace org::apache::lucene::util
 {
 template <typename T>
 class PriorityQueue;
 }
-namespace org::apache::lucene::queries::mlt
-{
-class ScoreTerm;
-}
-namespace org::apache::lucene::queries::mlt
-{
-class Int;
-}
-namespace org::apache::lucene::index
-{
-class Terms;
-}
+#include  "core/src/java/org/apache/lucene/queries/mlt/ScoreTerm.h"
+#include  "core/src/java/org/apache/lucene/queries/mlt/Int.h"
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -790,4 +769,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::queries::mlt
+} // #include  "core/src/java/org/apache/lucene/queries/mlt/

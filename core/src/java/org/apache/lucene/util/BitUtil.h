@@ -115,4 +115,4 @@ public:
   static int64_t zigZagDecode(int64_t l);
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

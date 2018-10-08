@@ -4,63 +4,21 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class TermsHash;
-}
+#include  "core/src/java/org/apache/lucene/index/TermsHash.h"
 
-namespace org::apache::lucene::index
-{
-class DocumentsWriterPerThread;
-}
-namespace org::apache::lucene::index
-{
-class DocState;
-}
-namespace org::apache::lucene::index
-{
-class FieldInvertState;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class TermToBytesRefAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class TermFrequencyAttribute;
-}
-namespace org::apache::lucene::util
-{
-class IntBlockPool;
-}
-namespace org::apache::lucene::util
-{
-class ByteBlockPool;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefHash;
-}
-namespace org::apache::lucene::index
-{
-class ParallelPostingsArray;
-}
-namespace org::apache::lucene::util
-{
-class Counter;
-}
-namespace org::apache::lucene::index
-{
-class ByteSliceReader;
-}
-namespace org::apache::lucene::index
-{
-class IndexableField;
-}
+#include  "core/src/java/org/apache/lucene/index/DocumentsWriterPerThread.h"
+#include  "core/src/java/org/apache/lucene/index/DocState.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInvertState.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/TermToBytesRefAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/TermFrequencyAttribute.h"
+#include  "core/src/java/org/apache/lucene/util/IntBlockPool.h"
+#include  "core/src/java/org/apache/lucene/util/ByteBlockPool.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefHash.h"
+#include  "core/src/java/org/apache/lucene/index/ParallelPostingsArray.h"
+#include  "core/src/java/org/apache/lucene/util/Counter.h"
+#include  "core/src/java/org/apache/lucene/index/ByteSliceReader.h"
+#include  "core/src/java/org/apache/lucene/index/IndexableField.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -239,4 +197,4 @@ public:
   createPostingsArray(int size) = 0;
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

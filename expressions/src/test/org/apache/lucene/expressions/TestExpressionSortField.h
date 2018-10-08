@@ -43,4 +43,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::expressions
+} // #include  "core/src/java/org/apache/lucene/expressions/

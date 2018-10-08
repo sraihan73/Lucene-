@@ -169,4 +169,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::misc
+} // #include  "core/src/java/org/apache/lucene/misc/

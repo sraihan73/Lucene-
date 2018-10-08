@@ -9,19 +9,10 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::opennlp
-{
-class OpenNLPLemmatizerFilter;
-}
+#include  "core/src/java/org/apache/lucene/analysis/opennlp/OpenNLPLemmatizerFilter.h"
 
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::analysis::util
-{
-class ResourceLoader;
-}
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/analysis/util/ResourceLoader.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -96,4 +87,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::opennlp
+} // #include  "core/src/java/org/apache/lucene/analysis/opennlp/

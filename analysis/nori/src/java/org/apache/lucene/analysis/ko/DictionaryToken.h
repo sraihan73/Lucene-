@@ -9,23 +9,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ko::dict
-{
-class Dictionary;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ko/dict/Dictionary.h"
 
-namespace org::apache::lucene::analysis::ko
-{
-class KoreanTokenizer;
-}
-namespace org::apache::lucene::analysis::ko
-{
-class POS;
-}
-namespace org::apache::lucene::analysis::ko::dict
-{
-class Morpheme;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ko/KoreanTokenizer.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/POS.h"
+#include  "core/src/java/org/apache/lucene/analysis/ko/dict/Morpheme.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -108,4 +96,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::ko
+} // #include  "core/src/java/org/apache/lucene/analysis/ko/

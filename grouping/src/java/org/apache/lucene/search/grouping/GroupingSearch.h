@@ -15,26 +15,11 @@ template <typename T>
 class GroupSelector;
 }
 
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search
-{
-class Sort;
-}
-namespace org::apache::lucene::util
-{
-class Bits;
-}
-namespace org::apache::lucene::queries::function
-{
-class ValueSource;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/Sort.h"
+#include  "core/src/java/org/apache/lucene/util/Bits.h"
+#include  "core/src/java/org/apache/lucene/queries/function/ValueSource.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
 namespace org::apache::lucene::search::grouping
 {
 template <typename T>
@@ -331,4 +316,4 @@ public:
   virtual std::shared_ptr<Bits> getAllGroupHeads();
 };
 
-} // namespace org::apache::lucene::search::grouping
+} // #include  "core/src/java/org/apache/lucene/search/grouping/

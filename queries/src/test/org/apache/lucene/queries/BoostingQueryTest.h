@@ -45,4 +45,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queries
+} // #include  "core/src/java/org/apache/lucene/queries/

@@ -7,35 +7,14 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::opennlp::tools
-{
-class NLPSentenceDetectorOp;
-}
+#include  "core/src/java/org/apache/lucene/analysis/opennlp/tools/NLPSentenceDetectorOp.h"
 
-namespace org::apache::lucene::analysis::util
-{
-class ResourceLoader;
-}
-namespace org::apache::lucene::analysis::opennlp::tools
-{
-class NLPTokenizerOp;
-}
-namespace org::apache::lucene::analysis::opennlp::tools
-{
-class NLPPOSTaggerOp;
-}
-namespace org::apache::lucene::analysis::opennlp::tools
-{
-class NLPChunkerOp;
-}
-namespace org::apache::lucene::analysis::opennlp::tools
-{
-class NLPNERTaggerOp;
-}
-namespace org::apache::lucene::analysis::opennlp::tools
-{
-class NLPLemmatizerOp;
-}
+#include  "core/src/java/org/apache/lucene/analysis/util/ResourceLoader.h"
+#include  "core/src/java/org/apache/lucene/analysis/opennlp/tools/NLPTokenizerOp.h"
+#include  "core/src/java/org/apache/lucene/analysis/opennlp/tools/NLPPOSTaggerOp.h"
+#include  "core/src/java/org/apache/lucene/analysis/opennlp/tools/NLPChunkerOp.h"
+#include  "core/src/java/org/apache/lucene/analysis/opennlp/tools/NLPNERTaggerOp.h"
+#include  "core/src/java/org/apache/lucene/analysis/opennlp/tools/NLPLemmatizerOp.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -142,4 +121,4 @@ public:
   static void clearModels();
 };
 
-} // namespace org::apache::lucene::analysis::opennlp::tools
+} // #include  "core/src/java/org/apache/lucene/analysis/opennlp/tools/

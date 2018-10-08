@@ -12,67 +12,22 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::benchmark::byTask::tasks
-{
-class HLImpl;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/tasks/HLImpl.h"
 
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::benchmark::byTask
-{
-class PerfRunData;
-}
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::search
-{
-class TopDocs;
-}
-namespace org::apache::lucene::search::highlight
-{
-class SimpleHTMLFormatter;
-}
-namespace org::apache::lucene::search::highlight
-{
-class Encoder;
-}
-namespace org::apache::lucene::search::highlight
-{
-class Highlighter;
-}
-namespace org::apache::lucene::search::vectorhighlight
-{
-class WeightedFragListBuilder;
-}
-namespace org::apache::lucene::search::vectorhighlight
-{
-class BoundaryScanner;
-}
-namespace org::apache::lucene::search::vectorhighlight
-{
-class ScoreOrderFragmentsBuilder;
-}
-namespace org::apache::lucene::search::vectorhighlight
-{
-class FastVectorHighlighter;
-}
-namespace org::apache::lucene::search
-{
-class ScoreDoc;
-}
-namespace org::apache::lucene::search::uhighlight
-{
-class UnifiedHighlighter;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/PerfRunData.h"
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/search/TopDocs.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/SimpleHTMLFormatter.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/Encoder.h"
+#include  "core/src/java/org/apache/lucene/search/highlight/Highlighter.h"
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/WeightedFragListBuilder.h"
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/BoundaryScanner.h"
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/ScoreOrderFragmentsBuilder.h"
+#include  "core/src/java/org/apache/lucene/search/vectorhighlight/FastVectorHighlighter.h"
+#include  "core/src/java/org/apache/lucene/search/ScoreDoc.h"
+#include  "core/src/java/org/apache/lucene/search/uhighlight/UnifiedHighlighter.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -326,4 +281,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::tasks
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/tasks/

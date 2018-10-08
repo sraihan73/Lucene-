@@ -5,23 +5,11 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::queryparser::classic
-{
-class QueryParser;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/classic/QueryParser.h"
 
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::queryparser::xml
-{
-class ParserException;
-}
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/queryparser/xml/ParserException.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -97,4 +85,4 @@ protected:
                     std::shared_ptr<Analyzer> analyzer);
 };
 
-} // namespace org::apache::lucene::queryparser::xml::builders
+} // #include  "core/src/java/org/apache/lucene/queryparser/xml/builders/

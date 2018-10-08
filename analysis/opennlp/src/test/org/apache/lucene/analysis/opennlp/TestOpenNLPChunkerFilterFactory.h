@@ -68,4 +68,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::opennlp
+} // #include  "core/src/java/org/apache/lucene/analysis/opennlp/

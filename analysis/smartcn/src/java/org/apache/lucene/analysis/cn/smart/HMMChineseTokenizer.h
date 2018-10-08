@@ -5,31 +5,13 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
 
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class TypeAttribute;
-}
-namespace org::apache::lucene::analysis::cn::smart
-{
-class WordSegmenter;
-}
-namespace org::apache::lucene::analysis::cn::smart::hhmm
-{
-class SegToken;
-}
-namespace org::apache::lucene::util
-{
-class AttributeFactory;
-}
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/TypeAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/cn/smart/WordSegmenter.h"
+#include  "core/src/java/org/apache/lucene/analysis/cn/smart/hhmm/SegToken.h"
+#include  "core/src/java/org/apache/lucene/util/AttributeFactory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -110,4 +92,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::cn::smart
+} // #include  "core/src/java/org/apache/lucene/analysis/cn/smart/

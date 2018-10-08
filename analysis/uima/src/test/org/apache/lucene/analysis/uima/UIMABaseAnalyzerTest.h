@@ -9,10 +9,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::uima
-{
-class UIMABaseAnalyzer;
-}
+#include  "core/src/java/org/apache/lucene/analysis/uima/UIMABaseAnalyzer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -86,4 +83,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::uima
+} // #include  "core/src/java/org/apache/lucene/analysis/uima/

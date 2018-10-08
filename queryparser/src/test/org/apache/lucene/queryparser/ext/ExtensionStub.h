@@ -3,19 +3,10 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class Query;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
 
-namespace org::apache::lucene::queryparser::classic
-{
-class ParseException;
-}
-namespace org::apache::lucene::queryparser::ext
-{
-class ExtensionQuery;
-}
+#include  "core/src/java/org/apache/lucene/queryparser/classic/ParseException.h"
+#include  "core/src/java/org/apache/lucene/queryparser/ext/ExtensionQuery.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -57,4 +48,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::ext
+} // #include  "core/src/java/org/apache/lucene/queryparser/ext/

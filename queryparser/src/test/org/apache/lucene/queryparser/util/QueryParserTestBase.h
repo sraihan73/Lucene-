@@ -8,23 +8,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
 
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class OffsetAttribute;
-}
-namespace org::apache::lucene::queryparser::flexible::standard
-{
-class CommonQueryParserConfiguration;
-}
-namespace org::apache::lucene::document
-{
-class DateTools;
-}
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/OffsetAttribute.h"
+#include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/CommonQueryParserConfiguration.h"
+#include  "core/src/java/org/apache/lucene/document/DateTools.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -516,4 +504,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queryparser::util
+} // #include  "core/src/java/org/apache/lucene/queryparser/util/

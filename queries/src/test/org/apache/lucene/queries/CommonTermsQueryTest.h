@@ -8,40 +8,19 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class BooleanClause;
-}
+#include  "core/src/java/org/apache/lucene/search/BooleanClause.h"
 
-namespace org::apache::lucene::queries
-{
-class TermAndFreq;
-}
+#include  "core/src/java/org/apache/lucene/queries/TermAndFreq.h"
 namespace org::apache::lucene::util
 {
 template <typename T>
 class PriorityQueue;
 }
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::index
-{
-class RandomIndexWriter;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::index
-{
-class TermContext;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/index/RandomIndexWriter.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/index/TermContext.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -202,4 +181,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::queries
+} // #include  "core/src/java/org/apache/lucene/queries/

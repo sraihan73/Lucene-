@@ -5,19 +5,10 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRefComparator;
-}
-namespace org::apache::lucene::util
-{
-class BytesRefIterator;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRefComparator.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRefIterator.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -206,4 +197,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::util
+} // #include  "core/src/java/org/apache/lucene/util/

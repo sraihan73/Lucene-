@@ -148,4 +148,4 @@ public:
   virtual int hash2(std::deque<wchar_t> &carray);
 };
 
-} // namespace org::apache::lucene::analysis::cn::smart::hhmm
+} // #include  "core/src/java/org/apache/lucene/analysis/cn/smart/hhmm/

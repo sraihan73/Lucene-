@@ -4,41 +4,23 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename Atypename B>
 class PairOutputs;
 }
-namespace org::apache::lucene::codecs::idversion
-{
-class VersionBlockTreeTermsReader;
-}
+#include  "core/src/java/org/apache/lucene/codecs/idversion/VersionBlockTreeTermsReader.h"
 namespace org::apache::lucene::util::fst
 {
 template <typename Atypename B>
 class Pair;
 }
-namespace org::apache::lucene::store
-{
-class IndexInput;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
+#include  "core/src/java/org/apache/lucene/store/IndexInput.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -136,4 +118,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::idversion
+} // #include  "core/src/java/org/apache/lucene/codecs/idversion/

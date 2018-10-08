@@ -8,10 +8,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::egothor::stemmer
-{
-class Trie;
-}
+#include  "core/src/java/org/egothor/stemmer/Trie.h"
 
 /*
                     Egothor Software License version 1.00
@@ -106,4 +103,4 @@ public:
   static void allocTrie();
 };
 
-} // namespace org::egothor::stemmer
+} // #include  "core/src/java/org/egothor/stemmer/

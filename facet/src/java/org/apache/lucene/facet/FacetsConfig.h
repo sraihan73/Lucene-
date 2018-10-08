@@ -10,39 +10,15 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::facet
-{
-class DimConfig;
-}
+#include  "core/src/java/org/apache/lucene/facet/DimConfig.h"
 
-namespace org::apache::lucene::document
-{
-class Document;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class TaxonomyWriter;
-}
-namespace org::apache::lucene::facet
-{
-class FacetField;
-}
-namespace org::apache::lucene::facet::sortedset
-{
-class SortedSetDocValuesFacetField;
-}
-namespace org::apache::lucene::facet::taxonomy
-{
-class AssociationFacetField;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util
-{
-class IntsRef;
-}
+#include  "core/src/java/org/apache/lucene/document/Document.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/TaxonomyWriter.h"
+#include  "core/src/java/org/apache/lucene/facet/FacetField.h"
+#include  "core/src/java/org/apache/lucene/facet/sortedset/SortedSetDocValuesFacetField.h"
+#include  "core/src/java/org/apache/lucene/facet/taxonomy/AssociationFacetField.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/IntsRef.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -258,4 +234,4 @@ public:
   static std::deque<std::wstring> stringToPath(const std::wstring &s);
 };
 
-} // namespace org::apache::lucene::facet
+} // #include  "core/src/java/org/apache/lucene/facet/

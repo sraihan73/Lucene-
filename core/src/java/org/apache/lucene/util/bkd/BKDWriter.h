@@ -10,103 +10,31 @@
 #include <queue>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::store
-{
-class TrackingDirectoryWrapper;
-}
+#include  "core/src/java/org/apache/lucene/store/TrackingDirectoryWrapper.h"
 
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::util
-{
-class FixedBitSet;
-}
-namespace org::apache::lucene::util::bkd
-{
-class OfflinePointWriter;
-}
-namespace org::apache::lucene::util::bkd
-{
-class HeapPointWriter;
-}
-namespace org::apache::lucene::store
-{
-class IndexOutput;
-}
-namespace org::apache::lucene::util
-{
-class OfflineSorter;
-}
-namespace org::apache::lucene::util
-{
-class BufferSize;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
-namespace org::apache::lucene::util::bkd
-{
-class BKDReader;
-}
-namespace org::apache::lucene::util::bkd
-{
-class IntersectState;
-}
-namespace org::apache::lucene::index
-{
-class MergeState;
-}
-namespace org::apache::lucene::index
-{
-class DocMap;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
-namespace org::apache::lucene::codecs
-{
-class MutablePointValues;
-}
-namespace org::apache::lucene::util::bkd
-{
-class OneDimensionBKDWriter;
-}
-namespace org::apache::lucene::store
-{
-class GrowableByteArrayDataOutput;
-}
-namespace org::apache::lucene::util::bkd
-{
-class PointWriter;
-}
-namespace org::apache::lucene::util
-{
-class ByteSequencesWriter;
-}
-namespace org::apache::lucene::store
-{
-class ChecksumIndexInput;
-}
-namespace org::apache::lucene::util
-{
-class ByteSequencesReader;
-}
-namespace org::apache::lucene::store
-{
-class RAMOutputStream;
-}
-namespace org::apache::lucene::store
-{
-class DataOutput;
-}
-namespace org::apache::lucene::util
-{
-class LongBitSet;
-}
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/util/FixedBitSet.h"
+#include  "core/src/java/org/apache/lucene/util/bkd/OfflinePointWriter.h"
+#include  "core/src/java/org/apache/lucene/util/bkd/HeapPointWriter.h"
+#include  "core/src/java/org/apache/lucene/store/IndexOutput.h"
+#include  "core/src/java/org/apache/lucene/util/OfflineSorter.h"
+#include  "core/src/java/org/apache/lucene/util/BufferSize.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
+#include  "core/src/java/org/apache/lucene/util/bkd/BKDReader.h"
+#include  "core/src/java/org/apache/lucene/util/bkd/IntersectState.h"
+#include  "core/src/java/org/apache/lucene/index/MergeState.h"
+#include  "core/src/java/org/apache/lucene/index/DocMap.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
+#include  "core/src/java/org/apache/lucene/codecs/MutablePointValues.h"
+#include  "core/src/java/org/apache/lucene/util/bkd/OneDimensionBKDWriter.h"
+#include  "core/src/java/org/apache/lucene/store/GrowableByteArrayDataOutput.h"
+#include  "core/src/java/org/apache/lucene/util/bkd/PointWriter.h"
+#include  "core/src/java/org/apache/lucene/util/ByteSequencesWriter.h"
+#include  "core/src/java/org/apache/lucene/store/ChecksumIndexInput.h"
+#include  "core/src/java/org/apache/lucene/util/ByteSequencesReader.h"
+#include  "core/src/java/org/apache/lucene/store/RAMOutputStream.h"
+#include  "core/src/java/org/apache/lucene/store/DataOutput.h"
+#include  "core/src/java/org/apache/lucene/util/LongBitSet.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -903,4 +831,4 @@ public:
   getPointWriter(int64_t count, const std::wstring &desc) ;
 };
 
-} // namespace org::apache::lucene::util::bkd
+} // #include  "core/src/java/org/apache/lucene/util/bkd/

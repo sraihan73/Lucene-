@@ -10,23 +10,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::suggest
-{
-class Input;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/Input.h"
 
-namespace org::apache::lucene::search::suggest::fst
-{
-class FSTCompletion;
-}
-namespace org::apache::lucene::search::suggest::fst
-{
-class Completion;
-}
-namespace org::apache::lucene::store
-{
-class Directory;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/fst/FSTCompletion.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/fst/Completion.h"
+#include  "core/src/java/org/apache/lucene/store/Directory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -119,4 +107,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::fst
+} // #include  "core/src/java/org/apache/lucene/search/suggest/fst/

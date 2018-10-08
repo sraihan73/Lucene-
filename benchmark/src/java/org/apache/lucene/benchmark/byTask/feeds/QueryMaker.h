@@ -4,15 +4,9 @@
 #include <string>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class Query;
-}
+#include  "core/src/java/org/apache/lucene/search/Query.h"
 
-namespace org::apache::lucene::benchmark::byTask::utils
-{
-class Config;
-}
+#include  "core/src/java/org/apache/lucene/benchmark/byTask/utils/Config.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -66,4 +60,4 @@ public:
   virtual std::wstring printQueries() = 0;
 };
 
-} // namespace org::apache::lucene::benchmark::byTask::feeds
+} // #include  "core/src/java/org/apache/lucene/benchmark/byTask/feeds/

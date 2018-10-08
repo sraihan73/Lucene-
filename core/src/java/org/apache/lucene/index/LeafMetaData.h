@@ -4,15 +4,9 @@
 #include <stdexcept>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class Version;
-}
+#include  "core/src/java/org/apache/lucene/util/Version.h"
 
-namespace org::apache::lucene::search
-{
-class Sort;
-}
+#include  "core/src/java/org/apache/lucene/search/Sort.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -73,4 +67,4 @@ public:
   std::shared_ptr<Sort> getSort();
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

@@ -8,15 +8,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class LineFileDocs;
-}
+#include  "core/src/java/org/apache/lucene/util/LineFileDocs.h"
 
-namespace org::apache::lucene::replicator::nrt
-{
-class NodeProcess;
-}
+#include  "core/src/java/org/apache/lucene/replicator/nrt/NodeProcess.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -173,4 +167,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::replicator::nrt
+} // #include  "core/src/java/org/apache/lucene/replicator/nrt/

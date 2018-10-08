@@ -239,4 +239,4 @@ public:
   static bool isUpper(int type);
 };
 
-} // namespace org::apache::lucene::analysis::miscellaneous
+} // #include  "core/src/java/org/apache/lucene/analysis/miscellaneous/

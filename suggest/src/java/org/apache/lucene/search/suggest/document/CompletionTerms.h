@@ -3,19 +3,10 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search::suggest::document
-{
-class CompletionsTermsReader;
-}
+#include  "core/src/java/org/apache/lucene/search/suggest/document/CompletionsTermsReader.h"
 
-namespace org::apache::lucene::index
-{
-class Terms;
-}
-namespace org::apache::lucene::search::suggest::document
-{
-class NRTSuggester;
-}
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
+#include  "core/src/java/org/apache/lucene/search/suggest/document/NRTSuggester.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -92,4 +83,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::search::suggest::document
+} // #include  "core/src/java/org/apache/lucene/search/suggest/document/

@@ -241,4 +241,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::spatial::spatial4j
+} // #include  "core/src/java/org/apache/lucene/spatial/spatial4j/

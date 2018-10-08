@@ -5,10 +5,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::mockfile
-{
-class FilterFileSystemProvider;
-}
+#include  "core/src/java/org/apache/lucene/mockfile/FilterFileSystemProvider.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -172,4 +169,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::mockfile
+} // #include  "core/src/java/org/apache/lucene/mockfile/

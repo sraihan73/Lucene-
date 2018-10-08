@@ -10,40 +10,19 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class DeleteSlice;
-}
+#include  "core/src/java/org/apache/lucene/index/DeleteSlice.h"
 
-namespace org::apache::lucene::index
-{
-class BufferedUpdates;
-}
-namespace org::apache::lucene::util
-{
-class InfoStream;
-}
-namespace org::apache::lucene::search
-{
-class Query;
-}
-namespace org::apache::lucene::index
-{
-class Term;
-}
-namespace org::apache::lucene::index
-{
-class DocValuesUpdate;
-}
+#include  "core/src/java/org/apache/lucene/index/BufferedUpdates.h"
+#include  "core/src/java/org/apache/lucene/util/InfoStream.h"
+#include  "core/src/java/org/apache/lucene/search/Query.h"
+#include  "core/src/java/org/apache/lucene/index/Term.h"
+#include  "core/src/java/org/apache/lucene/index/DocValuesUpdate.h"
 namespace org::apache::lucene::index
 {
 template <typename T>
 class Node;
 }
-namespace org::apache::lucene::index
-{
-class FrozenBufferedUpdates;
-}
+#include  "core/src/java/org/apache/lucene/index/FrozenBufferedUpdates.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -362,4 +341,4 @@ public:
   void skipSequenceNumbers(int64_t jump);
 };
 
-} // namespace org::apache::lucene::index
+} // #include  "core/src/java/org/apache/lucene/index/

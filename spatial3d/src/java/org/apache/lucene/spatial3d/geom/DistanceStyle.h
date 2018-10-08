@@ -4,23 +4,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::spatial3d::geom
-{
-class GeoPoint;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/GeoPoint.h"
 
-namespace org::apache::lucene::spatial3d::geom
-{
-class Membership;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class Plane;
-}
-namespace org::apache::lucene::spatial3d::geom
-{
-class PlanetModel;
-}
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Membership.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/Plane.h"
+#include  "core/src/java/org/apache/lucene/spatial3d/geom/PlanetModel.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -203,4 +191,4 @@ public:
                          double const distanceValue) = 0;
 };
 
-} // namespace org::apache::lucene::spatial3d::geom
+} // #include  "core/src/java/org/apache/lucene/spatial3d/geom/

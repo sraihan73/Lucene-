@@ -6,31 +6,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::util
-{
-class AttributeSource;
-}
+#include  "core/src/java/org/apache/lucene/util/AttributeSource.h"
 
-namespace org::apache::lucene::analysis::opennlp::tools
-{
-class NLPChunkerOp;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class TypeAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class FlagsAttribute;
-}
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
+#include  "core/src/java/org/apache/lucene/analysis/opennlp/tools/NLPChunkerOp.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/TypeAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/FlagsAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -114,4 +96,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::opennlp
+} // #include  "core/src/java/org/apache/lucene/analysis/opennlp/

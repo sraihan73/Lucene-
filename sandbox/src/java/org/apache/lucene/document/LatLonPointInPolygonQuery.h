@@ -8,51 +8,18 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::geo
-{
-class Polygon;
-}
+#include  "core/src/java/org/apache/lucene/geo/Polygon.h"
 
-namespace org::apache::lucene::search
-{
-class IndexSearcher;
-}
-namespace org::apache::lucene::search
-{
-class Weight;
-}
-namespace org::apache::lucene::geo
-{
-class Polygon2D;
-}
-namespace org::apache::lucene::geo
-{
-class GeoEncodingUtils;
-}
-namespace org::apache::lucene::geo
-{
-class PolygonPredicate;
-}
-namespace org::apache::lucene::index
-{
-class LeafReaderContext;
-}
-namespace org::apache::lucene::search
-{
-class Scorer;
-}
-namespace org::apache::lucene::util
-{
-class DocIdSetBuilder;
-}
-namespace org::apache::lucene::util
-{
-class BulkAdder;
-}
-namespace org::apache::lucene::index
-{
-class PointValues;
-}
+#include  "core/src/java/org/apache/lucene/search/IndexSearcher.h"
+#include  "core/src/java/org/apache/lucene/search/Weight.h"
+#include  "core/src/java/org/apache/lucene/geo/Polygon2D.h"
+#include  "core/src/java/org/apache/lucene/geo/GeoEncodingUtils.h"
+#include  "core/src/java/org/apache/lucene/geo/PolygonPredicate.h"
+#include  "core/src/java/org/apache/lucene/index/LeafReaderContext.h"
+#include  "core/src/java/org/apache/lucene/search/Scorer.h"
+#include  "core/src/java/org/apache/lucene/util/DocIdSetBuilder.h"
+#include  "core/src/java/org/apache/lucene/util/BulkAdder.h"
+#include  "core/src/java/org/apache/lucene/index/PointValues.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -198,4 +165,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::document
+} // #include  "core/src/java/org/apache/lucene/document/

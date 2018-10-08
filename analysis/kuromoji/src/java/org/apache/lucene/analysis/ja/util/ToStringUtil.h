@@ -92,4 +92,4 @@ public:
                   std::shared_ptr<std::wstring> s) ;
 };
 
-} // namespace org::apache::lucene::analysis::ja::util
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/util/

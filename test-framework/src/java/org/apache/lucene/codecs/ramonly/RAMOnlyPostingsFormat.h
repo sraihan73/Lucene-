@@ -9,75 +9,24 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::codecs::ramonly
-{
-class RAMField;
-}
+#include  "core/src/java/org/apache/lucene/codecs/ramonly/RAMField.h"
 
-namespace org::apache::lucene::index
-{
-class Terms;
-}
-namespace org::apache::lucene::util
-{
-class Accountable;
-}
-namespace org::apache::lucene::codecs::ramonly
-{
-class RAMTerm;
-}
-namespace org::apache::lucene::index
-{
-class FieldInfo;
-}
-namespace org::apache::lucene::index
-{
-class TermsEnum;
-}
-namespace org::apache::lucene::codecs::ramonly
-{
-class RAMDoc;
-}
-namespace org::apache::lucene::codecs::ramonly
-{
-class RAMTermsConsumer;
-}
-namespace org::apache::lucene::index
-{
-class SegmentWriteState;
-}
-namespace org::apache::lucene::index
-{
-class Fields;
-}
-namespace org::apache::lucene::codecs::ramonly
-{
-class RAMPostingsWriterImpl;
-}
-namespace org::apache::lucene::util
-{
-class BytesRef;
-}
-namespace org::apache::lucene::codecs
-{
-class TermStats;
-}
-namespace org::apache::lucene::index
-{
-class PostingsEnum;
-}
-namespace org::apache::lucene::codecs
-{
-class FieldsConsumer;
-}
-namespace org::apache::lucene::codecs
-{
-class FieldsProducer;
-}
-namespace org::apache::lucene::index
-{
-class SegmentReadState;
-}
+#include  "core/src/java/org/apache/lucene/index/Terms.h"
+#include  "core/src/java/org/apache/lucene/util/Accountable.h"
+#include  "core/src/java/org/apache/lucene/codecs/ramonly/RAMTerm.h"
+#include  "core/src/java/org/apache/lucene/index/FieldInfo.h"
+#include  "core/src/java/org/apache/lucene/index/TermsEnum.h"
+#include  "core/src/java/org/apache/lucene/codecs/ramonly/RAMDoc.h"
+#include  "core/src/java/org/apache/lucene/codecs/ramonly/RAMTermsConsumer.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentWriteState.h"
+#include  "core/src/java/org/apache/lucene/index/Fields.h"
+#include  "core/src/java/org/apache/lucene/codecs/ramonly/RAMPostingsWriterImpl.h"
+#include  "core/src/java/org/apache/lucene/util/BytesRef.h"
+#include  "core/src/java/org/apache/lucene/codecs/TermStats.h"
+#include  "core/src/java/org/apache/lucene/index/PostingsEnum.h"
+#include  "core/src/java/org/apache/lucene/codecs/FieldsConsumer.h"
+#include  "core/src/java/org/apache/lucene/codecs/FieldsProducer.h"
+#include  "core/src/java/org/apache/lucene/index/SegmentReadState.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -412,4 +361,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::codecs::ramonly
+} // #include  "core/src/java/org/apache/lucene/codecs/ramonly/

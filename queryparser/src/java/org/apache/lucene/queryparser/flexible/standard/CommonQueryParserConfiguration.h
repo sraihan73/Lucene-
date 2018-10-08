@@ -3,19 +3,10 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::search
-{
-class MultiTermQuery;
-}
+#include  "core/src/java/org/apache/lucene/search/MultiTermQuery.h"
 
-namespace org::apache::lucene::search
-{
-class RewriteMethod;
-}
-namespace org::apache::lucene::analysis
-{
-class Analyzer;
-}
+#include  "core/src/java/org/apache/lucene/search/RewriteMethod.h"
+#include  "core/src/java/org/apache/lucene/analysis/Analyzer.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -162,4 +153,4 @@ public:
    */
   virtual void setDateResolution(DateTools::Resolution dateResolution) = 0;
 };
-} // namespace org::apache::lucene::queryparser::flexible::standard
+} // #include  "core/src/java/org/apache/lucene/queryparser/flexible/standard/

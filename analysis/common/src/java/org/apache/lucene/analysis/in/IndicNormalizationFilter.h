@@ -4,10 +4,7 @@
 #include <memory>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::tokenattributes
-{
-class CharTermAttribute;
-}
+#include  "core/src/java/org/apache/lucene/analysis/tokenattributes/CharTermAttribute.h"
 
 namespace org::apache::lucene::analysis::@in { class IndicNormalizer; }
 namespace org::apache::lucene::analysis
@@ -65,4 +62,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::in_
+} // #include  "core/src/java/org/apache/lucene/analysis/in_/

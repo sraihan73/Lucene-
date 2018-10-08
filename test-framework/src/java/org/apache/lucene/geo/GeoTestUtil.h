@@ -12,15 +12,9 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::geo
-{
-class Rectangle;
-}
+#include  "core/src/java/org/apache/lucene/geo/Rectangle.h"
 
-namespace org::apache::lucene::geo
-{
-class Polygon;
-}
+#include  "core/src/java/org/apache/lucene/geo/Polygon.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -197,4 +191,4 @@ public:
                              double longitude);
 };
 
-} // namespace org::apache::lucene::geo
+} // #include  "core/src/java/org/apache/lucene/geo/

@@ -41,4 +41,4 @@ public:
   virtual float getDistance(const std::wstring &s1, const std::wstring &s2) = 0;
 };
 
-} // namespace org::apache::lucene::search::spell
+} // #include  "core/src/java/org/apache/lucene/search/spell/

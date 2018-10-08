@@ -44,4 +44,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::facet::taxonomy::writercache
+} // #include  "core/src/java/org/apache/lucene/facet/taxonomy/writercache/

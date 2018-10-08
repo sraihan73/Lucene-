@@ -10,23 +10,11 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::ja::dict
-{
-class UserDictionary;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ja/dict/UserDictionary.h"
 
-namespace org::apache::lucene::analysis::ja
-{
-class JapaneseTokenizer;
-}
-namespace org::apache::lucene::analysis
-{
-class CharArraySet;
-}
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
+#include  "core/src/java/org/apache/lucene/analysis/ja/JapaneseTokenizer.h"
+#include  "core/src/java/org/apache/lucene/analysis/CharArraySet.h"
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -118,4 +106,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::ja
+} // #include  "core/src/java/org/apache/lucene/analysis/ja/

@@ -6,10 +6,7 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::expressions::js
-{
-class ExpressionContext;
-}
+#include  "core/src/java/org/apache/lucene/expressions/js/ExpressionContext.h"
 
 // ANTLR GENERATED CODE: DO NOT EDIT
 namespace org::apache::lucene::expressions::js
@@ -513,4 +510,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::expressions::js
+} // #include  "core/src/java/org/apache/lucene/expressions/js/

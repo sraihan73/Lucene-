@@ -8,19 +8,10 @@
 #include <unordered_map>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::analysis::fa
-{
-class PersianNormalizationFilter;
-}
+#include  "core/src/java/org/apache/lucene/analysis/fa/PersianNormalizationFilter.h"
 
-namespace org::apache::lucene::analysis
-{
-class TokenStream;
-}
-namespace org::apache::lucene::analysis::util
-{
-class AbstractAnalysisFactory;
-}
+#include  "core/src/java/org/apache/lucene/analysis/TokenStream.h"
+#include  "core/src/java/org/apache/lucene/analysis/util/AbstractAnalysisFactory.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -84,4 +75,4 @@ protected:
   }
 };
 
-} // namespace org::apache::lucene::analysis::fa
+} // #include  "core/src/java/org/apache/lucene/analysis/fa/

@@ -7,31 +7,13 @@
 #include <deque>
 
 // C++ NOTE: Forward class declarations:
-namespace org::apache::lucene::index
-{
-class Term;
-}
+#include  "core/src/java/org/apache/lucene/index/Term.h"
 
-namespace org::apache::lucene::index
-{
-class IndexReader;
-}
-namespace org::apache::lucene::search::spell
-{
-class SuggestWord;
-}
-namespace org::apache::lucene::search::spell
-{
-class CombineSuggestion;
-}
-namespace org::apache::lucene::search::spell
-{
-class SuggestWordArrayWrapper;
-}
-namespace org::apache::lucene::search::spell
-{
-class CombineSuggestionWrapper;
-}
+#include  "core/src/java/org/apache/lucene/index/IndexReader.h"
+#include  "core/src/java/org/apache/lucene/search/spell/SuggestWord.h"
+#include  "core/src/java/org/apache/lucene/search/spell/CombineSuggestion.h"
+#include  "core/src/java/org/apache/lucene/search/spell/SuggestWordArrayWrapper.h"
+#include  "core/src/java/org/apache/lucene/search/spell/CombineSuggestionWrapper.h"
 
 /*
  * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
@@ -333,4 +315,4 @@ private:
   };
 };
 
-} // namespace org::apache::lucene::search::spell
+} // #include  "core/src/java/org/apache/lucene/search/spell/

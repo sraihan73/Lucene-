@@ -95,4 +95,4 @@ public:
   int64_t getLong(std::shared_ptr<ByteBuffer> receiver, int pos);
 };
 
-} // namespace org::apache::lucene::store
+} // #include  "core/src/java/org/apache/lucene/store/

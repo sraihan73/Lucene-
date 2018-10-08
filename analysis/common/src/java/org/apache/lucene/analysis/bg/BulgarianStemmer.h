@@ -61,4 +61,4 @@ private:
   int removePlural(std::deque<wchar_t> &s, int const len);
 };
 
-} // namespace org::apache::lucene::analysis::bg
+} // #include  "core/src/java/org/apache/lucene/analysis/bg/
