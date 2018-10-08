@@ -1,0 +1,554 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+  Version="10.0"
+  VendorName="SlickEdit"
+  TemplateName="GNU C/C++"
+  WorkingDir="."
+  BuildSystem="vsbuild">
+  <Config
+    Name="Debug"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdbenchmark.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd -g %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Config
+    Name="Release"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdbenchmark.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Files>
+    <Folder
+      Name="Source Files"
+      Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
+      GUID="{AB710C74-5193-44A1-B04D-6C30935E1178}">
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/AbstractQueryMaker.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/AddDocTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/AddFacetedDocTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/AddIndexesTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/utils/Algorithm.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/utils/AnalyzerFactory.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/AnalyzerFactoryTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/Benchmark.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ClearStatsTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CloseIndexTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CloseReaderTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CloseTaxonomyIndexTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CloseTaxonomyReaderTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CommitIndexTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CommitTaxonomyIndexTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/utils/Config.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/Constants.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ConsumeContentSourceTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/ContentItemsSource.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/ContentSource.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CreateIndexTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CreateTaxonomyIndexTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/DemoHTMLParser.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/DirContentSource.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/DocData.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/DocMaker.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/utils/DocNameExtractor.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/EnwikiContentSource.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/EnwikiQueryMaker.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/utils/ExtractReuters.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/utils/ExtractWikipedia.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/FacetSource.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/FileBasedQueryMaker.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ForceMergeTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/utils/Format.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/GeonamesLineParser.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/HTMLParser.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/Judge.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/LineDocSource.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/LongToEnglishContentSource.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/LongToEnglishQueryMaker.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/NearRealtimeReaderTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/NewAnalyzerTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/NewCollationAnalyzerTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/NewLocaleTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/NewRoundTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/NoMoreDataException.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/OpenIndexTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/OpenReaderTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/OpenTaxonomyIndexTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/OpenTaxonomyReaderTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/package-info.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/package-info.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/package-info.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/programmatic/package-info.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/stats/package-info.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/package-info.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/utils/package-info.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/package-info.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/trec/package-info.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/utils/package-info.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/utils/package-info.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/PerfRunData.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/PerfTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/stats/Points.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/PrintReaderTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/QualityBenchmark.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/utils/QualityQueriesFinder.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/QualityQuery.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/QualityQueryParser.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/QualityStats.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/trec/QueryDriver.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/QueryMaker.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/RandomFacetSource.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ReadTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ReadTokensTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ReopenReaderTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/RepAllTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/stats/Report.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ReportTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/RepSelectByPrefTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/RepSumByNameRoundTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/RepSumByNameTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/RepSumByPrefRoundTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/RepSumByPrefTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ResetInputsTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ResetSystemEraseTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ResetSystemSoftTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/ReutersContentSource.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/ReutersQueryMaker.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/RollbackIndexTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/programmatic/Sample.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SearchTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SearchTravRetHighlightTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SearchTravRetLoadFieldSelectorTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SearchTravRetTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SearchTravTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SearchWithCollectorTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SearchWithSortTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SetPropTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/utils/SimpleQQParser.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/SimpleQueryMaker.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/SimpleSloppyPhraseQueryMaker.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/SingleDocSource.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/SortableSingleDocSource.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/SpatialDocMaker.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/SpatialFileQueryMaker.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/utils/StreamUtils.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/utils/SubmissionReport.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/TaskSequence.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/stats/TaskStats.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/trec/Trec1MQReader.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecContentSource.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecDocParser.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecFBISParser.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecFR94Parser.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecFTParser.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecGov2Parser.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/trec/TrecJudge.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecLATimesParser.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecParserByPath.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/trec/TrecTopicsReader.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/UpdateDocTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/WaitTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/WarmTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/WriteEnwikiLineDocTask.cpp"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/WriteLineDocTask.cpp"/>
+    </Folder>
+    <Folder
+      Name="Header Files"
+      Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+      GUID="{F8918861-251C-40E5-86FA-A9DC632B92A9}">
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/AbstractQueryMaker.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/AddDocTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/AddFacetedDocTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/AddIndexesTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/utils/Algorithm.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/utils/AnalyzerFactory.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/AnalyzerFactoryTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/Benchmark.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ClearStatsTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CloseIndexTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CloseReaderTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CloseTaxonomyIndexTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CloseTaxonomyReaderTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CommitIndexTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CommitTaxonomyIndexTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/utils/Config.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/Constants.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ConsumeContentSourceTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/ContentItemsSource.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/ContentSource.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CreateIndexTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/CreateTaxonomyIndexTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/DemoHTMLParser.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/DirContentSource.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/DocData.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/DocMaker.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/utils/DocNameExtractor.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/EnwikiContentSource.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/EnwikiQueryMaker.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/utils/ExtractReuters.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/utils/ExtractWikipedia.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/FacetSource.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/FileBasedQueryMaker.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ForceMergeTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/utils/Format.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/GeonamesLineParser.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/HTMLParser.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/Judge.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/LineDocSource.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/LongToEnglishContentSource.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/LongToEnglishQueryMaker.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/NearRealtimeReaderTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/NewAnalyzerTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/NewCollationAnalyzerTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/NewLocaleTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/NewRoundTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/NoMoreDataException.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/OpenIndexTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/OpenReaderTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/OpenTaxonomyIndexTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/OpenTaxonomyReaderTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/package-info.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/package-info.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/package-info.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/programmatic/package-info.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/stats/package-info.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/package-info.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/utils/package-info.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/package-info.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/trec/package-info.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/utils/package-info.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/utils/package-info.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/PerfRunData.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/PerfTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/stats/Points.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/PrintReaderTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/QualityBenchmark.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/utils/QualityQueriesFinder.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/QualityQuery.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/QualityQueryParser.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/QualityStats.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/trec/QueryDriver.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/QueryMaker.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/RandomFacetSource.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ReadTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ReadTokensTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ReopenReaderTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/RepAllTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/stats/Report.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ReportTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/RepSelectByPrefTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/RepSumByNameRoundTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/RepSumByNameTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/RepSumByPrefRoundTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/RepSumByPrefTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ResetInputsTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ResetSystemEraseTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/ResetSystemSoftTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/ReutersContentSource.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/ReutersQueryMaker.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/RollbackIndexTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/programmatic/Sample.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SearchTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SearchTravRetHighlightTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SearchTravRetLoadFieldSelectorTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SearchTravRetTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SearchTravTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SearchWithCollectorTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SearchWithSortTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/SetPropTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/utils/SimpleQQParser.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/SimpleQueryMaker.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/SimpleSloppyPhraseQueryMaker.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/SingleDocSource.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/SortableSingleDocSource.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/SpatialDocMaker.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/SpatialFileQueryMaker.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/utils/StreamUtils.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/utils/SubmissionReport.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/TaskSequence.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/stats/TaskStats.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/trec/Trec1MQReader.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecContentSource.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecDocParser.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecFBISParser.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecFR94Parser.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecFTParser.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecGov2Parser.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/trec/TrecJudge.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecLATimesParser.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecParserByPath.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/quality/trec/TrecTopicsReader.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/UpdateDocTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/WaitTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/WarmTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/WriteEnwikiLineDocTask.h"/>
+      <F N="benchmark/src/java/org/apache/lucene/benchmark/byTask/tasks/WriteLineDocTask.h"/>
+    </Folder>
+    <Folder
+      Name="Resource Files"
+      Filters="*.ico;*.cur;*.dlg"
+      GUID="{D38ACCDC-DEA5-4B4B-901F-881A6D26BE72}"/>
+    <Folder
+      Name="Bitmaps"
+      Filters="*.bmp"
+      GUID="{E1DD9416-BB1A-4CBB-8602-10C49CF1FE9A}"/>
+    <Folder
+      Name="Other Files"
+      Filters=""
+      GUID="{215A9FEE-E51E-411B-93BA-E9E08F374953}"/>
+  </Files>
+</Project>

@@ -1,0 +1,366 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+  Version="10.0"
+  VendorName="SlickEdit"
+  TemplateName="GNU C/C++"
+  WorkingDir="."
+  BuildSystem="vsbuild">
+  <Config
+    Name="Debug"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdcodecs.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd -g %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Config
+    Name="Release"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdcodecs.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Files>
+    <Folder
+      Name="Source Files"
+      Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
+      GUID="{D1EA733C-26FD-4C4D-ABBB-4FEE99720493}">
+      <F N="codecs/src/java/org/apache/lucene/codecs/blockterms/BlockTermsReader.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blockterms/BlockTermsWriter.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blocktreeords/BlockTreeOrdsPostingsFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/bloom/BloomFilterFactory.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/bloom/BloomFilteringPostingsFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/bloom/DefaultBloomFilterFactory.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/DirectDocValuesConsumer.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/DirectDocValuesFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/DirectDocValuesProducer.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/DirectPostingsFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blockterms/FixedGapTermsIndexReader.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blockterms/FixedGapTermsIndexWriter.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/FSTOrdPostingsFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blocktreeords/FSTOrdsOutputs.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/FSTOrdTermsReader.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/FSTOrdTermsWriter.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/FSTPostingsFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/FSTTermOutputs.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/FSTTermsReader.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/FSTTermsWriter.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/bloom/FuzzySet.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/bloom/HashFunction.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/MemoryDocValuesConsumer.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/MemoryDocValuesFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/MemoryDocValuesProducer.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/MemoryPostingsFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/bloom/MurmurHash2.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blocktreeords/OrdsBlockTreeTermsReader.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blocktreeords/OrdsBlockTreeTermsWriter.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blocktreeords/OrdsFieldReader.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blocktreeords/OrdsIntersectTermsEnum.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blocktreeords/OrdsIntersectTermsEnumFrame.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blocktreeords/OrdsSegmentTermsEnum.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blocktreeords/OrdsSegmentTermsEnumFrame.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blockterms/package-info.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blocktreeords/package-info.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/bloom/package-info.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/memory/package-info.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/package-info.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextBKDReader.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextBKDWriter.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextCodec.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextCompoundFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextDocValuesFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextDocValuesReader.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextDocValuesWriter.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextFieldInfosFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextFieldsReader.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextFieldsWriter.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextLiveDocsFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextNormsFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextPointsFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextPointsReader.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextPointsWriter.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextPostingsFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextSegmentInfoFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextStoredFieldsFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextStoredFieldsReader.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextStoredFieldsWriter.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextTermVectorsFormat.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextTermVectorsReader.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextTermVectorsWriter.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextUtil.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blockterms/TermsIndexReaderBase.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blockterms/TermsIndexWriterBase.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blockterms/VariableGapTermsIndexReader.cpp"/>
+      <F N="codecs/src/java/org/apache/lucene/codecs/blockterms/VariableGapTermsIndexWriter.cpp"/>
+    </Folder>
+    <Folder
+      Name="Header Files"
+      Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+      GUID="{CB299869-6CE8-4AF1-8B44-7A61E8D1F212}"/>
+    <Folder
+      Name="Resource Files"
+      Filters="*.ico;*.cur;*.dlg"
+      GUID="{060AA67E-04B0-4404-8255-A84538327D27}"/>
+    <Folder
+      Name="Bitmaps"
+      Filters="*.bmp"
+      GUID="{A01BDCB8-72BA-4097-987B-B75AE3E00726}"/>
+    <Folder
+      Name="Other Files"
+      Filters=""
+      GUID="{5B8C2C1C-D1CF-4E5E-A47B-7818289C0478}"/>
+  </Files>
+</Project>

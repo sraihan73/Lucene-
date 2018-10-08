@@ -1,0 +1,416 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+  Version="10.0"
+  VendorName="SlickEdit"
+  TemplateName="GNU C/C++"
+  WorkingDir="."
+  BuildSystem="vsbuild">
+  <Config
+    Name="Debug"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdsandbox.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd -g %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Config
+    Name="Release"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdsandbox.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Files>
+    <Folder
+      Name="Source Files"
+      Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
+      GUID="{96A18A13-D763-4E73-B05C-9F0C5B3327BF}">
+      <F N="sandbox/src/java/org/apache/lucene/document/BigIntegerPoint.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/ConjunctionDISI.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/ConjunctionIntervalIterator.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/ConjunctionIntervalsSource.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/CoveringQuery.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/CoveringScorer.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/DifferenceIntervalFunction.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/DifferenceIntervalsSource.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/DisiPriorityQueue.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/DisiWrapper.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/DisjunctionDISIApproximation.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/DisjunctionIntervalsSource.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/DocValuesNumbersQuery.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/DocValuesTermsQuery.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/FloatPointNearestNeighbor.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/sandbox/queries/FuzzyLikeThisQuery.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/HalfFloatPoint.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/IDVersionPostingsFormat.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/IDVersionPostingsReader.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/IDVersionPostingsWriter.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/IDVersionSegmentTermsEnum.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/IDVersionSegmentTermsEnumFrame.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/IDVersionTermState.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/IntervalFilter.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/IntervalFunction.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/IntervalIterator.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/IntervalQuery.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/Intervals.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/IntervalScorer.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/IntervalsSource.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonBoundingBox.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonDocValuesBoxQuery.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonDocValuesDistanceQuery.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonDocValuesField.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonPoint.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonPointDistanceComparator.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonPointDistanceQuery.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonPointInPolygonQuery.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonPointSortField.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/LongHashSet.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/LowpassIntervalsSource.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/NearestNeighbor.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/package-info.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/payloads/package-info.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/sandbox/queries/package-info.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/package-info.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/payloads/PayloadSpanCollector.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/payloads/PayloadSpanUtil.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/SingleDocsEnum.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/SinglePostingsEnum.cpp"/>
+      <F N="sandbox/src/test/org/apache/lucene/codecs/idversion/StringAndPayloadField.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/TermAutomatonQuery.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/TermAutomatonScorer.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/TermIntervalsSource.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/TokenStreamToTermAutomatonQuery.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/VersionBlockTreeTermsReader.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/VersionBlockTreeTermsWriter.cpp"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/VersionFieldReader.cpp"/>
+    </Folder>
+    <Folder
+      Name="Header Files"
+      Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+      GUID="{EAC14AD7-9544-43F2-9311-DE349A0DD6B8}">
+      <F N="sandbox/src/java/org/apache/lucene/document/BigIntegerPoint.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/ConjunctionDISI.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/ConjunctionIntervalIterator.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/ConjunctionIntervalsSource.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/CoveringQuery.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/CoveringScorer.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/DifferenceIntervalFunction.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/DifferenceIntervalsSource.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/DisiPriorityQueue.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/DisiWrapper.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/DisjunctionDISIApproximation.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/DisjunctionIntervalsSource.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/DocValuesNumbersQuery.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/DocValuesTermsQuery.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/FloatPointNearestNeighbor.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/sandbox/queries/FuzzyLikeThisQuery.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/HalfFloatPoint.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/IDVersionPostingsFormat.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/IDVersionPostingsReader.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/IDVersionPostingsWriter.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/IDVersionSegmentTermsEnum.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/IDVersionSegmentTermsEnumFrame.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/IDVersionTermState.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/IntervalFilter.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/IntervalFunction.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/IntervalIterator.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/IntervalQuery.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/Intervals.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/IntervalScorer.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/IntervalsSource.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonBoundingBox.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonDocValuesBoxQuery.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonDocValuesDistanceQuery.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonDocValuesField.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonPoint.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonPointDistanceComparator.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonPointDistanceQuery.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonPointInPolygonQuery.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/LatLonPointSortField.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/LongHashSet.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/LowpassIntervalsSource.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/document/NearestNeighbor.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/package-info.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/payloads/package-info.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/sandbox/queries/package-info.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/package-info.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/payloads/PayloadSpanCollector.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/payloads/PayloadSpanUtil.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/SingleDocsEnum.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/SinglePostingsEnum.h"/>
+      <F N="sandbox/src/test/org/apache/lucene/codecs/idversion/StringAndPayloadField.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/TermAutomatonQuery.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/TermAutomatonScorer.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/intervals/TermIntervalsSource.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/search/TokenStreamToTermAutomatonQuery.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/VersionBlockTreeTermsReader.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/VersionBlockTreeTermsWriter.h"/>
+      <F N="sandbox/src/java/org/apache/lucene/codecs/idversion/VersionFieldReader.h"/>
+    </Folder>
+    <Folder
+      Name="Resource Files"
+      Filters="*.ico;*.cur;*.dlg"
+      GUID="{1DF18357-00F4-473A-8A8B-DB56656BEDEA}"/>
+    <Folder
+      Name="Bitmaps"
+      Filters="*.bmp"
+      GUID="{3CF3E76B-A10A-40FA-B4E5-AFB41FA7B1B0}"/>
+    <Folder
+      Name="Other Files"
+      Filters=""
+      GUID="{5EBD7869-A9A9-45F5-B18D-6E646E4834B7}"/>
+  </Files>
+</Project>

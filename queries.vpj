@@ -1,0 +1,474 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+  Version="10.0"
+  VendorName="SlickEdit"
+  TemplateName="GNU C/C++"
+  WorkingDir="."
+  BuildSystem="vsbuild">
+  <Config
+    Name="Debug"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdqueries.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd -g %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Config
+    Name="Release"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdqueries.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Files>
+    <Folder
+      Name="Source Files"
+      Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
+      GUID="{F512B97D-51DE-4A96-9FD0-F15A7F98B154}">
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/AveragePayloadFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/BoolDocValues.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/BoolFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/BoostedQuery.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/BoostingQuery.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/BytesRefFieldSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/CommonTermsQuery.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/ComparisonBoolFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/ConstNumberSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/ConstValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/CustomScoreProvider.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/CustomScoreQuery.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/DefFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/DivFloatFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/DocFreqValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/DocTermsIndexDocValues.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/DoubleConstValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/DoubleDocValues.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/DoubleFieldSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/DualFloatFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/EnumFieldSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/FieldCacheSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/FloatDocValues.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/FloatFieldSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/FunctionMatchQuery.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/FunctionQuery.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/FunctionRangeQuery.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/FunctionScoreQuery.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/FunctionValues.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/IDFValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/IfFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/IndexReaderFunctions.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/IntDocValues.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/IntFieldSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/JoinDocFreqValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/LinearFloatFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/LiteralValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/LongDocValues.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/LongFieldSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MaxDocValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MaxFloatFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/MaxPayloadFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MinFloatFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/MinPayloadFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/mlt/MoreLikeThis.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/mlt/MoreLikeThisQuery.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiBoolFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiFloatFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiValuedDoubleFieldSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiValuedFloatFieldSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiValuedIntFieldSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiValuedLongFieldSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/NormValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/NumDocsValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/package-info.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/package-info.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/package-info.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/package-info.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/mlt/package-info.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/package-info.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/PayloadDecoder.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/PayloadFunction.cpp"/>
+      <F N="queries/src/test/org/apache/lucene/queries/payloads/PayloadHelper.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/PayloadScoreQuery.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/PowFloatFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/ProductFloatFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/QueryValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/RangeMapFloatFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/ReciprocalFloatFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/ScaleFloatFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/SimpleBoolFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/SimpleFloatFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/SingleFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/SortedSetFieldSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/SpanPayloadCheckQuery.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/StrDocValues.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/SumFloatFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/SumPayloadFunction.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/SumTotalTermFreqValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/TermFreqValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/TFValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/TotalTermFreqValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/ValueSource.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/ValueSourceScorer.cpp"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/VectorValueSource.cpp"/>
+    </Folder>
+    <Folder
+      Name="Header Files"
+      Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+      GUID="{F28F606A-6B72-4C04-87A7-1301F958EE56}">
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/AveragePayloadFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/BoolDocValues.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/BoolFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/BoostedQuery.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/BoostingQuery.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/BytesRefFieldSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/CommonTermsQuery.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/ComparisonBoolFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/ConstNumberSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/ConstValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/CustomScoreProvider.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/CustomScoreQuery.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/DefFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/DivFloatFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/DocFreqValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/DocTermsIndexDocValues.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/DoubleConstValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/DoubleDocValues.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/DoubleFieldSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/DualFloatFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/EnumFieldSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/FieldCacheSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/FloatDocValues.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/FloatFieldSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/FunctionMatchQuery.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/FunctionQuery.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/FunctionRangeQuery.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/FunctionScoreQuery.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/FunctionValues.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/IDFValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/IfFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/IndexReaderFunctions.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/IntDocValues.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/IntFieldSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/JoinDocFreqValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/LinearFloatFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/LiteralValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/LongDocValues.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/LongFieldSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MaxDocValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MaxFloatFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/MaxPayloadFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MinFloatFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/MinPayloadFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/mlt/MoreLikeThis.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/mlt/MoreLikeThisQuery.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiBoolFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiFloatFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiValuedDoubleFieldSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiValuedFloatFieldSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiValuedIntFieldSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiValuedLongFieldSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/MultiValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/NormValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/NumDocsValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/package-info.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/package-info.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/package-info.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/package-info.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/mlt/package-info.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/package-info.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/PayloadDecoder.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/PayloadFunction.h"/>
+      <F N="queries/src/test/org/apache/lucene/queries/payloads/PayloadHelper.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/PayloadScoreQuery.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/PowFloatFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/ProductFloatFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/QueryValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/RangeMapFloatFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/ReciprocalFloatFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/ScaleFloatFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/SimpleBoolFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/SimpleFloatFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/SingleFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/SortedSetFieldSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/SpanPayloadCheckQuery.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/docvalues/StrDocValues.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/SumFloatFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/payloads/SumPayloadFunction.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/SumTotalTermFreqValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/TermFreqValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/TFValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/TotalTermFreqValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/ValueSource.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/ValueSourceScorer.h"/>
+      <F N="queries/src/java/org/apache/lucene/queries/function/valuesource/VectorValueSource.h"/>
+    </Folder>
+    <Folder
+      Name="Resource Files"
+      Filters="*.ico;*.cur;*.dlg"
+      GUID="{E637AE29-5AC8-44BE-B635-46FA377ED827}"/>
+    <Folder
+      Name="Bitmaps"
+      Filters="*.bmp"
+      GUID="{F5D445E2-F1CA-40C0-A64F-ACBD6F1EC1D7}"/>
+    <Folder
+      Name="Other Files"
+      Filters=""
+      GUID="{7FA68180-5394-45BB-BAAA-155315900926}"/>
+  </Files>
+</Project>

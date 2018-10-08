@@ -1,0 +1,764 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+  Version="10.0"
+  VendorName="SlickEdit"
+  TemplateName="GNU C/C++"
+  WorkingDir="."
+  BuildSystem="vsbuild">
+  <Config
+    Name="Debug"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdqueryparser.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd -g %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Config
+    Name="Release"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdqueryparser.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Files>
+    <Folder
+      Name="Source Files"
+      Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
+      GUID="{F81A895C-C289-47A0-AFFE-5479BC453C68}">
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/config/AbstractQueryConfig.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/AbstractRangeQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/AllowLeadingWildcardProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/AnalyzerQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/AndQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/AndQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/AnyQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/AnyQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/BasicQueryFactory.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/BooleanModifierNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/precedence/processors/BooleanModifiersQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/BooleanQuery2ModifierNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/BooleanQueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/BooleanQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/BooleanQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/surround/query/BooleanQueryTst.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/BooleanSingleChildOptimizationQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/BoostingQueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/BoostingTermBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/BoostQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/BoostQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/BoostQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/CharStream.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/CharStream.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/CharStream.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/CommonQueryParserConfiguration.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/complexPhrase/ComplexPhraseQueryParser.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/ComposedQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/config/ConfigurationKey.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/ConstantScoreQueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/CoreParser.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/CorePlusExtensionsParser.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/CorePlusQueriesParser.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/DefaultPhraseSlopQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/DeletedQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/DisjunctionMaxQueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/DistanceQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/DistanceRewriteQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/DistanceSubQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/DOMUtils.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/DummyQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/parser/EscapeQuerySyntax.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/EscapeQuerySyntaxImpl.cpp"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/surround/query/ExceptionQueryTst.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/ext/ExtendableQueryParser.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/ext/ExtensionQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/ext/Extensions.cpp"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/ext/ExtensionStub.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/FastCharStream.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/FastCharStream.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/FastCharStream.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/FieldableNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/FieldBoostMapFCListener.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/config/FieldConfig.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/config/FieldConfigListener.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/FieldDateResolutionFCListener.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/FieldQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/FieldQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/FieldsQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/FieldValuePairQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/FuzzyConfig.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/FuzzyLikeThisQueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/FuzzyQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/FuzzyQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/FuzzyQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/GroupQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/GroupQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/LikeThisQueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/MatchAllDocsQueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/MatchAllDocsQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/MatchAllDocsQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/MatchAllDocsQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/MatchNoDocsQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/MatchNoDocsQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/messages/Message.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/messages/MessageImpl.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/ModifierQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/ModifierQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/MultiFieldQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/MultiFieldQueryParser.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/MultiPhraseQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/MultiPhraseQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/MultiTermRewriteMethodProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/messages/NLS.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/messages/NLSException.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/processors/NoChildOptimizationQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/NoTokenFoundQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/NotQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/NumberDateFormat.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/OpaqueQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/OpenRangeQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/OrQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/OrQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/complexPhrase/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/ext/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/builders/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/config/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/messages/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/parser/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/processors/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/util/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/messages/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/precedence/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/simple/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/package-info.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/ParseException.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/ParseException.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/ParseException.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/ParserException.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/ext/ParserExtension.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/PathQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/PhraseQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/PhraseSlopQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/PhraseSlopQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/PointQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/PointQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/PointRangeQueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/PointRangeQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/PointRangeQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/PointRangeQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/PointsConfig.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/PointsConfigListener.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/precedence/processors/PrecedenceQueryNodeProcessorPipeline.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/precedence/PrecedenceQueryParser.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/PrefixWildcardQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/PrefixWildcardQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/ProximityQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/builders/QueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/QueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/QueryBuilderFactory.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/config/QueryConfigHandler.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/QueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/QueryNodeError.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/QueryNodeException.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/QueryNodeImpl.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/util/QueryNodeOperation.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/QueryNodeParseException.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/processors/QueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/processors/QueryNodeProcessorImpl.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/processors/QueryNodeProcessorPipeline.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/QueryParser.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/QueryParser.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/QueryParserBase.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/QueryParserConstants.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/QueryParserConstants.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/QueryParserHelper.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/messages/QueryParserMessages.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/QueryParserTokenManager.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/QueryParserTokenManager.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/QueryParserUtil.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/builders/QueryTreeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/QuotedFieldQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/RangeQueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/RangeQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/RegexpQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/RegexpQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/RegexpQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/processors/RemoveDeletedQueryNodesProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/RemoveEmptyNonLeafQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/RewriteQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/simple/SimpleQueryParser.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SimpleTerm.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SimpleTermRewriteQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/SlopQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/SlopQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanBuilderBase.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanFirstBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanNearBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SpanNearClauseFactory.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanNotBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanOrBuilder.cpp"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/SpanOrQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanOrTermsBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanQueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanQueryBuilderFactory.cpp"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/SpansQueryConfigHandler.cpp"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/SpansQueryTreeBuilder.cpp"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/SpansValidatorQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanTermBuilder.cpp"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/SpanTermQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SrndBooleanQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SrndPrefixQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SrndQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SrndTermQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SrndTruncQuery.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/StandardQueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/StandardQueryConfigHandler.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/StandardQueryNodeProcessorPipeline.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/StandardQueryParser.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/StandardQueryTreeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/StandardSyntaxParser.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/StandardSyntaxParserConstants.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/StandardSyntaxParserTokenManager.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/util/StringUtils.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/SynonymQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/SynonymQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/parser/SyntaxParser.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/TermQueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/TermRangeQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/TermRangeQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/TermRangeQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/TermsQueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/TextableQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/Token.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/Token.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/Token.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/TokenizedPhraseQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/TokenMgrError.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/TokenMgrError.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/TokenMgrError.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/TooManyBasicQueries.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/util/UnescapedCharSequence.cpp"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/UniqueFieldAttribute.cpp"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/UniqueFieldAttributeImpl.cpp"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/UniqueFieldQueryNodeProcessor.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/UserInputQueryBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/ValueQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/WildcardQueryNode.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/WildcardQueryNodeBuilder.cpp"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/WildcardQueryNodeProcessor.cpp"/>
+    </Folder>
+    <Folder
+      Name="Header Files"
+      Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+      GUID="{292DF0D6-76CB-47DE-B1C9-3584EEF1028A}">
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/config/AbstractQueryConfig.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/AbstractRangeQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/AllowLeadingWildcardProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/AnalyzerQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/AndQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/AndQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/AnyQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/AnyQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/BasicQueryFactory.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/BooleanModifierNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/precedence/processors/BooleanModifiersQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/BooleanQuery2ModifierNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/BooleanQueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/BooleanQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/BooleanQueryNodeBuilder.h"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/surround/query/BooleanQueryTst.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/BooleanSingleChildOptimizationQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/BoostingQueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/BoostingTermBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/BoostQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/BoostQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/BoostQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/CharStream.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/CharStream.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/CharStream.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/CommonQueryParserConfiguration.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/complexPhrase/ComplexPhraseQueryParser.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/ComposedQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/config/ConfigurationKey.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/ConstantScoreQueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/CoreParser.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/CorePlusExtensionsParser.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/CorePlusQueriesParser.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/DefaultPhraseSlopQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/DeletedQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/DisjunctionMaxQueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/DistanceQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/DistanceRewriteQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/DistanceSubQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/DOMUtils.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/DummyQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/parser/EscapeQuerySyntax.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/EscapeQuerySyntaxImpl.h"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/surround/query/ExceptionQueryTst.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/ext/ExtendableQueryParser.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/ext/ExtensionQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/ext/Extensions.h"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/ext/ExtensionStub.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/FastCharStream.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/FastCharStream.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/FastCharStream.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/FieldableNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/FieldBoostMapFCListener.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/config/FieldConfig.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/config/FieldConfigListener.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/FieldDateResolutionFCListener.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/FieldQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/FieldQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/FieldsQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/FieldValuePairQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/FuzzyConfig.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/FuzzyLikeThisQueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/FuzzyQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/FuzzyQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/FuzzyQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/GroupQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/GroupQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/LikeThisQueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/MatchAllDocsQueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/MatchAllDocsQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/MatchAllDocsQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/MatchAllDocsQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/MatchNoDocsQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/MatchNoDocsQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/messages/Message.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/messages/MessageImpl.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/ModifierQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/ModifierQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/MultiFieldQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/MultiFieldQueryParser.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/MultiPhraseQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/MultiPhraseQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/MultiTermRewriteMethodProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/messages/NLS.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/messages/NLSException.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/processors/NoChildOptimizationQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/NoTokenFoundQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/NotQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/NumberDateFormat.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/OpaqueQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/OpenRangeQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/OrQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/OrQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/complexPhrase/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/ext/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/builders/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/config/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/messages/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/parser/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/processors/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/util/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/messages/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/precedence/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/simple/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/package-info.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/ParseException.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/ParseException.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/ParseException.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/ParserException.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/ext/ParserExtension.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/PathQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/PhraseQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/PhraseSlopQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/PhraseSlopQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/PointQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/PointQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/PointRangeQueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/PointRangeQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/PointRangeQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/PointRangeQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/PointsConfig.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/PointsConfigListener.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/precedence/processors/PrecedenceQueryNodeProcessorPipeline.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/precedence/PrecedenceQueryParser.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/PrefixWildcardQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/PrefixWildcardQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/ProximityQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/builders/QueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/QueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/QueryBuilderFactory.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/config/QueryConfigHandler.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/QueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/QueryNodeError.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/QueryNodeException.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/QueryNodeImpl.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/util/QueryNodeOperation.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/QueryNodeParseException.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/processors/QueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/processors/QueryNodeProcessorImpl.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/processors/QueryNodeProcessorPipeline.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/QueryParser.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/QueryParser.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/QueryParserBase.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/QueryParserConstants.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/QueryParserConstants.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/QueryParserHelper.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/messages/QueryParserMessages.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/QueryParserTokenManager.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/QueryParserTokenManager.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/QueryParserUtil.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/builders/QueryTreeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/QuotedFieldQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/RangeQueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/RangeQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/RegexpQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/RegexpQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/RegexpQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/processors/RemoveDeletedQueryNodesProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/RemoveEmptyNonLeafQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/RewriteQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/simple/SimpleQueryParser.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SimpleTerm.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SimpleTermRewriteQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/SlopQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/SlopQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanBuilderBase.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanFirstBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanNearBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SpanNearClauseFactory.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanNotBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanOrBuilder.h"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/SpanOrQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanOrTermsBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanQueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanQueryBuilderFactory.h"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/SpansQueryConfigHandler.h"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/SpansQueryTreeBuilder.h"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/SpansValidatorQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/SpanTermBuilder.h"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/SpanTermQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SrndBooleanQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SrndPrefixQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SrndQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SrndTermQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/SrndTruncQuery.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/StandardQueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/config/StandardQueryConfigHandler.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/StandardQueryNodeProcessorPipeline.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/StandardQueryParser.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/StandardQueryTreeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/StandardSyntaxParser.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/StandardSyntaxParserConstants.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/StandardSyntaxParserTokenManager.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/util/StringUtils.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/SynonymQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/SynonymQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/parser/SyntaxParser.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/TermQueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/TermRangeQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/TermRangeQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/TermRangeQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/TermsQueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/TextableQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/Token.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/Token.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/Token.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/TokenizedPhraseQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/classic/TokenMgrError.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/parser/TokenMgrError.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/parser/TokenMgrError.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/surround/query/TooManyBasicQueries.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/util/UnescapedCharSequence.h"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/UniqueFieldAttribute.h"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/UniqueFieldAttributeImpl.h"/>
+      <F N="queryparser/src/test/org/apache/lucene/queryparser/flexible/spans/UniqueFieldQueryNodeProcessor.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/xml/builders/UserInputQueryBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/core/nodes/ValueQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/nodes/WildcardQueryNode.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/builders/WildcardQueryNodeBuilder.h"/>
+      <F N="queryparser/src/java/org/apache/lucene/queryparser/flexible/standard/processors/WildcardQueryNodeProcessor.h"/>
+    </Folder>
+    <Folder
+      Name="Resource Files"
+      Filters="*.ico;*.cur;*.dlg"
+      GUID="{AF785924-5F59-4C1F-B735-EC985AE2BFBF}"/>
+    <Folder
+      Name="Bitmaps"
+      Filters="*.bmp"
+      GUID="{F9FAFF93-51E2-41BF-B5BD-6BB59FB713A9}"/>
+    <Folder
+      Name="Other Files"
+      Filters=""
+      GUID="{FED2EB64-3886-4B26-A0FA-96FBC730804C}"/>
+  </Files>
+</Project>

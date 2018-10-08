@@ -1,0 +1,25 @@
+<!DOCTYPE Workspace SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpw.dtd">
+<Workspace Version="10.0" VendorName="SlickEdit">
+	<Projects>
+		<Project File="analysis.vpj"/>
+		<Project File="backward-codecs.vpj"/>
+		<Project File="benchmark.vpj"/>
+		<Project File="classification.vpj"/>
+		<Project File="codecs.vpj"/>
+		<Project File="core.vpj"/>
+		<Project File="expressions/expressions.vpj"/>
+		<Project File="facet.vpj"/>
+		<Project File="grouping.vpj"/>
+		<Project File="highlighter.vpj"/>
+		<Project File="join.vpj"/>
+		<Project File="memory.vpj"/>
+		<Project File="misc.vpj"/>
+		<Project File="queries.vpj"/>
+		<Project File="queryparser.vpj"/>
+		<Project File="replicator.vpj"/>
+		<Project File="sandbox.vpj"/>
+		<Project File="spatial.vpj"/>
+		<Project File="suggest.vpj"/>
+		<Project File="tools.vpj"/>
+	</Projects>
+</Workspace>

@@ -1,0 +1,380 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+  Version="10.0"
+  VendorName="SlickEdit"
+  TemplateName="GNU C/C++"
+  WorkingDir="."
+  BuildSystem="vsbuild">
+  <Config
+    Name="Debug"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdreplicator.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd -g %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Config
+    Name="Release"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdreplicator.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Files>
+    <Folder
+      Name="Source Files"
+      Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
+      GUID="{3C3EC4F5-62B2-4166-8CB9-FA9825387A8F}">
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/Connection.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/CopyJob.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/CopyOneFile.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/CopyState.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/FileMetaData.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/http/HttpClientBase.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/http/HttpReplicator.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/IndexAndTaxonomyReplicationHandler.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/IndexAndTaxonomyRevision.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/IndexInputInputStream.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/IndexReplicationHandler.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/IndexRevision.cpp"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/Jobs.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/LocalReplicator.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/Node.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/NodeCommunicationException.cpp"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/NodeProcess.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/package-info.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/http/package-info.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/package-info.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/PerSessionDirectoryFactory.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/PreCopyMergedSegmentWarmer.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/PrimaryNode.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/ReplicaFileDeleter.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/ReplicaNode.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/ReplicationClient.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/http/ReplicationService.cpp"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/http/ReplicationServlet.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/Replicator.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/Revision.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/RevisionFile.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/SegmentInfosSearcherManager.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/SessionExpiredException.cpp"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/SessionToken.cpp"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/SimpleCopyJob.cpp"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/SimplePrimaryNode.cpp"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/SimpleReplicaNode.cpp"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/SimpleServer.cpp"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/SimpleTransLog.cpp"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/ThreadPumper.cpp"/>
+    </Folder>
+    <Folder
+      Name="Header Files"
+      Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+      GUID="{79E47BAB-82EC-4DBB-BE5B-0914BE9AECC0}">
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/Connection.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/CopyJob.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/CopyOneFile.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/CopyState.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/FileMetaData.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/http/HttpClientBase.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/http/HttpReplicator.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/IndexAndTaxonomyReplicationHandler.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/IndexAndTaxonomyRevision.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/IndexInputInputStream.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/IndexReplicationHandler.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/IndexRevision.h"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/Jobs.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/LocalReplicator.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/Node.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/NodeCommunicationException.h"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/NodeProcess.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/package-info.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/http/package-info.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/package-info.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/PerSessionDirectoryFactory.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/PreCopyMergedSegmentWarmer.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/PrimaryNode.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/ReplicaFileDeleter.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/ReplicaNode.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/ReplicationClient.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/http/ReplicationService.h"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/http/ReplicationServlet.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/Replicator.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/Revision.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/RevisionFile.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/nrt/SegmentInfosSearcherManager.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/SessionExpiredException.h"/>
+      <F N="replicator/src/java/org/apache/lucene/replicator/SessionToken.h"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/SimpleCopyJob.h"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/SimplePrimaryNode.h"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/SimpleReplicaNode.h"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/SimpleServer.h"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/SimpleTransLog.h"/>
+      <F N="replicator/src/test/org/apache/lucene/replicator/nrt/ThreadPumper.h"/>
+    </Folder>
+    <Folder
+      Name="Resource Files"
+      Filters="*.ico;*.cur;*.dlg"
+      GUID="{E2095922-147E-4C64-AA16-9F386DAB5301}"/>
+    <Folder
+      Name="Bitmaps"
+      Filters="*.bmp"
+      GUID="{66789AEC-DF3A-443C-9EA2-F8F7F181806E}"/>
+    <Folder
+      Name="Other Files"
+      Filters=""
+      GUID="{90CC03B2-3748-4CBE-B0B8-53D043AE4458}"/>
+  </Files>
+</Project>

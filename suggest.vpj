@@ -1,0 +1,462 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+  Version="10.0"
+  VendorName="SlickEdit"
+  TemplateName="GNU C/C++"
+  WorkingDir="."
+  BuildSystem="vsbuild">
+  <Config
+    Name="Debug"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdsuggest.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd -g %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Config
+    Name="Release"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdsuggest.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Files>
+    <Folder
+      Name="Source Files"
+      Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
+      GUID="{593594B9-CA77-43EB-AFC9-2798F2CDD5AF}">
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/AnalyzingInfixSuggester.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/AnalyzingSuggester.cpp"/>
+      <F N="suggest/src/test/org/apache/lucene/search/suggest/Average.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/BitsProducer.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/BlendedInfixSuggester.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/BufferedInputIterator.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/fst/BytesRefSorter.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/CombineSuggestion.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/Completion50PostingsFormat.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionAnalyzer.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionFieldsConsumer.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionFieldsProducer.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionPostingsFormat.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionQuery.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionScorer.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionsTermsReader.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionTerms.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionTokenStream.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionWeight.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/ContextQuery.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/ContextSuggestField.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/Dictionary.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/DirectSpellChecker.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/DocumentDictionary.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/DocumentValueSourceDictionary.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/fst/ExternalRefSorter.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/FileDictionary.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/FreeTextSuggester.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/fst/FSTCompletion.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/fst/FSTCompletionBuilder.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/fst/FSTCompletionLookup.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/FSTUtil.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/FuzzyCompletionQuery.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/FuzzySuggester.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/HighFrequencyDictionary.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/InMemorySorter.cpp"/>
+      <F N="suggest/src/test/org/apache/lucene/search/suggest/Input.cpp"/>
+      <F N="suggest/src/test/org/apache/lucene/search/suggest/InputArrayIterator.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/InputIterator.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/JaroWinklerDistance.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/jaspell/JaspellLookup.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/jaspell/JaspellTernarySearchTrie.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/LevenshteinDistance.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/LevensteinDistance.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/Lookup.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/LuceneDictionary.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/LuceneLevenshteinDistance.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/NGramDistance.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/NRTSuggester.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/NRTSuggesterBuilder.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/package-info.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/package-info.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/package-info.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/package-info.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/fst/package-info.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/jaspell/package-info.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/tst/package-info.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/PlainTextDictionary.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/PrefixCompletionQuery.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/RegexCompletionQuery.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/SortedInputIterator.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/SpellChecker.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/StringDistance.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/SuggestField.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/SuggestIndexSearcher.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/SuggestMode.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/SuggestScoreDocPriorityQueue.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/SuggestStopFilter.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/SuggestStopFilterFactory.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/SuggestWord.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/SuggestWordFrequencyComparator.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/SuggestWordQueue.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/SuggestWordScoreComparator.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/tst/TernaryTreeNode.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/TopSuggestDocs.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/TopSuggestDocsCollector.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/tst/TSTAutocomplete.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/tst/TSTLookup.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/UnsortedInputIterator.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/fst/WFSTCompletionLookup.cpp"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/WordBreakSpellChecker.cpp"/>
+    </Folder>
+    <Folder
+      Name="Header Files"
+      Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+      GUID="{7B6443CD-FAA2-4B3D-8FB2-E6A83A7EE301}">
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/AnalyzingInfixSuggester.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/AnalyzingSuggester.h"/>
+      <F N="suggest/src/test/org/apache/lucene/search/suggest/Average.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/BitsProducer.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/BlendedInfixSuggester.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/BufferedInputIterator.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/fst/BytesRefSorter.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/CombineSuggestion.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/Completion50PostingsFormat.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionAnalyzer.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionFieldsConsumer.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionFieldsProducer.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionPostingsFormat.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionQuery.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionScorer.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionsTermsReader.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionTerms.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionTokenStream.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/CompletionWeight.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/ContextQuery.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/ContextSuggestField.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/Dictionary.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/DirectSpellChecker.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/DocumentDictionary.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/DocumentValueSourceDictionary.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/fst/ExternalRefSorter.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/FileDictionary.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/FreeTextSuggester.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/fst/FSTCompletion.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/fst/FSTCompletionBuilder.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/fst/FSTCompletionLookup.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/FSTUtil.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/FuzzyCompletionQuery.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/FuzzySuggester.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/HighFrequencyDictionary.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/InMemorySorter.h"/>
+      <F N="suggest/src/test/org/apache/lucene/search/suggest/Input.h"/>
+      <F N="suggest/src/test/org/apache/lucene/search/suggest/InputArrayIterator.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/InputIterator.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/JaroWinklerDistance.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/jaspell/JaspellLookup.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/jaspell/JaspellTernarySearchTrie.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/LevenshteinDistance.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/LevensteinDistance.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/Lookup.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/LuceneDictionary.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/LuceneLevenshteinDistance.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/NGramDistance.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/NRTSuggester.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/NRTSuggesterBuilder.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/package-info.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/package-info.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/package-info.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/package-info.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/fst/package-info.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/jaspell/package-info.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/tst/package-info.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/PlainTextDictionary.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/PrefixCompletionQuery.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/RegexCompletionQuery.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/SortedInputIterator.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/SpellChecker.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/StringDistance.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/SuggestField.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/SuggestIndexSearcher.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/SuggestMode.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/SuggestScoreDocPriorityQueue.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/SuggestStopFilter.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/analyzing/SuggestStopFilterFactory.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/SuggestWord.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/SuggestWordFrequencyComparator.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/SuggestWordQueue.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/SuggestWordScoreComparator.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/tst/TernaryTreeNode.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/TopSuggestDocs.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/document/TopSuggestDocsCollector.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/tst/TSTAutocomplete.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/tst/TSTLookup.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/UnsortedInputIterator.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/suggest/fst/WFSTCompletionLookup.h"/>
+      <F N="suggest/src/java/org/apache/lucene/search/spell/WordBreakSpellChecker.h"/>
+    </Folder>
+    <Folder
+      Name="Resource Files"
+      Filters="*.ico;*.cur;*.dlg"
+      GUID="{3CA69D09-34F2-4100-870C-0905E45EB1CD}"/>
+    <Folder
+      Name="Bitmaps"
+      Filters="*.bmp"
+      GUID="{00580081-6710-442A-A312-5EEF3879BF62}"/>
+    <Folder
+      Name="Other Files"
+      Filters=""
+      GUID="{D244FB04-31E8-48B7-8E75-0FD3DDBCA6BF}"/>
+  </Files>
+</Project>

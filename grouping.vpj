@@ -1,0 +1,340 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+  Version="10.0"
+  VendorName="SlickEdit"
+  TemplateName="GNU C/C++"
+  WorkingDir="."
+  BuildSystem="vsbuild">
+  <Config
+    Name="Debug"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdgrouping.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd -g %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine='%o "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Config
+    Name="Release"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdgrouping.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine='%o "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Files>
+    <Folder
+      Name="Source Files"
+      Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
+      GUID="{78991C3D-2525-4A42-A29F-76E990C823D4}">
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/AllGroupHeadsCollector.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/AllGroupsCollector.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/BlockGroupingCollector.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/CollectedSearchGroup.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/DistinctValuesCollector.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/FakeScorer.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/FirstPassGroupingCollector.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/GroupDocs.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/GroupFacetCollector.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/GroupingSearch.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/GroupReducer.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/GroupSelector.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/package-info.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/SearchGroup.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/SecondPassGroupingCollector.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/TermGroupFacetCollector.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/TermGroupSelector.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/TopGroups.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/TopGroupsCollector.cpp"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/ValueSourceGroupSelector.cpp"/>
+    </Folder>
+    <Folder
+      Name="Header Files"
+      Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+      GUID="{2EEB091E-141B-4E05-BB2E-554A4D53B8B9}">
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/AllGroupHeadsCollector.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/AllGroupsCollector.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/BlockGroupingCollector.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/CollectedSearchGroup.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/DistinctValuesCollector.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/FakeScorer.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/FirstPassGroupingCollector.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/GroupDocs.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/GroupFacetCollector.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/GroupingSearch.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/GroupReducer.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/GroupSelector.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/package-info.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/SearchGroup.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/SecondPassGroupingCollector.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/TermGroupFacetCollector.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/TermGroupSelector.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/TopGroups.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/TopGroupsCollector.h"/>
+      <F N="grouping/src/java/org/apache/lucene/search/grouping/ValueSourceGroupSelector.h"/>
+    </Folder>
+    <Folder
+      Name="Resource Files"
+      Filters="*.ico;*.cur;*.dlg"
+      GUID="{B25F9947-C557-4E81-A1EE-70FD9EDCEC6C}"/>
+    <Folder
+      Name="Bitmaps"
+      Filters="*.bmp"
+      GUID="{B1FCD22B-9AA6-41E5-9A55-BF9A6C733791}"/>
+    <Folder
+      Name="Other Files"
+      Filters=""
+      GUID="{869F74CE-BA16-425F-A15E-341D2F92AB1A}"/>
+  </Files>
+</Project>

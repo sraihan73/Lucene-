@@ -1,0 +1,444 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+  Version="10.0"
+  VendorName="SlickEdit"
+  TemplateName="GNU C/C++"
+  WorkingDir="."
+  BuildSystem="vsbuild">
+  <Config
+    Name="Debug"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdfacet.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd -g %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Config
+    Name="Release"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdfacet.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Files>
+    <Folder
+      Name="Source Files"
+      Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
+      GUID="{D2CD8F65-BA9A-4794-9409-2F01B1CE427A}">
+      <F N="facet/src/test/org/apache/lucene/facet/AssertingSubDocsAtOnceCollector.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/AssociationFacetField.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/CachedOrdinalsReader.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/CharBlockArray.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/sortedset/ConcurrentSortedSetDocValuesFacetCounts.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/directory/Consts.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/sortedset/DefaultSortedSetDocValuesReaderState.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/directory/DirectoryTaxonomyReader.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/directory/DirectoryTaxonomyWriter.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/DocValuesOrdinalsReader.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/DoubleRange.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/DoubleRangeFacetCounts.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/DrillDownQuery.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/DrillSideways.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/DrillSidewaysQuery.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/DrillSidewaysScorer.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/FacetField.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/FacetLabel.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/FacetQuery.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/FacetResult.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/Facets.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/FacetsCollector.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/FacetsCollectorManager.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/FacetsConfig.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/FastTaxonomyFacetCounts.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/FloatAssociationFacetField.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/FloatTaxonomyFacets.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/IntAssociationFacetField.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/IntTaxonomyFacets.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/LabelAndValue.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/LabelToOrdinal.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/LongRange.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/LongRangeCounter.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/LongRangeFacetCounts.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/LongValueFacetCounts.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/LRUHashMap.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/LruTaxonomyWriterCache.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/MultiFacetQuery.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/MultiFacets.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/NameHashIntCacheLRU.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/NameIntCacheLRU.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/OrdinalMappingLeafReader.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/OrdinalsReader.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/package-info.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/package-info.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/sortedset/package-info.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/package-info.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/directory/package-info.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/package-info.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/ParallelTaxonomyArrays.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/PrintTaxonomyStats.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/RandomSamplingFacetsCollector.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/Range.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/RangeFacetCounts.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/SearcherTaxonomyManager.cpp"/>
+      <F N="facet/src/test/org/apache/lucene/facet/SlowRAMDirectory.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/sortedset/SortedSetDocValuesFacetCounts.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/sortedset/SortedSetDocValuesFacetField.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/sortedset/SortedSetDocValuesReaderState.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyFacetCounts.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyFacets.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyFacetSumFloatAssociations.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyFacetSumIntAssociations.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyFacetSumValueSource.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/directory/TaxonomyIndexArrays.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyMergeUtils.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyReader.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyWriter.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/TaxonomyWriterCache.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/TopOrdAndFloatQueue.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/TopOrdAndIntQueue.cpp"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/UTF8TaxonomyWriterCache.cpp"/>
+    </Folder>
+    <Folder
+      Name="Header Files"
+      Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+      GUID="{00BA90FB-7967-470B-A9E8-AD960FE4C4B0}">
+      <F N="facet/src/test/org/apache/lucene/facet/AssertingSubDocsAtOnceCollector.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/AssociationFacetField.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/CachedOrdinalsReader.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/CharBlockArray.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/sortedset/ConcurrentSortedSetDocValuesFacetCounts.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/directory/Consts.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/sortedset/DefaultSortedSetDocValuesReaderState.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/directory/DirectoryTaxonomyReader.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/directory/DirectoryTaxonomyWriter.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/DocValuesOrdinalsReader.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/DoubleRange.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/DoubleRangeFacetCounts.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/DrillDownQuery.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/DrillSideways.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/DrillSidewaysQuery.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/DrillSidewaysScorer.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/FacetField.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/FacetLabel.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/FacetQuery.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/FacetResult.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/Facets.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/FacetsCollector.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/FacetsCollectorManager.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/FacetsConfig.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/FastTaxonomyFacetCounts.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/FloatAssociationFacetField.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/FloatTaxonomyFacets.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/IntAssociationFacetField.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/IntTaxonomyFacets.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/LabelAndValue.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/LabelToOrdinal.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/LongRange.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/LongRangeCounter.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/LongRangeFacetCounts.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/LongValueFacetCounts.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/LRUHashMap.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/LruTaxonomyWriterCache.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/MultiFacetQuery.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/MultiFacets.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/NameHashIntCacheLRU.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/NameIntCacheLRU.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/OrdinalMappingLeafReader.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/OrdinalsReader.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/package-info.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/package-info.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/sortedset/package-info.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/package-info.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/directory/package-info.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/package-info.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/ParallelTaxonomyArrays.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/PrintTaxonomyStats.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/RandomSamplingFacetsCollector.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/Range.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/range/RangeFacetCounts.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/SearcherTaxonomyManager.h"/>
+      <F N="facet/src/test/org/apache/lucene/facet/SlowRAMDirectory.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/sortedset/SortedSetDocValuesFacetCounts.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/sortedset/SortedSetDocValuesFacetField.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/sortedset/SortedSetDocValuesReaderState.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyFacetCounts.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyFacets.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyFacetSumFloatAssociations.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyFacetSumIntAssociations.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyFacetSumValueSource.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/directory/TaxonomyIndexArrays.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyMergeUtils.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyReader.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/TaxonomyWriter.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/TaxonomyWriterCache.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/TopOrdAndFloatQueue.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/TopOrdAndIntQueue.h"/>
+      <F N="facet/src/java/org/apache/lucene/facet/taxonomy/writercache/UTF8TaxonomyWriterCache.h"/>
+    </Folder>
+    <Folder
+      Name="Resource Files"
+      Filters="*.ico;*.cur;*.dlg"
+      GUID="{2972CFBF-DA84-459A-BC90-5CFB23337F59}"/>
+    <Folder
+      Name="Bitmaps"
+      Filters="*.bmp"
+      GUID="{42E00827-D628-4D20-A4CB-143735E13E2C}"/>
+    <Folder
+      Name="Other Files"
+      Filters=""
+      GUID="{3D462F4B-5320-4E96-9115-9E16468E38E3}"/>
+  </Files>
+</Project>

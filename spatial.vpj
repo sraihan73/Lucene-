@@ -1,0 +1,670 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+  Version="10.0"
+  VendorName="SlickEdit"
+  TemplateName="GNU C/C++"
+  WorkingDir="."
+  BuildSystem="vsbuild">
+  <Config
+    Name="Debug"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdspatial.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd -g %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Config
+    Name="Release"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdspatial.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Files>
+    <Folder
+      Name="Source Files"
+      Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
+      GUID="{01E41FBA-6230-4D21-80F5-59F0589F5B1D}">
+      <F N="spatial/src/java/org/apache/lucene/spatial/util/GeoRelationUtils.cpp"/>
+      <F N="spatial/src/java/org/apache/lucene/spatial/util/MortonEncoder.cpp"/>
+      <F N="spatial/src/java/org/apache/lucene/spatial/package-info.cpp"/>
+      <F N="spatial/src/java/org/apache/lucene/spatial/util/package-info.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/bbox/BBoxOverlapRatioValueSource.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/bbox/BBoxSimilarityValueSource.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/bbox/BBoxStrategy.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/bbox/BBoxValueSource.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/bbox/package-info.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/composite/CompositeSpatialStrategy.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/composite/CompositeVerifyQuery.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/composite/IntersectsRPTVerifyQuery.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/composite/package-info.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/AbstractPrefixTreeQuery.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/AbstractVisitingPrefixTreeQuery.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/BytesRefIteratorTokenStream.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/CellToBytesRefIterator.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/ContainsPrefixTreeQuery.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/HeatmapFacetCounter.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/IntersectsPrefixTreeQuery.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/NumberRangePrefixTreeStrategy.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/package-info.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/PointPrefixTreeFieldCacheProvider.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/PrefixTreeFacetCounter.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/PrefixTreeStrategy.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/RecursivePrefixTreeStrategy.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/TermQueryPrefixTreeStrategy.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/Cell.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/CellCanPrune.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/CellIterator.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/DateRangePrefixTree.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/FilterCellIterator.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/GeohashPrefixTree.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/LegacyCell.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/LegacyPrefixTree.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/NumberRangePrefixTree.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/package-info.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/PackedQuadPrefixTree.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/QuadPrefixTree.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/S2PrefixTree.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/S2PrefixTreeCell.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/S2ShapeFactory.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/SingletonCellIterator.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/SpatialPrefixTree.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/SpatialPrefixTreeFactory.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/TreeCellIterator.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/WithinPrefixTreeQuery.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/query/package-info.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/query/SpatialArgs.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/query/SpatialArgsParser.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/query/SpatialOperation.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/query/UnsupportedSpatialOperation.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/serialized/package-info.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/serialized/SerializedDVStrategy.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/ShapeValues.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/ShapeValuesSource.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dBinaryCodec.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dCircleShape.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dDistanceCalculator.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dPointShape.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dRectangleShape.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dShape.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dShapeFactory.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dSpatialContextFactory.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/package-info.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/SpatialStrategy.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/CachingDoubleValueSource.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/DistanceToShapeValueSource.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/ReciprocalDoubleValuesSource.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/ShapeAreaValueSource.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/ShapeFieldCache.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/ShapeFieldCacheDistanceValueSource.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/ShapeFieldCacheProvider.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/ShapeValuesPredicate.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/vector/DistanceValueSource.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/vector/package-info.cpp"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/vector/PointVectorStrategy.cpp"/>
+      <F N="spatial-extras/src/test/org/apache/lucene/spatial/prefix/CellToBytesRefIterator50.cpp"/>
+      <F N="spatial-extras/src/test/org/apache/lucene/spatial/SpatialExample.cpp"/>
+      <F N="spatial-extras/src/test/org/apache/lucene/spatial/SpatialMatchConcern.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/Geo3DDocValuesField.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/Geo3DPoint.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/Geo3DPointDistanceComparator.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/Geo3DPointOutsideDistanceComparator.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/Geo3DPointOutsideSortField.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/Geo3DPointSortField.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/Geo3DUtil.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/ArcDistance.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/BasePlanetObject.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/BaseXYZSolid.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/Bounded.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/Bounds.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/DistanceStyle.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/dXdYdZSolid.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/dXdYZSolid.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/dXYdZSolid.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/dXYZSolid.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoArea.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoAreaFactory.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoAreaShape.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseAreaShape.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseBBox.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseCircle.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseCompositeAreaShape.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseCompositeMembershipShape.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseCompositeShape.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseDistanceShape.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseMembershipShape.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBasePath.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBasePolygon.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseShape.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBBox.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBBoxFactory.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoCircle.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoCircleFactory.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoComplexPolygon.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoCompositeAreaShape.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoCompositeMembershipShape.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoCompositePolygon.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoConcavePolygon.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoConvexPolygon.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDegenerateHorizontalLine.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDegenerateLatitudeZone.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDegenerateLongitudeSlice.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDegeneratePath.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDegeneratePoint.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDegenerateVerticalLine.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDistance.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDistanceShape.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoExactCircle.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoLatitudeZone.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoLongitudeSlice.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoMembershipShape.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoNorthLatitudeZone.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoNorthRectangle.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoOutsideDistance.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoPath.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoPathFactory.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoPoint.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoPointShape.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoPointShapeFactory.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoPolygon.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoPolygonFactory.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoRectangle.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoS2Shape.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoS2ShapeFactory.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoShape.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoSizeable.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoSouthLatitudeZone.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoSouthRectangle.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoStandardCircle.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoStandardPath.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoWideDegenerateHorizontalLine.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoWideLongitudeSlice.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoWideNorthRectangle.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoWideRectangle.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoWideSouthRectangle.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoWorld.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/LatLonBounds.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/LinearDistance.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/LinearSquaredDistance.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/Membership.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/NormalDistance.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/NormalSquaredDistance.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/package-info.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/Plane.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/PlanetModel.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/PlanetObject.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/SerializableObject.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/SidedPlane.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/StandardObjects.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/StandardXYZSolid.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/Tools.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/Vector.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/XdYdZSolid.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/XdYZSolid.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/XYdZSolid.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/XYZBounds.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/XYZSolid.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/XYZSolidFactory.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/package-info.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/PointInGeo3DShapeQuery.cpp"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/PointInShapeIntersectVisitor.cpp"/>
+      <F N="spatial3d/src/test/org/apache/lucene/spatial3d/geom/Geo3DUtil.cpp"/>
+      <F N="spatial3d/src/test/org/apache/lucene/spatial3d/geom/RandomGeo3dShapeGenerator.cpp"/>
+    </Folder>
+    <Folder
+      Name="Header Files"
+      Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+      GUID="{6B6A6590-C6FB-449B-84DA-574F7994927C}">
+      <F N="spatial/src/java/org/apache/lucene/spatial/util/GeoRelationUtils.h"/>
+      <F N="spatial/src/java/org/apache/lucene/spatial/util/MortonEncoder.h"/>
+      <F N="spatial/src/java/org/apache/lucene/spatial/package-info.h"/>
+      <F N="spatial/src/java/org/apache/lucene/spatial/util/package-info.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/bbox/BBoxOverlapRatioValueSource.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/bbox/BBoxSimilarityValueSource.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/bbox/BBoxStrategy.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/bbox/BBoxValueSource.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/bbox/package-info.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/composite/CompositeSpatialStrategy.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/composite/CompositeVerifyQuery.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/composite/IntersectsRPTVerifyQuery.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/composite/package-info.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/AbstractPrefixTreeQuery.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/AbstractVisitingPrefixTreeQuery.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/BytesRefIteratorTokenStream.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/CellToBytesRefIterator.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/ContainsPrefixTreeQuery.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/HeatmapFacetCounter.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/IntersectsPrefixTreeQuery.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/NumberRangePrefixTreeStrategy.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/package-info.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/PointPrefixTreeFieldCacheProvider.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/PrefixTreeFacetCounter.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/PrefixTreeStrategy.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/RecursivePrefixTreeStrategy.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/TermQueryPrefixTreeStrategy.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/Cell.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/CellCanPrune.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/CellIterator.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/DateRangePrefixTree.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/FilterCellIterator.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/GeohashPrefixTree.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/LegacyCell.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/LegacyPrefixTree.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/NumberRangePrefixTree.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/package-info.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/PackedQuadPrefixTree.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/QuadPrefixTree.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/S2PrefixTree.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/S2PrefixTreeCell.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/S2ShapeFactory.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/SingletonCellIterator.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/SpatialPrefixTree.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/SpatialPrefixTreeFactory.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/tree/TreeCellIterator.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/prefix/WithinPrefixTreeQuery.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/query/package-info.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/query/SpatialArgs.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/query/SpatialArgsParser.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/query/SpatialOperation.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/query/UnsupportedSpatialOperation.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/serialized/package-info.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/serialized/SerializedDVStrategy.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/ShapeValues.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/ShapeValuesSource.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dBinaryCodec.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dCircleShape.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dDistanceCalculator.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dPointShape.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dRectangleShape.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dShape.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dShapeFactory.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/Geo3dSpatialContextFactory.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/spatial4j/package-info.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/SpatialStrategy.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/CachingDoubleValueSource.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/DistanceToShapeValueSource.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/ReciprocalDoubleValuesSource.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/ShapeAreaValueSource.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/ShapeFieldCache.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/ShapeFieldCacheDistanceValueSource.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/ShapeFieldCacheProvider.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/util/ShapeValuesPredicate.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/vector/DistanceValueSource.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/vector/package-info.h"/>
+      <F N="spatial-extras/src/java/org/apache/lucene/spatial/vector/PointVectorStrategy.h"/>
+      <F N="spatial-extras/src/test/org/apache/lucene/spatial/prefix/CellToBytesRefIterator50.h"/>
+      <F N="spatial-extras/src/test/org/apache/lucene/spatial/SpatialExample.h"/>
+      <F N="spatial-extras/src/test/org/apache/lucene/spatial/SpatialMatchConcern.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/Geo3DDocValuesField.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/Geo3DPoint.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/Geo3DPointDistanceComparator.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/Geo3DPointOutsideDistanceComparator.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/Geo3DPointOutsideSortField.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/Geo3DPointSortField.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/Geo3DUtil.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/ArcDistance.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/BasePlanetObject.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/BaseXYZSolid.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/Bounded.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/Bounds.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/DistanceStyle.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/dXdYdZSolid.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/dXdYZSolid.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/dXYdZSolid.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/dXYZSolid.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoArea.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoAreaFactory.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoAreaShape.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseAreaShape.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseBBox.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseCircle.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseCompositeAreaShape.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseCompositeMembershipShape.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseCompositeShape.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseDistanceShape.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseMembershipShape.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBasePath.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBasePolygon.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBaseShape.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBBox.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoBBoxFactory.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoCircle.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoCircleFactory.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoComplexPolygon.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoCompositeAreaShape.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoCompositeMembershipShape.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoCompositePolygon.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoConcavePolygon.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoConvexPolygon.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDegenerateHorizontalLine.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDegenerateLatitudeZone.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDegenerateLongitudeSlice.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDegeneratePath.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDegeneratePoint.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDegenerateVerticalLine.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDistance.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoDistanceShape.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoExactCircle.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoLatitudeZone.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoLongitudeSlice.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoMembershipShape.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoNorthLatitudeZone.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoNorthRectangle.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoOutsideDistance.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoPath.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoPathFactory.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoPoint.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoPointShape.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoPointShapeFactory.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoPolygon.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoPolygonFactory.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoRectangle.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoS2Shape.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoS2ShapeFactory.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoShape.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoSizeable.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoSouthLatitudeZone.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoSouthRectangle.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoStandardCircle.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoStandardPath.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoWideDegenerateHorizontalLine.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoWideLongitudeSlice.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoWideNorthRectangle.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoWideRectangle.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoWideSouthRectangle.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/GeoWorld.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/LatLonBounds.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/LinearDistance.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/LinearSquaredDistance.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/Membership.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/NormalDistance.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/NormalSquaredDistance.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/package-info.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/Plane.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/PlanetModel.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/PlanetObject.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/SerializableObject.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/SidedPlane.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/StandardObjects.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/StandardXYZSolid.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/Tools.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/Vector.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/XdYdZSolid.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/XdYZSolid.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/XYdZSolid.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/XYZBounds.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/XYZSolid.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/geom/XYZSolidFactory.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/package-info.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/PointInGeo3DShapeQuery.h"/>
+      <F N="spatial3d/src/java/org/apache/lucene/spatial3d/PointInShapeIntersectVisitor.h"/>
+      <F N="spatial3d/src/test/org/apache/lucene/spatial3d/geom/Geo3DUtil.h"/>
+      <F N="spatial3d/src/test/org/apache/lucene/spatial3d/geom/RandomGeo3dShapeGenerator.h"/>
+    </Folder>
+    <Folder
+      Name="Resource Files"
+      Filters="*.ico;*.cur;*.dlg"
+      GUID="{0A9021C8-046F-4E06-8F77-29057A85BB65}"/>
+    <Folder
+      Name="Bitmaps"
+      Filters="*.bmp"
+      GUID="{4F6EB295-155F-4A05-BD3D-624E316A9AC4}"/>
+    <Folder
+      Name="Other Files"
+      Filters=""
+      GUID="{610EDA51-9A2C-4EDF-93B9-FB342C4244E0}"/>
+  </Files>
+</Project>

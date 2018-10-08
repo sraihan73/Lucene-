@@ -1,0 +1,59 @@
+#pragma once
+#include "stringhelper.h"
+#include <memory>
+#include <deque>
+
+/*
+ * Licensed to the Syed Mamun Raihan (sraihan.com) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * sraihan.com licenses this file to You under GPLv3 License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     https://www.gnu.org/licenses/gpl-3.0.en.html
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+namespace org::apache::lucene::util::fst
+{
+
+// TODO: can we use just ByteArrayDataInput...?  need to
+// add a .skipBytes to DataInput.. hmm and .setPosition
+
+/** Reads from a single byte[]. */
+class ForwardBytesReader final : public FST::BytesReader
+{
+  GET_CLASS_NAME(ForwardBytesReader)
+private:
+  std::deque<char> const bytes;
+  int pos = 0;
+
+public:
+  ForwardBytesReader(std::deque<char> &bytes);
+
+  char readByte() override;
+
+  void readBytes(std::deque<char> &b, int offset, int len) override;
+
+  void skipBytes(int64_t count) override;
+
+  int64_t getPosition() override;
+
+  void setPosition(int64_t pos) override;
+
+  bool reversed() override;
+
+protected:
+  std::shared_ptr<ForwardBytesReader> shared_from_this()
+  {
+    return std::static_pointer_cast<ForwardBytesReader>(
+        FST.BytesReader::shared_from_this());
+  }
+};
+
+} // namespace org::apache::lucene::util::fst

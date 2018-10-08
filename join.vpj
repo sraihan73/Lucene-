@@ -1,0 +1,350 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+  Version="10.0"
+  VendorName="SlickEdit"
+  TemplateName="GNU C/C++"
+  WorkingDir="."
+  BuildSystem="vsbuild">
+  <Config
+    Name="Debug"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdjoin.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd -g %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Config
+    Name="Release"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdjoin.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Files>
+    <Folder
+      Name="Source Files"
+      Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
+      GUID="{067B7A96-6522-402E-9979-0FCB1A4A240D}">
+      <F N="join/src/java/org/apache/lucene/search/join/BaseGlobalOrdinalScorer.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/BitSetProducer.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/BlockJoinSelector.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/CheckJoinIndex.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/DocValuesTermsCollector.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/FakeScorer.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/GenericTermsCollector.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/GlobalOrdinalsCollector.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/GlobalOrdinalsQuery.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/GlobalOrdinalsWithScoreCollector.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/GlobalOrdinalsWithScoreQuery.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/JoinUtil.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/package-info.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/ParentChildrenBlockJoinQuery.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/PointInSetIncludingScoreQuery.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/QueryBitSetProducer.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/ScoreMode.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/TermsCollector.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/TermsIncludingScoreQuery.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/TermsQuery.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/TermsWithScoreCollector.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/ToChildBlockJoinQuery.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/ToParentBlockJoinQuery.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/ToParentBlockJoinSortField.cpp"/>
+      <F N="join/src/java/org/apache/lucene/search/join/ToParentDocValues.cpp"/>
+    </Folder>
+    <Folder
+      Name="Header Files"
+      Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+      GUID="{3DBEF283-B179-41D3-BF4F-903CB47B078A}">
+      <F N="join/src/java/org/apache/lucene/search/join/BaseGlobalOrdinalScorer.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/BitSetProducer.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/BlockJoinSelector.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/CheckJoinIndex.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/DocValuesTermsCollector.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/FakeScorer.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/GenericTermsCollector.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/GlobalOrdinalsCollector.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/GlobalOrdinalsQuery.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/GlobalOrdinalsWithScoreCollector.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/GlobalOrdinalsWithScoreQuery.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/JoinUtil.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/package-info.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/ParentChildrenBlockJoinQuery.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/PointInSetIncludingScoreQuery.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/QueryBitSetProducer.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/ScoreMode.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/TermsCollector.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/TermsIncludingScoreQuery.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/TermsQuery.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/TermsWithScoreCollector.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/ToChildBlockJoinQuery.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/ToParentBlockJoinQuery.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/ToParentBlockJoinSortField.h"/>
+      <F N="join/src/java/org/apache/lucene/search/join/ToParentDocValues.h"/>
+    </Folder>
+    <Folder
+      Name="Resource Files"
+      Filters="*.ico;*.cur;*.dlg"
+      GUID="{1BC2DF64-FE37-416D-8922-ECCC3923DE5A}"/>
+    <Folder
+      Name="Bitmaps"
+      Filters="*.bmp"
+      GUID="{D75E420F-E6F4-457F-9A3B-302D9A4C16FA}"/>
+    <Folder
+      Name="Other Files"
+      Filters=""
+      GUID="{971D7CB0-7E3B-486A-8C2E-A8BD83F1CA1C}"/>
+  </Files>
+</Project>

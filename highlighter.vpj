@@ -1,0 +1,442 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+  Version="10.0"
+  VendorName="SlickEdit"
+  TemplateName="GNU C/C++"
+  WorkingDir="."
+  BuildSystem="vsbuild">
+  <Config
+    Name="Debug"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdhighlighter.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd -g %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Config
+    Name="Release"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdhighlighter.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Files>
+    <Folder
+      Name="Source Files"
+      Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
+      GUID="{5A4AC25D-2BA7-40E3-94F5-DCD45A832DA7}">
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/AnalysisOffsetStrategy.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/BaseFragListBuilder.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/BaseFragmentsBuilder.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/BoundaryScanner.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/BreakIteratorBoundaryScanner.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/CustomSeparatorBreakIterator.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/DefaultEncoder.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/DefaultPassageFormatter.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/Encoder.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/FastVectorHighlighter.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/FieldFragList.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/FieldHighlighter.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/FieldOffsetStrategy.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/FieldPhraseList.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/FieldQuery.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/FieldTermStack.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/Formatter.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/FragListBuilder.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/Fragmenter.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/FragmentsBuilder.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/GradientFormatter.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/Highlighter.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/InvalidTokenOffsetsException.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/LengthGoalBreakIterator.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/MemoryIndexOffsetStrategy.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/MultiTermHighlighting.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/NoOpOffsetStrategy.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/NullFragmenter.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/OffsetLimitTokenFilter.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/OffsetsEnum.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/package-info.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/package-info.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/package-info.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/Passage.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/PassageFormatter.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/PassageScorer.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/PhraseHelper.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/PositionSpan.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/PostingsOffsetStrategy.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/PostingsWithTermVectorsOffsetStrategy.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/QueryScorer.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/QueryTermExtractor.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/QueryTermScorer.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/ScoreOrderFragmentsBuilder.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/Scorer.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/SimpleBoundaryScanner.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/SimpleFieldFragList.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/SimpleFragListBuilder.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/SimpleFragmenter.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/SimpleFragmentsBuilder.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/SimpleHTMLEncoder.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/SimpleHTMLFormatter.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/SimpleSpanFragmenter.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/SingleFragListBuilder.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/SpanGradientFormatter.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/SplittingBreakIterator.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/TermVectorFilteredLeafReader.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/TermVectorLeafReader.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/TermVectorOffsetStrategy.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/TextFragment.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/TokenGroup.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/TokenSources.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/TokenStreamFromTermVector.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/TokenStreamOffsetStrategy.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/UnifiedHighlighter.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/WeightedFieldFragList.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/WeightedFragListBuilder.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/WeightedSpanTerm.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/WeightedSpanTermExtractor.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/WeightedTerm.cpp"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/WholeBreakIterator.cpp"/>
+    </Folder>
+    <Folder
+      Name="Header Files"
+      Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+      GUID="{EC494053-ED7F-4642-94C6-50188681B79E}">
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/AnalysisOffsetStrategy.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/BaseFragListBuilder.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/BaseFragmentsBuilder.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/BoundaryScanner.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/BreakIteratorBoundaryScanner.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/CustomSeparatorBreakIterator.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/DefaultEncoder.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/DefaultPassageFormatter.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/Encoder.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/FastVectorHighlighter.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/FieldFragList.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/FieldHighlighter.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/FieldOffsetStrategy.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/FieldPhraseList.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/FieldQuery.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/FieldTermStack.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/Formatter.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/FragListBuilder.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/Fragmenter.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/FragmentsBuilder.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/GradientFormatter.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/Highlighter.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/InvalidTokenOffsetsException.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/LengthGoalBreakIterator.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/MemoryIndexOffsetStrategy.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/MultiTermHighlighting.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/NoOpOffsetStrategy.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/NullFragmenter.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/OffsetLimitTokenFilter.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/OffsetsEnum.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/package-info.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/package-info.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/package-info.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/Passage.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/PassageFormatter.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/PassageScorer.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/PhraseHelper.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/PositionSpan.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/PostingsOffsetStrategy.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/PostingsWithTermVectorsOffsetStrategy.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/QueryScorer.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/QueryTermExtractor.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/QueryTermScorer.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/ScoreOrderFragmentsBuilder.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/Scorer.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/SimpleBoundaryScanner.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/SimpleFieldFragList.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/SimpleFragListBuilder.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/SimpleFragmenter.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/SimpleFragmentsBuilder.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/SimpleHTMLEncoder.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/SimpleHTMLFormatter.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/SimpleSpanFragmenter.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/SingleFragListBuilder.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/SpanGradientFormatter.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/SplittingBreakIterator.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/TermVectorFilteredLeafReader.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/TermVectorLeafReader.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/TermVectorOffsetStrategy.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/TextFragment.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/TokenGroup.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/TokenSources.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/TokenStreamFromTermVector.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/TokenStreamOffsetStrategy.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/UnifiedHighlighter.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/WeightedFieldFragList.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/vectorhighlight/WeightedFragListBuilder.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/WeightedSpanTerm.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/WeightedSpanTermExtractor.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/highlight/WeightedTerm.h"/>
+      <F N="highlighter/src/java/org/apache/lucene/search/uhighlight/WholeBreakIterator.h"/>
+    </Folder>
+    <Folder
+      Name="Resource Files"
+      Filters="*.ico;*.cur;*.dlg"
+      GUID="{5DB703C9-EF75-4CA7-B4AC-28A56FB99F49}"/>
+    <Folder
+      Name="Bitmaps"
+      Filters="*.bmp"
+      GUID="{1224707A-3878-4173-948F-B334AF5BDA27}"/>
+    <Folder
+      Name="Other Files"
+      Filters=""
+      GUID="{70FB2FE1-56D0-4409-8A3E-B5D097467784}"/>
+  </Files>
+</Project>

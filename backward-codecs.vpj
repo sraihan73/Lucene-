@@ -1,0 +1,338 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+  Version="10.0"
+  VendorName="SlickEdit"
+  TemplateName="GNU C/C++"
+  WorkingDir="."
+  BuildSystem="vsbuild">
+  <Config
+    Name="Debug"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdbackward-codecs.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd -g %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -g -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Config
+    Name="Release"
+    Type="gnuc"
+    DebugCallbackName="gdb"
+    Version="1"
+    OutputFile="%bdbackward-codecs.a"
+    CompilerConfigName="Latest Version"
+    Defines="">
+    <Menu>
+      <Target
+        Name="Compile"
+        MenuCaption="&amp;Compile"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        OutputExts="*.o"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec
+          CmdLine='g++ -c %xup %defd %~other -o "%bd%n%oe" %i "%f"'
+          OtherOptions="-I/media/psf/Home/Downloads/lucene-7.4.0-cpp -std=gnu++2a"/>
+      </Target>
+      <Target
+        Name="Link"
+        MenuCaption="&amp;Link"
+        ShowOnMenu="Never"
+        Dialog="_gnuc_options_form Link"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveCurrent"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='ar -rs %xup "%o" %f'/>
+      </Target>
+      <Target
+        Name="Build"
+        MenuCaption="&amp;Build"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw"
+        ClearProcessBuffer="1">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t build'/>
+      </Target>
+      <Target
+        Name="Rebuild"
+        MenuCaption="&amp;Rebuild"
+        Dialog="_gnuc_options_form Compile"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%(VSLICKBIN1)vsbuild" "%w" "%r" -t rebuild'/>
+      </Target>
+      <Target
+        Name="Debug"
+        MenuCaption="&amp;Debug"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveNone"
+        RunFromDir="%rw">
+        <Exec CmdLine=' "%o"'/>
+      </Target>
+      <Target
+        Name="Execute"
+        MenuCaption="E&amp;xecute"
+        Dialog="_gnuc_options_form Run/Debug"
+        BuildFirst="1"
+        CaptureOutputWith="ProcessBuffer"
+        Deletable="0"
+        SaveOption="SaveWorkspaceFiles"
+        RunFromDir="%rw">
+        <Exec CmdLine='"%o"'/>
+      </Target>
+      <Target
+        Name="dash"
+        MenuCaption="-"
+        Deletable="0">
+        <Exec/>
+      </Target>
+      <Target
+        Name="GNU C Options"
+        MenuCaption="GNU C &amp;Options..."
+        ShowOnMenu="HideIfNoCmdLine"
+        Deletable="0"
+        SaveOption="SaveNone">
+        <Exec
+          CmdLine="gnucoptions"
+          Type="Slick-C"/>
+      </Target>
+    </Menu>
+    <Rules Name="Compile">
+      <Rule
+        InputExts="*.ada"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.adb"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gnat -O -c -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.f90"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gfortran -O -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+      <Rule
+        InputExts="*.d"
+        OutputExts="*.o"
+        LinkObject="1">
+        <Exec CmdLine='gdc -c -g -o "%bd%n.o" "%f"'/>
+      </Rule>
+    </Rules>
+    <List Name="GNUC Options">
+      <Item
+        Name="LinkerOutputType"
+        Value="StaticLibrary"/>
+    </List>
+    <Includes/>
+  </Config>
+  <Files>
+    <Folder
+      Name="Source Files"
+      Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
+      GUID="{A935E740-C165-4526-9A4E-F468F0F2BC2F}">
+      <F N="backward-codecs/src/java/org/apache/lucene/index/FixBrokenOffsets.cpp"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene54/LegacyStringHelper.cpp"/>
+      <F N="backward-codecs/src/test/org/apache/lucene/codecs/lucene50/Lucene50RWSegmentInfoFormat.cpp"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene50/Lucene50SegmentInfoFormat.cpp"/>
+      <F N="backward-codecs/src/test/org/apache/lucene/codecs/lucene53/Lucene53NormsConsumer.cpp"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene53/Lucene53NormsFormat.cpp"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene53/Lucene53NormsProducer.cpp"/>
+      <F N="backward-codecs/src/test/org/apache/lucene/codecs/lucene53/Lucene53RWNormsFormat.cpp"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene54/Lucene54DocValuesConsumer.cpp"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene54/Lucene54DocValuesFormat.cpp"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene54/Lucene54DocValuesProducer.cpp"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene60/Lucene60Codec.cpp"/>
+      <F N="backward-codecs/src/test/org/apache/lucene/codecs/lucene60/Lucene60RWCodec.cpp"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene62/Lucene62Codec.cpp"/>
+      <F N="backward-codecs/src/test/org/apache/lucene/codecs/lucene62/Lucene62RWCodec.cpp"/>
+      <F N="backward-codecs/src/test/org/apache/lucene/codecs/lucene62/Lucene62RWSegmentInfoFormat.cpp"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene53/package-info.cpp"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene54/package-info.cpp"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/Placeholder.cpp"/>
+    </Folder>
+    <Folder
+      Name="Header Files"
+      Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+      GUID="{ED38A263-EA8D-41C4-B699-69E8D0354F95}">
+      <F N="backward-codecs/src/java/org/apache/lucene/index/FixBrokenOffsets.h"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene54/LegacyStringHelper.h"/>
+      <F N="backward-codecs/src/test/org/apache/lucene/codecs/lucene50/Lucene50RWSegmentInfoFormat.h"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene50/Lucene50SegmentInfoFormat.h"/>
+      <F N="backward-codecs/src/test/org/apache/lucene/codecs/lucene53/Lucene53NormsConsumer.h"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene53/Lucene53NormsFormat.h"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene53/Lucene53NormsProducer.h"/>
+      <F N="backward-codecs/src/test/org/apache/lucene/codecs/lucene53/Lucene53RWNormsFormat.h"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene54/Lucene54DocValuesConsumer.h"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene54/Lucene54DocValuesFormat.h"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene54/Lucene54DocValuesProducer.h"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene60/Lucene60Codec.h"/>
+      <F N="backward-codecs/src/test/org/apache/lucene/codecs/lucene60/Lucene60RWCodec.h"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene62/Lucene62Codec.h"/>
+      <F N="backward-codecs/src/test/org/apache/lucene/codecs/lucene62/Lucene62RWCodec.h"/>
+      <F N="backward-codecs/src/test/org/apache/lucene/codecs/lucene62/Lucene62RWSegmentInfoFormat.h"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene53/package-info.h"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/lucene54/package-info.h"/>
+      <F N="backward-codecs/src/java/org/apache/lucene/codecs/Placeholder.h"/>
+    </Folder>
+    <Folder
+      Name="Resource Files"
+      Filters="*.ico;*.cur;*.dlg"
+      GUID="{6A0A2950-3C8F-49EF-AA4A-01D0F7FE6C72}"/>
+    <Folder
+      Name="Bitmaps"
+      Filters="*.bmp"
+      GUID="{95A16814-46F0-4E3D-AD9A-A49D17A2B4C9}"/>
+    <Folder
+      Name="Other Files"
+      Filters=""
+      GUID="{DEEEA176-421D-4AE0-8E91-EED78C068D26}"/>
+  </Files>
+</Project>
